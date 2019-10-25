@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" lang="hr" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Navbar</title>
+
+	<link rel="stylesheet" type="text/css" href="../css/app.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+	<header>
+		<div class="head">
+			<div class="head-item">
+				<a class="navbar-brand" href="https://www.tvz.hr">
+					<img src="../img/TvzLogo.png" alt="tvzLogo" style="width: 100px;">
+				</a>
+			</div>
+			<div class="head-item">
+				<h2>Navbar</h2>
+			</div>
+			<div class="head-item">
+				<!-- Main navigation -->
+				<div class="hamburger">
+					<div class="burger burger-3" id="burger">
+						<input type="checkbox" name="burger3" id="mainNav" onclick="mainNavigation()" />
+						<label for="mainNav">
+							<span class="bar bar-1"></span>
+							<span class="bar bar-2"></span>
+							<span class="bar bar-3"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Main sidebar -->
+		<nav id="myNav"></nav>
+	</header>
+	
+<div class="filler"></div>
+<!--PAGE CONTENT-->
+
+<br />
+<!-- NAVBAR -->
+<nav class="navBar">
+  <h4 class="navTitle">Navbar</h4>
+  <label for="drop" class="toggle">
+    <div class="wrapper-menu">
+      <div class="line-menu half start"></div>
+      <div class="line-menu"></div>
+      <div class="line-menu half end"></div>
+    </div>
+  </label>
+  <input type="checkbox" id="drop" />
+
+  <ul class="menu">
+    <li><a href="#">Home</a></li>
+    <li> 
+      <!-- First Tier Drop Down -->
+      <label for="drop-1" class="toggle">Service +</label>
+      <a href="#">Service</a>
+      <input type="checkbox" id="drop-1"/>
+      <ul>
+        <li><a href="#">Service 1</a></li>
+        <li><a href="#">Service 2</a></li>
+        <li><a href="#">Service 3</a></li>
+      </ul>
+    </li>
+    <li> 
+      <!-- First Tier Drop Down -->
+      <label for="drop-2" class="toggle">Portfolio +</label>
+      <a href="#">Portfolio</a>
+      <input type="checkbox" id="drop-2"/>
+      <ul>
+        <li><a href="#">Portfolio 1</a></li>
+        <li><a href="#">Portfolio 2</a></li>
+        <li> 
+          <!-- Second Tier Drop Down -->
+          <label for="drop-3" class="toggle">Works +</label>
+          <a href="#">Works</a>
+          <input type="checkbox" id="drop-3"/>
+          <ul>
+            <li><a href="#">HTML/CSS</a></li>
+            <li><a href="#">jQuery</a></li>
+            <li><a href="#">Python</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+</nav>
+
+<br />
+  <div id="main">
+      <section>
+          <p></p>
+          <fieldset>
+              <legend>Uputstva</legend>
+              <article>
+                  <ul>
+                      <li><span class="tw-0">navBar</span> klasa unutar koje stiliziram sve komponente &lt;nav&gt; taga</li>
+                      <li><span class="tw-0">toggle</span> pomoću ove klase radimo dropdown na elementima</li>
+                      <li><span class="tw-0">drop, drop-1, drop-2, drop-3</span> svaki dropdown ima svoj redni broj. <i>For</i> i <i>id</i> element se povezuju pomoću naziva. Služi kako bi znali koji znali koji dropdown se treba izvršiti.</li>
+
+                  </ul>
+              </article>
+          </fieldset>
+          <br />
+          <code>
+  &lt;nav class="navBar"&gt;
+      &lt;h4 class="navTitle">Navbar&lt;/h4&gt;
+      &lt;label for="drop" class="toggle"&gt;
+        &lt;div class="wrapper-menu"&gt;
+          &lt;div class="line-menu half start">&lt;/div&gt;
+          &lt;div class="line-menu">&lt;/div&gt;
+          &lt;div class="line-menu half end">&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/label&gt;
+      &lt;input type="checkbox" id="drop" /&gt;
+  
+      &lt;ul class="menu"&gt;
+        &lt;li&gt;&lt;a href="#">Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt; 
+          &lt;!-- First Tier Drop Down --&gt;
+          &lt;label for="drop-1" class="toggle"&gt;Service +&lt;/label&gt;
+          &lt;a href="#"&gt;Service&lt;/a&gt;
+          &lt;input type="checkbox" id="drop-1"/&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Service 1&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Service 2&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Service 3&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt; 
+          &lt;!-- First Tier Drop Down --&gt;
+          &lt;label for="drop-2" class="toggle"&gt;Portfolio +&lt;/label&gt;
+          &lt;a href="#"&gt;Portfolio&lt;/a&gt;
+          &lt;input type="checkbox" id="drop-2"/&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Portfolio 1&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Portfolio 2&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt; 
+              &lt;!-- Second Tier Drop Down --&gt;
+              &lt;label for="drop-3" class="toggle"&gt;Works +&lt;/label&gt;
+              &lt;a href="#"&gt;Works&lt;/a&gt;
+              &lt;input type="checkbox" id="drop-3"/&gt;
+              &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#"&gt;HTML/CSS&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;jQuery&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Python&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li>&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+        &lt;li>&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+          </code>
+          <small class="float-right">HTML</small><br />
+          <code>
+// NAVBAR
+
+.navBar {
+  min-height: 50px;
+  margin: 0;
+  padding: 0;
+  background-color: $primary-1;
+  .navTitle {
+    color: white;
+    float: left;
+    height: 50px;
+    width: 150px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  .toggle, [id^=drop] {
+    display: none;
+  }
+  .toggle:nth-child(2) {
+    float: right;
+    padding-top: 8px;
+  }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  ul {
+    float: right;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+  }
+  ul li {
+    margin: 0px;
+    display: inline-block;
+    float: left;
+    background-color: transparent;
+    & > a:after { content: ' +'; }
+    & > a:only-child:after { content: ''; }
+  }
+  a {
+    display: block;
+    padding: 0 20px;
+    color: $white;
+    font-size: 20px;
+    line-height: 60px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  nav ul li ul li:hover { background-color: $primary-1; }
+  a:hover { background-color: $primary-2; }
+  ul ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+  }
+  ul li:hover > ul { display: inherit; }
+  ul ul li {
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+    background-color: $primary-0;
+  }
+  ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 170px;
+  }
+  @include respond-to(small-screens) {  
+    @include navMedia-small();
+  }
+
+  @include respond-to(medium-screens) { 
+    @include navMedia-small();
+  }
+}
+              
+          </code>
+          <small class="float-right">SCSS</small><br />
+      </section>    
+  </div>
+
+
+  
+  <script src="../js/navigationMenu.js"></script>
+  <script src="../js/closeIcon.js"></script>
+
+  <script src="../js/header.js"></script>
+  <script src="../js/myscript.js"></script>
+</body>
+</html>
+
+	

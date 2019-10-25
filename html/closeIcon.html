@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" lang="hr" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Close icon</title>
+
+	<link rel="stylesheet" type="text/css" href="../css/app.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+	<header>
+		<div class="head">
+			<div class="head-item">
+				<a class="navbar-brand" href="https://www.tvz.hr">
+					<img src="../img/TvzLogo.png" alt="tvzLogo" style="width: 100px;">
+				</a>
+			</div>
+			<div class="head-item">
+				<h2>Hamburger icon</h2>
+			</div>
+			<div class="head-item">
+				<!-- Main navigation -->
+				<div class="hamburger">
+					<div class="burger burger-3" id="burger">
+						<input type="checkbox" name="burger3" id="mainNav" onclick="mainNavigation()" />
+						<label for="mainNav">
+							<span class="bar bar-1"></span>
+							<span class="bar bar-2"></span>
+							<span class="bar bar-3"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Main sidebar -->
+		<nav id="myNav"></nav>
+	</header>
+	
+	<div class="filler"></div>
+	<!--PAGE CONTENT-->
+<div class="container">
+	<div>
+		<p>
+			Hamburger gumb zbog svoje sličnosti hamburgeru je dobila i isto ime.
+			Gumb se najčešće nalazi u gornjem desnom kutu grafičkog korisničkog sučelja. Jedan je on najpopularnijih komponenti navigacije.
+			Funkcija Hamburger gumba je prikaz kolapsa navigacije.
+			Hamburger se sastoji se od tri horizontalne linije. Klikom na hamburger linije se animiraju u X ikonu.
+			Sadrži dva stanja: hamburger ikona kada je navigacija zatvorena i X ikona kada je navigacija otvorena.
+		</p>
+		<fieldset>
+			<legend>Uputstva</legend>
+			<article>
+				<ul>
+					<li><span class="tp-0">burger </span>stilizira prostor unutar kojeg se nalazi hamburger ikona (tri horizontalne linije) i X ikona</li>
+					<li><span class="tp-0">bar </span> stilizira horizontalne linije</li>
+					<li><span class="tp-0">bar-1, bar-2, bar-3 </span> zasebno pozicionira svaku horizontalnu liniju</li>
+					<li><span class="tp-0">&lt;input&gt; </span> kako bi se ikona animirala i transformirala potrebno je koristiti <span class="tp-0">type:'checkbox'</span> element kako bi omogučili promijenu između dva stanja unutar ikone.</li>
+					
+				</ul>
+			</article>
+		</fieldset>
+		<br />
+		<div class="row">
+			<div class="col-wd-6">
+				<div class="burger" id="burger">
+					<input type="checkbox" id="leftNav" />
+					<label for="leftNav">
+						<span class="bar bar-1"></span>
+						<span class="bar bar-2"></span>
+						<span class="bar bar-3"></span>
+					</label>
+				</div>
+			</div>
+			<div class="col-wd-6">
+				<div class="wrapper-menu ">
+					<div class="line-menu half start"></div>
+					<div class="line-menu"></div>
+					<div class="line-menu half end"></div>
+				</div>
+			</div>
+		</div>
+
+		<br />
+		<br />
+
+		<code>
+&lt;div class="burger" id="burger"&gt;
+	&lt;input type="checkbox" name="burger3" id="leftNav" /&gt;
+	&lt;label for="leftNav"&gt;
+		&lt;span class="bar bar-1"&gt;&lt;/span&gt;
+		&lt;span class="bar bar-2"&gt;&lt;/span&gt;
+		&lt;span class="bar bar-3"&gt;&lt;/span&gt;
+	&lt;/label&gt;
+&lt;/div&gt;
+		</code>
+		<small style="float: right;">HTML</small><br />
+		<code>
+// Burger Base
+.burger {
+	width: 50px;
+	height: 42px;
+	position: relative;
+	overflow: hidden;
+	margin-left: 20px;
+	margin-right: 20px;
+	input:checked ~ label {
+		transform: rotate(90deg);
+		.bar-1 {
+		top: 18px;
+		transform: rotate(45deg);
+		}
+		.bar-2 {
+		left: 100%;
+		}
+		.bar-3 {
+		top: 18px;
+		transform: rotate(-45deg);
+		}
+	}
+	
+
+	input {
+	display: none;
+	}
+	label {
+	width: 50px;
+	height: 42px;
+	display: block;
+	transition: all .35s;
+	cursor: url('../img/cursor.cur') 5 5, pointer;
+	}
+}
+.bar {
+	width: 100%;
+	height: 6px;
+	display: block;
+	position: absolute;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	transition: all 0.5s;
+	pointer-events: none;
+}
+.bar-1 { top: 4px; }
+.bar-2 { top: 18px; }
+.bar-3 { top: 32px; }
+		</code>
+		<small style="float: right;">SCSS</small><br />
+	</section>
+</div>
+
+
+<script src="../js/closeIcon.js"></script>
+
+<script src="../js/header.js"></script>
+<script src="../js/myscript.js"></script>
+</body>
+</html>

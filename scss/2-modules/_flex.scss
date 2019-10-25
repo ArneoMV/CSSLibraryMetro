@@ -1,0 +1,20 @@
+/* FLEX */
+.flex {
+	width: auto;
+	height: 400px;
+	background-color: #D9D9D9;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.flex-item {
+	height: 50px;
+	background-color: purple;
+
+	flex: 0 0 150px;
+}
+.flex-body {
+	height: 100px;
+	background-color: orange;
+	flex: 1 0 auto;
+}

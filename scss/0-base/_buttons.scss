@@ -1,0 +1,515 @@
+/* BUTTONS */
+@import "../2-modules/mixins.scss";
+
+.btn-small {
+    font-size: 0.8125em;
+    padding: 0.4125em 1.25em;
+}
+.btn-medium {
+    font-size: 0.9375em;
+    padding: 0.5375em 1.375em;
+}
+.btn-large {
+    font-size: 1.0625em;
+    padding: 0.5625em 1.5em;
+}
+
+
+// Button RAISED
+.btn-primary-raised {
+  @include btn_base();
+  @include btn_bg_rased();
+  @include btn_shadow();
+  border: 2px solid $primary-1;
+  background-color: $primary-1;
+  &:hover{
+    box-shadow: 0 3px 3px -3px #777;
+    background-color: $primary-4;
+    border: 2px solid $primary-4;
+  }
+}
+.btn-warrning-raised {
+  @include btn_base();
+  @include btn_bg_rased();
+  @include btn_shadow();
+  border: 2px solid $warrning-1;
+  background-color: $warrning-1;
+  &:hover{
+    box-shadow: 0 3px 3px -3px #777;
+    background-color: $warrning-4;
+    border: 2px solid $warrning-4;
+  }
+}
+.btn-danger-raised {
+  @include btn_base();
+  @include btn_bg_rased();
+  @include btn_shadow();
+  border: 2px solid $danger-1;
+  background-color: $danger-1;
+  &:hover{
+    box-shadow: 0 3px 3px -3px #777;
+    background-color: $danger-4;
+    border: 2px solid $danger-4;
+  }
+}
+.btn-success-raised {
+  @include btn_base();
+  @include btn_bg_rased();
+  @include btn_shadow();
+  border: 2px solid $success-1;
+  background-color: $success-1;
+  &:hover{
+    box-shadow: 0 3px 3px -3px #777;
+    background-color: $success-4;
+    border: 2px solid $success-4;
+  }
+}
+.btn-raised-normal{
+  @include btn_base();
+  @include btn_shadow();
+  color: white;
+  border-radius: 0.15em;
+  background-color: $primary-1;
+}
+.btn-raised-focus {
+  @include btn_base();
+  // @include btn_shadow();
+  border: 0;
+  outline: 0;
+  color: white;
+  position: relative;
+  background-color: $primary-4;
+}
+
+// Button FLAT
+.btn-primary-flat {
+  @include btn_base();
+  @include btn_bg_rased();
+  border: 2px solid $primary-1;
+  background-color: $primary-1;
+  &:hover{
+    box-shadow: 0 3px 3px -3px #777;
+    background-color: $primary-4;
+    border: 2px solid $primary-4;
+  }
+}
+.btn-warrning-flat {
+  @include btn_base();
+  @include btn_bg_rased();
+  border: 2px solid $warrning-1;
+  background-color: $warrning-1;
+  &:hover{
+    box-shadow: 0 3px 3px -3px #777;
+    background-color: $warrning-4;
+    border: 2px solid $warrning-4;
+  }
+}
+.btn-danger-flat {
+  @include btn_base();
+  @include btn_bg_rased();
+  border: 2px solid $danger-1;
+  background-color: $danger-1;
+  &:hover{
+    box-shadow: 0 3px 3px -3px #777;
+    background-color: $danger-4;
+    border: 2px solid $danger-4;
+  }
+}
+.btn-success-flat {
+  @include btn_base();
+  @include btn_bg_rased();
+  border: 2px solid $success-1;
+  background-color: $success-1;
+  &:hover{
+    box-shadow: 0 3px 3px -3px #777;
+    background-color: $success-4;
+    border: 2px solid $success-4;
+  }
+}
+
+.btn-flat-normal {
+  @include btn_base();
+  @include btn_bg_rased();
+  background-color: $primary-1;
+}
+.btn-flat-focus {
+  @include btn_base();
+  @include btn_bg_rased();
+  background-color: $primary-4;
+}
+
+// Button GHOST
+
+.btn-white-ghost {
+  @include btn_base();
+  @include btn-ghost();
+    color: $white;
+    border: 2px solid $white;
+    &:after {
+      background-color: $primary-4;
+    }
+    &, &:after { transition: all 0.3s; }
+    &:hover {
+      border-color: $primary-4;
+      &:after {
+        background-color: $primary-4;
+      }
+    }
+}
+.btn-primary-ghost {
+  @include btn_base();
+  @include btn-ghost();
+  color: $primary-1;
+  border: 2px solid $primary-1;
+  &:after {
+    background-color: $primary-4;
+  }
+  &, &:after { transition: all 0.3s; }
+  &:hover {
+    border-color: $primary-4;
+    &:after {
+      background-color: $primary-4;
+    }
+  }
+}
+.btn-warrning-ghost {
+  @include btn_base();
+  @include btn-ghost();
+    color: $warrning-1;
+    border: 2px solid $warrning-1;
+    &:after {
+      background-color: $warrning-4;
+    }
+    &, &:after { transition: all 0.3s; }
+    &:hover {
+      border-color: $warrning-4;
+      &:after {
+        background-color: $warrning-4;
+      }
+    }
+}
+.btn-danger-ghost {
+  @include btn_base();
+  @include btn-ghost();
+    color: $danger-1;
+    border: 2px solid $danger-1;
+    &:after {
+      background-color: $danger-4;
+    }
+    &, &:after { transition: all 0.3s; }
+    &:hover {
+      border-color: $danger-4;
+      &:after {
+        background-color: $danger-4;
+      }
+    }
+}
+.btn-success-ghost {
+  @include btn_base();
+  @include btn-ghost();
+    color: $success-1;
+    border: 2px solid $success-1;
+    &:after {
+      background-color: $success-4;
+    }
+    &, &:after { transition: all 0.3s; }
+    &:hover {
+      border-color: $success-4;
+      &:after {
+        background-color: $success-4;
+      }
+    }
+}
+
+.btn-ghost-normal {
+  @include btn_base();
+  color: $primary-1;
+  border: 2px solid $primary-1;
+  transition: all 0.6s linear 0s;
+  background-color: transparent;
+  position: relative;
+  box-shadow: 0 5px 5px -3px #777;
+  -webkit-box-shadow: 0 5px 5px -3px #777;
+  -moz-box-shadow: 0 5px 5px -3px #777;
+}
+.btn-ghost-focus {
+  @include btn_base();
+    color: $white;
+    background-color: $primary-4;
+    border-color: $primary-4;
+    color: white;
+    position: relative;
+    transition: all 0.6s linear 0s;
+    box-shadow: 0 3px 3px -3px #777;
+    -webkit-box-shadow: 0 3px 3px -3px #777;
+    -moz-box-shadow: 0 3px 3px -3px #777;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0; bottom: 0;
+      left: 0;
+      width: 0;
+      z-index: -1;
+      background-color: $primary-4;
+    }
+    &, &:after { transition: all 0.3s; }
+}
+
+// Button TEXT
+
+.btn-primary-text {
+  @include btn_base();
+  @include btn-text();
+  color: $primary-0;
+  &:hover{
+    color: $primary-4;
+  }
+}
+.btn-warrning-text {
+  @include btn_base();
+  @include btn-text();
+  color: $warrning-0;
+  &:hover{
+    color: $warrning-4;
+  }
+}
+.btn-danger-text {
+  @include btn_base();
+  @include btn-text();
+  color: $danger-0;
+  &:hover{
+    color: $danger-4;
+  }
+}
+.btn-success-text {
+  @include btn_base();
+  @include btn-text();
+  color: $success-0;
+  &:hover{
+    color: $success-4;
+  }
+}
+
+.btn-text-normal{
+  @include btn_base();
+  border: 0;
+  outline: 0;
+  color: $primary-0;
+  background-color: transparent;
+  box-shadow: none;
+}
+.btn-text-focus {
+  @include btn_base();
+  border: 0;
+  outline: 0;
+  color: $primary-0;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+// Button ICON
+.btn-primary-icon {
+  @include btn-icon();
+  background-color: $primary-0;
+  &:hover{
+    background-color: $primary-4;
+  }
+}
+.btn-warrning-icon {
+  @include btn-icon();
+  background-color: $warrning-0;
+  &:hover{
+    background-color: $warrning-4;
+  }
+}
+.btn-danger-icon {
+  @include btn-icon();
+  background-color: $danger-0;
+  &:hover{
+    background-color: $danger-4;
+  }
+}
+.btn-success-icon {
+  @include btn-icon();
+  background-color: $success-0;
+  &:hover{
+    background-color: $success-4;
+  }
+}
+
+
+.btn-icon-normal {
+  @include btn-icon();
+  background-color: $primary-0;
+  box-shadow: 0 5px 5px -3px #777;
+  -webkit-box-shadow: 0 5px 5px -3px #777;
+  -moz-box-shadow: 0 5px 5px -3px #777;
+  &::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+  }
+}
+.btn-icon-focus {
+  @include btn-icon();
+  box-shadow: 0 3px 3px -3px #777;
+  background-color: $primary-4;
+  &::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+  }
+}
+
+// BUTTON STATES
+.disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  a {
+    cursor: not-allowed;
+  }
+}
+
+// ripple
+.btn-ripple .ripple{
+    border-radius: 50%;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    position: absolute;
+    transform: scale(0);
+    animation: ripple 0.6s linear;
+  }
+  @keyframes ripple{
+    to{
+      transform: scale(2.5);
+      opacity: 0;
+    }
+  }
+
+// TOGGLE BUTTON
+
+input[type="checkbox"]:focus {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.btn-toggle{
+  transform: translate(-50%, -50%);
+    .switch {
+      position: absolute;
+      opacity: 0;
+      z-index: -1;
+        &:checked + .switchStyle:before {
+          background: $primary-4;
+          border: 3px solid $primary-4;
+        }
+        &:checked + .switchStyle:after {
+          content: "";
+          left: 30px;
+        }
+    }
+    .switchStyle {
+      position: relative;
+      display: block;
+      width: 50px;
+      height: 24px;
+      cursor: pointer;
+      border-radius: 25px;
+        &:before,
+        &:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          transition: .25s ease all; 
+          -moz-transition: .25s ease all; 
+          -webkit-transition: .25s ease all;
+        }
+        &:before {
+          display: block;
+          top: 0px;
+          left: 0px;
+          width: 100%;
+          height: 100%;
+          border-radius: 20px;
+          border: 3px solid $primary-1;
+          background: $primary-1;
+        }
+        &:after {
+          content: "";
+          top: 4px;
+          left: 9px;
+          width: 20px;
+          height: 20px;
+          border-radius: 50px;
+          background: $white;
+          box-shadow: 0px 9px 3px rgba($black,.05), 0px 6px 6px rgba($black,.1), 0px 9px 9px rgba($black,.05), 0px 0px 0px 2px rgba($black,.04);
+        }
+    }
+}
+
+/* Button BOUNCE, SHAKE. GROW, SHRINK */
+
+.btn-primary-raised, .btn-primary-flat, .btn-primary-ghost, .btn-primary-text, .btn-primary-icon
+.btn-warrning-raised, .btn-warrning-flat, .btn-warrning-ghost, .btn-warrning-text, .btn-warrning-icon
+.btn-danger-raised, .btn-danger-flat, .btn-danger-ghost, .btn-danger-text, .btn-danger-icon
+.btn-success-raised, .btn-success-flat, .btn-success-ghost, .btn-success-text, .btn-success-icon {
+   &.bounce:hover {
+    position: relative;
+    animation: bounce .5s linear 0s infinite alternate;
+    -webkit-animation: bounce .5s linear 0s infinite alternate;
+  }
+  &.shake:hover {
+    animation: shake .3s linear 0s infinite;
+    -webkit-animation: shake .3s linear 0s infinite;
+  }
+  &.grow:hover {
+    animation: grow 1s linear 0s infinite alternate;
+ 	  -webkit-animation: grow 1s linear 0s infinite alternate;
+  }
+  &.shrink:hover {
+    animation: shrink 1s linear 0s infinite alternate;
+    -webkit-animation: shrink 1s linear 0s infinite alternate;
+  }
+}
+
+@-webkit-keyframes shake {
+  0% {transform: rotate(0deg) translate3d(0, 0, 0);}
+  25% {transform: rotate(10deg) translate3d(0, 0, 0);}
+  50% {transform: rotate(0deg) translate3d(0, 0, 0);}
+  75% {transform: rotate(-10deg) translate3d(0, 0, 0);}
+  100% {transform: rotate(0deg) translate3d(0, 0, 0);}
+}
+@keyframes shake {
+  0% {transform: rotate(0deg) translate3d(0, 0, 0);}
+  25% {transform: rotate(10deg) translate3d(0, 0, 0);}
+  50% {transform: rotate(0deg) translate3d(0, 0, 0);}
+  75% {transform: rotate(-10deg) translate3d(0, 0, 0);}
+  100% {transform: rotate(0deg) translate3d(0, 0, 0);}
+}
+@-webkit-keyframes bounce {
+  0% {bottom: 0;}
+  100% {bottom: 5px;}
+}
+@keyframes bounce {
+  0% {bottom: 0;}
+  100% {bottom: 5px;}
+}
+@-webkit-keyframes grow {
+  0% {transform: scale(1);}
+  100% {transform: scale(1.2);}
+}
+@keyframes grow {
+  0% {transform: scale(1);}
+  100% {transform: scale(1.2);}
+}
+
+@-webkit-keyframes shrink {
+  0% {transform: scale(1);}
+  100% {transform: scale(0.8);}
+}
+@keyframes shrink {
+  0% {transform: scale(1);}
+  100% {transform: scale(0.8);}
+}

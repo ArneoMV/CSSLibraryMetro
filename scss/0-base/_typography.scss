@@ -1,0 +1,189 @@
+/* TYPOGRAFIJA */
+
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-webfont.woff') format('woff'),
+         url('../fonts/europaextended-webfont.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'UpheavalTT';
+    src: url('../fonts/upheavtt-webfont.woff2') format('woff2'),
+         url('../fonts/upheavtt-webfont.woff') format('woff'),
+         url('../fonts/europaextended-webfont.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'UbuntuMono';
+    src: url('../fonts/UbuntuMono/UbuntuMono-Regular.woff2') format('woff2'),
+         url('../fonts/UbuntuMono/UbuntuMono-Regular.woff') format('woff'),
+         url('../fonts/UbuntuMono/UbuntuMono-Regular.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LibreBaskerville';
+    src: url('../fonts/LibreBaskerville/LibreBaskerville-Regular.woff2') format('woff2'),
+		url('../fonts/LibreBaskerville/LibreBaskerville-Regular.woff') format('woff'),
+		url('..fonts/LibreBaskerville/LibreBaskerville-Bold.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'LibreBaskerville-Italic';
+    src: url('../fonts/LibreBaskerville/LibreBaskerville-Italic.woff2') format('woff2'),
+		url('../fonts/LibreBaskerville/LibreBaskerville-Italic.woff') format('woff'),
+		url('..fonts/LibreBaskerville/LibreBaskerville-Italic.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'LibreBaskerville-Bold';
+    src: url('../fonts/LibreBaskerville/LibreBaskerville-Bold.woff2') format('woff2'),
+		url('../fonts/LibreBaskerville/LibreBaskerville-Bold.woff') format('woff'),
+		url('../fonts/LibreBaskerville/LibreBaskerville-Regular.ttf')  format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+
+// <h1> <h6>
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'LibreBaskerville';
+  font-weight: 600;
+  font-kerning: 1.5em/1 ;
+  color: $black;
+//   text-transform: uppercase;
+//   letter-spacing: .5em;
+  margin: 0.2em 0 0.2em 0;
+}
+h1 {font-size: 2.25em;}
+h2 {font-size: 1.875em;}
+h3 {font-size: 1.5em;}
+h4 {font-size: 1.125em;}
+h5 {font-size: 0.875em;}
+h6 {font-size: 0.75em;}
+
+// p
+p {
+
+	font-family: 'Montserrat'; 
+	font-size: 16px; 
+	font-weight: 400; 
+	line-height: 1.4;
+	margin: 0.2em 0 0.3em 0;
+}
+
+
+
+// Blockquote
+blockquote {
+	margin: 0 auto;
+	padding: 1em;
+	border-left: 5px solid $primary-0;
+	&:before {
+		display: none;
+	}
+	p {
+		color: $color-default;
+		font-size: 12pt;
+		line-height: 1.4;
+		font-family: 'Montserrat'; 
+		font-size: 14pt;
+	}
+	footer {
+		margin-top: .5em;
+		padding: 0;
+		color: $color-default;
+		font-size: 12pt;
+		text-align: left;
+		font-style: italic;
+		&:before {
+			content: '— ';
+		}
+	}
+	&:nth-of-type(even) {
+		//The: nth-of-type(n) selector matches every element that is the nth child, of a particular type, of its parent. text-align: right;
+		border-left: none;
+		border-right: 5px solid $color-default;
+		padding: 1em 1em 1em 20%;
+		footer {
+			text-align: right;
+			&:before {
+				content: '';
+			}
+			&:after {
+				content: ' —';
+			}
+		}
+	}
+	&:not(:first-of-type) {
+		margin-top: .5em;
+	}
+}
+
+
+/*
+small {
+  
+}
+mark {
+
+}
+strong {
+
+}
+em {
+
+}
+.text-left {
+
+
+.text-center {
+
+}
+.text-right {
+
+}
+.text-justtify {
+
+}
+.text-nowrap {
+
+}
+.text-upercase {
+
+}
+.text-lowercase {
+
+}
+blockquote {
+
+}
+.blockquote-reverse {
+
+}
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

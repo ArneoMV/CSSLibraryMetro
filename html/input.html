@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" lang="hr" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Input</title>
+
+	<link rel="stylesheet" type="text/css" href="../css/app.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+	<header>
+		<div class="head">
+			<div class="head-item">
+				<a class="navbar-brand" href="https://www.tvz.hr">
+					<img src="../img/TvzLogo.png" alt="tvzLogo" style="width: 100px;">
+				</a>
+			</div>
+			<div class="head-item">
+				<h2>Input</h2>
+			</div>
+			<div class="head-item">
+				<!-- Main navigation -->
+				<div class="hamburger">
+					<div class="burger burger-3" id="burger">
+						<input type="checkbox" name="burger3" id="mainNav" onclick="mainNavigation()" />
+						<label for="mainNav">
+							<span class="bar bar-1"></span>
+							<span class="bar bar-2"></span>
+							<span class="bar bar-3"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Main sidebar -->
+		<nav id="myNav"></nav>
+	</header>
+    
+<div class="filler"></div>
+<!--PAGE CONTENT-->
+
+<section>
+    <h4>Input</h4>
+    <p>One line input</p>
+    <br/>
+    <fieldset>
+        <legend>Uputstva</legend>
+        <article>
+            <ul>
+                <li><span class="tw-0"></span></li>
+                <li><span class="tw-0"></span></li>
+            </ul>
+        </article>
+    </fieldset>
+<br /><br />
+
+    <div class="inputFilled-sm">
+        <input type="text" required="required" pattern="\S+.*"/>
+        <label for="input" class="control-label" >input text small</label>
+    </div>
+    <div class="inputFilled-md">
+        <input type="text"  required="required" pattern="\S+.*"/>
+        <label for="input" class="control-label" >input text medium</label>
+    </div>
+    <div class="inputFilled">
+        <input type="text"  required="required" pattern="\S+.*"/>
+        <label for="input" class="control-label" >input text 100%</label>
+    </div>
+
+    <br /><br />
+
+    <input class="inputOutlined-sm" type="text" pattern="\S+.*" placeholder="input text small"/>
+    <br/>
+    <input class="inputOutlined-md" type="text" pattern="\S+.*" placeholder="input text medium"/>
+    <br />
+    <input class="inputOutlined" type="text" pattern="\S+.*" placeholder="input text 100%"/>
+    <br /><br />
+ 
+
+    <code>
+    
+    </code>
+    <small class="codeText">HTML</small><br />
+    <code>
+                
+    </code>
+    <small class="codeText">SCSS</small><br>
+</section>
+
+<!-- multi-step form -->
+
+
+<script src="../js/header.js"></script>
+<script src="../js/myscript.js"></script>
+</body>
+</html>

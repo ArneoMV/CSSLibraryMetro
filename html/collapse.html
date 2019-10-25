@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" lang="hr" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Collapse</title>
+
+	<link rel="stylesheet" type="text/css" href="../css/app.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+	<header>
+		<div class="head">
+			<div class="head-item">
+				<a class="navbar-brand" href="https://www.tvz.hr">
+					<img src="../img/TvzLogo.png" alt="tvzLogo" style="width: 100px;">
+				</a>
+			</div>
+			<div class="head-item">
+				<h2>Collapse</h2>
+			</div>
+			<div class="head-item">
+				<!-- Main navigation -->
+				<div class="hamburger">
+					<div class="burger burger-3" id="burger">
+						<input type="checkbox" name="burger3" id="mainNav" onclick="mainNavigation()" />
+						<label for="mainNav">
+							<span class="bar bar-1"></span>
+							<span class="bar bar-2"></span>
+							<span class="bar bar-3"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Main sidebar -->
+		<nav id="myNav"></nav>
+	</header>
+	
+<div class="filler"></div>
+<!--PAGE CONTENT-->
+<div class="container">
+	<section>
+		<fieldset>
+			<legend>Uputstva</legend>
+			<p>Kolaps je komponenta koja služi kako bi prikazao ili sakrio sadržaj. 
+				Sastoji se od dva elementa: kolaps i sadržaj. 
+				Potrebno je da kolaps bude iznad sadržaja, te ne smije biti drugih elemenata između njihovih div elemenata.
+			</p>
+			<p>Unesite sljedeće klase kako bi prikazali i/ili sakrili element.</p>
+			<article>
+				<ul>
+					<li><span class="tw-0">kolaps</span> sadrži naslov i gumb pomoću kojega se prikazuje sadržaj.</li>
+					<li><span class="tw-0">kolapsSadrzaj</span> sadrži podatke koje želimo prikazati i/ili sakriti. Sadržaj može prihvatiti različite komponente poput gumba, trake progresa, forme i drugih.</li>
+				</ul>
+			</article>
+		</fieldset>
+
+		<div class="kolaps">Primjer teksta</div>
+		<div class="kolapsSadrzaj">
+			<div class="kolapsInner">
+				<h4>It's art! A statement on modern society</h4>
+				<p>I hate yogurt. It's just stuff with bits in. You hit me with a cricket bat. Did I mention we have comfy chairs? I am the last of my species, and I know how that weighs on the heart so don't lie to me!</p>
+				<article>
+				<ul>
+					<li>I'm the Doctor. Well, they call me the Doctor. I don't know why. I call me the Doctor too. I still don't know why.</li>
+					<li>Father Christmas. Santa Claus. Or as I've always known him: Jeff.</li>
+					<li>Aw, you're all Mr. Grumpy Face today.</li>
+				</ul>
+				</article> 
+			</div>
+		</div>
+
+		<div class="kolaps">Primjer forme</div>
+		<div class="kolapsSadrzaj">
+			<div class="kolapsInner">
+				<form class="form">
+					<h6>Formular</h6>
+					<fieldset>
+						<legend>Text</legend>
+						<div class="form-group">
+							<input type="text" required="required"/>
+							<label for="input" class="control-label">Textfield</label>
+							<i class="bar-form"></i>
+						</div>
+						<div class="form-group">
+							<textarea required="required"></textarea>
+							<label for="textarea" class="control-label">Textarea</label>
+							<i class="bar-form"></i>
+						</div>
+					</fieldset>
+					
+					<fieldset>
+						<legend>Select</legend>
+						<div class="selectStyle">
+							<select>
+								<optgroup label="Option Group 1">
+									<option>Option 1</option>
+									<option>Option 2</option>
+									<option>Option 3</option>
+									<option>Option 4</option>
+									<option>Option 5</option>
+									<option>Option 6</option>
+									<option>Option 7</option>
+								</optgroup>
+							</select>
+						</div>
+					</fieldset>
+					
+					<div class="button-container">
+						<button class="btn-primary-raised btn-ripple">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div class="kolaps">Primjer gumba</div>
+		<div class="kolapsSadrzaj">
+			<div class="kolapsInner">
+				<h4>Naslov</h4>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste quia rerum vero necessitatibus? Aliquam ea temporibus unde tenetur perferendis maiores ad, sed sint minus at expedita doloribus. Tenetur, labore cumque.</p>
+				<div class="button-container">
+					<button class="btn-primary-flat btn-ripple">Submit</button>
+				</div>
+			</div>
+			
+		</div>
+
+		<code>
+&lt;div class="kolaps">Naslov&lt;/div&gt;
+&lt;div class="kolapsSadrzaj"&gt;
+//Ovdije ubacite sadržaj 
+&lt;/div&gt;
+		</code>
+		<small class="codeText">HTML</small><br>
+		<code>
+.kolaps {
+background-color: $primary-1;
+color: $white;
+cursor: pointer;
+padding: 18px;
+width: 100%;
+border: none;
+border-radius: 5px;
+text-align: left;
+outline: none;
+font-size: 1.2em;
+font-family: 'LibreBaskerville', serif;
+margin-bottom: 10px;
+}
+
+.active, .kolaps:hover {
+background-color: rgba($color: $primary-2, $alpha: 1);
+}
+
+.kolaps:after {
+content: '\002B';
+color: white;
+float: right;
+}
+
+.active:after {
+content: "\2212";
+}
+
+.kolapsSadrzaj {
+padding: 0 18px;
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.2s ease-out;
+color: $black;
+font-family: 'Montserrat';
+margin-bottom: 10px;
+background-color: rgba($color: $white, $alpha: 1.0);
+h1,h2,h3,h4,h5,h6,p,a, button {
+margin: 15px;
+}
+.button-container {
+text-align: right;
+}
+}
+		</code>
+		<small class="codeText">SCSS</small><br>
+	</section>
+</div>
+
+<script src="../js/header.js"></script>
+<script src="../js/myscript.js"></script>
+<script src="../js/collapse.js"></script>
+<script src="../js/form.js"></script>
+</body>
+</html>
+
+	

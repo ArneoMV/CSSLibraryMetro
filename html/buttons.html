@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" lang="hr" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Button's</title>
+
+	<link rel="stylesheet" type="text/css" href="../css/app.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+	<header>
+		<div class="head">
+			<div class="head-item">
+				<a class="navbar-brand" href="https://www.tvz.hr">
+					<img src="../img/TvzLogo.png" alt="tvzLogo" style="width: 100px;">
+				</a>
+			</div>
+			<div class="head-item">
+				<h2>Button's</h2>
+			</div>
+			<div class="head-item">
+				<!-- Main navigation -->
+				<div class="hamburger">
+					<div class="burger burger-3" id="burger">
+						<input type="checkbox" name="burger3" id="mainNav" onclick="mainNavigation()" />
+						<label for="mainNav">
+							<span class="bar bar-1"></span>
+							<span class="bar bar-2"></span>
+							<span class="bar bar-3"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Main sidebar -->
+		<nav id="myNav"></nav>
+	</header>
+<style>
+
+</style>
+<div class="filler"></div>
+<!--PAGE CONTENT-->
+<div class="container" id="page-content">
+	<!-- opis opčenito -->
+	<section>
+		<p>Gumbi su jedan od najčešće korištenih elemenata u dizajnu interakcije, a može izgledati kao jednostavan element dizajna. Međutim, postoji mnogo detalja koje trebate razmotriti kako biste osigurali da gumbi rade najbolje što mogu.
+		<br/>
+			Svaka vrsta gumba ima svoja četiri osnovna stanja ponašanja: normalno, fokusirano, pritisnito, onemogućeno
+		</p>
+		<br />
+		<fieldset>
+			<legend>Uputstva</legend>
+			<p>Unutar HTML dokumenta unesite sljedeće klase kako bi dobili vrstu gumba koju želite.</p>
+			<article>
+				<ul>
+					<li><span class="tw-0">btn-raised</span> klasa koja se unese kako bi dobili uzdignuti gumb.</li>
+					<li><span class="tw-0">bbtn-flat</span> klasa koja se unese kako bi dobili plutajući gumb.</li>
+					<li><span class="tw-0">btn-ghost</span> klasa koja se unese kako bi dobili ghost gumb.</li>
+					<li><span class="tw-0">Btn-text</span>  klasa koja se unese kako bi dobili gumb koji čini samo tekst.</li>
+					<li><span class="tw-0">btn-icon</span> klasa koja se unese kako bi dobili kružni gumb unutar čijeg <span>'a'</span> i <span>'i'</span> taga unosimo link za ikonu.</li>
+					<li><span class="tw-0">btn-ripple</span>  klasa koja se unese kako bi dobili uzdignuti gumb.</li>
+				</ul>
+			</article>
+		</fieldset>	
+	</section>
+	<!-- opis pojedinačno -->
+	<section>
+		<h3>PET TIPIČNIH VRSTA GUMBIJU</h3>
+		<button class="btn-primary-raised btn-ripple">Raised</button>
+		<button class="btn-warrning-flat btn-ripple">Flat</button>
+		<button class="btn-danger-ghost btn-ripple">Ghost</button>
+		<button class="btn-success-text">Text</button>
+		<button class="btn-primary-icon btn-ripple">
+			<a href="#"><i class="fas fa-plus"></i></a>
+		</button>
+		<!-- btn-raised -->
+		<h4>Uzdignuti gumb</h4>
+		<p>Tipično pravokutni gumb koji podiže (sjenčanje označava da je moguće kliknuti). Povišeni gumbi dodaju dimenziju uglavnom ravnim izgledima. Oni naglašavaju funkcije na zauzetim ili širokim prostorima..</p>
+		<h5>Koristiti</h5>
+		<p>Inline (kako bi se istaknula akcija u rasporedu s mnogo različitih sadržaja). Koristite povišene gumbe da biste istaknuli radnje u izgledima s mnogo različitih sadržaja.</p>
+		<br />
+		<button class="btn-raised-normal">Normalno</button>
+		<button class="btn-raised-focus">Fokusirano</button>
+		<button class="btn-primary-raised btn-ripple">Pritisnuto</button>
+		<button class="btn-raised-normal disabled">Onemogučeno</button>
+
+		<!--btn-flat-->
+		<h4>Plutajući gumb</h4>
+		<p>Ravne tipke se ne podižu, već se ispune bojom. Glavna prednost ravnih gumba je prilično jednostavna - smanjuju ometanje sadržaja.</p>
+		<h5>Koristiti</h5>
+		<p>U dijaloškim okvirima (da biste unijeli radnju gumba s sadržajem dijaloga)</p>
+		<br />
+		<button class="btn-flat-normal">Normalno</button>
+		<button class="btn-flat-focus">Fokusirano</button>
+		<button class="btn-primary-flat btn-ripple">Pritisnuto</button>
+		<button class="btn-flat-normal disabled">Onemogučeno</button>
+
+		<!--btn-ghost-->
+		<h4>Duh gumb</h4>
+		<p>Ghost gumbi su oni prozirni i prazni gumbi koji imaju osnovni oblik oblika, kao što je pravokutni. Obično su omeđene vrlo tankom linijom, dok se unutarnji dio sastoji od običnog teksta.</p>
+		<h5>Koristiti</h5>
+		<p>Korištenje tipke duhova kao primarnog CTA obično nije dobra ideja. Možete vidjeti primjer Bootstrap i gumb duhova Download Bootstrap koji izgleda na isti način kao i njihov glavni logotip koji može zbuniti korisnike.</p>
+		<p>Gumb Ghost se najbolje koristi za sekundarni ili tercijarni sadržaj, jer se on (ili ne bi trebao) natjecati s vašim primarnim CTA. Idealno želite da korisnik vidi vaš glavni CTA, a zatim (ako nije relevantan) preskočite ga na sekundarni gumb.</p>
+		<p>Pozitivno djelovanje ima mnogo veće kontraste i korisnik vidi jasnu akciju.</p>
+		<br />
+		<button class="btn-ghost-normal">Normalno</button>
+		<button class="btn-ghost-focus">Fokusirano</button>
+		<button class="btn-primary-ghost btn-ripple">Pritisnuto</button>
+		<button class="btn-ghost-normal disabled">Onemogučeno</button>
+
+		<!--btn-text-->
+		<h4>Tekst gumb</h4>
+		<p>Ravne tipke se ne podižu, već se ispune bojom. Glavna prednost ravnih gumba je prilično jednostavna - smanjuju ometanje sadržaja.</p>
+		<h5>Koristiti</h5>
+		<p>U dijaloškim okvirima (da biste unijeli radnju gumba s sadržajem dijaloga)</p>
+		<br />
+		<button class="btn-text-normal">Normalno</button>
+		<button class="btn-text-focus">Fokusirano</button>
+		<button class="btn-primary-text">Pritisnuto</button>
+		<button class="btn-text-normal disabled">Onemogučeno</button>
+
+		<!--btn-icon-->
+		<h4>Ikona gumb</h4>
+		<p>Gumb s pomičnim postupkom dio je Googleovog dizajna materijala. To je kružni materijal koji otvara i prikazuje reakciju tinte na tisku</p>
+		<h5>Koristiti</h5>
+		<p>Plutajuće tipke za djelovanje koriste se za promovirano djelovanje.</p>
+		<h5>Ponašanje</h5>
+		<p>Odlikuju ih zaokružena ikona koja lebdi iznad korisničkog sučelja i ponašanja kretanja koja uključuju morfiranje, lansiranje i prijenosno sidrište.</p>
+		<br />
+		<button class="btn-icon-normal">
+				<a href="#"><i class="fas fa-arrow-up"></i></i></a>
+		</button>
+		<button class="btn-icon-focus">
+				<a href="#"><i class="fas fa-cog"></i></a>
+		</button>
+		<button class="btn-primary-icon btn-ripple">
+				<a href="#"><i class="far fa-dizzy"></i></i></a>
+		</button>
+		<button class="btn-icon-normal disabled">
+				<a href="#"><i class="fas fa-paperclip"></i></a>
+		</button>
+
+		<!--btn-toggle-->
+		<h4>Toggle gumb</h4>
+		<p>Toggle gumbi grupiraju skup akcija pomoću izgleda i razmaka. Koriste se rjeđe od ostalih tipova gumba.</p>
+		<br />
+		<label class="btn-toggle" for="switch">
+			<input class="switch" id="switch" type="checkbox" checked="" /><span class="switchStyle"></span>
+		</label>
+		<br />
+		<code>
+		&lt;label class="btn-toggle" for="switch"&gt;
+		&lt;nput class="switch" id="switch" type="checkbox" checked="" /&gt;&lt;span class="switchStyle"&gt;&lt;/span&gt;
+		&lt;/label&gt;
+		</code>
+		<small style="float: right;">HTML</small>
+
+		<!--KOD-->		
+		<br />
+		<code>
+			&lt;button class="btn-raised btn-ripple"&gt;Raised&lt;/button&gt;
+			&lt;button class="btn-flat btn-ripple"&gt;Flat&lt;/button&gt;
+			&lt;button class="btn-ghost btn-ripple"&gt;Ghost&lt;/button&gt;
+			&lt;button class="btn-text"&gt;Text&lt;/button&gt;
+			&lt;button class="btn-icon btn-ripple"&gt;
+			&lt;a href="#">&lt;i class="fas fa-plus">&lt;/i>&lt;/a&gt;
+			&lt;/button&gt;
+		</code>
+		<small class="codeText">HTML</small><br />	
+		<code>
+		// MIXINS
+		@mixin btn_base {
+			font-family: 'Roboto';
+			padding: 1em 2em;
+			margin: 2px;
+			font-weight:600;
+			letter-spacing: 0.1em;
+			border: 2px solid $color-primary;
+			border-radius: 0.15em;
+			text-transform: uppercase;
+			overflow: hidden;
+			cursor: pointer;
+		}
+		@mixin btn_bg_rased {
+			border: 0;
+			outline: 0;
+			color: white;
+			background-color: $color-primary;
+			position: relative;
+			overflow: hidden; 
+		}
+		@mixin btn_shadow {
+			box-shadow: 0 5px 5px -3px #777;
+			-webkit-box-shadow: 0 5px 5px -3px #777;
+			-moz-box-shadow: 0 5px 5px -3px #777;
+		}		
+		// BUTTON RAISED
+		.btn-raised {
+			@include btn_base();
+			@include btn_bg_rased();
+			@include btn_shadow();
+			&:hover{
+				box-shadow: 0 3px 3px -3px #777;
+				background-color:$color-btn-hover;
+			}
+		}
+		</code>
+		<small class="codeText">SCSS</small>
+	</section>
+
+	<!--ANIMACIJE-->
+	<section>
+		<h4>Animacije na gumbima</h4>
+		<fieldset>
+			<legend>Uputstva</legend>
+			<p>Unesite sljedeće klase kako bi dobili vrstu animacije gumba koju želite.</p>
+			<article>
+				<ul>
+					<li><span class="tw-0">bounce</span> prikazuje animaciju odskakivanja.</li>
+					<li><span class="tw-0">shake</span> prikazuje shake aniamciju.</li>
+					<li><span class="tw-0">grow</span> prikazuje animaciju povečavanja.</li>
+					<li><span class="tw-0">shrink</span>  prikazuje animaciju smanjivanja.</li>
+				</ul>
+			</article>
+		</fieldset>
+		
+		<div class="col-sm-6">
+			<h5>Bounce</h5>
+			<button class="btn-primary-raised btn-ripple bounce">Raised</button>
+			<button class="btn-primary-flat btn-ripple bounce">Flat</button>
+			<button class="btn-primary-ghost btn-ripple bounce">Ghost</button>
+			<button class="btn-primary-text bounce">Text</button>
+			<button class="btn-primary-icon bounce">
+				<a href="#"><i class="fas fa-plus"></i></a>
+			</button>
+			<h5>Shake</h5>
+			<button class="btn-warrning-raised btn-ripple shake">Raised</button>
+			<button class="btn-warrning-flat btn-ripple shake">Flat</button>
+			<button class="btn-warrning-ghost btn-ripple shake">Ghost</button>
+			<button class="btn-warrning-text shake">Text</button>
+			<button class="btn-warrning-icon btn-ripple shake">
+					<a href="#"><i class="fas fa-plus"></i></a>
+			</button>
+		</div>
+		<div class="col-sm-6">
+			<h5>Grow</h5>
+			<button class="btn-danger-raised btn-ripple grow">Raised</button>
+			<button class="btn-danger-flat btn-ripple grow">Flat</button>
+			<button class="btn-danger-ghost btn-ripple grow">Ghost</button>
+			<button class="btn-danger-text grow">Text</button>
+			<button class="btn-danger-icon grow">
+				<a href="#"><i class="fas fa-plus"></i></a>
+			</button>
+			<h5>Shrink</h5>
+			<button class="btn-success-raised btn-ripple shrink">Raised</button>
+			<button class="btn-success-flat btn-ripple shrink">Flat</button>
+			<button class="btn-success-ghost btn-ripple shrink">Ghost</button>
+			<button class="btn-success-text shrink">Text</button>
+			<button class="btn-success-icon shrink">
+				<a href="#"><i class="fas fa-plus"></i></a>
+			</button>
+		</div>
+
+		
+
+		<code>
+&lt;button class="btn-primary-raised btn-ripple bounce"&gt;Raised&lt;/button&gt;
+&lt;button class="btn-primary-flat btn-ripple bounce"&gt;Flat&lt;/button&gt;
+&lt;button class="btn-primary-ghost btn-ripple bounce"&gt;Ghost&lt;/button&gt;
+&lt;button class="btn-primary-text bounce"&gt;Text&lt;/button&gt;
+&lt;button class="btn-primary-icon bounce"&gt;
+&lt;a href="#"&gt;&lt;i class="fas fa-plus">&lt;/i&gt;&lt;a&gt;
+&lt;/button&gt;
+		</code>
+		<small class="codeText">HTML</small><br />
+		<code>
+/* Button BOUNCE, SHAKE. GROW, SHRINK */
+
+.btn-primary-raised, .btn-primary-flat, .btn-primary-ghost, .btn-primary-text, .btn-primary-icon
+.btn-warrning-raised, .btn-warrning-flat, .btn-warrning-ghost, .btn-warrning-text, .btn-warrning-icon
+.btn-danger-raised, .btn-danger-flat, .btn-danger-ghost, .btn-danger-text, .btn-danger-icon
+.btn-success-raised, .btn-success-flat, .btn-success-ghost, .btn-success-text, .btn-success-icon {
+&.bounce:hover {
+position: relative;
+animation: bounce .5s linear 0s infinite alternate;
+-webkit-animation: bounce .5s linear 0s infinite alternate;
+}
+&.shake:hover {
+animation: shake .3s linear 0s infinite;
+-webkit-animation: shake .3s linear 0s infinite;
+}
+&.grow:hover {
+animation: grow 1s linear 0s infinite alternate;
+-webkit-animation: grow 1s linear 0s infinite alternate;
+}
+&.shrink:hover {
+animation: shrink 1s linear 0s infinite alternate;
+-webkit-animation: shrink 1s linear 0s infinite alternate;
+}
+}
+
+@-webkit-keyframes shake {
+0% {transform: rotate(0deg) translate3d(0, 0, 0);}
+25% {transform: rotate(10deg) translate3d(0, 0, 0);}
+50% {transform: rotate(0deg) translate3d(0, 0, 0);}
+75% {transform: rotate(-10deg) translate3d(0, 0, 0);}
+100% {transform: rotate(0deg) translate3d(0, 0, 0);}
+}
+@keyframes shake {
+0% {transform: rotate(0deg) translate3d(0, 0, 0);}
+25% {transform: rotate(10deg) translate3d(0, 0, 0);}
+50% {transform: rotate(0deg) translate3d(0, 0, 0);}
+75% {transform: rotate(-10deg) translate3d(0, 0, 0);}
+100% {transform: rotate(0deg) translate3d(0, 0, 0);}
+}
+@-webkit-keyframes bounce {
+0% {bottom: 0;}
+100% {bottom: 5px;}
+}
+@keyframes bounce {
+0% {bottom: 0;}
+100% {bottom: 5px;}
+}
+@-webkit-keyframes grow {
+0% {transform: scale(1);}
+100% {transform: scale(1.2);}
+}
+@keyframes grow {
+0% {transform: scale(1);}
+100% {transform: scale(1.2);}
+}
+
+@-webkit-keyframes shrink {
+0% {transform: scale(1);}
+100% {transform: scale(0.8);}
+}
+@keyframes shrink {
+0% {transform: scale(1);}
+100% {transform: scale(0.8);}
+}
+
+		</code>
+		<small class="codeText">SCSS</small>
+	</section>
+
+ </div>
+
+<script src="../js/header.js"></script>
+<script src="../js/myscript.js"></script>
+
+</body>
+</html>

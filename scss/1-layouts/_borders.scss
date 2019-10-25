@@ -1,0 +1,49 @@
+/* Borders */
+
+
+.border-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    grid-gap: 10px;
+    span {
+        width: 60px;
+        height: 60px;
+        background-color: $gray-1;
+        border-radius: 5px;
+    }
+    @include respond-to(extrasmall-screens) { 
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+     }
+    @include respond-to(small-screens) { 
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+     }
+    @include respond-to(medium-screens) {  }
+    @include respond-to(large-screens) {  }
+    @include respond-to(large-2-screens) {  }
+    @include respond-to(extralarge-screens) {  }
+}
+.border {
+    border: 1px solid;
+}
+.border-primary {
+    border-color: $primary-0;
+}
+.border-warrning {
+    border-color: $warrning-0;
+}
+.border-danger {
+    border-color: $danger-0;
+}
+.border-success {
+    border-color: $success-0;
+}
+.border-white {
+    border-color: $white;
+}
+.border-black {
+    border-color: $black;
+}

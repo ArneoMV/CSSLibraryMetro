@@ -1,0 +1,422 @@
+/* FORM'S */
+@import "../1-layouts/_brakepoint.scss";
+@import "../2-modules/mixins.scss";
+
+
+// custom checkbox/radios
+$fw-input-padding:            6px                      !default;
+$fw-check-height:             24px                     !default;
+$fw-check-width:              $fw-check-height         !default;
+$fw-check-scale:              6px                      !default;  // optimized for even numbers
+$fw-check-border-width:       1px                      !default;
+$fw-check-border-radius:      null                     !default;
+
+
+// FORM
+@mixin forma {
+    margin: auto;
+    padding: 2em;
+    padding-bottom: 2em;
+    background-color: white;
+    border-radius: 0.2em;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+
+    h1,h2,h3,h4,h5,h6 {
+        font-size: 1.2em;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    label, i {
+        font-family: 'Montserrat', 'Arial' sans-serif;
+    }
+}
+// One Page Form
+.form {
+    @include forma; 
+    .button-group {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top:2em;
+        button#validateForm{
+            margin: 0 auto;
+        }
+    }
+    .button-container {
+        text-align: center;
+    }
+}
+// MultiStep Form
+.form-step {
+    @include forma;
+    .progress-bar {
+        width: auto;
+        list-style-type: none;
+        display: flex;
+        padding: 0;
+        justify-content: center;
+        margin-bottom: 3.5em;
+        li.progress-bar__dot {
+            display: block;
+            width: 1em;
+            border-radius: 1000em;
+            height: 1em;
+            border: 0.2em solid $primary-0;
+            background-color: white;
+            cursor:pointer;
+            transition: all .5s ease;
+            &.full {
+                background-color: $primary-0;
+            }
+        }
+        li.progress-bar__connector {
+            display: block;
+            width: 5em;
+            border-radius: 1000em;
+            height: 0.1em;
+            background-color: $primary-0;
+            margin-top: 0.45em;
+        }
+    }
+    .button-group {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top:2em;
+        button#validateFormStep{
+            margin: 0 auto;
+        }
+    }
+    
+}
+
+//komponente forne
+fieldset {
+    padding: 1em;
+    font-family: 'UbuntuMono', monospace;
+    ul {
+        list-style: none;
+    }
+    select {
+        width: 100%;
+        height: 2em;
+        font-size: 1em;
+        padding: 4px;
+        background: transparent;
+        background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2216%22%20height%3D%228%22%20viewBox%3D%220%200%2016%208%22%3E%3Cpolygon%20fill%3D%22%234D4D4D%22%20points%3D%228%2C0%2016%2C0%2012%2C4%208%2C8%204%2C4%200%2C0%20%22/%3E%3C/svg%3E);
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+        border: $fw-check-border-width solid $black;
+        border-radius: 0;
+        appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -o-appearance: none;
+        &:focus,
+        &:hover {
+            border-color: black;
+            outline: none;
+        }
+        &:active {
+            border-color: #900;
+        }
+        // Fix Firefox dotted focusring
+        &:-moz-focusring {
+            color: transparent;
+            text-shadow: 0 0 0 #000;
+        }
+    }
+    .form-label {
+        margin-bottom: .2em;
+    }
+    .form-radio, .form-group {
+        position: relative;
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+}
+.form-group {
+    .control-label {
+        font-family: 'UbuntuMono', monospace;
+        position: absolute;
+        top: 0.25rem;
+        pointer-events: none;
+        padding-left: 0.125rem;
+        z-index: 1;
+        color: #b3b3b3;
+        font-size: 1rem;
+        font-weight: normal;
+        -webkit-transition: all 0.28s ease;
+        transition: all 0.28s ease;
+    }
+    .bar-form {
+      position: relative;
+      border-bottom: 0.0625rem solid $black;
+      display: block;
+    }
+    input, textarea {
+        width: 100%;
+        display: block;
+        background: none;
+        padding: 0.125rem 0.125rem 0.0625rem;
+        font-size: 1rem;
+        line-height: 1.9;
+        color: transparent;
+        border-width: 0;
+        border-color: transparent;
+        -webkit-transition: all 0.28s ease;
+        transition: all 0.28s ease;
+    }
+    input {
+        /* Show green borders when valid */
+        &:focus, &:valid, &.form-file, &.has-value {
+            border-bottom: 2px solid $black;
+            color: $black;
+        }
+        // &:not(:placeholder-shown) {
+        //     border-color: hsl(0, 76%, 50%);;
+        // }
+    }
+    textarea {
+      &:focus, &:valid, &.form-file, &.has-value {
+        color: #333;
+      }
+    }
+    input {
+      &:focus ~ .control-label, &:valid ~ .control-label, &.form-file ~ .control-label, &.has-value ~ .control-label {
+        font-size: 0.8rem;
+        color: gray;
+        top: -1rem;
+        left: 0;
+      }
+    }
+    textarea {
+      &:focus ~ .control-label, &:valid ~ .control-label, &.form-file ~ .control-label, &.has-value ~ .control-label {
+        font-size: 0.8rem;
+        color: gray;
+        top: -1rem;
+        left: 0;
+      }
+    }
+    select:focus, input:focus, textarea:focus {
+      outline: none;
+    }
+    select:focus ~ .control-label, input:focus ~ .control-label, textarea:focus ~ .control-label {
+      color: $primary-0;
+      font-family: 'UbuntuMono', monospace;
+    }
+    select:focus ~ .bar-form::before, input:focus ~ .babar-formr::before, textarea:focus ~ .bar-form::before {
+      width: 100%;
+      left: 0;
+    }
+
+}
+  
+.checkbox label, .form-radio label {
+    font-family: 'UbuntuMono', monospace;
+    position: relative;
+    cursor: pointer;
+    padding-left: 2rem;
+    text-align: left;
+    color: $black;
+    display: block;
+}
+.checkbox input, .form-radio input {
+    width: auto;
+    opacity: 0.00000001;
+    position: absolute;
+    left: 0;
+}
+.radio {
+    margin-bottom: 1rem;
+    .helper {
+        position: absolute;
+        top: -0.25rem;
+        left: -0.25rem;
+        cursor: pointer;
+        display: block;
+        font-size: 1rem;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        color: #999;
+        &::before {
+        content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin: 0.25rem;
+            width: 1rem;
+            height: 1rem;
+            -webkit-transition: -webkit-transform 0.28s ease;
+            transition: -webkit-transform 0.28s ease;
+            transition: transform 0.28s ease;
+            transition: transform 0.28s ease, -webkit-transform 0.28s ease;
+            border-radius: 50%;
+            border: 0.125rem solid currentColor;
+        }
+        &::after {
+        content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin: 0.25rem;
+            width: 1rem;
+            height: 1rem;
+            -webkit-transition: -webkit-transform 0.28s ease;
+            transition: -webkit-transform 0.28s ease;
+            transition: transform 0.28s ease;
+            transition: transform 0.28s ease, -webkit-transform 0.28s ease;
+            border-radius: 50%;
+            border: 0.125rem solid currentColor;
+            -webkit-transform: scale(0);
+            transform: scale(0);
+            background-color: #337ab7;
+            border-color: #337ab7;
+        }
+    }
+    label:hover .helper {
+        color: #337ab7;
+    }
+    input:checked ~ .helper {
+        &::after {
+            -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+        }
+        &::before {
+            color: #337ab7;
+        }
+    }
+}
+.checkbox {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    .helper {
+        color: #999;
+        position: absolute;
+        top: 4px;
+        left: 0;
+        width: 1rem;
+        height: 1rem;
+        z-index: 0;
+        border: 0.125rem solid currentColor;
+        border-radius: 0.0625rem;
+        -webkit-transition: border-color 0.28s ease;
+        transition: border-color 0.28s ease;
+        &::before, &::after {
+            position: absolute;
+            height: 0;
+            width: 0.2rem;
+            background-color: #337ab7;
+            display: block;
+            -webkit-transform-origin: left top;
+            transform-origin: left top;
+            border-radius: 0.25rem;
+            content: '';
+            -webkit-transition: opacity 0.28s ease, height 0s linear 0.28s;
+            transition: opacity 0.28s ease, height 0s linear 0.28s;
+            opacity: 0;
+        }
+        &::before {
+            top: 0.65rem;
+            left: 0.38rem;
+            -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+            // box-shadow: 0 0 0 0.0625rem #fff;
+        }
+        &::after {
+            top: 0.3rem;
+            left: 0;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+        }
+    }
+    label:hover .helper {
+        color: #337ab7;
+    }
+    input:checked ~ .helper {
+        color: #337ab7;
+        &::after, &::before {
+            opacity: 1;
+            -webkit-transition: height 0.28s ease;
+            transition: height 0.28s ease;
+        }
+        &::after {
+            height: 0.5rem;
+        }
+        &::before {
+            height: 1.2rem;
+            -webkit-transition-delay: 0.28s;
+            transition-delay: 0.28s;
+        }
+    }
+}
+.radio + .radio, .checkbox + .checkbox {
+    margin-top: 1rem;
+}
+.has-error {
+    .legend.legend {
+        color: #d9534f;
+    }
+    &.form-group {
+        .control-label.control-label, .form-help, .helper {
+        color: #d9534f;
+        }
+    }
+    &.checkbox {
+        .form-help, .helper {
+        color: #d9534f;
+        }
+    }
+    &.radio {
+        .form-help, .helper {
+        color: #d9534f;
+        }
+    }
+    &.form-radio {
+        .form-help, .helper {
+        color: #d9534f;
+        }
+    }
+    .bar-form::before {
+        background: #d9534f;
+        left: 0;
+        width: 100%;
+    }
+}
+// MEDIA
+.form {
+    @include respond-to(small-screens) {
+        width: auto;
+    }
+    @include respond-to(medium-screens) {
+        width: auto;
+    }
+    @include respond-to(large-screens) {
+        width: 500px;
+    }
+    @include respond-to(large-2-screens) {
+        width: 500px;
+    }
+    @include respond-to(extralarge-screens) {
+        width: 500px;
+    }
+}
+.form-step {
+    @include respond-to(small-screens) {
+        width: 90vw;
+    }
+    @include respond-to(medium-screens) {
+        width: 90vw;
+    }
+    @include respond-to(large-screens) {
+        width: 500px;
+    }
+    @include respond-to(large-2-screens) {
+        width: 500px;
+    }
+    @include respond-to(extralarge-screens) {
+        width: 500px;
+    }
+}

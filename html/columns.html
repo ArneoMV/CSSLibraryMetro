@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" lang="hr" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Columns</title>
+
+	<link rel="stylesheet" type="text/css" href="../css/app.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+	<header>
+		<div class="head">
+			<div class="head-item">
+				<a class="navbar-brand" href="https://www.tvz.hr">
+					<img src="../img/TvzLogo.png" alt="tvzLogo" style="width: 100px;">
+				</a>
+			</div>
+			<div class="head-item">
+				<h2>Columns</h2>
+			</div>
+			<div class="head-item">
+				<!-- Main navigation -->
+				<div class="hamburger">
+					<div class="burger burger-3" id="burger">
+						<input type="checkbox" name="burger3" id="mainNav" onclick="mainNavigation()" />
+						<label for="mainNav">
+							<span class="bar bar-1"></span>
+							<span class="bar bar-2"></span>
+							<span class="bar bar-3"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Main sidebar -->
+		<nav id="myNav"></nav>
+	</header>
+	
+<div class="filler"></div>
+<!--PAGE CONTENT-->
+<div class="container" id="page-content">	
+	<br />
+	<h4>Grid Sistem</h4>
+	<p>Grid sustav omogućuje do 12 stupaca na stranici.Ako ne želite koristiti svih 12 stupaca pojedinačno, možete grupirati stupce za stvaranje širih stupaca:</p>
+
+	<p>Grid sustav je osjetljiv, a stupci će se preurediti ovisno o veličini zaslona: na velikom ekranu može izgledati bolje s sadržajem organiziranim u tri stupca, ali na malom zaslonu bilo bi bolje da su stavke sadržaja složene na jedan na drugi.
+		Savjet: Zapamtite da stupci mreže trebaju imati do dvanaest za redak. Više od toga, stupci će se slagati bez obzira na vidni okvir
+	</p>
+	<fieldset>
+		<legend>Uputstva</legend>
+		<p>-grid sistem se sastoji od četiri klase</p>
+		<article>
+			<ul>
+				<li><span class="tw-0">col-xs-*</span> (za telefone - ekrani manji od 768px)</li>
+				<li><span class="tw-0">col-sm-*</span> (za tablice - ekrani jednaki ili veći od 768px širine)</li>
+				<li><span class="tw-0">col-md-*</span> (za mala prijenosna računala - ekrani jednaki ili veći od 992px širine)</li>
+				<li><span class="tw-0">col-lg-*</span> (za prijenosna i stolna računala - ekrani jednaki ili veći od 1200px širine)</li>
+			</ul>
+		</article>
+	</fieldset>
+
+	<p>Gore navedene klase mogu se kombinirati kako bi se stvorili dinamičniji i fleksibilniji rasporedi.
+		Savjet: Svaka klasa se povećava, pa ako želite postaviti iste širine za xs i sm, potrebno je samo navesti xs.</p>
+
+	<h5>Pravila Grid sustava</h5>
+	<p>Neka pravila sustava mreže za pokretanje:
+		<br />Redovi moraju biti postavljeni unutar spremnika (fiksne širine) ili tekućine za kontejnere (pune širine) za pravilno poravnanje i oblaganje.
+		<br />Koristite retke za izradu horizontalnih skupina stupaca.
+		<br />Sadržaj treba postaviti unutar stupaca, a samo stupci mogu biti neposredna djeca redaka. Unaprijed definirane klase kao što su .row i .col-sm-4 dostupne su za brzo pravljenje matrica. Stupci stvaraju žljebove (razmake između sadržaja stupca) putem dodatka, te se padding pomiče u retke za prvi i zadnji stupac pomoću negativne margine na .rows. Stupci mreže izrađuju se navođenjem broja dostupnih stupaca koje želite rasporediti.
+		<br />Na primjer, tri jednaka stupca koristit će tri .col-sm-4. Širine stupaca su u postocima, tako da su uvijek tekuće i veličine u odnosu na njihov nadređeni element
+	</p>
+
+
+
+	<div class="col-wd-12">
+		<div class="col">12 Column</div>
+	</div>
+	<div class="col-wd-6">
+		<div class="col">6 Column</div>
+	</div>
+	<div class="col-wd-6">
+		<div class="col">6 Column</div>
+	</div>
+	<div class="col-wd-6 col-md-4">
+		<div class="col">4 Column</div>
+	</div>
+	<div class="col-wd-6 col-md-4">
+		<div class="col">4 Column</div>
+	</div>
+	<div class="col-wd-12 col-md-4">
+		<div class="col">4 Column</div>
+	</div>
+	<div class="col-wd-6 col-md-3">
+		<div class="col">3 Column</div>
+	</div>
+	<div class="col-wd-6 col-md-3">
+		<div class="col">3 Column</div>
+	</div>
+	<div class="col-wd-6 col-md-3">
+		<div class="col">3 Column</div>
+	</div>
+	<div class="col-wd-6 col-md-3">
+		<div class="col">3 Column</div>
+	</div>
+	<div class="col-wd-6 col-md-4 col-sm-2">
+		<div class="col">2 Column</div>
+	</div>
+	<div class="col-wd-6 col-md-4 col-sm-2">
+		<div class="col">2 Column</div>
+	</div>
+	<div class="col-wd-6 col-md-4 col-sm-2">
+		<div class="col">2 Column</div>
+	</div>
+	<div class="col-wd-6 col-md-4 col-sm-2">
+		<div class="col">2 Column</div>
+	</div>
+	<div class="col-wd-6 col-md-4 col-sm-2">
+		<div class="col">2 Column</div>
+	</div>
+	<div class="col-wd-6 col-md-4 col-sm-2">
+		<div class="col">2 Column</div>
+	</div>
+	<div class="col-wd-3 col-md-2 col-sm-1">
+		<div class="col">1</div>
+	</div>
+	<div class="col-wd-3 col-md-2 col-sm-1">
+		<div class="col">1</div>
+	</div>
+	<div class="col-wd-3 col-md-2 col-sm-1">
+		<div class="col">1</div>
+	</div>
+	<div class="col-wd-3 col-md-2 col-sm-1">
+		<div class="col">1</div>
+	</div>
+	<div class="col-wd-3 col-md-2 col-sm-1">
+		<div class="col">1</div>
+	</div>
+	<div class="col-wd-3 col-md-2 col-sm-1">
+		<div class="col">1</div>
+	</div>
+	<div class="col-wd-3 col-md-2 col-sm-1">
+		<div class="col">1</div>
+	</div>
+	<div class="col-wd-3 col-md-2 col-sm-1">
+		<div class="col">1</div>
+	</div>
+	<div class="col-wd-3 col-md-2 col-sm-1">
+		<div class="col">1</div>
+	</div>
+	<div class="col-wd-3 col-md-2 col-sm-1">
+		<div class="col">1</div>
+	</div>
+	<div class="col-wd-3 col-md-2 col-sm-1">
+		<div class="col">1</div>
+	</div>
+	<div class="col-wd-3 col-md-2 col-sm-1">
+		<div class="col">1</div>
+	</div>
+
+	<div class="col-sm-12">
+		<code>
+	&lt;div class="container"&gt;
+		&lt;div class="row"&gt;
+			&lt;div class="col-wd-6 col-md-3"&gt;
+				&lt;div class="col"&gt;3 Column&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="col-wd-6 col-md-3"&gt;
+				&lt;div class="col"v3 Column&lt;/div&gt;
+			&lt;/div &gt;
+			&lt;div class="col-wd-6 col-md-3"&gt;
+				&lt;div class="col"&gt;3 Column&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="col-wd-6 col-md-3"&gt;
+				&lt;div class="col"&gt;3 Column&lt;/div&gt;
+			&lt;/div &gt;
+		&lt;/div &gt;
+	&lt;/div &gt;
+		</code>
+		<small style="float: right;">HTML</small>
+		<br>
+		<code>
+	.container {
+		width: 80%;
+		height: auto;
+		margin: 0 auto;
+	}
+	[class*='col-'] {
+		width: 100%;
+		float: left;
+		min-height: 1px;
+	}
+	.col {
+		padding: 1em;
+		margin: 8px;
+		background: $color-primary;
+		border-radius: 3px;
+		box-shadow: 0 1px 1px rgba(0,0,0,.3);
+		color: $black;
+		font-weight: bolder;
+		text-align: center;
+	}
+	@media screen and (min-width: 320px) {
+		.col-wd-1 {width: 8.33333%;}
+		.col-wd-2 {width: 16.66667%;}
+		.col-wd-3 {width: 25%;}
+		.col-wd-4 {width: 33.33333%;}
+		.col-wd-5 {width: 41.66667%;}
+		.col-wd-6 {width: 50%;}
+		.col-wd-7 {width: 58.33333%;}
+		.col-wd-8 {width: 66.66667%;}
+		.col-wd-9 {width: 75%;}
+		.col-wd-10 {width: 83.33333%;}
+		.col-wd-11 {width: 91.66667%;}
+		.col-wd-12 {width: 100%;}
+	}
+	@media screen and (min-width: 640px) {
+		.col-md-1 {width: 8.33333%;}
+		.col-md-2 {width: 16.66667%;}
+		.col-md-3 {width: 25%;}
+		.col-md-4 {width: 33.33333%;}
+		.col-md-5 {width: 41.66667%;}
+		.col-md-6 {width: 50%;}
+		.col-md-7 {width: 58.33333%;}
+		.col-md-8 {width: 66.66667%;}
+		.col-md-9 {width: 75%;}
+		.col-md-10 {width: 83.33333%;}
+		.col-md-11 {width: 91.66667%;}
+		.col-md-12 {width: 100%;}
+	}
+	@media screen and (min-width: 960px) {
+		.col-sm-1 {width: 8.33333%;}
+		.col-sm-2 {width: 16.66667%;}
+		.col-sm-3 {width: 25%;}
+		.col-sm-4 {width: 33.33333%;}
+		.col-sm-5 {width: 41.66667%;}
+		.col-sm-6 {width: 50%;}
+		.col-sm-7 {width: 58.33333%;}
+		.col-sm-8 {width: 66.66667%;}
+		.col-sm-9 {width: 75%;}
+		.col-sm-10 {width: 83.33333%;}
+		.col-sm-11 {width: 91.66667%;}
+		.col-sm-12 {width: 100%;}
+	}
+		</code>
+		<small style="float: right;">CSS</small>
+	</div>
+
+</div>
+
+<script src="../js/header.js"></script>
+<script src="../js/myscript.js"></script>
+</body>
+</html>

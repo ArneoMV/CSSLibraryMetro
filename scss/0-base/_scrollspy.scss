@@ -1,0 +1,67 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+.navScrollspy {
+    width: 100%;
+    position: fixed;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    background-color: $gray-8;
+    a {
+        width: auto;
+        color: $white;
+        padding: 5px 10px;
+        text-decoration: none;
+        &:hover{
+            color: $white;
+            background-color: $black;
+        }
+    }
+    @include respond-to(extrasmall-screens) {  }
+    @include respond-to(small-screens) { }
+    @include respond-to(medium-screens) { 
+        border: 1px solid blue;
+        width: 100px;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
+        a {
+            width: 100%;
+            position: relative;
+        }
+    }
+    @include respond-to(large-screens) { }
+    @include respond-to(large-2-screens) {  }
+    @include respond-to(extralarge-screens) {  }
+}
+.scrollspy {
+  position: relative;
+  top: 70px;
+}
+#section-1, #section-2, #section-3, #section-4, #section-5, #section-6, #section-7, #section-8, #section-9   {
+  position: relative;
+  top: 70px;
+
+}
+  // /* Only stick if you can fit */
+  // @media (min-height: 300px) {
+  //   nav ul {
+  //     position: sticky;
+  //     top: 10px;
+  //   }
+  // }
+  // .scrollspy {
+  //   @include respond-to(medium-screens) { 
+  //       // margin-left: 70px;
+  //   }
+  // }
+// section {
+//     margin: 0 0 2rem 0; 
+//     &:first-child {
+//         padding: 100px 0 0 0;
+//     }
+// }

@@ -1,0 +1,125 @@
+/* INPUT */
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+@mixin inputOutlined {
+    height: 30px;
+    width: auto;
+    border: 1px solid $black;
+    background-color: transparent;
+    margin: 3px 0;
+    padding-left: 10px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    &:focus {
+        border: 0;
+        border: 2px solid $primary-0;
+    }
+}
+@mixin inputGroup {
+    position: relative;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid $black;
+    .control-label {
+        font-family: 'UbuntuMono', monospace;
+        position: absolute;
+        top: 0.25rem;
+        pointer-events: none;
+        padding-left: 0.125rem;
+        z-index: 1;
+        color: #b3b3b3;
+        font-size: 1rem;
+        font-weight: normal;
+        -webkit-transition: all 0.28s ease;
+        transition: all 0.28s ease;
+    }
+    .bar-form {
+    position: relative;
+    border-bottom: 0.0625rem solid $black;
+    display: block;
+    }
+    input, textarea {
+        width: 100%;
+        display: block;
+        background: none;
+        padding: 0.125rem 0.125rem 0.0625rem;
+        font-size: 1rem;
+        line-height: 1.9;
+        color: transparent;
+        border-width: 0;
+        border-color: transparent;
+        -webkit-transition: all 0.28s ease;
+        transition: all 0.28s ease;
+    }
+    input {
+        /* Show green borders when valid */
+        &:focus, &:valid, &.form-file, &.has-value {
+            border-bottom: 2px solid $primary-0;
+            color: $black;
+        }
+    }
+    textarea {
+    &:focus, &:valid, &.form-file, &.has-value {
+        color: #333;
+        }
+    }
+    input {
+    &:focus ~ .control-label, &:valid ~ .control-label, &.form-file ~ .control-label, &.has-value ~ .control-label {
+        font-size: 0.8rem;
+        color: gray;
+        top: -1rem;
+        left: 0;
+        }
+    }
+    textarea {
+    &:focus ~ .control-label, &:valid ~ .control-label, &.form-file ~ .control-label, &.has-value ~ .control-label {
+        font-size: 0.8rem;
+        color: gray;
+        top: -1rem;
+        left: 0;
+        }
+    }
+    select:focus, input:focus, textarea:focus {
+    outline: none;
+    }
+    select:focus ~ .control-label, input:focus ~ .control-label, textarea:focus ~ .control-label {
+    color: $primary-0;
+    font-family: 'UbuntuMono', monospace;
+    }
+    select:focus ~ .bar-form::before, input:focus ~ .babar-formr::before, textarea:focus ~ .bar-form::before {
+    width: 100%;
+    left: 0;
+    }
+}
+
+
+.inputFilled-sm {
+    @include inputGroup();
+
+    width: 150px;
+}
+.inputFilled-md {
+    @include inputGroup();
+    width: 300px;
+}
+.inputFilled {
+    @include inputGroup();
+    width: 100%;
+}
+
+.inputOutlined-sm {
+    @include inputOutlined();
+    width: 150px;
+}
+.inputOutlined-md {
+    @include inputOutlined();
+    width: 300px;
+}
+.inputOutlined {
+    @include inputOutlined();
+    width: 100%;
+}

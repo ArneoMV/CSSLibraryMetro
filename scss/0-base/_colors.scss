@@ -1,0 +1,279 @@
+/* COLORS */
+// SASS style sheet */
+// Palette color codes */
+// Palette URL: http://paletton.com/#uid=70h0u0kBhvolREbrWBfDBoXInjr */
+
+// As hex codes */
+
+// Main Primary color
+$primary-1: #4686BF;
+$primary-2: #2371B7;
+$primary-0: #095AA2;
+$primary-3: #074781;
+$primary-4: #043764;
+// Main Secondary color (1)
+$warrning-0: #FA9200;
+$warrning-1: #FFB751;
+$warrning-2: #FFA320;
+$warrning-3: #C77400;
+$warrning-4: #9B5B00;
+
+// Main Secondary color (2)
+$danger-0: #FA4E00;
+$danger-1: #FF8751;
+$danger-2: #FF6620;
+$danger-3: #C73E00;
+$danger-4: #9B3000;
+// Main Complement color
+$success-0: #00A969;
+$success-1: #3EC491;
+$success-2: #18BC7E;
+$success-3: #008654;
+$success-4: #006941;
+
+// As RGBa codes */
+
+// color-primary / rgba-primary
+$primary-0: rgba(  9, 90,162,1);
+$primary-1: rgba( 70,134,191,1);
+$primary-2: rgba( 35,113,183,1);
+$primary-3: rgba(  7, 71,129,1);
+$primary-4: rgba(  4, 55,100,1);
+
+// color-warrning / rgba-secondary-1
+$warrning-0: rgba(250,146,  0,1);
+$warrning-1: rgba(255,183, 81,1);
+$warrning-2: rgba(255,163, 32,1);
+$warrning-3: rgba(199,116,  0,1);
+$warrning-4: rgba(155, 91,  0,1);
+
+// color-danger / rgba-secondary-2
+$danger-0: rgba(250, 78,  0,1);
+$danger-1: rgba(255,135, 81,1);
+$danger-2: rgba(255,102, 32,1);
+$danger-3: rgba(199, 62,  0,1);
+$danger-4: rgba(155, 48,  0,1);
+
+// color-success / rgba-complement
+$success-0: rgba(  0,169,105,1);
+$success-1: rgba( 62,196,145,1);
+$success-2: rgba( 24,188,126,1);
+$success-3: rgba(  0,134, 84,1);
+$success-4: rgba(  0,105, 65,1);
+
+// color-primary
+.primary-1 { background-color: #4686BF }
+.primary-2 { background-color: #2371B7 }
+.primary-0 { background-color: #095AA2 }
+.primary-3 { background-color: #074781 }
+.primary-4 { background-color: #043764 }
+// color-warrning
+.warrning-1 { background-color: #FFB751 }
+.warrning-2 { background-color: #FFA320 }
+.warrning-0 { background-color: #FA9200 }
+.warrning-3 { background-color: #C77400 }
+.warrning-4 { background-color: #9B5B00 }
+// color-danger
+.danger-1 { background-color: #FF8751 }
+.danger-2 { background-color: #FF6620 }
+.danger-0 { background-color: #FA4E00 }
+.danger-3 { background-color: #C73E00 }
+.danger-4 { background-color: #9B3000 }
+// color-success
+.success-1 { background-color: #3EC491 }
+.success-2 { background-color: #18BC7E }
+.success-0 { background-color: #00A969 }
+.success-3 { background-color: #008654 }
+.success-4 { background-color: #006941 }
+
+
+// TEXT COLOUR --> clase / span
+.tp-0 {color: $primary-0}
+.tp-1 {color: $primary-1}
+.tp-3 {color: $primary-3}
+.tp-4 {color: $primary-4}
+
+.tw-0 {color: $warrning-0}
+.td-0 {color: $danger-0}
+.ts-0 {color: $success-0}
+
+
+// colors
+$color-default: #212121;
+$color-info: #a6e3e9;
+$color-btn-hover: #4682B4;
+$accent-color: #355cc9;
+
+// Table
+$color-table-head: #4682B4;
+// FORM
+$darkgrey: #33312E;
+
+$white: #fff;
+$black: #333333;
+
+$gray-8: rgba(51, 51, 51,0.8);
+$gray-6: rgba(51, 51, 51,0.6);
+$gray-4: rgba(51, 51, 51,0.4);
+$gray-2: rgba(51, 51, 51,0.2);
+$gray-1: rgba(51, 51, 51,0.1);
+
+.white {color: #fff;}
+.black {color: #333333;}
+
+
+// GRADIENT
+$gradient-primary-1: linear-gradient(-225deg, #77FFD2 0%, #6297DB 48%, #1EECFF 100%);
+$gradient-warrning-1: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+$gradient-danger-1: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+$gradient-success-1: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+
+
+/* OTHER STYLES */
+
+#color-textarea {
+    position: fixed;
+    background: transparent;
+    border: none;
+    height: 0;
+    padding: 10px;
+    opacity: 0;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+}
+
+#color-picker {
+    box-shadow: 0 .5em 5em 0 rgba(0, 0, 0, .1);
+    width: 100%;
+    margin: 0 auto;
+}
+.base-colors-container {
+    display: flex;
+    align-items: center;
+    background-color:rgba(230, 230, 230, 0.3);
+    border-radius: .35em .35em 0 0;
+    width: 100%;
+    padding: 2px;
+}
+.base-colors {
+    flex: 1;
+    background: linear-gradient(rgba(white, 0.1), rgba(black, 0.1));
+    color: transparent;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 0.8em;
+    letter-spacing: -0.5em;
+    text-align: center;
+    padding: .5em 1em;
+    opacity: .5;
+    cursor: pointer;
+    transition: .5s;
+}
+.base-colors:first-of-type {
+    border-radius: .25em 0 0 .25em;
+}
+.base-colors:last-of-type {
+    border-radius: 0 .25em .25em 0;
+}
+.base-red {
+    background-color: $danger-0;
+}
+.base-yellow {
+    background-color: $warrning-0;
+}
+.base-green {
+    background-color: $success-0;
+}
+.base-blue {
+    background-color: $primary-0;
+}
+// .base-gray {
+//     background-color: #8c8c8c;
+// }
+.base-colors:hover {
+    color: #fff;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .1);
+    letter-spacing: normal;
+    opacity: 1;
+}
+.activeColor {
+    flex-basis: 75%;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .1);
+    color: #fff;
+    letter-spacing: normal;
+    opacity: 1;
+}
+
+.shade-colors-container {
+    background-color:rgba(230, 230, 230, 0.3);
+    border-radius: 0 0 .35em .35em;
+    width: 100%;
+    max-height: 0;
+    margin-top: .1em;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+.collapsed {
+    max-height: 350px;
+    padding: 20px;
+}
+
+.current-color {
+    text-transform: capitalize;
+    margin: 3px 0 7px 0;
+}
+.shade-colors {
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: .1s;
+}
+.shade-colors:nth-child(n+7) {
+    color: #ddd;
+}
+.shade-colors:last-of-type {
+    margin-bottom: 0;
+}
+.shade-colors:hover {
+    transform: scale(1.01);
+}
+.shade-color-weight {
+    flex: 1;
+}
+.copy-message {
+    flex: 3;
+    text-align: center;
+    font-size: .9em;
+    letter-spacing: -0.35em;
+    opacity: 0;
+    transition: .3s;
+}
+.shade-color-hex {
+    flex: 1;
+    text-align: right;
+    text-transform: uppercase;
+}
+.show {
+    letter-spacing: normal;
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    #color-picker {
+        width: 80%;
+    }
+}
+@media (max-width: 500px) {
+    #color-picker {
+        width: 90%;
+    }
+    .shade-colors {
+        font-size: .8em;
+    }
+}

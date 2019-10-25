@@ -1,0 +1,93 @@
+/* Carousel */
+
+.carousel-container{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    box-shadow: 0 1rem 3rem rgba(0,0,0, 0.175)!important;
+    border-radius: 15px;
+    button {
+        -webkit-appearance: none;
+        background: $white;
+        border: 0;
+        outline:0;
+        svg {
+            width: 15px; 
+            height: 15px;
+            fill: currentColor;
+            vertical-align: bottom
+          }
+      }
+    #previousBtn, #nextBtn{
+        z-index: 10;
+    }
+    .carousel-slide{
+        display: flex;
+        width: 100%;
+        height: auto;
+    }
+
+    @include respond-to(extrasmall-screens) {  }
+    @include respond-to(small-screens) {  }
+    @include respond-to(medium-screens) {  }
+    @include respond-to(large-screens) {
+        max-width: 400px;
+        .carousel-slide {
+            max-width: 400px;
+            img {
+                max-width: 400px;
+            }
+        }
+    }
+    @include respond-to(large-2-screens) { 
+        max-width: 500px;
+        .carousel-slide {
+            max-width: 500px;
+            img {
+                max-width: 500px;
+            }
+        }
+    }
+    @include respond-to(extralarge-screens) { 
+        max-width: 600px;
+        .carousel-slide {
+            max-width: 600px;
+            img {
+                max-width: 600px;
+            }
+        }
+    }
+}
+
+  .arrow {
+    cursor: pointer;
+  }
+.left, .right polyline {
+    stroke: $primary-0;
+}
+  .left:hover polyline,
+  .left:focus polyline {
+    stroke-width: 3;
+    
+  }
+  .left:active polyline {
+    stroke-width: 6;
+    stroke: $primary-0;
+    transition: all 100ms ease-in-out;
+  }
+  .right:hover polyline,
+  .right:focus polyline {
+    stroke-width: 3;
+  }
+  .right:active polyline {
+    stroke-width: 6;
+    stroke: $primary-0;
+    transition: all 100ms ease-in-out;
+  }
+  polyline {
+    transition: all 250ms ease-in-out;
+  }

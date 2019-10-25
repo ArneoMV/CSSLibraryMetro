@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" lang="hr" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Float</title>
+
+	<link rel="stylesheet" type="text/css" href="../css/app.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+	<header>
+		<div class="head">
+			<div class="head-item">
+				<a class="navbar-brand" href="https://www.tvz.hr">
+					<img src="../img/TvzLogo.png" alt="tvzLogo" style="width: 100px;">
+				</a>
+			</div>
+			<div class="head-item">
+				<h2>Float</h2>
+			</div>
+			<div class="head-item">
+				<!-- Main navigation -->
+				<div class="hamburger">
+					<div class="burger burger-3" id="burger">
+						<input type="checkbox" name="burger3" id="mainNav" onclick="mainNavigation()" />
+						<label for="mainNav">
+							<span class="bar bar-1"></span>
+							<span class="bar bar-2"></span>
+							<span class="bar bar-3"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Main sidebar -->
+		<nav id="myNav"></nav>
+    </header>
+    
+ <div class="filler"></div>    
+<!--PAGE CONTENT-->
+<div class="container " id="page-content">
+    <section>     
+        <!-- Opis -->
+        <h4>Zašto float nije dobar za layout</h4>
+        <p>Kada je element u označavanju doplovio lijevo ili desno, roditelj (ili element kontejnera) prestaje ga sadržavati i uklanja ga iz toka izgleda. Učvršćivanje ovog kolapsa je potrebno kako bi se vratio protok i poravnanje elemenata u rasporedu.</p>
+        <p>Ponekad ovaj kolaps rasporeda nije vidljiv zbog transparentne pozadine, ali dobra je praksa to popraviti čišćenjem plovaka.</p>
+        <br />
+
+        <h5>NO FLOAT</h5>
+        <br />
+        <div class="show-bg ">
+            <div class=" box"></div>
+            <div class=" box"></div>
+        </div>
+        <br />
+        <h5 class="float-left">Float left</h5>
+        <h5 class="float-right">Float right</h5>
+        <br />
+        <br />
+        <div class="show-bg ">
+            <div class="float-right box"></div>
+            <div class="float-left box"></div>
+        </div>
+
+        <br />
+        <!-- Clearfix -->
+        <h5>ClearFix</h5>
+        <article>
+            <ul>
+                <li>Današnji stručnjaci za označavanje koriste ovu tehniku kako bi izbjegli nered u markupu. Ovu tehniku izumio je Nicolas Gallagher.Pročitajte njegov izvorni post na <a href="http://nicolasgallagher.com/micro-clearfix-hack/">micro-clearfix hack.</a></li>
+                <li>U ovoj tehnici, roditeljskom elementu se daju neke čarobne CSS-osobine kako bi očistile plovke svih svojih djece.</li>
+                <li>Flexbox is supported from Firefox 18, Chrome 21, Opera 12.10, and Internet Explorer 10, Safari 6.1 (including Mobile Safari) and Android's default browser 4.4.</li>
+            </ul>
+        </article>
+        <p>Micro clearfix generira pseudo-elemente i postavlja njihov prikaz na tablicu. Time se stvara anonimna ćelija tablice i novi kontekst oblikovanja bloka, što znači: prije pseudo-elementa sprječava kolaps gornje margine. Pseudo-element se koristi za brisanje plovaka. Kao rezultat toga, nema potrebe sakriti generirani sadržaj i ukupna količina potrebnog koda je smanjena.</p>
+        <p>Uključujući izbornik: before, nije potrebno za brisanje floats-a, ali sprječava da se gornje margine sruše u modernim preglednicima. To ima dvije prednosti:</p>
+        <article>
+            <ul>
+                <li>Ona osigurava vizualnu dosljednost s drugim tehnikama zadržavanja floata koje stvaraju novi kontekst oblikovanja bloka, <span class="tw-0">overflow:hidden;</span></li>
+                <li>Osigurava vizualnu dosljednost s IE 6/7 kada se primjenjuje <span class="tw-0">zoom: 1;</span></li>
+            </ul>
+        </article>
+        <br />
+        <div class="show-bg">
+            <div class="float-left box"></div>
+            <div class="float-left box"></div>
+            <div class="float-left box"></div>
+            <div class="float-left box"></div>
+            <div class="float-left box"></div>
+            <div class="float-left box"></div>
+            <div class="float-left box"></div>
+            <div class="float-left box"></div>
+            <div class="float-left box"></div>
+            <div class="float-left box"></div>
+            <div class="float-left box"></div>
+            <div class="float-left box"></div>
+            <div class="float-left box"></div>
+            <div class="float-left box"></div>
+            <div class="float-left box"></div>
+            <div class="float-left box"></div>      
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dicta labore minima distinctio placeat quos libero, perferendis reiciendis voluptatem totam assumenda quo, qui dolor laboriosam! Velit expedita minus culpa illo! Vero eligendi est qui nulla eum asperiores ullam nam aut itaque et enim, ex laudantium, incidunt iste nisi dicta autem.
+        </div>
+        <br />
+        <code>
+            &lt;div class="show-bg">
+                &lt;div class="float-left box"&gt:&lt;/div&gt:
+                &lt;div class="float-left box"&gt:&lt;/div&gt:
+                &lt;div class="float-left box"&gt:&lt;/div&gt:
+                &lt;div class="float-left box"&gt:&lt;/div&gt:
+                &lt;div class="float-left box"&gt:&lt;/div&gt:
+                &lt;div class="float-left box"&gt:&lt;/div&gt:
+                &lt;div class="float-left box"&gt:&lt;/div&gt:
+                &lt;div class="float-left box"&gt:&lt;/div&gt:
+                &lt;div class="float-left box"&gt:&lt;/div&gt:
+                &lt;div class="float-left box"&gt:&lt;/div&gt:
+                &lt;div class="float-left box"&gt:&lt;/div&gt:
+                &lt;div class="float-left box"&gt:&lt;/div&gt:
+                &lt;div class="float-left box"&gt:&lt;/div&gt:
+                &lt;div class="float-left box"&gt:&lt;/div&gt:
+                &lt;div class="float-left box"&gt:&lt;/div&gt:
+                &lt;div class="float-left box"&gt:&lt;/div&gt:     
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dicta labore minima distinctio placeat quos libero, perferendis reiciendis voluptatem totam assumenda quo, qui dolor laboriosam! Velit expedita minus culpa illo! Vero eligendi est qui nulla eum asperiores ullam nam aut itaque et enim, ex laudantium, incidunt iste nisi dicta autem.
+            &lt;/div&gt:
+        </code>
+        <smal class="float-right">HTML</smal>
+        <br />
+        <code>
+            // Mixin clearfix
+            @mixin clearfix() {
+                &::after {
+                    display: block;
+                    content: "";
+                    clear: both;
+                }
+            }
+            // Usage as a mixin
+            .element {
+            @include clearfix;
+            }       
+        </code>
+        <smal class="float-right">SCSS</smal>
+
+        <br />
+        <!-- Clear -->
+        <h5>Clear</h5>
+        <article>
+            <ul>
+                <li>Brisanje plovaka dodavanjem jasnog elementa</li>
+                <li>Dodavanje jasnog elementa nakon plutajućeg (ih) elementa najčešći je način na koji ljudi koriste za brisanje floats-a u CSS-u i možda već implementirate tu stvar u svoj markup. U ovoj tehnici, u osnovi koristimo jasan element za čišćenje plovaka braće i sestara. Jasan element se obično koristi nakon plutajućih braće i sestara bez dječjih elemenata ili sadržaja u njemu.</li>  
+            </ul>
+        </article>
+        <br />
+        <div class="show-bg">
+            <div class="float-left box"></div>
+            <div class="float-left box"></div>
+            <div class="float-left box"></div>
+            <div class="float-left box"></div>
+            <div class="float-left box"></div>
+            <div class="float-left box"></div>
+            <div class="float-left box"></div>
+            <div class="float-left box"></div>
+            <div class="float-left box"></div>
+            <div class="clear"></div>
+            <div class="float-right box"></div>
+            <div class="float-right box"></div>   
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, corporis quo minus autem molestias dolorum reprehenderit eligendi vel eum tempore quis, fugit incidunt nobis veritatis impedit veniam ipsam facere! Rerum quo dicta, neque amet in consequuntur modi! Quibusdam atque, suscipit similique incidunt id totam! Quaerat officiis ipsa atque eveniet qui!</p>
+        </div>
+        <br />
+        <code>
+&lt;div class="show-bg">
+&lt;div class="float-left box"&gt;&lt;/div&gt;
+&lt;div class="float-left box"&gt;&lt;/div&gt;
+&lt;div class="float-left box"&gt;&lt;/div&gt;
+&lt;div class="float-left box"&gt;&lt;/div&gt;
+&lt;div class="float-left box"&gt;&lt;/div&gt;
+&lt;div class="float-left box"&gt;&lt;/div&gt;
+&lt;div class="float-left box"&gt;&lt;/div&gt;
+&lt;div class="float-left box"&gt;&lt;/div&gt;
+&lt;div class="float-left box"&gt;&lt;/div&gt;
+&lt;div class="clear"&gt;&lt;/div&gt;
+&lt;div class="float-right box"&gt;&lt;/div&gt;
+&lt;div class="float-right box"&gt;&lt;/div&gt;
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dicta labore minima distinctio placeat quos libero, perferendis reiciendis voluptatem totam assumenda quo, qui dolor laboriosam! Velit expedita minus culpa illo! Vero eligendi est qui nulla eum asperiores ullam nam aut itaque et enim, ex laudantium, incidunt iste nisi dicta autem.
+&lt;/div&gt&gt;
+        </code>
+        <smal class="float-right">HTML</smal> 
+        <br />
+        <code>
+.float-left {
+float: left;
+}
+
+.float-right {
+float: right;
+}
+
+.clear {
+clear: both;
+}
+        </code>
+        <smal class="float-right">SCSS</smal> 
+    </section>
+</div>
+
+<script src="../js/header.js"></script>
+<script src="../js/myscript.js"></script>
+
+    </body>
+</html>

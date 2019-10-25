@@ -1,0 +1,95 @@
+/* TABLE */
+
+@import "../2-modules/mixins.scss";
+
+// Basic table
+table {
+	@include clearfix();
+	width: 100%;
+	border-collapse: collapse;
+	overflow: hidden;
+	overflow-x:auto;
+	table-layout: fixed;
+	line-height: 1.25em;/*15*/
+	border-spacing: 0;
+
+	th, td { 
+		margin: 0; 
+		padding: 0.4166em;/*10*/
+		font-size: 0.85em;/*12*/
+		text-align: center; 
+		vertical-align: middle;
+		color: white;
+	}
+	thead {
+		@include clearfix();
+		background-color: $primary-4;
+	}
+
+	tbody {
+		background-color: $primary-1;
+		tr {
+			border: 0;
+		}
+		tr:hover {
+			background-color: $primary-2;
+		}
+	}
+	@include breakpoint(desktop) { 
+		th, td {
+		font-size: 0.7em;
+		} 
+	}
+	@include breakpoint(tablet) { 
+		th, td {
+		font-size: 0.6em;
+		}
+		table {
+			display: block;
+			position: relative;
+			width: 100%;
+		}
+		th,tr,td { display: block; }
+		th,td {
+			font-size: 0.8em;
+			min-height: 1.25em; 
+		}
+		th {
+			text-align: left;
+		}
+		thead { 
+			display: block; 
+			float: left; 
+		}
+		tbody{ 
+			display: block; 
+			width: auto; 
+			position: relative; 
+			overflow-x: auto; 
+			white-space: nowrap;
+		}
+		tbody tr { 
+			display: inline-block; 
+			vertical-align: top; 
+		}
+		thead { 
+			display: block;
+			float: left; 
+		}
+		tbody { 
+			display: -webkit-box; 
+			overflow-x: auto; 
+		}
+	}
+	@include breakpoint(phone) { 
+		th, td {
+			font-size: 0.6em;
+		} 
+	}
+}
+
+// TABLE STRIPED
+// .table-striped tbody tr:nth-of-type(odd) {
+// 	background-color: rgba(0, 0, 0, 0.05);
+// }
+

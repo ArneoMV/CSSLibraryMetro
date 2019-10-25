@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" lang="hr" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Modal</title>
+
+	<link rel="stylesheet" type="text/css" href="../css/app.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+	<header>
+		<div class="head">
+			<div class="head-item">
+				<a class="navbar-brand" href="https://www.tvz.hr">
+					<img src="../img/TvzLogo.png" alt="tvzLogo" style="width: 100px;">
+				</a>
+			</div>
+			<div class="head-item">
+				<h2>Modal</h2>
+			</div>
+			<div class="head-item">
+				<!-- Main navigation -->
+				<div class="hamburger">
+					<div class="burger burger-3" id="burger">
+						<input type="checkbox" name="burger3" id="mainNav" onclick="mainNavigation()" />
+						<label for="mainNav">
+							<span class="bar bar-1"></span>
+							<span class="bar bar-2"></span>
+							<span class="bar bar-3"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Main sidebar -->
+		<nav id="myNav"></nav>
+	</header>
+	
+	<div class="filler"></div>
+<!--PAGE CONTENT-->
+
+<div class="container" id="page-content">
+		<p>Dijalozi informiraju korisnike o zadatku i mogu sadržavati kritične informacije, zahtijevati odluke ili uključivati višestruke zadatke.
+			Upozorenje pruža kontekstualne povratne poruke za tipične radnje korisnika s nekoliko dostupnih i fleksibilnih poruka upozorenja.
+		</p>
+		<p>Različiti stilovi modalnog prozora:
+		Različita upozorenja mogu imat različiti tip važnosti. Postoje šest različitih tipova upozorenja <span>default, primary, success, info, warrning, te danger</span>
+		Primjer prikaza modalnog prozora možemo vidjeti pritiskom na sljedeći gumb.
+		</p>
+
+		<fieldset>
+			<legend>Uputstva</legend>
+			<article>
+				<ul>
+					<li><span class="tw-0">id="simpleModal"</span> pomoću ovog id-a povezujemo se sa gumbom koji otvara prozor sa modal-om.</li>
+					<li><span class="tw-0">modal-content-</span> unutar njega se nalaze svi elementi koji čine modal.</li>
+					<li><span class="tw-0">modal-header</span> služi kako bi ispisao naslov poruke.</li>
+					<li><span class="tw-0">modal-body</span> mjesto gdje se ispisuje tekst.</li>
+					<li><span class="tw-0">modal-footer</span> mjesto gdje se nalaze gumbi pomoću kojih odgovaramo na pitanje koje nam modal zadaje.</li>
+				</ul>
+			</article>
+		</fieldset>
+
+		<button id="modalBtn" class="btn-primary-flat btn-ripple">CLICK ME</button>
+		<div id="simpleModal" class="modal">
+			<div class="modal-content-default">
+				<div class="modal-header">
+					<span class="closeBtn">&times;</span>
+					<h3>Default modal</h3>
+				</div>
+				<div class="modal-body">
+					<p>Bok...Ja sam modal prozor!</p>
+					Pritiskom na X ili na body zatvaramo modal prozor!
+				</div>
+				<div class="modal-footer">
+					<a>Cancel</a>
+					<a>Accept</a>
+				</div>	
+			</div>
+		</div>
+		<br>
+
+		<div class="col-sm-12 col-md-6 col-lg-4">
+			<div class="modal-content-default">
+				<div class="modal-header">
+					<span class="closeBtn">&times;</span>
+					<h3>Default modal</h3>
+				</div>
+				<div class="modal-body">
+					<p>Hello...I'm modal!</p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Ipsam ducimus possimus maxime officia quam vero facere rem? 
+				</div>
+				<div class="modal-footer">
+					<a>Cancel</a>
+					<a>Accept</a>
+				</div>	
+			</div>
+		</div>
+		<div class="col-sm-12 col-md-6 col-lg-4">
+			<div class="modal-content-primary">
+				<div class="modal-header">
+					<span class="closeBtn">&times;</span>
+					<h3>Primary modal</h3>
+				</div>
+				<div class="modal-body">
+					<p>Hello...I'm modal!</p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Ipsam ducimus possimus maxime officia quam vero facere rem? 
+				</div>
+				<div class="modal-footer">
+					<a>Cancel</a>
+					<a>Accept</a>
+				</div>	
+			</div>
+		</div>
+		<div class="col-sm-12 col-md-6 col-lg-4">
+			<div class="modal-content-success">
+				<div class="modal-header">
+					<span class="closeBtn">&times;</span>
+					<h3>Success modal</h3>
+				</div>
+				<div class="modal-body">
+					<p>Hello...I'm modal!</p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Ipsam ducimus possimus maxime officia quam vero facere rem? 
+				</div>
+				<div class="modal-footer">
+					<a>Cancel</a>
+					<a>Accept</a>
+				</div>	
+			</div>
+		</div>
+
+		<div class="col-sm-12 col-md-6 col-lg-4">
+			<div class="modal-content-info">
+				<div class="modal-header">
+					<span class="closeBtn">&times;</span>
+					<h3>Info modal</h3>
+				</div>
+				<div class="modal-body">
+					<p>Hello...I'm modal!</p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Ipsam ducimus possimus maxime officia quam vero facere rem? 
+				</div>
+				<div class="modal-footer">
+					<a>Cancel</a>
+					<a>Accept</a>
+				</div>	
+			</div>
+		</div>
+		<div class="col-sm-12 col-md-6 col-lg-4">
+			<div class="modal-content-warrning">
+				<div class="modal-header">
+					<span class="closeBtn">&times;</span>
+					<h3>Warrning modal</h3>
+				</div>
+				<div class="modal-body">
+					<p>Hello...I'm modal!</p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Ipsam ducimus possimus maxime officia quam vero facere rem? 
+				</div>
+				<div class="modal-footer">
+					<a>Cancel</a>
+					<a>Accept</a>
+				</div>	
+			</div>
+		</div>
+		<div class="col-sm-12 col-md-6 col-lg-4">
+			<div class="modal-content-danger">
+				<div class="modal-header">
+					<span class="closeBtn">&times;</span>
+					<h3>Danger modal</h3>
+				</div>
+				<div class="modal-body">
+					<p>Hello...I'm modal!</p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Ipsam ducimus possimus maxime officia quam vero facere rem? 
+				</div>
+				<div class="modal-footer">
+					<a>Cancel</a>
+					<a>Accept</a>
+				</div>	
+			</div>
+		</div>
+		
+
+		<br />
+		<code>
+&lt;div id="simpleModal" class="modal"&gt;
+&lt;div class="modal-content-default"&gt;
+&lt;div class="modal-header"&gt;
+	&lt;pan class="closeBtn"&gt;&times;&lt;/span&gt;
+	&lt;h3>Default modal&lt;/h3&gt;
+&lt;/div&gt;
+&lt;div class="modal-body"&gt;
+	&lt;p>Hello...I'm modal!&lt;/p&gt;
+	Lorem ipsum dolor sit amet consectetur adipisicing elit.
+	Ipsam ducimus possimus maxime officia quam vero facere rem? 
+&lt;/div&gt;
+&lt;div class="modal-footer"&gt;
+	&lt;h5>Cancel&lt;/h5&gt;
+	&lt;h5>Accept&lt;/h5&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+		</code>
+		<small style="float: right;">HTML</small>
+		<br />
+		<code>
+.modal {
+display: none;
+position: fixed;
+z-index: 99;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+overflow: auto;
+background-color: rgba(0,0,0,0.5); 
+}
+@mixin modal-content {
+background-color: #f4f4f4;
+margin: 5% auto;
+width: 70%;
+box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+animation-name: modalopen;
+animation-duration: 1s; 
+// border-left: 5px solid $color-primary;
+}
+.modal-content-default {
+@include modal-content();
+border-left: 8px solid $color-default;
+}
+.modal-content-primary {
+@include modal-content();
+border-left: 8px solid $color-primary;
+}
+.modal-content-success {
+@include modal-content();
+border-left: 8px solid $color-success;
+}
+.modal-content-info {
+@include modal-content();
+border-left: 8px solid $color-info;
+}
+.modal-content-warrning {
+@include modal-content();
+border-left: 8px solid $color-warrning;
+}
+.modal-content-danger {
+@include modal-content();
+border-left: 8px solid $color-danger;
+}
+.modal-header{
+padding: 15px;
+h3 {
+margin: 0;
+}
+}
+.modal-body {
+padding: 10px 20px;
+}
+.modal-footer {
+padding: 10px;
+color: #444444;
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+h5 {
+margin: 0 10px;
+}
+h5:hover {
+color: #7189bf;
+}
+}
+
+.closeBtn {
+color: #ccc;
+float: right;
+font-size: 30px;
+color: #ccc
+}
+.closeBtn:hover,.closeBtn:focus{
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+@keyframes modalopen {
+from{opacity: 0;}
+to{opacity: 1;}
+}
+		</code>
+		<small style="float: right;">SCSS</small>
+
+</div>
+<script src="../js/header.js"></script>
+<script src="../js/myscript.js"></script>
+</body>
+</html>

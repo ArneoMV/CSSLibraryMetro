@@ -1,0 +1,47 @@
+/* GRID BRAKEPOINT'S */
+
+// Extra small
+$screen-es: 150px;
+// Small tablets and large smartphones (lendscape view)
+$screen-sm: 320px;
+// Small tablets (portrait view)
+$screen-md: 480px;
+// Tablet and small desktops
+$screen-lg: 720px;
+// SITOLAB brakepoint
+$screen-lg-2: 920px;
+// Large tablets and desktops
+$screen-xl: 1200px;
+
+// MIXIN
+@mixin respond-to ($media) {
+    @if $media == extrasmall-screens {
+        @media only screen and (min-width: $screen-es + 1) and (max-width: $screen-md - 1) { @content; }
+    }
+    @else if $media == small-screens {
+        @media only screen and (min-width: $screen-sm + 1) and (max-width: $screen-md - 1) { @content; }
+    }
+    @else if $media == medium-screens {
+        @media only screen and (min-width: $screen-md + 1) and (max-width: $screen-lg - 1) { @content; }
+    }
+    @else if $media == large-screens {
+        @media only screen and (min-width: $screen-lg + 1) and (max-width: $screen-lg-2 - 1) { @content; }
+    }
+    @else if $media == large-2-screens {
+        @media only screen and (min-width: $screen-lg-2 + 1) and (max-width: $screen-xl - 1) { @content; }
+    }
+    @else if $media == extralarge-screens {
+        @media only screen and (min-width: $screen-xl) { @content; }
+    }
+}
+
+// KAKO KORISTITI
+// unijeti brakepoint u roditelj element
+.primjer {
+    @include respond-to(extrasmall-screens) {  }
+    @include respond-to(small-screens) {  }
+    @include respond-to(medium-screens) {  }
+    @include respond-to(large-screens) {  }
+    @include respond-to(large-2-screens) {  }
+    @include respond-to(extralarge-screens) {  }
+}

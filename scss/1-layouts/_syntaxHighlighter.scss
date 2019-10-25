@@ -1,0 +1,21 @@
+/* Syntax Highliter */
+code {
+    display: block;
+    margin: 10px auto;
+    white-space: pre-wrap;
+    background-color: #d6d6d6;
+    padding: 10px;
+    line-height: 1.5em;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 0.7em;
+    text-align: left;
+}
+.code-str { color:#090; }
+.code-elem{ color: #5ca0d3; }
+.code-comment { color:#999; }
+.code-curlyBracket { color:#2196f3; }
+
+.codeText {
+    margin: 3px 8px 0 0;
+    float: right;
+}

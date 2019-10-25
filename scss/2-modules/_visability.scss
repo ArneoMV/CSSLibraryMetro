@@ -1,0 +1,28 @@
+/* VISABILITY */
+
+// Class
+.visible {
+    visibility: visible;
+}
+.invisible {
+    visibility: hidden;
+}
+.invisible-demo {
+    visibility: hidden;
+    background: $primary-1;
+    border: 5px outset $danger-0;
+    padding: 10px;
+    &:hover {
+        visibility: visible;
+        cursor: pointer;
+        color: $white;
+    }
+}
+
+// Usage as a mixin
+.element {
+    @include invisible(visible);
+}
+.element {
+    @include invisible(hidden);
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" lang="hr" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Colors</title>
+
+	<link rel="stylesheet" type="text/css" href="../css/app.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+	<header>
+		<div class="head">
+			<div class="head-item">
+				<a class="navbar-brand" href="https://www.tvz.hr">
+					<img src="../img/TvzLogo.png" alt="tvzLogo" style="width: 100px;">
+				</a>
+			</div>
+			<div class="head-item">
+				<h2>Colors</h2>
+			</div>
+			<div class="head-item">
+				<!-- Main navigation -->
+				<div class="hamburger">
+					<div class="burger burger-3" id="burger">
+						<input type="checkbox" name="burger3" id="mainNav" onclick="mainNavigation()" />
+						<label for="mainNav">
+							<span class="bar bar-1"></span>
+							<span class="bar bar-2"></span>
+							<span class="bar bar-3"></span>
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Main sidebar -->
+		<nav id="myNav"></nav>
+	</header>
+	
+<div class="filler"></div>
+<!--PAGE CONTENT-->
+<div class="container" id="page-content">
+
+	<fieldset>
+		<legend>Uputstva</legend>
+		<article>
+				<ul>
+					<li>Boje se mogu uključiti u projekt pomoću CSS klase, ili pomoću varijable pomoću SCSS-a</li>
+					<li>Koriste se četiri boje za prijenos informacija <span class="tp-0">primary</span>, <span class="tw-0">warrning</span>, <span class="td-0">danger</span>, te <span class="ts-0">success</span>.</li>
+					<li>Untar svake skupine boja napravljena je paleta boja od 5 boja.</li>
+				</ul>
+			</article>
+	</fieldset>
+		
+	<h2 id="colorPickerTitle">Color Picker</h2>
+	<div id="color-picker">
+		<div class="base-colors-container">
+			<div class="base-colors base-blue" data-color="primary">Primary</div>
+			<div class="base-colors base-yellow" data-color="warrning">Warrning</div>
+			<div class="base-colors base-red" data-color="danger">Danger</div>
+			<div class="base-colors base-green" data-color="success">Success</div>
+		</div>
+	</div>
+	<br />
+	<code>
+/*		COLOURS		*/
+// SASS style sheet */
+// Palette color codes */
+// Palette URL: http://paletton.com/#uid=70h0u0kBhvolREbrWBfDBoXInjr */
+
+// As hex codes */
+
+$primary-0: #095AA2;	// Main Primary color */
+$primary-1: #4686BF;
+$primary-2: #2371B7;
+$primary-3: #074781;
+$primary-4: #043764;
+
+$warrning-0: #FA9200;	// Main Secondary color (1) */
+$warrning-1: #FFB751;
+$warrning-2: #FFA320;
+$warrning-3: #C77400;
+$warrning-4: #9B5B00;
+
+$danger-0: #FA4E00;	// Main Secondary color (2) */
+$danger-1: #FF8751;
+$danger-2: #FF6620;
+$danger-3: #C73E00;
+$danger-4: #9B3000;
+
+$success-0: #00A969;	// Main Complement color */
+$success-1: #3EC491;
+$success-2: #18BC7E;
+$success-3: #008654;
+$success-4: #006941;
+
+// As RGBa codes */
+// color-primary / rgba-primary
+$primary-0: rgba(  9, 90,162,1);	// Main Primary color */
+$primary-1: rgba( 70,134,191,1);
+$primary-2: rgba( 35,113,183,1);
+$primary-3: rgba(  7, 71,129,1);
+$primary-4: rgba(  4, 55,100,1);
+// color-warrning / rgba-secondary-1
+$warrning-0: rgba(250,146,  0,1);	// Main Secondary color (1) */
+$warrning-1: rgba(255,183, 81,1);
+$warrning-2: rgba(255,163, 32,1);
+$warrning-3: rgba(199,116,  0,1);
+$warrning-4: rgba(155, 91,  0,1);
+// color-danger / rgba-secondary-2
+$danger-0: rgba(250, 78,  0,1);	// Main Secondary color (2) */
+$danger-1: rgba(255,135, 81,1);
+$danger-2: rgba(255,102, 32,1);
+$danger-3: rgba(199, 62,  0,1);
+$danger-4: rgba(155, 48,  0,1);
+// color-success / rgba-complement
+$success-0: rgba(  0,169,105,1);	// Main Complement color */
+$success-1: rgba( 62,196,145,1);
+$success-2: rgba( 24,188,126,1);
+$success-3: rgba(  0,134, 84,1);
+$success-4: rgba(  0,105, 65,1);
+
+// color-primary
+.primary-1 { background-color: #4686BF }
+.primary-2 { background-color: #2371B7 }
+.primary-0 { background-color: #095AA2 }
+.primary-3 { background-color: #074781 }
+.primary-4 { background-color: #043764 }
+// color-warrning
+.warrning-1 { background-color: #FFB751 }
+.warrning-2 { background-color: #FFA320 }
+.warrning-0 { background-color: #FA9200 }
+.warrning-3 { background-color: #C77400 }
+.warrning-4 { background-color: #9B5B00 }
+// color-danger
+.danger-1 { background-color: #FF8751 }
+.danger-2 { background-color: #FF6620 }
+.danger-0 { background-color: #FA4E00 }
+.danger-3 { background-color: #C73E00 }
+.danger-4 { background-color: #9B3000 }
+// color-success
+.success-1 { background-color: #3EC491 }
+.success-2 { background-color: #18BC7E }
+.success-0 { background-color: #00A969 }
+.success-3 { background-color: #008654 }
+.success-4 { background-color: #006941 }
+
+
+// Text clase's / span
+.tp-0 {color: $primary-0}
+.tp-1 {color: $primary-1}
+
+.tw-0 {color: $warrning-0}
+.td-0 {color: $danger-0}
+
+.ts-0 {color: $success-0}
+
+
+// colors
+$color-default: #212121;
+$color-info: #a6e3e9;
+$color-btn-hover: #4682B4;
+
+// Table
+$color-table-head: #4682B4;
+
+$white: #fff;
+$black: #333333;
+
+.white {color: #fff;}
+.black {color: #333333;}
+	</code>
+	<small class="float-right">SCSS</small>
+				
+</div>
+
+<script src="../js/header.js"></script>
+<script src="../js/colors.js"></script>
+<script src="../js/myscript.js"></script>
+</body>
+</html>
+
+	
