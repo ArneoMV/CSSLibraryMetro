@@ -1,0 +1,23 @@
+/* Breadcrumb trail container */
+#bread-trail {
+    background: #f2f2f2;
+    padding: 10px;
+  }
+  /* Trail tabs */
+  #bread-trail a {
+    color: #2b76a5;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #bread-trail a:after {
+    content: "\00BB";
+    margin: 0 10px;
+    color : #aaa;
+  }
+  /* Current tab */
+  #bread-trail a:last-child {
+    color: #db5248;
+  }
+  #bread-trail a:last-child:after {
+    content: "";
+  }
