@@ -1,6 +1,21 @@
 /* TABLE */
 
 @import "../2-modules/mixins.scss";
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+  }
+  
+  td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+	background-color: #dddddd;
+  }
 
 // Basic table
 table {
@@ -12,14 +27,13 @@ table {
 	table-layout: fixed;
 	line-height: 1.25em;/*15*/
 	border-spacing: 0;
+	font-family: "UbuntuMono", monospace;
 
 	th, td { 
 		margin: 0; 
-		padding: 0.4166em;/*10*/
-		font-size: 0.85em;/*12*/
-		text-align: center; 
+		padding: 0.9em;
+		font-size: 0.85em;
 		vertical-align: middle;
-		color: white;
 	}
 	thead {
 		@include clearfix();
@@ -29,20 +43,33 @@ table {
 	tbody {
 		background-color: $primary-1;
 		tr {
-			border: 0;
-		}
-		tr:hover {
-			background-color: $primary-2;
+			th {
+				background-color: $primary-0;
+				color: $white;
+				text-align: center; 
+				text-transform: uppercase;
+			}
+			td {
+				color: $black;
+				text-align: left; 
+			}
+			td:nth-child(1){
+				text-align: center; 
+			}
+			&:nth-child(even) {
+				background-color: $white;
+				color: $black;
+			}
 		}
 	}
 	@include breakpoint(desktop) { 
 		th, td {
-		font-size: 0.7em;
+			font-size: 0.7em;
 		} 
 	}
 	@include breakpoint(tablet) { 
 		th, td {
-		font-size: 0.6em;
+			font-size: 0.6em;
 		}
 		table {
 			display: block;

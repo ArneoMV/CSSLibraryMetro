@@ -21,7 +21,7 @@ document.getElementById("myNav").innerHTML =
                 +"<li><span class='tp-1'>Components</span></li>" 
                 +"<li><a href='../html/navigationMenu.html'>Navigation menu</a></li>"
                 +"<li><a href='../html/navbar.html'>Navbar</a></li>"
-                +"<li><a href='breadcrumb'><span class='td-0'>Breadcrumb</span></a></li>"
+                +"<li><a href='../html/breadcrumb.html'>Breadcrumb</a></li>"
                 +"<li><a href='../html/closeIcon.html'>Close icon</a></li>"
                 +"<li><a href='../html/collapse.html'>Collapse</a></li>"
                 

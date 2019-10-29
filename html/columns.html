@@ -42,36 +42,76 @@
 <!--PAGE CONTENT-->
 <div class="container" id="page-content">	
 	<br />
-	<h4>Grid Sistem</h4>
-	<p>Grid sustav omogućuje do 12 stupaca na stranici.Ako ne želite koristiti svih 12 stupaca pojedinačno, možete grupirati stupce za stvaranje širih stupaca:</p>
+	<article>
+		<p>Columns system is a structure that allows for content to be stacked both vertically and horizontally in a consistent and easily manageable fashion. Additionally, grid system code is project-agnostic giving it a high degree of portability so that it may be adopted on new projects.</p>
+		
+		<ul>
+			<h4>The Benefits</h4>
+			<li><span class="tw-0">They increase productivity</span>  by providing simple and predictable layout scaffolding to HTML design. The structure of a page can be formulated quickly without second guessing its precision or cross-browser compatibility.</li>
+			<li><span class="tw-0">They are versatile</span>  in how layouts can be constructed, being adaptable in varying combinations of rows and columns. They even support nested grids for more complex use cases. No matter your layout requirements, a grid system is almost certainly well suited.</li>
+			<li><span class="tw-0">They are ideal for responsive layouts</span> This is where grid systems reign supreme. They make it incredibly easy to create mobile friendly interfaces that are adaptable to different sized viewports.</li>
+		</ul>
 
-	<p>Grid sustav je osjetljiv, a stupci će se preurediti ovisno o veličini zaslona: na velikom ekranu može izgledati bolje s sadržajem organiziranim u tri stupca, ali na malom zaslonu bilo bi bolje da su stavke sadržaja složene na jedan na drugi.
-		Savjet: Zapamtite da stupci mreže trebaju imati do dvanaest za redak. Više od toga, stupci će se slagati bez obzira na vidni okvir
-	</p>
-	<fieldset>
-		<legend>Uputstva</legend>
-		<p>-grid sistem se sastoji od četiri klase</p>
-		<article>
-			<ul>
-				<li><span class="tw-0">col-xs-*</span> (za telefone - ekrani manji od 768px)</li>
-				<li><span class="tw-0">col-sm-*</span> (za tablice - ekrani jednaki ili veći od 768px širine)</li>
-				<li><span class="tw-0">col-md-*</span> (za mala prijenosna računala - ekrani jednaki ili veći od 992px širine)</li>
-				<li><span class="tw-0">col-lg-*</span> (za prijenosna i stolna računala - ekrani jednaki ili veći od 1200px širine)</li>
-			</ul>
-		</article>
-	</fieldset>
+		<h4>The Primary Components</h4>
+		<p>Grid systems include two key components: rows and columns. Rows are used to accommodate the columns. 
+			Columns make up the final structure and contain the actual content. 
+			grid system also includes containers, which serve as wrappers for the layout.</p>
 
-	<p>Gore navedene klase mogu se kombinirati kako bi se stvorili dinamičniji i fleksibilniji rasporedi.
-		Savjet: Svaka klasa se povećava, pa ako želite postaviti iste širine za xs i sm, potrebno je samo navesti xs.</p>
+		<h4>Calculating Column Widths</h4>
+		<p>
+			Before we can begin making calculations, we need to determine the maximum amount of columns per row. A popular choice is 12 as it boasts flexibility given that it is divisible by 1, 2, 3, 4, and 6. This permits a variety of different combinations that still allow for evenly distributed columns of the same size.
+			<br />
+			It’s important to understand that by going with a maximum of 12 columns per row, you need to fulfill that amount for every row regardless of how many columns you want. For example, if you wanted only a row of 3 equal columns, you would use 3 elements that each span 4 columns (4×3=12). Exceeding the sum of 12 will result in the extra column(s) wrapping to a new line.
+			<br />
+			Now that we know the maximum number of columns, next we need to determine the width of a single (1/12) column using the following formula:
+			<br /><br />
+			scw = (100 – (m * (mc – 1))) / mc
+			<br /><br />
+			Where:
+			<br />
+			scw = single column width<br /><br />
+			m = margin (1.6%)<br /><br />
+			mc = maximum columns (12)<br /><br />
+			When we plug in the numbers, we get a single column width of 8.33%. From here we can use this number to calculate the rest of the column widths. The formula for this is:
+			<br /><br />
+			cw = (scw * cs) + (m * (cs – 1))
+			<br /><br />
+			Where:
+			<br /><br />
+			cw = column width<br /><br />
+			scw = single column width (8.33%)<br /><br />
+			cs = column span (1-12)<br /><br />
+			m = margin (1.6%)<br /><br />
+			Applying this formula for each of the 12 columns results in the following CSS.
+		</p>
+		<br /><br />
+	</article>
 
-	<h5>Pravila Grid sustava</h5>
-	<p>Neka pravila sustava mreže za pokretanje:
-		<br />Redovi moraju biti postavljeni unutar spremnika (fiksne širine) ili tekućine za kontejnere (pune širine) za pravilno poravnanje i oblaganje.
-		<br />Koristite retke za izradu horizontalnih skupina stupaca.
-		<br />Sadržaj treba postaviti unutar stupaca, a samo stupci mogu biti neposredna djeca redaka. Unaprijed definirane klase kao što su .row i .col-sm-4 dostupne su za brzo pravljenje matrica. Stupci stvaraju žljebove (razmake između sadržaja stupca) putem dodatka, te se padding pomiče u retke za prvi i zadnji stupac pomoću negativne margine na .rows. Stupci mreže izrađuju se navođenjem broja dostupnih stupaca koje želite rasporediti.
-		<br />Na primjer, tri jednaka stupca koristit će tri .col-sm-4. Širine stupaca su u postocima, tako da su uvijek tekuće i veličine u odnosu na njihov nadređeni element
-	</p>
+	<table>
+		<tr>
+			<th>class</th>
+			<th>explanation</th>
+		</tr>
+		<tr>
+			<td><span class="tw-0">col-xs-*</span></td>
+			<td> - for phones - screens smaller than 768px</td>
+		</tr>
+		<tr>
+			<td><span class="tw-0">col-sm-*</span></td>
+			<td> - for tables - screens equal to or greater than 768px wide</td>
+		</tr>
+		<tr>
+			<td><span class="tw-0">col-md-*</span></td>
+			<td> - for small laptops - Screens equal to or greater than 992px wide</td>
+		</tr>
+		<tr>
+			<td><span class="tw-0">col-lg-*</span></td>
+			<td> - for laptops and desktops - screens equal to or larger than 1200px wide</td>
+		</tr>
+	</table>
 
+	<p>The classes listed can be combined to create more dynamic and flexible schedules</p>
+	<br />
 
 
 	<div class="col-wd-12">
