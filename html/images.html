@@ -10,38 +10,42 @@
 </head>
 
 <body>
-	<header>
-		<div class="head">
-			<div class="head-item">
-				<a class="navbar-brand" href="https://www.tvz.hr">
-					<img src="../img/TvzLogo.png" alt="tvzLogo" style="width: 100px;">
-				</a>
-			</div>
-			<div class="head-item">
-				<h2>Images</h2>
-			</div>
-			<div class="head-item">
-				<!-- Main navigation -->
-				<div class="hamburger">
-					<div class="burger burger-3" id="burger">
-						<input type="checkbox" name="burger3" id="mainNav" onclick="mainNavigation()" />
-						<label for="mainNav">
-							<span class="bar bar-1"></span>
-							<span class="bar bar-2"></span>
-							<span class="bar bar-3"></span>
-						</label>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Main sidebar -->
-		<nav id="myNav"></nav>
-	</header>
+	<header id="myNav"></header>
 	
 <div class="filler"></div>
 <!--PAGE CONTENT-->
-<div class="container" id="page-content">
+<div class="container">
 	<section>
+		<h2>Images</h2>
+		<p>It is unnecessary to display large images on screens designed for smaller images. This issue has been resolved in the HTML5 standard by using two new attributes within the <img> tag: srcset and sizes. The srcset attribute allows the <img> tag to point the browser to multiple files. Sizes determines the width of the screen and the image that will be used for that screen width. This technique saves device memory and displays better quality images.</p>
+		
+		<table>
+			<tr>
+				<th>CSS</th>
+				<th>explanation</th>
+			</tr>
+			<tr>
+				<td><span class="txt-primary-4 ">&lt;img&gt;</span></td>
+				<td>- tag uses four attributes: srcset, sizes, src, and alt</td>
+			</tr>
+			<tr>
+				<td><span class="txt-primary-4 ">&lt;figure&gt; & &lt;figcaption&gt; </span></td>
+				<td>- Inside the HTML, we used a &lt;figure&gt; tag that served to add an &lt;figcaption&gt; element that allowed us to print the image or media title</td>
+			</tr>
+			<tr>
+				<td><span class="txt-primary-4 ">&lt;src&gt;</span></td>
+				<td>- is used to find the root of the image we are showing</td>
+			</tr>
+			<tr>
+				<td><span class="txt-primary-4 ">&lt;alt&gt;</span></td>
+				<td>- is used to print the name of an image if the image cannot be displayed on the screen</td>
+			</tr>
+			<tr>
+				<td><span class="txt-primary-4 ">&lt;srcset&gt</span> </td>
+				<td>- attribute serves to retrieve a set of images for different screen images within</td>
+			</tr>
+		</table>
+
 		<fieldset>
 			<legend>Uputstva</legend>
 			<article>
@@ -61,7 +65,7 @@
 							../img/slika480.png 1.5x,
 							../img/slika720.png 2x"
 					src="../img/slika480.png" alt="slika">
-					<figcaption>slika širina.480px</figcaption>
+					<figcaption>image width:480px</figcaption>
 			</figure>
 		</div>
 		<div class="col-sm-12 col-md-6 col-lg-4">
@@ -70,7 +74,7 @@
 							../img/slika480.png 1.5x,
 							../img/slika720.png 2x"
 					src="../img/slika720.png" alt="slika">
-					<figcaption>slika širina.720px</figcaption>
+					<figcaption>image width:720px</figcaption>
 			</figure>
 		</div>
 		<div class="col-sm-12 col-md-6 col-lg-4">
@@ -79,7 +83,7 @@
 							../img/slika480.png 1.5x,
 							../img/slika720.png 2x"
 					src="../img/slika720.png" alt="slika">
-					<figcaption>slika širina.720px</figcaption>
+					<figcaption>image width:720px</figcaption>
 			</figure>
 		</div>
 		<div class="col-sm-12 col-md-6 col-lg-4">
@@ -92,7 +96,7 @@
 							800px"
 					src="../img/slika320.png" alt="slika">
 	
-				<figcaption>slika širina.320px</figcaption>
+				<figcaption>image width:320px</figcaption>
 			</figure>
 		</div>
 	
@@ -110,11 +114,11 @@
 		</code>
 		<small style="float: right;">HTML</small>
 		<br />
-		<p>Proširivanjem CSS koda sa iframe, object, embed, te video omogučujemo responzivnu razlučivot ostalih media elemenata. </p>
+		<p>By extending CSS code with iframe, object, embed, and video, we enable responsive resolution of other media elements.</p>
 		<code>
 img, iframe, object, embed, video {
-width: 100%;
-max-width: 100%;
+	width: 100%;
+	max-width: 100%;
 }
 		</code>
 		<small style="float: right;">SCSS</small>

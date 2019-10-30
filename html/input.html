@@ -10,85 +10,304 @@
 </head>
 
 <body>
-	<header>
-		<div class="head">
-			<div class="head-item">
-				<a class="navbar-brand" href="https://www.tvz.hr">
-					<img src="../img/TvzLogo.png" alt="tvzLogo" style="width: 100px;">
-				</a>
-			</div>
-			<div class="head-item">
-				<h2>Input</h2>
-			</div>
-			<div class="head-item">
-				<!-- Main navigation -->
-				<div class="hamburger">
-					<div class="burger burger-3" id="burger">
-						<input type="checkbox" name="burger3" id="mainNav" onclick="mainNavigation()" />
-						<label for="mainNav">
-							<span class="bar bar-1"></span>
-							<span class="bar bar-2"></span>
-							<span class="bar bar-3"></span>
-						</label>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Main sidebar -->
-		<nav id="myNav"></nav>
-	</header>
+	<header id="myNav"></header>
     
 <div class="filler"></div>
 <!--PAGE CONTENT-->
+<div class="container">
+    <section>
+        <h2>Input</h2>
+        <p>
+            The HTML &lt;input&gt; element is used to create interactive web forms. They are used to accept information from users. <br/>
+            Input accepts a variety of attribute values. Depending on the value of the attribute, the input element will perform the associated actions. If the attribute is not specified, the default default attribute value is text.
+        </p>
 
-<section>
-    <h4>Input</h4>
-    <p>One line input</p>
-    <br/>
-    <fieldset>
-        <legend>Uputstva</legend>
-        <article>
-            <ul>
-                <li><span class="tw-0"></span></li>
-                <li><span class="tw-0"></span></li>
-            </ul>
-        </article>
-    </fieldset>
-<br /><br />
+        <br />
 
-    <div class="inputFilled-sm">
-        <input type="text" required="required" pattern="\S+.*"/>
-        <label for="input" class="control-label" >input text small</label>
-    </div>
-    <div class="inputFilled-md">
-        <input type="text"  required="required" pattern="\S+.*"/>
-        <label for="input" class="control-label" >input text medium</label>
-    </div>
-    <div class="inputFilled">
-        <input type="text"  required="required" pattern="\S+.*"/>
-        <label for="input" class="control-label" >input text 100%</label>
-    </div>
+        <h4>&lt;input&gt; types</h4>
+        <p>How an &lt;input&gt; works varies depending on the value of its type attribute. <br > Here are some of the basic attribute types.</p>
+        <br />
+        <table>
+            <tr>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><span class="txt-primary-4 ">text</span></td>
+                <td>The default value. A single-line text field. Line-breaks are automatically removed from the input value.</td>
+            </tr>
+            <tr>
+                <td><span class="txt-primary-4 ">date</span></td>
+                <td>A control for entering a date (year, month, and day, with no time) opening a date picker or numeric  wheels for month, hour, etc.,  when active in supporting browsers.</td>
+            </tr>
+            <tr>
+                <td><span class="txt-primary-4 ">number</span></td>
+                <td>A control for entering a number; displays a spinner and adds default validation when supported. Displays a numeric keypad in some devices with dynamic keypads.	</td>
+            </tr>
+            <tr>
+                <td><span class="txt-primary-4 ">checkbox</span></td>
+                <td>A check box allowing single values to be selected/deselected.</td>
+            </tr>
+            <tr>
+                <td><span class="txt-primary-4 ">submit</span></td>
+                <td>A button that submits the form.</td>
+            </tr>
+        </table>
 
-    <br /><br />
+        <br /><br />
 
-    <input class="inputOutlined-sm" type="text" pattern="\S+.*" placeholder="input text small"/>
-    <br/>
-    <input class="inputOutlined-md" type="text" pattern="\S+.*" placeholder="input text medium"/>
-    <br />
-    <input class="inputOutlined" type="text" pattern="\S+.*" placeholder="input text 100%"/>
-    <br /><br />
- 
+        <h4>Attributes</h4>
+        <p>Attributes are a powerful part of the &lt;input&gt; element. Each &lt;input&gt; element is based on an HTMLInputeElement interface, so technically all &lt;input&gt; elements share exactly the same set of attributes. However, in reality, most attributes only affect a certain subset of input types.</p>
+        <table>
+            <tr>
+                <th>Attribute</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><span class="txt-primary-4 ">required</span></td>
+                <td>almost all</td>
+                <td>Boolean. A value is required or must be check for the form to be submittable</td>
+            </tr>
+            <tr>
+                <td><span class="txt-primary-4 ">pattern</span></td>
+                <td>password, text, tel</td>
+                <td>Pattern the value must match to be valid</td>
+            </tr>
+            <tr>
+                <td><span class="txt-primary-4 ">checked</span></td>
+                <td>radio, checkbox</td>
+                <td>Whether the command or control is checked</td>
+            </tr>
+            <tr>
+                <td><span class="txt-primary-4 ">form</span></td>
+                <td>all</td>
+                <td>Associates the control with a form element</td>
+            </tr>
+            <tr>
+                <td><span class="txt-primary-4 ">placeholder</span></td>
+                <td>password, search, tel, text, url</td>
+                <td>content to be appear in the form control when the form control is empty</td>
+            </tr>
+        </table>
+        
+        <br /><br />
 
-    <code>
-    
-    </code>
-    <small class="codeText">HTML</small><br />
-    <code>
-                
-    </code>
-    <small class="codeText">SCSS</small><br>
-</section>
+        <h3>Examples of input elements</h3>
 
+        <h4>Input with the lower border</h4>
+        <div class="inputFilled-sm">
+            <input type="text" required="required" pattern="\S+.*"/>
+            <label for="input" class="control-label" >input text small</label>
+        </div>
+        <div class="inputFilled-md">
+            <input type="text"  required="required" pattern="\S+.*"/>
+            <label for="input" class="control-label" >input text medium</label>
+        </div>
+        <div class="inputFilled">
+            <input type="text"  required="required" pattern="\S+.*"/>
+            <label for="input" class="control-label" >input text 100%</label>
+        </div>
+
+        <br /><br />
+
+        <h4>Input with the full border</h4>
+        <input class="inputOutlined-sm" type="text" pattern="\S+.*" placeholder="input text small"/>
+        <br/>
+        <input class="inputOutlined-md" type="text" pattern="\S+.*" placeholder="input text medium"/>
+        <br />
+        <input class="inputOutlined" type="text" pattern="\S+.*" placeholder="input text 100%"/>
+        <br /><br />
+        <p>The following table shows the classes we used to create our input elements.</p>
+        <table>
+            <tr>
+                <th>Class</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><span class="txt-primary-4 ">inputFilled</span></td>
+                <td>class is used to style an input element that has only the lower border. The default width is 100%</td>
+            </tr>
+            <tr>
+                <td><span class="txt-primary-4 ">inputFilled-sm</span></td>
+                <td>inputFilled-sm has a fixed width of 150px.</td>
+            </tr>
+            <tr>
+                <td><span class="txt-primary-4 ">inputFilled-md</span></td>
+                <td>inputFilled-sm has a fixed width of 300px</td>
+            </tr>
+            <tr>
+                <td><span class="txt-primary-4 ">control_label</span></td>
+                <td>class is inserted inside the &lt;label&gt; element to execute the text shift effect</td>
+            </tr>
+            <tr>
+                <td><span class="txt-primary-4 ">inputOutlined</span></td>
+                <td>class is used to style an input element that has full border. The default width is 100%</td>
+            </tr>
+            <tr>
+                <td><span class="txt-primary-4 ">inputOutlined-sm</span></td>
+                <td>inputOutlined-sm has a fixed width of 150px.</td>
+            </tr>
+            <tr>
+                <td><span class="txt-primary-4 ">inputOutlined-md</span></td>
+                <td>inputOutlined-sm has a fixed width of 300px.</td>
+            </tr>
+        </table>
+
+        <br />
+        <br />
+
+        <code>
+            //Input with the lower border
+            &lt;div class="inputFilled-sm"&gt;
+                &lt;input type="text" required="required" pattern="\S+.*"/&gt;
+                &lt;label for="input" class="control-label" >input text small&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="inputFilled-md"&gt;
+                &lt;input type="text"  required="required" pattern="\S+.*"/&gt;
+                &lt;label for="input" class="control-label" >input text medium&lt;/label&gt;
+            &lt;/div&gt;
+            &lt;div class="inputFilled"&gt;
+                &lt;input type="text"  required="required" pattern="\S+.*"/&gt;
+                &lt;label for="input" class="control-label" >input text 100%&lt;/label&gt;
+            &lt;/div&gt;
+            
+            
+            //Input with the full border
+            &lt;input class="inputOutlined-sm" type="text" pattern="\S+.*" placeholder="input text small"/&gt;
+
+            &lt;input class="inputOutlined-md" type="text" pattern="\S+.*" placeholder="input text medium"/&gt;
+
+            &lt;input class="inputOutlined" type="text" pattern="\S+.*" placeholder="input text 100%"/&gt;
+        </code>
+        <small class="codeText">HTML</small><br />
+        <code>
+        textarea:focus, input:focus{
+            outline: none;
+        }
+        
+        @mixin inputOutlined {
+            height: 30px;
+            width: auto;
+            border: 1px solid $black;
+            background-color: transparent;
+            margin: 3px 0;
+            padding-left: 10px;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            border-radius: 5px;
+            &:focus {
+                border: 0;
+                border: 2px solid $primary-0;
+            }
+        }
+        @mixin inputGroup {
+            position: relative;
+            margin-top: 1.25rem;
+            margin-bottom: 1.25rem;
+            border-bottom: 1px solid $black;
+            .control-label {
+                font-family: 'UbuntuMono', monospace;
+                position: absolute;
+                top: 0.25rem;
+                pointer-events: none;
+                padding-left: 0.125rem;
+                z-index: 1;
+                color: #b3b3b3;
+                font-size: 1rem;
+                font-weight: normal;
+                -webkit-transition: all 0.28s ease;
+                transition: all 0.28s ease;
+            }
+            .bar-form {
+            position: relative;
+            border-bottom: 0.0625rem solid $black;
+            display: block;
+            }
+            input, textarea {
+                width: 100%;
+                display: block;
+                background: none;
+                padding: 0.125rem 0.125rem 0.0625rem;
+                font-size: 1rem;
+                line-height: 1.9;
+                color: transparent;
+                border-width: 0;
+                border-color: transparent;
+                -webkit-transition: all 0.28s ease;
+                transition: all 0.28s ease;
+            }
+            input {
+                /* Show green borders when valid */
+                &:focus, &:valid, &.form-file, &.has-value {
+                    border-bottom: 2px solid $primary-0;
+                    color: $black;
+                }
+            }
+            textarea {
+            &:focus, &:valid, &.form-file, &.has-value {
+                color: #333;
+                }
+            }
+            input {
+            &:focus ~ .control-label, &:valid ~ .control-label, &.form-file ~ .control-label, &.has-value ~ .control-label {
+                font-size: 0.8rem;
+                color: gray;
+                top: -1rem;
+                left: 0;
+                }
+            }
+            textarea {
+            &:focus ~ .control-label, &:valid ~ .control-label, &.form-file ~ .control-label, &.has-value ~ .control-label {
+                font-size: 0.8rem;
+                color: gray;
+                top: -1rem;
+                left: 0;
+                }
+            }
+            select:focus, input:focus, textarea:focus {
+            outline: none;
+            }
+            select:focus ~ .control-label, input:focus ~ .control-label, textarea:focus ~ .control-label {
+            color: $primary-0;
+            font-family: 'UbuntuMono', monospace;
+            }
+            select:focus ~ .bar-form::before, input:focus ~ .babar-formr::before, textarea:focus ~ .bar-form::before {
+            width: 100%;
+            left: 0;
+            }
+        }  
+        
+        .inputFilled-sm {
+            @include inputGroup();
+        
+            width: 150px;
+        }
+        .inputFilled-md {
+            @include inputGroup();
+            width: 300px;
+        }
+        .inputFilled {
+            @include inputGroup();
+            width: 100%;
+        }
+        
+        .inputOutlined-sm {
+            @include inputOutlined();
+            width: 150px;
+        }
+        .inputOutlined-md {
+            @include inputOutlined();
+            width: 300px;
+        }
+        .inputOutlined {
+            @include inputOutlined();
+            width: 100%;
+        }         
+        </code>
+        <small class="codeText">SCSS</small><br>
+    </section>
+</div>
 <!-- multi-step form -->
 
 

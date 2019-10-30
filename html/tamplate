@@ -1,0 +1,49 @@
+	
+    <section>
+		<article>
+            <h2></h2>
+            <p> </p>
+
+			<ul>
+				<li></li>
+				<li> </li>
+			</ul>
+
+			<h4> </h4>
+			<ul>
+				<li> </li>
+				<li> </li>
+			</ul>
+
+			<h4></h4>
+			<ul>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+			</ul>
+		</article>
+
+
+		<table>
+			<tr>
+				<th>class</th>
+				<th>explanation</th>
+			</tr>
+			<tr>
+				<td><span class="txt-primary-4 "> </span></td>
+				<td> </td>
+			</tr>
+			<tr>
+				<td><span class="txt-primary-4 "> </span></td>
+				<td> </td>
+			</tr>
+		</table>
+    </section>
+
+
+.txt-primary-0 { color: $primary-0};
+.txt-primary-4 { color: $primary-4};
+.txt-warrning-0 { color: $warrning-0};
+.txt-danger-0 { color: $danger-0};
+.txt-success-0 { color: $success-0};
+

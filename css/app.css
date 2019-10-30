@@ -84,6 +84,14 @@
   background-color: #006941;
 }
 
+.white {
+  color: #fff;
+}
+
+.black {
+  color: #333333;
+}
+
 .tp-0 {
   color: #095aa2;
 }
@@ -101,7 +109,7 @@
 }
 
 .tw-0 {
-  color: #fa9200;
+  color: #043764;
 }
 
 .td-0 {
@@ -112,12 +120,24 @@
   color: #00a969;
 }
 
-.white {
-  color: #fff;
+.txt-primary-0 {
+  color: #095aa2;
 }
 
-.black {
-  color: #333333;
+.txt-primary-4 {
+  color: #043764;
+}
+
+.txt-warrning-0 {
+  color: #fa9200;
+}
+
+.txt-danger-0 {
+  color: #fa4e00;
+}
+
+.txt-success-0 {
+  color: #00a969;
 }
 
 /* OTHER STYLES */
@@ -212,7 +232,8 @@
 }
 
 .collapsed {
-  max-height: 350px;
+  height: auto;
+  max-height: 500px;
   padding: 20px;
 }
 
@@ -615,9 +636,12 @@ table {
 }
 
 td, th {
-  border: 1px solid #dddddd;
+  border: 1px solid #333333;
   text-align: left;
   padding: 8px;
+  width: auto;
+  height: auto;
+  max-width: 100px;
 }
 
 tr:nth-child(even) {
@@ -647,15 +671,21 @@ table th, table td {
   vertical-align: middle;
 }
 table thead {
-  background-color: #043764;
+  background-color: #4686bf;
 }
 table thead::after {
   display: block;
   content: "";
   clear: both;
 }
+table thead th {
+  background-color: #095aa2;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
 table tbody {
-  background-color: #4686bf;
+  background-color: rgba(70, 134, 191, 0.5);
 }
 table tbody tr th {
   background-color: #095aa2;
@@ -2697,8 +2727,7 @@ fieldset .form-radio, fieldset .form-group {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 65px;
   grid-template-areas: "logo naslov naslov hamburger";
-  background-color: rgba(207, 199, 248, 0.95);
-  /* Black w/opacity/see-through */
+  background-color: #fff;
   z-index: 100;
 }
 .sideNavigation img {
@@ -3457,6 +3486,14 @@ textarea:focus, input:focus {
   background-color: #006941;
 }
 
+.white {
+  color: #fff;
+}
+
+.black {
+  color: #333333;
+}
+
 .tp-0 {
   color: #095aa2;
 }
@@ -3474,7 +3511,7 @@ textarea:focus, input:focus {
 }
 
 .tw-0 {
-  color: #fa9200;
+  color: #043764;
 }
 
 .td-0 {
@@ -3485,12 +3522,24 @@ textarea:focus, input:focus {
   color: #00a969;
 }
 
-.white {
-  color: #fff;
+.txt-primary-0 {
+  color: #095aa2;
 }
 
-.black {
-  color: #333333;
+.txt-primary-4 {
+  color: #043764;
+}
+
+.txt-warrning-0 {
+  color: #fa9200;
+}
+
+.txt-danger-0 {
+  color: #fa4e00;
+}
+
+.txt-success-0 {
+  color: #00a969;
 }
 
 /* OTHER STYLES */
@@ -3585,7 +3634,8 @@ textarea:focus, input:focus {
 }
 
 .collapsed {
-  max-height: 350px;
+  height: auto;
+  max-height: 500px;
   padding: 20px;
 }
 
@@ -5676,7 +5726,8 @@ ol li::before {
 }
 
 code {
-  height: 400px;
+  height: auto;
+  max-height: 400px;
   overflow-x: scroll;
 }
 

@@ -8,9 +8,12 @@ table {
   }
   
   td, th {
-	border: 1px solid #dddddd;
+	border: 1px solid $black;
 	text-align: left;
 	padding: 8px;
+	width: auto;
+	height: auto;
+	max-width: 100px;
   }
   
   tr:nth-child(even) {
@@ -37,11 +40,17 @@ table {
 	}
 	thead {
 		@include clearfix();
-		background-color: $primary-4;
+		background-color: $primary-1;
+		th {
+			background-color: $primary-0;
+			color: $white;
+			text-align: center; 
+			text-transform: uppercase;
+		}
 	}
 
 	tbody {
-		background-color: $primary-1;
+		background-color: $table-primary-1;
 		tr {
 			th {
 				background-color: $primary-0;

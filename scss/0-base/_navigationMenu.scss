@@ -53,7 +53,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 65px;
     grid-template-areas: "logo naslov naslov hamburger";  
-    background-color: rgba(207, 199, 248, 0.95); /* Black w/opacity/see-through */
+    background-color: $white;
     z-index: 100;
     img {
         width: 50px;

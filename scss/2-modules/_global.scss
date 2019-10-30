@@ -98,8 +98,9 @@ ol {
 }
 
 code {
-    height: 400px;
-    overflow-x:scroll;
+    height: auto;
+    max-height: 400px;
+    overflow-x: scroll;
 }
 .hidden {
     display: none;

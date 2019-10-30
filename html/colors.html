@@ -10,50 +10,33 @@
 </head>
 
 <body>
-	<header>
-		<div class="head">
-			<div class="head-item">
-				<a class="navbar-brand" href="https://www.tvz.hr">
-					<img src="../img/TvzLogo.png" alt="tvzLogo" style="width: 100px;">
-				</a>
-			</div>
-			<div class="head-item">
-				<h2>Colors</h2>
-			</div>
-			<div class="head-item">
-				<!-- Main navigation -->
-				<div class="hamburger">
-					<div class="burger burger-3" id="burger">
-						<input type="checkbox" name="burger3" id="mainNav" onclick="mainNavigation()" />
-						<label for="mainNav">
-							<span class="bar bar-1"></span>
-							<span class="bar bar-2"></span>
-							<span class="bar bar-3"></span>
-						</label>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Main sidebar -->
-		<nav id="myNav"></nav>
-	</header>
+	<header id="myNav"></header>
 	
 <div class="filler"></div>
 <!--PAGE CONTENT-->
-<div class="container" id="page-content">
+<div class="container">
+<section>
+	<h2>Colors</h2>
+	<p>Metro allows the use of four colors to transmit information: blue (primary), orange (warrning), red (danger), and green (success). In addition, we use white and black that do not fit into the spectrum of the other four colors.</p>
 
-	<fieldset>
-		<legend>Uputstva</legend>
-		<article>
-				<ul>
-					<li>Boje se mogu uključiti u projekt pomoću CSS klase, ili pomoću varijable pomoću SCSS-a</li>
-					<li>Koriste se četiri boje za prijenos informacija <span class="tp-0">primary</span>, <span class="tw-0">warrning</span>, <span class="td-0">danger</span>, te <span class="ts-0">success</span>.</li>
-					<li>Untar svake skupine boja napravljena je paleta boja od 5 boja.</li>
-				</ul>
-			</article>
-	</fieldset>
-		
-	<h2 id="colorPickerTitle">Color Picker</h2>
+	<article>
+		<ul>
+			<li><span class="txt-primary-0 ">Blue </span> - openness, intelligence, faith, stability, clarity</li>
+			<li><span class="txt-warrning-0 ">Orange </span> - active, happiness, enthusiasm, creativity, appetite</li>
+			<li><span class="txt-danger-0 ">Red </span> - aggression, passion, exciting, dramatic, love </li>
+			<li><span class="txt-success-0 ">Green </span> -  nature, calming, growth, freshness, hope, wealth, education</li>
+			<li><span class="black">White </span> - purity, perfection, light</li>
+			<li><span class="black">Balck </span> - death, evil, power, elegance</li>
+		</ul>
+
+		<p>Colors are defined using variables that can be used within SCSS. Within each color group, a palette of five different color tones was made. 
+			In order to use color, it is necessary to write its variable to the location of the value that is intended to display the color.
+				If there is a need to change color within the Metro work environment, this can be easily accomplished within the <span class="tw-0">"_colors.scss"</span> folder.</p>
+	</article>
+
+	<br/>
+	<h3 id="colorPickerTitle">Color Picker</h3>
+	<p>Click on the color you want to see and select the class you want.</p>
 	<div id="color-picker">
 		<div class="base-colors-container">
 			<div class="base-colors base-blue" data-color="primary">Primary</div>
@@ -62,6 +45,7 @@
 			<div class="base-colors base-green" data-color="success">Success</div>
 		</div>
 	</div>
+
 	<br />
 	<code>
 /*		COLOURS		*/
@@ -172,7 +156,7 @@ $black: #333333;
 .black {color: #333333;}
 	</code>
 	<small class="float-right">SCSS</small>
-				
+</section>		
 </div>
 
 <script src="../js/header.js"></script>

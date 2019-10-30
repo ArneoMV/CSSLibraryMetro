@@ -113,23 +113,23 @@ function activeColor() {
             h1currentColor.style.color = "#FA4E00";
 
             clShadeColors[0].style.backgroundColor = "#FF8751";
-            clShadeColorWeight[0].innerHTML = "danger-1";
+            clShadeColorWeight[0].innerHTML = ".danger-1";
             clShadeColorHex[0].innerHTML = "#FF8751";
 
             clShadeColors[1].style.backgroundColor = "#FF6620";
-            clShadeColorWeight[1].innerHTML = "danger-2";
+            clShadeColorWeight[1].innerHTML = ".danger-2";
             clShadeColorHex[1].innerHTML = "#FF6620";
 
             clShadeColors[2].style.backgroundColor = "#FA4E00";
-            clShadeColorWeight[2].innerHTML = "danger-0";
+            clShadeColorWeight[2].innerHTML = ".danger-0";
             clShadeColorHex[2].innerHTML = "#FA4E00";
 
             clShadeColors[3].style.backgroundColor = "#C73E00";
-            clShadeColorWeight[3].innerHTML = "danger-3";
+            clShadeColorWeight[3].innerHTML = ".danger-3";
             clShadeColorHex[3].innerHTML = "#C73E00";
 
             clShadeColors[4].style.backgroundColor = "#9B3000";
-            clShadeColorWeight[4].innerHTML = "danger-4";
+            clShadeColorWeight[4].innerHTML = ".danger-4";
             clShadeColorHex[4].innerHTML = "#9B3000";
 
             break;
@@ -139,23 +139,23 @@ function activeColor() {
             h1currentColor.style.color = "#00A969";
 
             clShadeColors[0].style.backgroundColor = "#3EC491";
-            clShadeColorWeight[0].innerHTML = "success-1";
+            clShadeColorWeight[0].innerHTML = ".success-1";
             clShadeColorHex[0].innerHTML = "#3EC491";
 
             clShadeColors[1].style.backgroundColor = "#18BC7E";
-            clShadeColorWeight[1].innerHTML = "success-2";
+            clShadeColorWeight[1].innerHTML = ".success-2";
             clShadeColorHex[1].innerHTML = "#18BC7E";
 
             clShadeColors[2].style.backgroundColor = "#00A969";
-            clShadeColorWeight[2].innerHTML = "success-0";
+            clShadeColorWeight[2].innerHTML = ".success-0";
             clShadeColorHex[2].innerHTML = "#00A969";
 
             clShadeColors[3].style.backgroundColor = "#008654";
-            clShadeColorWeight[3].innerHTML = "success-3";
+            clShadeColorWeight[3].innerHTML = ".success-3";
             clShadeColorHex[3].innerHTML = "#008654";
 
             clShadeColors[4].style.backgroundColor = "#006941";
-            clShadeColorWeight[4].innerHTML = "success-4";
+            clShadeColorWeight[4].innerHTML = ".success-4";
             clShadeColorHex[4].innerHTML = "#006941";
 
             break;

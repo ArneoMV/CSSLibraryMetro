@@ -10,478 +10,465 @@
 </head>
 
 <body>
-	<header>
-		<div class="head">
-			<div class="head-item">
-				<a class="navbar-brand" href="https://www.tvz.hr">
-					<img src="../img/TvzLogo.png" alt="tvzLogo" style="width: 100px;">
-				</a>
-			</div>
-			<div class="head-item">
-				<h2>Table</h2>
-			</div>
-			<div class="head-item">
-				<!-- Main navigation -->
-				<div class="hamburger">
-					<div class="burger burger-3" id="burger">
-						<input type="checkbox" name="burger3" id="mainNav" onclick="mainNavigation()" />
-						<label for="mainNav">
-							<span class="bar bar-1"></span>
-							<span class="bar bar-2"></span>
-							<span class="bar bar-3"></span>
-						</label>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Main sidebar -->
-		<nav id="myNav"></nav>
-	</header>
+	<header id="myNav"></header>
 	
 <div class="filler"></div>
 <!--PAGE CONTENT-->
-<div class="container font-2 font-size-5" id="page-content">
-	<div class="row">
-		<div class="col-sm-12">
-			
-			<section>
-				<h5>Basic Table</h5>
-				<article>
-					<ul>
-						<li><span class="tp-1">&lt;table&gt;</span> atribut je stiliziran zajedno sa <span class="tp-0">&lt;thead&gt; i &lt;tbody&gt;</span> atributima pomnoću SCSSa </li>
-						<li>Sljedeće tablice mijenjaju orijentaciju na malim zaslonima. Horizontalno pomicanje ili povlačenje se koristi za prikaz više podataka.Table head je uvijek vidljiv.</li>
-						<li>Tehnika za responzivan dizajn je koristiti <span class="tp-0">&lt;display: inline-block;&gt;</span> na retke tablice i <span class="tp-0">&lt;white-space: nowrap;&gt;</span> na tbody element.</li>
-						<li>Brakepoint za tablet ekrane gdje se tablica transformira je 840px</li>
-					</ul>
-				</article>
-				<table>
-					<thead>
-						<tr>
-							<th>Selector</th>
-							<th>IE7</th>
-							<th>IE8</th>
-							<th>IE9</th>
-							<th>FF 3.6</th>
-							<th>FF 4</th>
-							<th>Safari 5</th>
-							<th>Chrome 5</th>
-							<th>Opera 10</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>* selector</td>
-							<td>yes</td>
-							<td>yes</td>
-							<td>yes</td>
-							<td>yes</td>
-							<td>yes</td>
-							<td>yes</td>
-							<td>yes</td>
-							<td>yes</td>
-						</tr>
-						<tr>
-							<td>:before :after</td>
-							<td>no</td>
-							<td>yes</td>
-							<td>yes</td>
-							<td>yes</td>
-							<td>yes</td>
-							<td>yes</td>
-							<td>yes</td>
-							<td>yes</td>
-						</tr>
-						<tr>
-							<td>:nth-of-type()</td>
-							<td>no</td>
-							<td>no</td>
-							<td>no</td>
-							<td>yes</td>
-							<td>yes</td>
-							<td>yes</td>
-							<td>yes</td>
-							<td>incorrect</td>
-						</tr>
-						<tr>
-							<td>background-clip</td>
-							<td>no</td>
-							<td>no</td>
-							<td>yes</td>
-							<td>no</td>
-							<td>yes</td>
-							<td>-webkit-</td>
-							<td>-webkit-</td>
-							<td>buggy</td>
-						</tr>
-						<tr>
-							<td>background-repeat</td>
-							<td>incomplete</td>
-							<td>incomplete</td>
-							<td>yes</td>
-							<td>incomplete</td>
-							<td>incomplete</td>
-							<td>incorrect</td>
-							<td>incorrect</td>
-							<td>yes</td>
-						</tr>
-					</tbody>
-				</table>
-				<br/>
+<div class="container">
+	<section>	
+		<article>
+				<h2>Table</h2>
+				<p>A table is a summary of information organized into rows and columns. They are used to store and display data in a structured format. For example, databases store data inside a table so that data can be accessed quickly. Websites use tables to display multiple rows of data. Spreadsheets combine both tables to manipulate data and display it in a structured format.</p>
+				<p>When creating a web spreadsheet, it should be answered what the user is trying to display with the spreadsheet. We've found that the user has three common goals when interacting with a spreadsheet:</p>
+			<ul>
+				<li>The user wants to search as much information as possible as quickly as possible</li>
+				<li>The user wants to perform actions quickly, such as deleting rows, downloading items</li>
+				<li>Data comparison</li>
+			</ul>
+		<p>It is possible for the table to be filled with a large amount of data that will become opaque on a mobile device. To solve this problem, we used the static horizontal left-side table header technique.</p>
+		<p>The following tables change the orientation on small screens. Horizontal scrolling or dragging is used to display more data.Table head is always visible.</p>
+		<p>The technique for responsive design is to use <span class="txt-warrning-0">display: { inline-block; }</span> on row tables and <span class="txt-warrning-0">white-space: { nowrap; }</span> on the tbody element.</p>
+		<p>Brakepoint for tablet screens where the table is being transformed is 840px</p>
+		</article>
 
-				<code>
-		&lt;table&gt;
-		&lt;thead&gt;
-			&lt;tr&gt;
-				&lt;th&gt;Head 1&lt;/th&gt;
-				&lt;th&gt;Head 2&lt;/th&gt;
-				&lt;th&gt;Head 3&lt;/th&gt;
-			&lt;/tr&gt;
-		&lt;/thead&gt;
-		&lt;tbody&gt;
-			&lt;tr&gt;
-				&lt;td&gt;Description 1&lt;/td&gt;
-				&lt;td&gt;Description 2&lt;/td&gt;
-				&lt;td&gt;Description 3&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-				&lt;td&gt;Description 1&lt;/td&gt;
-				&lt;td&gt;Description 2&lt;/td&gt;
-				&lt;td&gt;Description 3&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-				&lt;td&gt;Description 1&lt;/td&gt;
-				&lt;td&gt;Description 2&lt;/td&gt;
-				&lt;td&gt;Description 3&lt;/td&gt;
-			&lt;/tr&gt;
-		&lt;/tbody&gt;
-		&lt;/table&gt;
-				</code>
-				<small style="float: right;">HTML</small>
-				<br/>
-				<code>
-			// TABLE 
+		<br />
+		<table>
+			<tr>
+				<th>CSS</th>
+				<th>explanation</th>
+			</tr>
+			<tr>
+				<td><span class="txt-primary-4 ">&lt;table&gt;</span></td>
+				<td>- attribute is stylized along with the <span class="txt-primary-4 ">&lt;thead&gt;</span> and <span class="txt-primary-4 ">&lt;tbody&gt;</span> attributes using SCSS</td>
+			</tr>
+		</table>
++
 
-			@import "../3-modules/mixins.scss";
-			
-			table {
-				@include clearfix();
-				width: 100%;
-				border-collapse: collapse;
-				overflow: hidden;
-				overflow-x:auto;
-				table-layout: fixed;
-				line-height: 1.25em;/*15*/
-				border-spacing: 0;
-			
-				th, td { 
-					margin: 0; 
-					padding: 0.4166em;/*10*/
-					font-size: 0.85em;/*12*/
-					text-align: center; 
-					vertical-align: middle;
-					color: white;
-				}
-				thead {
-					@include clearfix();
-					background-color: $rgba-secondary-2-4;
-				}
-			
-				tbody {
-					background-image: linear-gradient(to right top, #607da9, #5e89b6, #5b96c2, #57a3cd, #54b0d7);
-					tr {
-						border: 0;
-					}
-					tr:hover {
-						background-color: $color-secondary-2-2;
-					}
-				}
-				@include breakpoint(desktop) { 
-					th, td {
-					font-size: 0.7em;
-					} 
-				}
-				@include breakpoint(tablet) { 
-					th, td {
-					font-size: 0.6em;
-					}
-					table {
-						display: block;
-						position: relative;
-						width: 100%;
-					}
-					th,tr,td { display: block; }
-					th,td {
-						font-size: 0.8em;
-						min-height: 1.25em; 
-					}
-					th {
-						text-align: left;
-					}
-					thead { 
-						display: block; 
-						float: left; 
-					}
-					tbody{ 
-						display: block; 
-						width: auto; 
-						position: relative; 
-						overflow-x: auto; 
-						white-space: nowrap;
-					}
-					tbody tr { 
-						display: inline-block; 
-						vertical-align: top; 
-					}
-					thead { 
-						display: block;
-						float: left; 
-					}
-					tbody { 
-						display: -webkit-box; 
-						overflow-x: auto; 
-					}
-				}
-				@include breakpoint(phone) { 
-					th, td {
-						font-size: 0.6em;
-					} 
-				}
+		<table>
+			<thead>
+				<tr>
+					<th>Selector</th>
+					<th>IE7</th>
+					<th>IE8</th>
+					<th>IE9</th>
+					<th>FF 3.6</th>
+					<th>FF 4</th>
+					<th>Safari 5</th>
+					<th>Chrome 5</th>
+					<th>Opera 10</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>* selector</td>
+					<td>yes</td>
+					<td>yes</td>
+					<td>yes</td>
+					<td>yes</td>
+					<td>yes</td>
+					<td>yes</td>
+					<td>yes</td>
+					<td>yes</td>
+				</tr>
+				<tr>
+					<td>:before :after</td>
+					<td>no</td>
+					<td>yes</td>
+					<td>yes</td>
+					<td>yes</td>
+					<td>yes</td>
+					<td>yes</td>
+					<td>yes</td>
+					<td>yes</td>
+				</tr>
+				<tr>
+					<td>:nth-of-type()</td>
+					<td>no</td>
+					<td>no</td>
+					<td>no</td>
+					<td>yes</td>
+					<td>yes</td>
+					<td>yes</td>
+					<td>yes</td>
+					<td>incorrect</td>
+				</tr>
+				<tr>
+					<td>background-clip</td>
+					<td>no</td>
+					<td>no</td>
+					<td>yes</td>
+					<td>no</td>
+					<td>yes</td>
+					<td>-webkit-</td>
+					<td>-webkit-</td>
+					<td>buggy</td>
+				</tr>
+				<tr>
+					<td>background-repeat</td>
+					<td>incomplete</td>
+					<td>incomplete</td>
+					<td>yes</td>
+					<td>incomplete</td>
+					<td>incomplete</td>
+					<td>incorrect</td>
+					<td>incorrect</td>
+					<td>yes</td>
+				</tr>
+			</tbody>
+		</table>
+		<br/>
+
+		<code>
+&lt;table&gt;
+&lt;thead&gt;
+	&lt;tr&gt;
+		&lt;th&gt;Head 1&lt;/th&gt;
+		&lt;th&gt;Head 2&lt;/th&gt;
+		&lt;th&gt;Head 3&lt;/th&gt;
+	&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Description 1&lt;/td&gt;
+		&lt;td&gt;Description 2&lt;/td&gt;
+		&lt;td&gt;Description 3&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Description 1&lt;/td&gt;
+		&lt;td&gt;Description 2&lt;/td&gt;
+		&lt;td&gt;Description 3&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Description 1&lt;/td&gt;
+		&lt;td&gt;Description 2&lt;/td&gt;
+		&lt;td&gt;Description 3&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+		</code>
+		<small style="float: right;">HTML</small>
+		<br/>
+		<code>
+	// TABLE 
+
+	@import "../3-modules/mixins.scss";
+	
+	table {
+		@include clearfix();
+		width: 100%;
+		border-collapse: collapse;
+		overflow: hidden;
+		overflow-x:auto;
+		table-layout: fixed;
+		line-height: 1.25em;/*15*/
+		border-spacing: 0;
+	
+		th, td { 
+			margin: 0; 
+			padding: 0.4166em;/*10*/
+			font-size: 0.85em;/*12*/
+			text-align: center; 
+			vertical-align: middle;
+			color: white;
+		}
+		thead {
+			@include clearfix();
+			background-color: $rgba-secondary-2-4;
+		}
+	
+		tbody {
+			background-image: linear-gradient(to right top, #607da9, #5e89b6, #5b96c2, #57a3cd, #54b0d7);
+			tr {
+				border: 0;
 			}
-						
-				</code>
-				<small style="float: right;">SCSS</small>
-			</section>
+			tr:hover {
+				background-color: $color-secondary-2-2;
+			}
+		}
+		@include breakpoint(desktop) { 
+			th, td {
+			font-size: 0.7em;
+			} 
+		}
+		@include breakpoint(tablet) { 
+			th, td {
+			font-size: 0.6em;
+			}
+			table {
+				display: block;
+				position: relative;
+				width: 100%;
+			}
+			th,tr,td { display: block; }
+			th,td {
+				font-size: 0.8em;
+				min-height: 1.25em; 
+			}
+			th {
+				text-align: left;
+			}
+			thead { 
+				display: block; 
+				float: left; 
+			}
+			tbody{ 
+				display: block; 
+				width: auto; 
+				position: relative; 
+				overflow-x: auto; 
+				white-space: nowrap;
+			}
+			tbody tr { 
+				display: inline-block; 
+				vertical-align: top; 
+			}
+			thead { 
+				display: block;
+				float: left; 
+			}
+			tbody { 
+				display: -webkit-box; 
+				overflow-x: auto; 
+			}
+		}
+		@include breakpoint(phone) { 
+			th, td {
+				font-size: 0.6em;
+			} 
+		}
+	}
+				
+		</code>
+		<small style="float: right;">SCSS</small>
+	</section>
 
-			<table>
-				<thead>
-					<tr>
-						<th>Head 1</th>
-						<th>Head 2</th>
-						<th>Head 3</th>
-						<th>Head 4</th>
-						<th>Head 5</th>
-						<th>Head 6</th>
-						<th>Head 7</th>
-						<th>Head 8</th>
-						<th>Head 9</th>
-						<th>Head 10</th>
-						<th>Head 11</th>
-						<th>Head 12</th>
-						<th>Head 13</th>
-						<th>Head 14</th>
-						<th>Head 15</th>
-						<th>Head 16</th>
-						<th>Head 17</th>
-						<th>Head 18</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>Description 1</td>
-						<td>Description 2</td>
-						<td>Description 3</td>
-						<td>Description 4</td>
-						<td>Description 5</td>
-						<td>Description 6</td>
-						<td>Description 7</td>
-						<td>Description 8</td>
-						<td>Description 9</td>
-						<td>Description 10</td>
-						<td>Description 11</td>
-						<td>Description 12</td>
-						<td>Description 13</td>
-						<td>Description 14</td>
-						<td>Description 15</td>
-						<td>Description 16</td>
-						<td>Description 17</td>
-						<td>Description 18</td>
-					</tr>
-					<tr>
-						<td>Description 1</td>
-						<td>Description 2</td>
-						<td>Description 3</td>
-						<td>Description 4</td>
-						<td>Description 5</td>
-						<td>Description 6</td>
-						<td>Description 7</td>
-						<td>Description 8</td>
-						<td>Description 9</td>
-						<td>Description 10</td>
-						<td>Description 11</td>
-						<td>Description 12</td>
-						<td>Description 13</td>
-						<td>Description 14</td>
-						<td>Description 15</td>
-						<td>Description 16</td>
-						<td>Description 17</td>
-						<td>Description 18</td>
-					</tr>
-					<tr>
-						<td>Description 1</td>
-						<td>Description 2</td>
-						<td>Description 3</td>
-						<td>Description 4</td>
-						<td>Description 5</td>
-						<td>Description 6</td>
-						<td>Description 7</td>
-						<td>Description 8</td>
-						<td>Description 9</td>
-						<td>Description 10</td>
-						<td>Description 11</td>
-						<td>Description 12</td>
-						<td>Description 13</td>
-						<td>Description 14</td>
-						<td>Description 15</td>
-						<td>Description 16</td>
-						<td>Description 17</td>
-						<td>Description 18</td>
-					</tr>
-					<tr>
-						<td>Description 1</td>
-						<td>Description 2</td>
-						<td>Description 3</td>
-						<td>Description 4</td>
-						<td>Description 5</td>
-						<td>Description 6</td>
-						<td>Description 7</td>
-						<td>Description 8</td>
-						<td>Description 9</td>
-						<td>Description 10</td>
-						<td>Description 11</td>
-						<td>Description 12</td>
-						<td>Description 13</td>
-						<td>Description 14</td>
-						<td>Description 15</td>
-						<td>Description 16</td>
-						<td>Description 17</td>
-						<td>Description 18</td>
-					</tr>
-					<tr>
-						<td>Description 1</td>
-						<td>Description 2</td>
-						<td>Description 3</td>
-						<td>Description 4</td>
-						<td>Description 5</td>
-						<td>Description 6</td>
-						<td>Description 7</td>
-						<td>Description 8</td>
-						<td>Description 9</td>
-						<td>Description 10</td>
-						<td>Description 11</td>
-						<td>Description 12</td>
-						<td>Description 13</td>
-						<td>Description 14</td>
-						<td>Description 15</td>
-						<td>Description 16</td>
-						<td>Description 17</td>
-						<td>Description 18</td>
-					</tr>
-					<tr>
-						<td>Description 1</td>
-						<td>Description 2</td>
-						<td>Description 3</td>
-						<td>Description 4</td>
-						<td>Description 5</td>
-						<td>Description 6</td>
-						<td>Description 7</td>
-						<td>Description 8</td>
-						<td>Description 9</td>
-						<td>Description 10</td>
-						<td>Description 11</td>
-						<td>Description 12</td>
-						<td>Description 13</td>
-						<td>Description 14</td>
-						<td>Description 15</td>
-						<td>Description 16</td>
-						<td>Description 17</td>
-						<td>Description 18</td>
-					</tr>
-					<tr>
-						<td>Description 1</td>
-						<td>Description 2</td>
-						<td>Description 3</td>
-						<td>Description 4</td>
-						<td>Description 5</td>
-						<td>Description 6</td>
-						<td>Description 7</td>
-						<td>Description 8</td>
-						<td>Description 9</td>
-						<td>Description 10</td>
-						<td>Description 11</td>
-						<td>Description 12</td>
-						<td>Description 13</td>
-						<td>Description 14</td>
-						<td>Description 15</td>
-						<td>Description 16</td>
-						<td>Description 17</td>
-						<td>Description 18</td>
-					</tr>
-					<tr>
-						<td>Description 1</td>
-						<td>Description 2</td>
-						<td>Description 3</td>
-						<td>Description 4</td>
-						<td>Description 5</td>
-						<td>Description 6</td>
-						<td>Description 7</td>
-						<td>Description 8</td>
-						<td>Description 9</td>
-						<td>Description 10</td>
-						<td>Description 11</td>
-						<td>Description 12</td>
-						<td>Description 13</td>
-						<td>Description 14</td>
-						<td>Description 15</td>
-						<td>Description 16</td>
-						<td>Description 17</td>
-						<td>Description 18</td>
-					</tr>
-					<tr>
-						<td>Description 1</td>
-						<td>Description 2</td>
-						<td>Description 3</td>
-						<td>Description 4</td>
-						<td>Description 5</td>
-						<td>Description 6</td>
-						<td>Description 7</td>
-						<td>Description 8</td>
-						<td>Description 9</td>
-						<td>Description 10</td>
-						<td>Description 11</td>
-						<td>Description 12</td>
-						<td>Description 13</td>
-						<td>Description 14</td>
-						<td>Description 15</td>
-						<td>Description 16</td>
-						<td>Description 17</td>
-						<td>Description 18</td>
-					</tr>
-					<tr>
-						<td>Description 1</td>
-						<td>Description 2</td>
-						<td>Description 3</td>
-						<td>Description 4</td>
-						<td>Description 5</td>
-						<td>Description 6</td>
-						<td>Description 7</td>
-						<td>Description 8</td>
-						<td>Description 9</td>
-						<td>Description 10</td>
-						<td>Description 11</td>
-						<td>Description 12</td>
-						<td>Description 13</td>
-						<td>Description 14</td>
-						<td>Description 15</td>
-						<td>Description 16</td>
-						<td>Description 17</td>
-						<td>Description 18</td>
-					</tr>
-				</tbody>
-			</table>
+	<table>
+		<thead>
+			<tr>
+				<th>Head 1</th>
+				<th>Head 2</th>
+				<th>Head 3</th>
+				<th>Head 4</th>
+				<th>Head 5</th>
+				<th>Head 6</th>
+				<th>Head 7</th>
+				<th>Head 8</th>
+				<th>Head 9</th>
+				<th>Head 10</th>
+				<th>Head 11</th>
+				<th>Head 12</th>
+				<th>Head 13</th>
+				<th>Head 14</th>
+				<th>Head 15</th>
+				<th>Head 16</th>
+				<th>Head 17</th>
+				<th>Head 18</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Description 1</td>
+				<td>Description 2</td>
+				<td>Description 3</td>
+				<td>Description 4</td>
+				<td>Description 5</td>
+				<td>Description 6</td>
+				<td>Description 7</td>
+				<td>Description 8</td>
+				<td>Description 9</td>
+				<td>Description 10</td>
+				<td>Description 11</td>
+				<td>Description 12</td>
+				<td>Description 13</td>
+				<td>Description 14</td>
+				<td>Description 15</td>
+				<td>Description 16</td>
+				<td>Description 17</td>
+				<td>Description 18</td>
+			</tr>
+			<tr>
+				<td>Description 1</td>
+				<td>Description 2</td>
+				<td>Description 3</td>
+				<td>Description 4</td>
+				<td>Description 5</td>
+				<td>Description 6</td>
+				<td>Description 7</td>
+				<td>Description 8</td>
+				<td>Description 9</td>
+				<td>Description 10</td>
+				<td>Description 11</td>
+				<td>Description 12</td>
+				<td>Description 13</td>
+				<td>Description 14</td>
+				<td>Description 15</td>
+				<td>Description 16</td>
+				<td>Description 17</td>
+				<td>Description 18</td>
+			</tr>
+			<tr>
+				<td>Description 1</td>
+				<td>Description 2</td>
+				<td>Description 3</td>
+				<td>Description 4</td>
+				<td>Description 5</td>
+				<td>Description 6</td>
+				<td>Description 7</td>
+				<td>Description 8</td>
+				<td>Description 9</td>
+				<td>Description 10</td>
+				<td>Description 11</td>
+				<td>Description 12</td>
+				<td>Description 13</td>
+				<td>Description 14</td>
+				<td>Description 15</td>
+				<td>Description 16</td>
+				<td>Description 17</td>
+				<td>Description 18</td>
+			</tr>
+			<tr>
+				<td>Description 1</td>
+				<td>Description 2</td>
+				<td>Description 3</td>
+				<td>Description 4</td>
+				<td>Description 5</td>
+				<td>Description 6</td>
+				<td>Description 7</td>
+				<td>Description 8</td>
+				<td>Description 9</td>
+				<td>Description 10</td>
+				<td>Description 11</td>
+				<td>Description 12</td>
+				<td>Description 13</td>
+				<td>Description 14</td>
+				<td>Description 15</td>
+				<td>Description 16</td>
+				<td>Description 17</td>
+				<td>Description 18</td>
+			</tr>
+			<tr>
+				<td>Description 1</td>
+				<td>Description 2</td>
+				<td>Description 3</td>
+				<td>Description 4</td>
+				<td>Description 5</td>
+				<td>Description 6</td>
+				<td>Description 7</td>
+				<td>Description 8</td>
+				<td>Description 9</td>
+				<td>Description 10</td>
+				<td>Description 11</td>
+				<td>Description 12</td>
+				<td>Description 13</td>
+				<td>Description 14</td>
+				<td>Description 15</td>
+				<td>Description 16</td>
+				<td>Description 17</td>
+				<td>Description 18</td>
+			</tr>
+			<tr>
+				<td>Description 1</td>
+				<td>Description 2</td>
+				<td>Description 3</td>
+				<td>Description 4</td>
+				<td>Description 5</td>
+				<td>Description 6</td>
+				<td>Description 7</td>
+				<td>Description 8</td>
+				<td>Description 9</td>
+				<td>Description 10</td>
+				<td>Description 11</td>
+				<td>Description 12</td>
+				<td>Description 13</td>
+				<td>Description 14</td>
+				<td>Description 15</td>
+				<td>Description 16</td>
+				<td>Description 17</td>
+				<td>Description 18</td>
+			</tr>
+			<tr>
+				<td>Description 1</td>
+				<td>Description 2</td>
+				<td>Description 3</td>
+				<td>Description 4</td>
+				<td>Description 5</td>
+				<td>Description 6</td>
+				<td>Description 7</td>
+				<td>Description 8</td>
+				<td>Description 9</td>
+				<td>Description 10</td>
+				<td>Description 11</td>
+				<td>Description 12</td>
+				<td>Description 13</td>
+				<td>Description 14</td>
+				<td>Description 15</td>
+				<td>Description 16</td>
+				<td>Description 17</td>
+				<td>Description 18</td>
+			</tr>
+			<tr>
+				<td>Description 1</td>
+				<td>Description 2</td>
+				<td>Description 3</td>
+				<td>Description 4</td>
+				<td>Description 5</td>
+				<td>Description 6</td>
+				<td>Description 7</td>
+				<td>Description 8</td>
+				<td>Description 9</td>
+				<td>Description 10</td>
+				<td>Description 11</td>
+				<td>Description 12</td>
+				<td>Description 13</td>
+				<td>Description 14</td>
+				<td>Description 15</td>
+				<td>Description 16</td>
+				<td>Description 17</td>
+				<td>Description 18</td>
+			</tr>
+			<tr>
+				<td>Description 1</td>
+				<td>Description 2</td>
+				<td>Description 3</td>
+				<td>Description 4</td>
+				<td>Description 5</td>
+				<td>Description 6</td>
+				<td>Description 7</td>
+				<td>Description 8</td>
+				<td>Description 9</td>
+				<td>Description 10</td>
+				<td>Description 11</td>
+				<td>Description 12</td>
+				<td>Description 13</td>
+				<td>Description 14</td>
+				<td>Description 15</td>
+				<td>Description 16</td>
+				<td>Description 17</td>
+				<td>Description 18</td>
+			</tr>
+			<tr>
+				<td>Description 1</td>
+				<td>Description 2</td>
+				<td>Description 3</td>
+				<td>Description 4</td>
+				<td>Description 5</td>
+				<td>Description 6</td>
+				<td>Description 7</td>
+				<td>Description 8</td>
+				<td>Description 9</td>
+				<td>Description 10</td>
+				<td>Description 11</td>
+				<td>Description 12</td>
+				<td>Description 13</td>
+				<td>Description 14</td>
+				<td>Description 15</td>
+				<td>Description 16</td>
+				<td>Description 17</td>
+				<td>Description 18</td>
+			</tr>
+		</tbody>
+	</table>
 
-			
-		</div>
-	</div>
 </div>
 
 

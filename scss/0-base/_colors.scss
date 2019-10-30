@@ -86,6 +86,10 @@ $success-4: rgba(  0,105, 65,1);
 .success-3 { background-color: #008654 }
 .success-4 { background-color: #006941 }
 
+$white: #fff;
+$black: #333333;
+.white {color: #fff;}
+.black {color: #333333;}
 
 // TEXT COLOUR --> clase / span
 .tp-0 {color: $primary-0}
@@ -93,10 +97,15 @@ $success-4: rgba(  0,105, 65,1);
 .tp-3 {color: $primary-3}
 .tp-4 {color: $primary-4}
 
-.tw-0 {color: $warrning-0}
+.tw-0 {color: $primary-4 }
 .td-0 {color: $danger-0}
 .ts-0 {color: $success-0}
 
+.txt-primary-0 { color: $primary-0};
+.txt-primary-4 { color: $primary-4};
+.txt-warrning-0 { color: $warrning-0};
+.txt-danger-0 { color: $danger-0};
+.txt-success-0 { color: $success-0};
 
 // colors
 $color-default: #212121;
@@ -105,12 +114,11 @@ $color-btn-hover: #4682B4;
 $accent-color: #355cc9;
 
 // Table
-$color-table-head: #4682B4;
+$table-primary-1: rgba( 70,134,191,0.5);
+
 // FORM
 $darkgrey: #33312E;
 
-$white: #fff;
-$black: #333333;
 
 $gray-8: rgba(51, 51, 51,0.8);
 $gray-6: rgba(51, 51, 51,0.6);
@@ -118,8 +126,7 @@ $gray-4: rgba(51, 51, 51,0.4);
 $gray-2: rgba(51, 51, 51,0.2);
 $gray-1: rgba(51, 51, 51,0.1);
 
-.white {color: #fff;}
-.black {color: #333333;}
+
 
 
 // GRADIENT
@@ -214,7 +221,8 @@ $gradient-success-1: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
     transition: max-height 1s;
 }
 .collapsed {
-    max-height: 350px;
+    height: auto;
+    max-height: 500px;
     padding: 20px;
 }
 
