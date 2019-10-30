@@ -1,7 +1,7 @@
 // HAMBURGER ICON
 
 // Hamburger button 2
-var wrapperMenu = document.querySelector('.wrapper-menu');
+var wrapperMenu = document.querySelector('.burger_2');
 
 wrapperMenu.addEventListener('click', function(){
   wrapperMenu.classList.toggle('open');  

@@ -10,52 +10,23 @@
 </head>
 
 <body>
-	<header>
-		<div class="head">
-			<div class="head-item">
-				<a class="navbar-brand" href="https://www.tvz.hr">
-					<img src="../img/TvzLogo.png" alt="tvzLogo" style="width: 100px;">
-				</a>
-			</div>
-			<div class="head-item">
-				<h2>Collapse</h2>
-			</div>
-			<div class="head-item">
-				<!-- Main navigation -->
-				<div class="hamburger">
-					<div class="burger burger-3" id="burger">
-						<input type="checkbox" name="burger3" id="mainNav" onclick="mainNavigation()" />
-						<label for="mainNav">
-							<span class="bar bar-1"></span>
-							<span class="bar bar-2"></span>
-							<span class="bar bar-3"></span>
-						</label>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Main sidebar -->
-		<nav id="myNav"></nav>
-	</header>
+	<header id="myNav"></header>
 	
 <div class="filler"></div>
 <!--PAGE CONTENT-->
 <div class="container">
 	<section>
-		<fieldset>
-			<legend>Uputstva</legend>
-			<p>Kolaps je komponenta koja služi kako bi prikazao ili sakrio sadržaj. 
-				Sastoji se od dva elementa: kolaps i sadržaj. 
-				Potrebno je da kolaps bude iznad sadržaja, te ne smije biti drugih elemenata između njihovih div elemenata.
-			</p>
-			<p>Unesite sljedeće klase kako bi prikazali i/ili sakrili element.</p>
-			<article>
-				<ul>
-					<li><span class="tw-0">kolaps</span> sadrži naslov i gumb pomoću kojega se prikazuje sadržaj.</li>
-					<li><span class="tw-0">kolapsSadrzaj</span> sadrži podatke koje želimo prikazati i/ili sakriti. Sadržaj može prihvatiti različite komponente poput gumba, trake progresa, forme i drugih.</li>
-				</ul>
-			</article>
-		</fieldset>
+		<article>
+			<h2>Collapse</h2>
+			<p>Collapse is a collapsible component that is used when you want to display or hide a large amount of content. Allows easy display of content at the touch of a button. It serves to rid the page of redundant content and give it a modern minimalist look.</p>
+			<p>It is useful for:</p>
+			<ul>
+				<li>grouping content</li>
+				<li>displaying long lists</li>
+				<li>displaying hidden data and more</li>
+			</ul>
+		</article>
+		<br />
 
 		<div class="kolaps">Primjer teksta</div>
 		<div class="kolapsSadrzaj">
@@ -71,7 +42,6 @@
 				</article> 
 			</div>
 		</div>
-
 		<div class="kolaps">Primjer forme</div>
 		<div class="kolapsSadrzaj">
 			<div class="kolapsInner">
@@ -114,7 +84,6 @@
 				</form>
 			</div>
 		</div>
-
 		<div class="kolaps">Primjer gumba</div>
 		<div class="kolapsSadrzaj">
 			<div class="kolapsInner">
@@ -126,6 +95,23 @@
 			</div>
 			
 		</div>
+		<br /><br />
+
+		<table>
+			<tr>
+				<th>class</th>
+				<th>explanation</th>
+			</tr>
+			<tr>
+				<td><span class="txt-primary-4">kolaps</span></td>
+				<td>class contains a title and a button that displays content.</td>
+			</tr>
+			<tr>
+				<td><span class="txt-primary-4">kolapsSadrzaj</span></td>
+				<td>class contains the information we want to show and / or hide. Content can accept various components such as buttons, progress bar, form and more.</td>
+			</tr>
+		</table>
+		<br /><br />
 
 		<code>
 &lt;div class="kolaps">Naslov&lt;/div&gt;
@@ -182,6 +168,7 @@ text-align: right;
 }
 		</code>
 		<small class="codeText">SCSS</small><br>
+
 	</section>
 </div>
 

@@ -10,73 +10,168 @@
 </head>
 
 <body>
-	<header>
-		<div class="head">
-			<div class="head-item">
-				<a class="navbar-brand" href="https://www.tvz.hr">
-					<img src="../img/TvzLogo.png" alt="tvzLogo" style="width: 100px;">
-				</a>
-			</div>
-			<div class="head-item">
-				<h2>Breadcrumb</h2>
-			</div>
-			<div class="head-item">
-				<!-- Main navigation -->
-				<div class="hamburger">
-					<div class="burger burger-3" id="burger">
-						<input type="checkbox" name="burger3" id="mainNav" onclick="mainNavigation()" />
-						<label for="mainNav">
-							<span class="bar bar-1"></span>
-							<span class="bar bar-2"></span>
-							<span class="bar bar-3"></span>
-						</label>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Main sidebar -->
-		<nav id="myNav"></nav>
-	</header>
+	<header id="myNav"></header>
     
-<div class="filler"></div>
-<!--PAGE CONTENT-->
+	<div class="filler"></div>
+	<!--PAGE CONTENT-->
+	<div class="container">
+		<section>
+			<h2>Breadcrumb</h2>
+			<p>Breadchrumb is a graphical view that enables navigation in the user interface and web pages.
+				Allows the user to track the current position in the website hierarchy. 
+				The breadcrumb navigator also allows the user to retrace their steps.</p>
+			<p>We use AJAX to create our breadchrumb navigation to refer to the current page.</p>
+			<br />
+			<!-- BREADCRUMB TRAIL CONTAINER -->
+			<nav id="bread-trail"></nav> 
 
-<section>
+			<!-- AJAX CONTENT CONTAINER -->
+			<div id="bread-load"></div> 
 
-    <p>AJAX Breadcrumb Demo</p>
-    <fieldset>
-        <legend>Uputstva</legend>
-        <article>
-            <ul>
-                <li><span class="tw-0"></span></li>
-                <li><span class="tw-0"></span></li>
-            </ul>
-        </article>
-    </fieldset>
+			<br />
+			<table>
+				<tr>
+					<th>id</th>
+					<th>explanation</th>
+				</tr>
+				<tr>
+					<td><span class="txt-primary-4 ">bread-trail</span></td>
+					<td>HTML breadcrumb trail</td>
+				</tr>
+				<tr>
+					<td><span class="txt-primary-4 ">bread-load</span></td>
+					<td>HTML AJAX load container</td>
+				</tr>
+			</table>
 
-<br />
+			<br />
+			<code>
+			// BREADCRUMB TRAIL CONTAINER
+			&lt;nav id="bread-trail"&gt;&lt;/nav&gt;
 
-  <!-- BREADCRUMB TRAIL CONTAINER -->
-  <nav id="bread-trail"></nav> 
+			// AJAX CONTENT CONTAINER 
+			&lt;div id="bread-load"&gt;&lt;/div&gt; 
+			</code>
+			<small class="codeText">HTML</small><br />
+			<code>
+			/* Breadcrumb trail container */
+			#bread-trail {
+				background: #f2f2f2;
+				padding: 10px;
+				}
+				/* Trail tabs */
+				#bread-trail a {
+				color: #2b76a5;
+				text-decoration: none;
+				cursor: pointer;
+				}
+				#bread-trail a:after {
+				content: "\00BB";
+				margin: 0 10px;
+				color : #aaa;
+				}
+				/* Current tab */
+				#bread-trail a:last-child {
+				color: #db5248;
+				}
+				#bread-trail a:last-child:after {
+				content: "";
+				}
+			</code>
+			<small class="codeText">SCSS</small><br />
+			<code>
+			var crumbs = {
+				path : [], // current breadcrumb tabs
+				htrail : "bread-trail", // HTML breadcrumb trail
+				hload : "bread-load", // HTML AJAX load container
+				
+				init : function () {
+				// init() : initialize breadcrumb
+				
+					crumbs.htrail = document.getElementById(crumbs.htrail);
+					crumbs.hload = document.getElementById(crumbs.hload);
+				},
+				
+				add : function (tab) {
+				// add() : add a new tab to the trail
+				// PARAM crumb : new tab to be added to the trail
+				//        - name : name of the tab
+				//        - url : url to load
+				//        - data : data to POST, optional
+				
+					// Push the new crumb into the current trail path
+					crumbs.path.push(tab);
+				
+					// Add new HTML tab to trail
+					var htmltab = document.createElement("a");
+					htmltab.innerHTML = tab.name;
+					htmltab.id = "crumb-"+ crumbs.path.length;
+					htmltab.dataset.num = crumbs.path.length;
+					htmltab.addEventListener("click", crumbs.go);
+					crumbs.htrail.appendChild(htmltab);
+				
+					// AJAX load the newly added crumb
+					htmltab.dispatchEvent(new Event("click"));
+				},
+				
+				go : function () {
+				// go() : go to the selected tab
+				
+					// Reshuffle the path if required
+					var num = parseInt(this.dataset.num),
+						tab = null;
+					if (num != crumbs.path.length) {
+					// Remove HTML breadcrumb tabs
+					for (var i=num+1; i<=crumbs.path.length; i++) {
+						tab = document.getElementById("crumb-"+ i);
+						crumbs.htrail.removeChild(tab);
+					}
+					// New path
+					crumbs.path = crumbs.path.slice(0, num);
+					}
+				
+					// AJAX load
+					tab = crumbs.path[num - 1];
+					var xhr = new XMLHttpRequest();
+					xhr.open('POST', tab.url, true);
+					xhr.onload = function() {
+					if (this.status == 200) {
+						document.getElementById("bread-load").innerHTML = this.response;
+					} else {
+						alert("ERROR LOADING "+ tab.url);
+					}
+					};
+				//   xhr.send(tab.data);
+				}
+				};
+				
+				window.addEventListener("load", function(){
+				// Initialize JS breadcrumb
+				crumbs.init();
+				
+				// Demo - Load first page via AJAX
+				crumbs.add({
+					name : "First",
+					url : "../breadcrumbs/dummy_1.html",
+				});
+				crumbs.add({
+					name : "Second",
+					url : "../breadcrumbs/dummy_1.html",
+				});
+					crumbs.add({
+					name : "Third",
+					url : "../breadcrumbs/dummy_1.html",
+				});
+				});		
+			</code>
+			<small class="codeText">JS</small><br>
+		</section>
+	</div>
 
-  <!-- AJAX CONTENT CONTAINER -->
-  <div id="bread-load"></div> 
-
-<br />
- 
-    <code>   
-    </code>
-    <small class="codeText">HTML</small><br />
-    <code>
-                
-    </code>
-    <small class="codeText">SCSS</small><br>
-</section>
 
 
-
-<script src="../js/breadcrumbs.js"></script>
-<script src="../js/header.js"></script>
-<script src="../js/myscript.js"></script>
+	<script src="../js/breadcrumbs.js"></script>
+	<script src="../js/header.js"></script>
+	<script src="../js/myscript.js"></script>
 </body>
 </html>

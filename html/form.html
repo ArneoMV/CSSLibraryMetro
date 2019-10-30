@@ -10,112 +10,39 @@
 </head>
 
 <body>
-	<header>
-		<div class="head">
-			<div class="head-item">
-				<a class="navbar-brand" href="https://www.tvz.hr">
-					<img src="../img/TvzLogo.png" alt="tvzLogo" style="width: 100px;">
-				</a>
-			</div>
-			<div class="head-item">
-				<h2>Form</h2>
-			</div>
-			<div class="head-item">
-				<!-- Main navigation -->
-				<div class="hamburger">
-					<div class="burger burger-3" id="burger">
-						<input type="checkbox" name="burger3" id="mainNav" onclick="mainNavigation()" />
-						<label for="mainNav">
-							<span class="bar bar-1"></span>
-							<span class="bar bar-2"></span>
-							<span class="bar bar-3"></span>
-						</label>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Main sidebar -->
-		<div id="mainSidebar" class="mainSidebar">
-			<div class="sidebar-item nav">
-				<ul>
-					<li><a href="../index.html">Get started</a></li>
-					<li><span class="tp-1">Layaout</span></li>
-					<li><a href="../html/grid.html">Grid</a></li>
-					<li><a href="../html/columns.html">Columns layout</a></li>
-					<li><span class="tp-1">Content</span></li>
-					<li><a href="../html/typography.html">Typography</a></li>
-					<li><a href="../html/images.html">Images</a></li>
-					<li><a href="../html/table.html">Tables</a></li>
-					<li><span class="tp-1">Components</span></li>
-					<li><a href="../html/modal.html">Modal</a></li>
-					<li><a href="../html/buttons.html">Buttons</a></li>
-					<li><a href="../html/cards.html">Cards</a></li>
-					<li><a href="../html/form.html">Forms</a></li>
-					<li><a href="../html/progressBar.html">Progress Bars</a></li>
-					<li><a><span class="td-0">Dropdowns</span></a></li>
-					<li><a><span class="td-0">Spinners</span></a></li>
-					<li><a href="../html/collapse.html">Collapse</a></li>
-					<li><a><span class="td-0">Navbar</span></a></li>
-					<li><a><span class="td-0">Aside menu</span></a></li>
-					<li><a><span class="td-0">Inputs</span></a></li>
-					<li><a><span class="td-0">Pagination</span></a></li>
-					<li><a><span class="td-0">Tooltip</span></a></li>
-					<li><a><span class="td-0">Input group</span></a></li>
-					<li><a href="../html/navigationMenu.html">Navigation menu</a></li>
-					<li><a href="../html/textEffects.html">Text effects</a></li>
-					<li><span class="tp-1">Utilities</span></li>
-					<li><a href="../html/colors.html">Colors</a></li>
-					<li><a href="../html/closeIcon.html">Close icon</a></li>
-					<li><a href="../html/float.html">Float & Clearfix</a></li>
-                    <li><a href="../html/visability.html">Visability</a></li>
-                    <li><a href="../html/shadow.html">Shadows</a></li>
-					<li><a><span class="td-0">Display</span></a></li>
-					<li><a><span class="td-0">Flex</span></a></li>
-					<li><a><span class="td-0">Embed</span></a></li>		
-					<li><a><span class="td-0">Position</span></a></li>
-					<li><a><span class="td-0">Sizing</span></a></li>		
-				</ul>
-			</div>
-		</div>
-	</header>
+	<header id="myNav"></header>
     
 <div class="filler"></div>
 <!--PAGE CONTENT-->
-
 <section>
-    <h4>Forma</h4>
-    <p> &emsp;Web obrasci su medij pomoću kojega omogučujemo korisnicma da stupe u kontakt sa našom web stranicom. 
-        One su jedan od najboljih načina za dobivanje informacija od korisnika i uspostavljanje odnosa sa njima.
-        Web obrasci izrađeni su u programskim jezicima kao što su PHP, HTML ili Java.
-        <br/><br/>
-        &emsp;Mogu sadržavati elemente za popunu obrazaca poput: teksutalnog okvira, radio gumba, checkbox gumba, potvrdne okvire, padajuće liste, skrivena polja, prijenos podataka i gumbe.
-        Web obrazac često djeluje kao komunikacijski kanal između korisnika i tvrtke i obrnuto.
-        Nelogična i neprimjerena pitanja mogu vrlo lako ugroziti imiđ tvrtke. 
-        Na primjer želite da korisnici otvore profil na vašoj web stranici. Tražiti adresu stanovanja bilo bi sasvim nebitno. Prvo što bi korisniku palo na pamet bilo bi "Što će vam moja adresa stanovanja samo za prijavu??". To stvara zbunjenost i nepovjerenje, te će se povečati šansa da korisnik ne napavi prijavu.
-        <br/><br/>
-        &emsp;Trebali biste znati svoju ciljanu publiku i tržište kako biste postavili relevantna pitanja na web obrazac. Možete sami obaviti istraživanje ili kontaktirati dobru firmu za web savjetovanje kako biste procijenili svoje ciljno tržište i stvorili razumna pitanja u skladu s tim.
-    </p>
-    <br/>
-    <fieldset>
-        <legend>Uputstva</legend>
-        <article>
-            <ul>
-                <li><span class="tw-0">form</span> klasa koristi se unuatar &lt;form&gt; elementa. Zadužena je za stilsko oblikovanje izgleda forme.</li>
-                <li><span class="tw-0">fieldset</span> element služi kako bi grupirao srodne elemente unutar forme.</li>
-                <li><span class="tw-0">form-group</span> klasa služi kako bi grupirala pojedinačne elemente za unos podataka. Unutar njega se nalaze &lt;input&gt;, &lt;label&gt; i &lt;i&gt; elementi.</li>
-                <li><span class="tw-0">bar-form</span> klasa koja stilski uređuje liniju na kojoj se piše tekst.</li>
-                <li><span class="tw-0">selectStyle</span> klasa služi kao bi stilski uredila padajući izbornik unutar &lt;optgroup&gt; elementa.</li>
-                <li><span class="tw-0">checkboxStyle</span> </li>
-                <li><span class="tw-0">form-radio</span> klasa služi kako bi grupirala i stilski uredila radio button elemente</li>
-                <li><span class="tw-0">radio</span> klasa koja dodatno stilizira radio button element. </li>
-                <li><span class="tw-0">helper</span> klasa koja stilski uređuje checkbox i radio button elemente. </li>  
-            </ul>
-        </article>
-    </fieldset>
+    <article>
+        <h3>Form</h3>
+        <p>A form is a medium of a website that enables the input and processing of data by which we make contact with a user. With the help of backend programming languages ​​like NodeJS, PHP, Python and others, the form becomes functional and the collected data can be used for further processing.</p>
 
+        <p>The forms include elements such as: text box, radio button, checkbox button, checkbox, drop-down lists, data transfer and buttons.</p>
 
+        <p>The web form acts as a communication channel between the user and the website and vice versa. Illogical and inappropriate issues can very easily compromise the image of the company. For example, you want a user to open a profile on your website. Asking for a residence address would be completely irrelevant. The first thing a user would think would be: "What do you need my residence address for login only?". This creates confusion and distrust, and will increase the chance of a user not making a login. You should know your target audience to ask relevant questions.</p>
+        
+        <p>To create a web form, you need to follow the guidelines to facilitate the user journey when interacting with the form.</p>
+        <ul>
+            <li>Content is contained within one column</li>
+            <li>Align content vertically</li>
+            <li>Group the relevant information, and group the title with its input field</li>
+            <li>Avoid all capital letters</li>
+            <li>Show all selection options horizontally if below six options</li>
+            <li>Place checkboxes and radio buttons under each other for clarity</li>
+            <li>Make the description of the call to action button clearly described</li>
+            <li>Show the user where the error occurred and state the reason</li>
+            <li>Display help text</li>
+            <li>Show the difference between primary and secondary action</li>
+            <li>The size of the input field should be of relevant length with respect to the information being entered</li>
+        </ul>
+    </article>
+    <br /><br />
+
+    <!-- Classic form -->
     <form class="form">
-        <h6>Formular</h6>
+        <h6>Form</h6>
         <fieldset>
             <legend>Text</legend>
             <div class="form-group">
@@ -186,409 +113,467 @@
             <button class="btn-primary-raised btn-ripple">Submit</button>
         </div>
     </form>
+    <br /><br />
+
+    <table>
+        <tr>
+            <th>class</th>
+            <th>explanation</th>
+        </tr>
+        <tr>
+            <td><span class="txt-primary-4">form</span></td>
+            <td>class uses the unuatar of the &lt;form&gt; element. She is in charge of styling the appearance of the form</td>
+        </tr>
+        <tr>
+            <td><span class="txt-primary-4">fieldset</span></td>
+            <td>element serves to group related elements within a form</td>
+        </tr>
+        <tr>
+            <td><span class="txt-primary-4">form-group</span></td>
+            <td>class is used to group individual data entry elements. It contains &lt;input&gt;, &lt;label&gt; and &lt;i&gt; elements</td>
+        </tr>
+        <tr>
+            <td><span class="txt-primary-4">bar-form</span></td>
+            <td> class that stylistically lines the line on which the text is written</td>
+        </tr>
+        <tr>
+            <td><span class="txt-primary-4">selectStyle</span></td>
+            <td>class serves to style the drop-down menu within an &lt;optgroup&gt; element</td>
+        </tr>
+        <tr>
+            <td><span class="txt-primary-4">checkboxStyle</span></td>
+            <td>class is used to style the checkbox attribute</td>
+        </tr>
+        <tr>
+            <td><span class="txt-primary-4">form-radio</span></td>
+            <td> class serves to group and style radio button elements</td>
+        </tr>
+        <tr>
+            <td><span class="txt-primary-4">radio</span></td>
+            <td>class that further stylizes the radio button element.</td>
+        </tr>
+        <tr>
+            <td><span class="txt-primary-4">helper</span></td>
+            <td>class that stylishly checksbox and radio button elements.</td>
+        </tr>
+    </table>
+    <br /><br />
 
     <code>
-    &lt;form class="form"&gt;
-        &lt;h6>Formular&lt;/h6&gt;
-        
-        &lt;fieldset&gt;
-            &lt;legend>Text&lt;/legend&gt;
-            &lt;div class="form-group"&gt;
-                &lt;input type="text" required="required"/&gt;
-                &lt;label for="input" class="control-label">Textfield&lt;/label&gt;
-                &lt;i class="bar-form">&lt;/i&gt;
-            &lt;/div&gt;
-            &lt;div class="form-group"&gt;
-                &lt;textarea required="required"&gt;&lt;/textarea&gt;
-                &lt;label for="textarea" class="control-label"&gt;Textarea&lt;/label&gt;
-                &lt;i class="bar-form">&lt;/i&gt;
-            &lt;/div&gt;
-        &lt;/fieldset&gt;
-        
-        &lt;fieldset&gt;
-            &lt;legend>Select&lt;/legend&gt;
-            &lt;div class="selectStyle"&gt;
-                &lt;select&gt;
-                    &lt;optgroup label="Option Group 1"&gt;
-                        &lt;option&gt;Option 1&lt;/option&gt;
-                        &lt;option&gt;Option 2&lt;/option&gt;
-                        &lt;option&gt;Option 3&lt;/option&gt;
-                        &lt;option&gt;Option 4&lt;/option&gt;
-                        &lt;option&gt;Option 5&lt;/option&gt;
-                        &lt;option&gt;Option 6&lt;/option&gt;
-                        &lt;option&gt;Option 7&lt;/option&gt;
-                    &lt;/optgroup&gt;
-                &lt;/select&gt;
-            &lt;/div&gt;
-        &lt;/fieldset&gt;
-
-        &lt;fieldset&gt;
-            &lt;legend&gt;Radio&lt;/legend&gt;
-            &lt;div class="checkbox"&gt;
-                &lt;label&gt;
-                    &lt;input type="checkbox" checked="checked"/&gt;
-                    &lt;i class="helper">&lt;/i>I'm the label from a checkbox
-                &lt;/label&gt;
-            &lt;/div&gt;
-            &lt;div class="checkbox"&gt;
-                &lt;label&gt;
-                    &lt;input type="checkbox"/&gt;
-                    &lt;i class="helper">&lt;/i&gt;I'm the label from a checkbox
-                &lt;/label&gt;
-            &lt;/div&gt;       
-        &lt;/fieldset&gt;
-        
-        &lt;fieldset&gt;
-            &lt;legend&gt;Check&lt;/legend&gt;
-            &lt;div class="form-radio">
-                &lt;div class="radio"&gt;
-                    &lt;label&gt;
-                        &lt;input type="radio" name="radio" checked="checked"/&gt;
-                        &lt;i class="helper"&gt;&lt;/i&gt;I'm the label from a radio button
-                    &lt;/label&gt;
+        &lt;form class="form"&gt;
+            &lt;h6>Formular&lt;/h6&gt;
+            
+            &lt;fieldset&gt;
+                &lt;legend>Text&lt;/legend&gt;
+                &lt;div class="form-group"&gt;
+                    &lt;input type="text" required="required"/&gt;
+                    &lt;label for="input" class="control-label">Textfield&lt;/label&gt;
+                    &lt;i class="bar-form">&lt;/i&gt;
                 &lt;/div&gt;
-                &lt;div class="radio"&gt;
-                    &lt;label&gt;
-                        &lt;input type="radio" name="radio"/&gt;
-                        &lt;i class="helper"&gt;&lt;i&gt;I'm the label from a radio button
-                    &lt;/label&gt;
+                &lt;div class="form-group"&gt;
+                    &lt;textarea required="required"&gt;&lt;/textarea&gt;
+                    &lt;label for="textarea" class="control-label"&gt;Textarea&lt;/label&gt;
+                    &lt;i class="bar-form">&lt;/i&gt;
                 &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/fieldset&gt;
-        
-        &lt;div class="button-container"&gt;
-            &lt;button class="btn-primary-raised btn-ripple"&gt;Submit&lt;/button&gt;
-        &lt;/div&gt;
-    &lt;/form>&gt;
-    </code>
-    <small class="codeText">HTML</small><br />
-    <code>
-    @mixin forma {
-        margin: auto;
-        padding: 2em;
-        padding-bottom: 2em;
-        background-color: white;
-        border-radius: 0.2em;
-        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+            &lt;/fieldset&gt;
+            
+            &lt;fieldset&gt;
+                &lt;legend>Select&lt;/legend&gt;
+                &lt;div class="selectStyle"&gt;
+                    &lt;select&gt;
+                        &lt;optgroup label="Option Group 1"&gt;
+                            &lt;option&gt;Option 1&lt;/option&gt;
+                            &lt;option&gt;Option 2&lt;/option&gt;
+                            &lt;option&gt;Option 3&lt;/option&gt;
+                            &lt;option&gt;Option 4&lt;/option&gt;
+                            &lt;option&gt;Option 5&lt;/option&gt;
+                            &lt;option&gt;Option 6&lt;/option&gt;
+                            &lt;option&gt;Option 7&lt;/option&gt;
+                        &lt;/optgroup&gt;
+                    &lt;/select&gt;
+                &lt;/div&gt;
+            &lt;/fieldset&gt;
     
-        h1,h2,h3,h4,h5,h6 {
-            font-size: 1.2em;
-            text-align: center;
-            margin-bottom: 30px;
+            &lt;fieldset&gt;
+                &lt;legend&gt;Radio&lt;/legend&gt;
+                &lt;div class="checkbox"&gt;
+                    &lt;label&gt;
+                        &lt;input type="checkbox" checked="checked"/&gt;
+                        &lt;i class="helper">&lt;/i>I'm the label from a checkbox
+                    &lt;/label&gt;
+                &lt;/div&gt;
+                &lt;div class="checkbox"&gt;
+                    &lt;label&gt;
+                        &lt;input type="checkbox"/&gt;
+                        &lt;i class="helper">&lt;/i&gt;I'm the label from a checkbox
+                    &lt;/label&gt;
+                &lt;/div&gt;       
+            &lt;/fieldset&gt;
+            
+            &lt;fieldset&gt;
+                &lt;legend&gt;Check&lt;/legend&gt;
+                &lt;div class="form-radio">
+                    &lt;div class="radio"&gt;
+                        &lt;label&gt;
+                            &lt;input type="radio" name="radio" checked="checked"/&gt;
+                            &lt;i class="helper"&gt;&lt;/i&gt;I'm the label from a radio button
+                        &lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;div class="radio"&gt;
+                        &lt;label&gt;
+                            &lt;input type="radio" name="radio"/&gt;
+                            &lt;i class="helper"&gt;&lt;i&gt;I'm the label from a radio button
+                        &lt;/label&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/fieldset&gt;
+            
+            &lt;div class="button-container"&gt;
+                &lt;button class="btn-primary-raised btn-ripple"&gt;Submit&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/form>&gt;
+    </code>
+     <small class="codeText">HTML</small><br />
+    <code>
+        @mixin forma {
+            margin: auto;
+            padding: 2em;
+            padding-bottom: 2em;
+            background-color: white;
+            border-radius: 0.2em;
+            box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+        
+            h1,h2,h3,h4,h5,h6 {
+                font-size: 1.2em;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            label, i {
+                font-family: 'Montserrat', 'Arial' sans-serif;
+            }
         }
-        label, i {
-            font-family: 'Montserrat', 'Arial' sans-serif;
+        // One Page Form
+        .form {
+            @include forma; 
         }
-    }
-    // One Page Form
-    .form {
-        @include forma; 
-    }
-    fieldset {
-        padding: 1em;
-        font-family: 'UbuntuMono', monospace;
-        ul {
-            list-style: none;
+        fieldset {
+            padding: 1em;
+            font-family: 'UbuntuMono', monospace;
+            ul {
+                list-style: none;
+            }
+            select {
+                width: 100%;
+                height: 2em;
+                font-size: 1em;
+                padding: 4px;
+                background: transparent;
+                background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2216%22%20height%3D%228%22%20viewBox%3D%220%200%2016%208%22%3E%3Cpolygon%20fill%3D%22%234D4D4D%22%20points%3D%228%2C0%2016%2C0%2012%2C4%208%2C8%204%2C4%200%2C0%20%22/%3E%3C/svg%3E);
+                background-repeat: no-repeat;
+                background-position: 95% 50%;
+                border: $fw-check-border-width solid $black;
+                border-radius: 0;
+                appearance: none;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    -o-appearance: none;
+                &:focus,
+                &:hover {
+                    border-color: black;
+                    outline: none;
+                }
+                &:active {
+                    border-color: #900;
+                }
+                // Fix Firefox dotted focusring
+                &:-moz-focusring {
+                    color: transparent;
+                    text-shadow: 0 0 0 #000;
+                }
+            }
+            .form-label {
+                margin-bottom: .2em;
+            }
+            .form-radio, .form-group {
+                position: relative;
+                margin-top: 1.25rem;
+                margin-bottom: 1.25rem;
+            }
         }
-        select {
-            width: 100%;
-            height: 2em;
-            font-size: 1em;
-            padding: 4px;
-            background: transparent;
-            background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2216%22%20height%3D%228%22%20viewBox%3D%220%200%2016%208%22%3E%3Cpolygon%20fill%3D%22%234D4D4D%22%20points%3D%228%2C0%2016%2C0%2012%2C4%208%2C8%204%2C4%200%2C0%20%22/%3E%3C/svg%3E);
-            background-repeat: no-repeat;
-            background-position: 95% 50%;
-            border: $fw-check-border-width solid $black;
-            border-radius: 0;
-            appearance: none;
-                -webkit-appearance: none;
-                -moz-appearance: none;
-                -o-appearance: none;
-            &:focus,
-            &:hover {
-                border-color: black;
+        .form-group {
+            .control-label {
+                font-family: 'UbuntuMono', monospace;
+                position: absolute;
+                top: 0.25rem;
+                pointer-events: none;
+                padding-left: 0.125rem;
+                z-index: 1;
+                color: #b3b3b3;
+                font-size: 1rem;
+                font-weight: normal;
+                -webkit-transition: all 0.28s ease;
+                transition: all 0.28s ease;
+            }
+            .bar-form {
+                position: relative;
+                border-bottom: 0.0625rem solid $black;
+                display: block;
+            }
+            input, textarea {
+                width: 100%;
+                display: block;
+                background: none;
+                padding: 0.125rem 0.125rem 0.0625rem;
+                font-size: 1rem;
+                line-height: 1.9;
+                color: transparent;
+                border-width: 0;
+                border-color: transparent;
+                -webkit-transition: all 0.28s ease;
+                transition: all 0.28s ease;
+            }
+            input {
+                &:focus, &:valid, &.form-file, &.has-value {
+                color: #333;
+                }
+            }
+            textarea {
+                &:focus, &:valid, &.form-file, &.has-value {
+                color: #333;
+                }
+            }
+            input {
+                &:focus ~ .control-label, &:valid ~ .control-label, &.form-file ~ .control-label, &.has-value ~ .control-label {
+                font-size: 0.8rem;
+                color: gray;
+                top: -1rem;
+                left: 0;
+                }
+            }
+            textarea {
+                &:focus ~ .control-label, &:valid ~ .control-label, &.form-file ~ .control-label, &.has-value ~ .control-label {
+                font-size: 0.8rem;
+                color: gray;
+                top: -1rem;
+                left: 0;
+                }
+            }
+            select:focus, input:focus, textarea:focus {
                 outline: none;
             }
-            &:active {
-                border-color: #900;
+            select:focus ~ .control-label, input:focus ~ .control-label, textarea:focus ~ .control-label {
+                color: $primary-0;
+                font-family: 'UbuntuMono', monospace;
             }
-            // Fix Firefox dotted focusring
-            &:-moz-focusring {
-                color: transparent;
-                text-shadow: 0 0 0 #000;
+            select:focus ~ .bar-form::before, input:focus ~ .babar-formr::before, textarea:focus ~ .bar-form::before {
+                width: 100%;
+                left: 0;
             }
         }
-        .form-label {
-            margin-bottom: .2em;
-        }
-        .form-radio, .form-group {
-            position: relative;
-            margin-top: 1.25rem;
-            margin-bottom: 1.25rem;
-        }
-    }
-    .form-group {
-        .control-label {
+            
+        .checkbox label, .form-radio label {
             font-family: 'UbuntuMono', monospace;
-            position: absolute;
-            top: 0.25rem;
-            pointer-events: none;
-            padding-left: 0.125rem;
-            z-index: 1;
-            color: #b3b3b3;
-            font-size: 1rem;
-            font-weight: normal;
-            -webkit-transition: all 0.28s ease;
-            transition: all 0.28s ease;
-        }
-        .bar-form {
-          position: relative;
-          border-bottom: 0.0625rem solid $black;
-          display: block;
-        }
-        input, textarea {
-            width: 100%;
-            display: block;
-            background: none;
-            padding: 0.125rem 0.125rem 0.0625rem;
-            font-size: 1rem;
-            line-height: 1.9;
-            color: transparent;
-            border-width: 0;
-            border-color: transparent;
-            -webkit-transition: all 0.28s ease;
-            transition: all 0.28s ease;
-        }
-        input {
-          &:focus, &:valid, &.form-file, &.has-value {
-            color: #333;
-          }
-        }
-        textarea {
-          &:focus, &:valid, &.form-file, &.has-value {
-            color: #333;
-          }
-        }
-        input {
-          &:focus ~ .control-label, &:valid ~ .control-label, &.form-file ~ .control-label, &.has-value ~ .control-label {
-            font-size: 0.8rem;
-            color: gray;
-            top: -1rem;
-            left: 0;
-          }
-        }
-        textarea {
-          &:focus ~ .control-label, &:valid ~ .control-label, &.form-file ~ .control-label, &.has-value ~ .control-label {
-            font-size: 0.8rem;
-            color: gray;
-            top: -1rem;
-            left: 0;
-          }
-        }
-        select:focus, input:focus, textarea:focus {
-          outline: none;
-        }
-        select:focus ~ .control-label, input:focus ~ .control-label, textarea:focus ~ .control-label {
-          color: $primary-0;
-          font-family: 'UbuntuMono', monospace;
-        }
-        select:focus ~ .bar-form::before, input:focus ~ .babar-formr::before, textarea:focus ~ .bar-form::before {
-          width: 100%;
-          left: 0;
-        }
-    }
-      
-    .checkbox label, .form-radio label {
-        font-family: 'UbuntuMono', monospace;
-        position: relative;
-        cursor: pointer;
-        padding-left: 2rem;
-        text-align: left;
-        color: $black;
-        display: block;
-    }
-    .checkbox input, .form-radio input {
-    width: auto;
-    opacity: 0.00000001;
-    position: absolute;
-    left: 0;
-    }
-    .radio {
-        margin-bottom: 1rem;
-        .helper {
-            position: absolute;
-            top: -0.25rem;
-            left: -0.25rem;
+            position: relative;
             cursor: pointer;
+            padding-left: 2rem;
+            text-align: left;
+            color: $black;
             display: block;
-            font-size: 1rem;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            color: #999;
-            &::before {
-            content: '';
-                position: absolute;
-                left: 0;
-                top: 0;
-                margin: 0.25rem;
-                width: 1rem;
-                height: 1rem;
-                -webkit-transition: -webkit-transform 0.28s ease;
-                transition: -webkit-transform 0.28s ease;
-                transition: transform 0.28s ease;
-                transition: transform 0.28s ease, -webkit-transform 0.28s ease;
-                border-radius: 50%;
-                border: 0.125rem solid currentColor;
-            }
-            &::after {
-            content: '';
-                position: absolute;
-                left: 0;
-                top: 0;
-                margin: 0.25rem;
-                width: 1rem;
-                height: 1rem;
-                -webkit-transition: -webkit-transform 0.28s ease;
-                transition: -webkit-transform 0.28s ease;
-                transition: transform 0.28s ease;
-                transition: transform 0.28s ease, -webkit-transform 0.28s ease;
-                border-radius: 50%;
-                border: 0.125rem solid currentColor;
-                -webkit-transform: scale(0);
-                transform: scale(0);
-                background-color: #337ab7;
-                border-color: #337ab7;
-            }
         }
-        label:hover .helper {
-            color: #337ab7;
+        .checkbox input, .form-radio input {
+        width: auto;
+        opacity: 0.00000001;
+        position: absolute;
+        left: 0;
         }
-        input:checked ~ .helper {
-            &::after {
-                -webkit-transform: scale(0.5);
-                transform: scale(0.5);
-            }
-            &::before {
-                color: #337ab7;
-            }
-        }
-    }
-    .checkbox {
-        margin-top: 3rem;
-        margin-bottom: 1rem;
-        .helper {
-            color: #999;
-            position: absolute;
-            top: 4px;
-            left: 0;
-            width: 1rem;
-            height: 1rem;
-            z-index: 0;
-            border: 0.125rem solid currentColor;
-            border-radius: 0.0625rem;
-            -webkit-transition: border-color 0.28s ease;
-            transition: border-color 0.28s ease;
-            &::before, &::after {
+        .radio {
+            margin-bottom: 1rem;
+            .helper {
                 position: absolute;
-                height: 0;
-                width: 0.2rem;
-                background-color: #337ab7;
+                top: -0.25rem;
+                left: -0.25rem;
+                cursor: pointer;
                 display: block;
-                -webkit-transform-origin: left top;
-                transform-origin: left top;
-                border-radius: 0.25rem;
+                font-size: 1rem;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                color: #999;
+                &::before {
                 content: '';
-                -webkit-transition: opacity 0.28s ease, height 0s linear 0.28s;
-                transition: opacity 0.28s ease, height 0s linear 0.28s;
-                opacity: 0;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    margin: 0.25rem;
+                    width: 1rem;
+                    height: 1rem;
+                    -webkit-transition: -webkit-transform 0.28s ease;
+                    transition: -webkit-transform 0.28s ease;
+                    transition: transform 0.28s ease;
+                    transition: transform 0.28s ease, -webkit-transform 0.28s ease;
+                    border-radius: 50%;
+                    border: 0.125rem solid currentColor;
+                }
+                &::after {
+                content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    margin: 0.25rem;
+                    width: 1rem;
+                    height: 1rem;
+                    -webkit-transition: -webkit-transform 0.28s ease;
+                    transition: -webkit-transform 0.28s ease;
+                    transition: transform 0.28s ease;
+                    transition: transform 0.28s ease, -webkit-transform 0.28s ease;
+                    border-radius: 50%;
+                    border: 0.125rem solid currentColor;
+                    -webkit-transform: scale(0);
+                    transform: scale(0);
+                    background-color: #337ab7;
+                    border-color: #337ab7;
+                }
             }
-            &::before {
-                top: 0.65rem;
-                left: 0.38rem;
-                -webkit-transform: rotate(-135deg);
-                transform: rotate(-135deg);
-                // box-shadow: 0 0 0 0.0625rem #fff;
-            }
-            &::after {
-                top: 0.3rem;
-                left: 0;
-                -webkit-transform: rotate(-45deg);
-                transform: rotate(-45deg);
-            }
-        }
-        label:hover .helper {
-            color: #337ab7;
-        }
-        input:checked ~ .helper {
+            label:hover .helper {
                 color: #337ab7;
-                &::after, &::before {
-                opacity: 1;
-                -webkit-transition: height 0.28s ease;
-                transition: height 0.28s ease;
             }
-            &::after {
-                height: 0.5rem;
-            }
-            &::before {
-                height: 1.2rem;
-                -webkit-transition-delay: 0.28s;
-                transition-delay: 0.28s;
+            input:checked ~ .helper {
+                &::after {
+                    -webkit-transform: scale(0.5);
+                    transform: scale(0.5);
+                }
+                &::before {
+                    color: #337ab7;
+                }
             }
         }
-    }
-    .radio + .radio, .checkbox + .checkbox {
-        margin-top: 1rem;
-    }
-    .has-error {
-        .legend.legend {
-            color: #d9534f;
-        }
-        &.form-group {
-            .control-label.control-label, .form-help, .helper {
-            color: #d9534f;
+        .checkbox {
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            .helper {
+                color: #999;
+                position: absolute;
+                top: 4px;
+                left: 0;
+                width: 1rem;
+                height: 1rem;
+                z-index: 0;
+                border: 0.125rem solid currentColor;
+                border-radius: 0.0625rem;
+                -webkit-transition: border-color 0.28s ease;
+                transition: border-color 0.28s ease;
+                &::before, &::after {
+                    position: absolute;
+                    height: 0;
+                    width: 0.2rem;
+                    background-color: #337ab7;
+                    display: block;
+                    -webkit-transform-origin: left top;
+                    transform-origin: left top;
+                    border-radius: 0.25rem;
+                    content: '';
+                    -webkit-transition: opacity 0.28s ease, height 0s linear 0.28s;
+                    transition: opacity 0.28s ease, height 0s linear 0.28s;
+                    opacity: 0;
+                }
+                &::before {
+                    top: 0.65rem;
+                    left: 0.38rem;
+                    -webkit-transform: rotate(-135deg);
+                    transform: rotate(-135deg);
+                    // box-shadow: 0 0 0 0.0625rem #fff;
+                }
+                &::after {
+                    top: 0.3rem;
+                    left: 0;
+                    -webkit-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+                }
+            }
+            label:hover .helper {
+                color: #337ab7;
+            }
+            input:checked ~ .helper {
+                    color: #337ab7;
+                    &::after, &::before {
+                    opacity: 1;
+                    -webkit-transition: height 0.28s ease;
+                    transition: height 0.28s ease;
+                }
+                &::after {
+                    height: 0.5rem;
+                }
+                &::before {
+                    height: 1.2rem;
+                    -webkit-transition-delay: 0.28s;
+                    transition-delay: 0.28s;
+                }
             }
         }
-        &.checkbox {
-            .form-help, .helper {
-            color: #d9534f;
+        .radio + .radio, .checkbox + .checkbox {
+            margin-top: 1rem;
+        }
+        .has-error {
+            .legend.legend {
+                color: #d9534f;
             }
-        }
-        &.radio {
-            .form-help, .helper {
-            color: #d9534f;
+            &.form-group {
+                .control-label.control-label, .form-help, .helper {
+                color: #d9534f;
+                }
             }
-        }
-        &.form-radio {
-            .form-help, .helper {
-            color: #d9534f;
+            &.checkbox {
+                .form-help, .helper {
+                color: #d9534f;
+                }
             }
-        }
-        .bar-form::before {
-            background: #d9534f;
-            left: 0;
-            width: 100%;
-        }
-    }                
+            &.radio {
+                .form-help, .helper {
+                color: #d9534f;
+                }
+            }
+            &.form-radio {
+                .form-help, .helper {
+                color: #d9534f;
+                }
+            }
+            .bar-form::before {
+                background: #d9534f;
+                left: 0;
+                width: 100%;
+            }
+        }                
     </code>
     <small class="codeText">SCSS</small><br>
-</section>
+    <br /><br />
 
-<!-- multi-step form -->
-<section>
-    <h4>Forma sa više koraka</h4>
-    <p>Obrasci mogu biti različitih veličina. Kada je potrebno ispuniti veću količinu podataka koristit ćemo obrasce koji se sastoje od više koraka. Na taj način odvajamo relevantne podatke u manje cjeline. </p>
-    <h6>Uputstva:</h6>
-    <article>
-        <ul>
-            <li><span class="tw-0">progress-bar</span> klasa unutar forme služi kako bi vidjeli na kojem prozoru multi-page forme se nalazimo. Sastoji se od <span class="tw-0">progress-bar__dot, full</span>, te  <span class="tw-0"></span>progress-bar__connector</span> klasa koje grafički uređuju izgled. Povezane su sa javascriptom koji određuje unutar kojeg prozora forme se nalazimo.</li>
-            <li><span class="tw-0">step</span> klasa je povezana ja javascriptom. Služi kako bi se svaki prozor forme prikazao zasebno.</li>
-            <li><span class="tw-0">step1, step2, step3</span> unutar ovih klasa ubacujemo komponente koje želimo da de prikazuju unutar svakog koraka forme.</li>
-            
-        </ul>
+
+    <!-- Multi-step form -->
+	<article>
+        <h3>Multi-step form </h3>
+        <p>Forms can be of different sizes. When more information is needed, we will use multiple-step forms. In this way, we separate the relevant data into smaller units.</p>
+
+        <table>
+            <tr>
+                <th>class</th>
+                <th>explanation</th>
+            </tr>
+            <tr>
+                <td><span class="txt-primary-4">progress-bar</span></td>
+                <td>class inside the form serves to see which multi-page form window we are on. It consists of progress-bar__dot, full, and progress-bar__connector classes that graphically regulate appearance. They are linked to javascript that specifies which form window we are in.</td>
+            </tr>
+            <tr>
+                <td><span class="txt-primary-4">step</span></td>
+                <td>class is linked by javascript. Serves to display each form window separately.</td>
+            </tr>
+            <tr>
+                <td><span class="txt-primary-4">step1, step2, step3 </span></td>
+                <td>within these classes, we insert the components that we want to display within each step of the form.</td>
+            </tr>
+        </table>
     </article>
+    <br /><br />
 
     <form id="stepByStepForm" class="form-step">
         <ul class="progress-bar">
@@ -689,7 +674,27 @@
             <button id="validateFormStep" type="submit" class="btn-primary-ghost btn-ripple shake hidden">Submit</button>
         </div>       
     </form>
-    <br />
+    <br /><br />
+
+    <table>
+        <tr>
+            <th>class</th>
+            <th>explanation</th>
+        </tr>
+        <tr>
+            <td><span class="txt-primary-4">progress-bar</span></td>
+            <td>class inside the form serves to see which multi-page form window we are on. It consists of progress-bar__dot, full, and progress-bar__connector classes that graphically regulate appearance. They are linked to javascript that specifies which form window we are in.</td>
+        </tr>
+        <tr>
+            <td><span class="txt-primary-4">step</span></td>
+            <td>class is linked by javascript. Serves to display each form window separately.</td>
+        </tr>
+        <tr>
+            <td><span class="txt-primary-4">step1, step2, step3</span></td>
+            <td>within these classes, we insert the components that we want to display within each step of the form.</td>
+        </tr>
+    </table>
+    <br /><br />
 
     <code>
         &lt;form id="stepByStepForm" class="form-step"&gt;
@@ -853,91 +858,91 @@
         @include respond-to(extralarge-screens) {
             width: 500px;
         }
-    }                    
+    }
     </code>
     <small class="codeText">SCSS</small><br>
     <code>
-const previousButton = document.getElementById("previous")
-const nextButton = document.getElementById("next")
-const submitButton = document.getElementById('validate')
-const form = document.getElementById('stepByStepForm')
-const dots = document.getElementsByClassName('progress-bar__dot')
-const numberOfSteps = 3
-let currentStep = 1
-
-for(let i = 0 ; i < dots.length ; ++i) {
-    dots[i].addEventListener('click', () => {
-        goToStep(i+1) 
-    })
-}
-
-previousButton.onclick = goPrevious
-nextButton.onclick = goNext
-
-function goNext(e) {
-    e.preventDefault()
-    currentStep += 1
-    goToStep(currentStep)
-}
-function goPrevious(e) {
-    e.preventDefault()
-    currentStep -= 1
-    goToStep(currentStep)
-}
-
-function goToStep(stepNumber) {   
-    currentStep = stepNumber
-
-    let inputsToHide = document.getElementsByClassName('step')
-    let inputs = document.getElementsByClassName(`step${currentStep}`)
-    let indicators = document.getElementsByClassName('progress-bar__dot')
-
-    for(let i = indicators.length-1; i >= currentStep ; --i) {
-        indicators[i].classList.remove('full')
+    const previousButton = document.getElementById("previous")
+    const nextButton = document.getElementById("next")
+    const submitButton = document.getElementById('validate')
+    const form = document.getElementById('stepByStepForm')
+    const dots = document.getElementsByClassName('progress-bar__dot')
+    const numberOfSteps = 3
+    let currentStep = 1
+    
+    for(let i = 0 ; i < dots.length ; ++i) {
+        dots[i].addEventListener('click', () => {
+            goToStep(i+1) 
+        })
     }
-    for(let i = 0; i < currentStep; ++i){
-        indicators[i].classList.add('full')
+    
+    previousButton.onclick = goPrevious
+    nextButton.onclick = goNext
+    
+    function goNext(e) {
+        e.preventDefault()
+        currentStep += 1
+        goToStep(currentStep)
     }
-    //hide all input
-    for (let i = 0; i < inputsToHide.length; ++i) {
-        hide(inputsToHide[i])
+    function goPrevious(e) {
+        e.preventDefault()
+        currentStep -= 1
+        goToStep(currentStep)
     }
-    //only show the right one
-    for (let i = 0; i < inputs.length; ++i) {
-        show(inputs[i])
-    }
-    //if we reached final step
-    if(currentStep === numberOfSteps) {
-        enable(previousButton)
-        disable(nextButton)
-        show(submitButton)
-    }
-    //else if first step
-        else if(currentStep === 1){
-        disable(previousButton)
-        enable(next)
-        hide(submitButton)
-    }
-    else {
-        enable(previousButton)
-        enable(next)
-        hide(submitButton)
+    
+    function goToStep(stepNumber) {   
+        currentStep = stepNumber
+    
+        let inputsToHide = document.getElementsByClassName('step')
+        let inputs = document.getElementsByClassName(`step${currentStep}`)
+        let indicators = document.getElementsByClassName('progress-bar__dot')
+    
+        for(let i = indicators.length-1; i >= currentStep ; --i) {
+            indicators[i].classList.remove('full')
         }
-    }
-    function enable(elem) {
-        elem.classList.remove("disabled");
-        elem.disabled = false;
-    }
-    function disable(elem) {
-        elem.classList.add("disabled");
-        elem.disabled = true;
-    }
-        function show(elem) {
-        elem.classList.remove('hidden')
-    }
-        function hide(elem) {
-        elem.classList.add('hidden')
-    }        
+        for(let i = 0; i < currentStep; ++i){
+            indicators[i].classList.add('full')
+        }
+        //hide all input
+        for (let i = 0; i < inputsToHide.length; ++i) {
+            hide(inputsToHide[i])
+        }
+        //only show the right one
+        for (let i = 0; i < inputs.length; ++i) {
+            show(inputs[i])
+        }
+        //if we reached final step
+        if(currentStep === numberOfSteps) {
+            enable(previousButton)
+            disable(nextButton)
+            show(submitButton)
+        }
+        //else if first step
+            else if(currentStep === 1){
+            disable(previousButton)
+            enable(next)
+            hide(submitButton)
+        }
+        else {
+            enable(previousButton)
+            enable(next)
+            hide(submitButton)
+            }
+        }
+        function enable(elem) {
+            elem.classList.remove("disabled");
+            elem.disabled = false;
+        }
+        function disable(elem) {
+            elem.classList.add("disabled");
+            elem.disabled = true;
+        }
+            function show(elem) {
+            elem.classList.remove('hidden')
+        }
+            function hide(elem) {
+            elem.classList.add('hidden')
+        }        
     </code>
     <small class="codeText">JS</small>
 </section>

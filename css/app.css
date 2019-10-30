@@ -2399,7 +2399,13 @@ fieldset .form-radio, fieldset .form-group {
   }
 }
 
-/* Close Icon */
+/* Hamburger Icon's */
+.hamburgerGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
 .burger {
   width: 50px;
   height: 42px;
@@ -2456,7 +2462,7 @@ fieldset .form-radio, fieldset .form-group {
   top: 32px;
 }
 
-.wrapper-menu {
+.burger_2 {
   width: 40px;
   height: 40px;
   display: flex;
@@ -2466,7 +2472,7 @@ fieldset .form-radio, fieldset .form-group {
   transition: transform 330ms ease-out;
 }
 
-.wrapper-menu.open {
+.burger_2.open {
   transform: rotate(-45deg);
 }
 
@@ -2727,7 +2733,7 @@ fieldset .form-radio, fieldset .form-group {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 65px;
   grid-template-areas: "logo naslov naslov hamburger";
-  background-color: #fff;
+  background-color: #4686bf;
   z-index: 100;
 }
 .sideNavigation img {

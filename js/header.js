@@ -42,13 +42,14 @@ document.getElementById("myNav").innerHTML =
                     +"<li><a href='../html/input.html'>Input</a></li>"
                     +"<li><a href='../html/carousel.html'>Carousel</a></li>"
 
-                    +"<li><span class='tp-1'>Components</span></li>" 
-                    +"<li><a href='../html/navigationMenu.html'>Navigation menu</a></li>"
-                    +"<li><a href='../html/navbar.html'>Navbar</a></li>"
+                    +"<li><span class='tp-1'>Navigation menu's</span></li>"
+                    +"<li><a href='../html/navigationMenu.html'>Side menu</a></li>"
+                    +"<li><a href='../html/navbar.html'>Top menu</a></li>"
                     +"<li><a href='../html/breadcrumb.html'>Breadcrumb</a></li>"
+
+                    +"<li><span class='tp-1'>Components</span></li>" 
                     +"<li><a href='../html/closeIcon.html'>Close icon</a></li>"
                     +"<li><a href='../html/collapse.html'>Collapse</a></li>"
-                    
                     +"<li><a href='../html/form.html'>Forms</a></li>"
                     +"<li><a href='../html/cards.html'>Cards</a></li>"
                     +"<li><a href='../html/buttons.html'>Buttons</a></li>"
