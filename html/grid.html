@@ -23,34 +23,19 @@
 				<li>Increasing fixed sizes uses pixel measurement units</li>
 				<li>Increasing flexible sizes with percentages or "fr" units designed to work with grids</li>
 			</ul>
-			<h4>Position</h4>
+			
 			<ul>
+				<h4>Position</h4>
 				<li>The element can be accurately identified within the interior solution by using a number line, call or determine within which area to solve the artificial components</li>
 				<li>The grid contains an algorithm for controlling the placement of components within the network</li>
 			</ul>
-			<h4>Settlement control</h4>
 			<ul>
+				<h4>Settlement control</h4>
 				<li>The grid contains comparison commands so that we can control the elements within the network</li>
 				<li>Content overlap control</li>
 				<li>It will be possible or possible to accommodate multiple elements within the grid, and they may partially overlap. If you have trouble resolving the z-index problem</li>
 			</ul>
-		</article>
-
-
-		<table>
-			<tr>
-				<th>class</th>
-				<th>explanation</th>
-			</tr>
-			<tr>
-				<td><span class="txt-primary-4">grid-container</span></td>
-				<td>class consists of four brakepoint elements that adjust to the size of the screen.</td>
-			</tr>
-			<tr>
-				<td><span class="txt-primary-4">grid-item</span></td>
-				<td>class to which the <span class="tw-0">grid-container</span> divides.</td>
-			</tr>
-		</table>
+		</article>		
 
 		<br/>
 		<div class="grid-container">
@@ -68,6 +53,23 @@
 			<div class="grid-item">12</div> 
 		</div>
 		<br>
+
+		<table>
+			<tr>
+				<th>class</th>
+				<th>explanation</th>
+			</tr>
+			<tr>
+				<td><span class="txt-primary-4">grid-container</span></td>
+				<td>class consists of four brakepoint elements that adjust to the size of the screen.</td>
+			</tr>
+			<tr>
+				<td><span class="txt-primary-4">grid-item</span></td>
+				<td>class to which the <span class="tw-0">grid-container</span> divides.</td>
+			</tr>
+		</table>
+		<br />
+
 		<code>
 &lt;div class="grid-container"&gt;
 	&lt;div class="grid-item"&gt;1&lt;/div&gt;
@@ -115,10 +117,19 @@
 }
 		</code>
 		<small style="float: right;">SCSS</small>
-
 		<br />
 
-		<h4>Grid layout of a classic website</h4>
+		<h3>Grid layout of a classic website</h3>
+		<br />
+		<div class="grid-container-1">
+			<div class="grid-item-1 grid-header">Header</div>
+			<div class="grid-item-1 grid-sidebar">Sidebar</div>
+			<div class="grid-item-1 grid-content-1">Content-1</div>
+			<div class="grid-item-1 grid-content-2">Content-2</div>
+			<div class="grid-item-1 grid-content-3">Content-3</div>
+			<div class="grid-item-1 grid-footer">Footer</div>
+		</div>
+		<br />
 		<table>
 			<tr>
 				<th>class</th>
@@ -133,20 +144,10 @@
 				<td>class that <span class="tw-0">grid-container</span> is part of.</td>
 			</tr>
 		</table>
-		<br />
-		<div class="grid-container-1">
-			<div class="grid-item-1 grid-header">Header</div>
-			<div class="grid-item-1 grid-sidebar">Sidebar</div>
-			<div class="grid-item-1 grid-content-1">Content-1</div>
-			<div class="grid-item-1 grid-content-2">Content-2</div>
-			<div class="grid-item-1 grid-content-3">Content-3</div>
-			<div class="grid-item-1 grid-footer">Footer</div>
-		</div>
-	</section>
-
-	<!-- Mondrian Art Generator -->
-	<!-- https://codepen.io/vinvanbreugel/pen/pmzmmb -->
-	<section>
+		<br /><br />
+		
+		<!-- Mondrian Art Generator -->
+		<!-- https://codepen.io/vinvanbreugel/pen/pmzmmb -->
 		<div class="grid-mondarianArtGenerator">
 			<div class="item-mondarian">
 				<h1>Mondrian Art Generator</h1>
@@ -158,7 +159,6 @@
 			</div>
 		</div>
 	</section>
-
 </div>
 
 	<script src="../js/header.js"></script>	

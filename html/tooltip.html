@@ -10,50 +10,52 @@
 </head>
 
 <body>
-	<header>
-		<div class="head">
-			<div class="head-item">
-				<a class="navbar-brand" href="https://www.tvz.hr">
-					<img src="../img/TvzLogo.png" alt="tvzLogo" style="width: 100px;">
-				</a>
-			</div>
-			<div class="head-item">
-				<h2>Tooltip</h2>
-			</div>
-			<div class="head-item">
-				<!-- Main navigation -->
-				<div class="hamburger">
-					<div class="burger burger-3" id="burger">
-						<input type="checkbox" name="burger3" id="mainNav" onclick="mainNavigation()" />
-						<label for="mainNav">
-							<span class="bar bar-1"></span>
-							<span class="bar bar-2"></span>
-							<span class="bar bar-3"></span>
-						</label>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Main sidebar -->
-		<nav id="myNav"></nav>
-	</header>
+<header id="myNav"></header>
     
 <div class="filler"></div>
 <!--PAGE CONTENT-->
+<div class="container">
+    <section>
+        <h2>Tooltip</h2>
+        <p>A tooltip is a graphical user interface element used in conjunction with the cursor or mouse pointer to display information about an item without needing to click on it</p>
+        <p>A tooltip is also known as a hint, infotip or screentip.</p>
+        <br />
+
+        <div class="contentTooltip">
+            <p class="left" tooltip="Left" flow="left">Left</p>
+            <p class="right" tooltip="Right" flow="right">Right</p>
+            <p class="up" tooltip="Up" flow="up">Up</p>
+            <p class="down" tooltip="Down" flow="down">Down</p>
+            <p class="left-down" tooltip="Left down" flow="leftDown">Left-down</p>
+            <p class="right-down" tooltip="Right down" flow="rightDown">Right-down</p>
+            <p class="left-up" tooltip="Left up" flow="leftUp">Left-up</p>
+            <p class="right-up" tooltip="Right up" flow="rightUp">Right-up</p>
+        </div>
+        <br />
+
+
+        
+        <table>
+            <tr>
+                <th>class</th>
+                <th>explanation</th>
+            </tr>
+            <tr>
+                <td><span class="txt-primary-4"> </span></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td><span class="txt-primary-4"> </span></td>
+                <td> </td>
+            </tr>
+        </table>
+
+    </section>
+</div>
+
 
 <section>
 
-    <p>
-        Što je opis u HTML kodu?<br>
-        Atribut "title" može odrediti tekst koji će se pojaviti kao opis pri prelasku miša preko slike. Upotrijebite ovo za usmjerivanje alatnih znakova na ikoni ili bilo kojoj drugoj mrežnoj slici. Alt tekst se prikazuje ako se slika iz nekog razloga ne može prikazati, primjerice ako je preglednik ne može učitati od mjesta na kojem je pohranjena.
-        <br><br>
-        Osnovni opis<br>
-        HTML: Upotrijebite element spremnika (poput &lt;div&gt;) i dodajte mu klasu "tooltip". Kad korisnik pređe mišem preko tog &lt;divgt;, prikazat će se opis teksta. Opisni tekst nalazi se unutar umetnutog elementa (poput &lt;span&gt;) s class = "tooltiptext"
-        <br><br>
-        Što je tooltip u JavaScript-u?<br>
-        Pregled. HTML5 / JavaScript Tooltip komponenta je skočni prozor koji prikazuje informacije ili poruku kada korisnici lebde, kliknu, fokusiraju ili dodirnu sliku, gumb, oznaku za sidro itd. Podaci prikazani u Tooltipu mogu uključivati jednostavan tekst, slike, hiperveze ili prilagođene predloške.</p>
-
-    <br/>
     <fieldset>
         <legend>Uputstva</legend>
         <article>
@@ -65,16 +67,7 @@
     </fieldset>
 <br /><br />
 
-<div class="contentTooltip">
-    <p class="left" tooltip="Left" flow="left">Left</p>
-    <p class="right" tooltip="Right" flow="right">Right</p>
-    <p class="up" tooltip="Up" flow="up">Up</p>
-    <p class="down" tooltip="Down" flow="down">Down</p>
-    <p class="left-down" tooltip="Left down" flow="leftDown">Left-down</p>
-    <p class="right-down" tooltip="Right down" flow="rightDown">Right-down</p>
-    <p class="left-up" tooltip="Left up" flow="leftUp">Left-up</p>
-    <p class="right-up" tooltip="Right up" flow="rightUp">Right-up</p>
-</div>
+
 <br /><br />
  
 

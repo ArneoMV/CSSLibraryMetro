@@ -168,93 +168,96 @@ line-height: 1.4;
 		<small style="float: right;">SCSS</small>
 
 		<!-- blockquote -->
-			<h4>Blockquote</h4>
-			<p>The blockquote tag is used to display content from another source</p>
-			<br/>
-			<table>
-				<tr>
-					<th>CSS</th>
-					<th>explanation</th>
-				</tr>
-				<tr>
-					<td><span class="txt-primary-0">&lt;blockquote&gt;</span></td>
-					<td> tag blockquote is used to display content from another source</td>
-				</tr>
-				<tr>
-					<td><span class="txt-primary-0">&lt;q&gt;</span></td>
-					<td> tag is used to enclose quotes.</td>
-				</tr>
-				<tr>
-					<td><span class="txt-primary-0">&lt;footer&gt;</span> </td>
-					<td> tag displays the text reference.e</td>
-				</tr>
-				<tr>
-					<td><span class="txt-primary-0">nth-of-type (even)</span></td>
-					<td> selector  will corresponds to every element that is the nth child of a certain type, its parent. The selector will include each subsequent (odd) quote on the right side of the page</td>
-				</tr>
-			</table>
-			<br/><br/>
-			<blockquote>
-					<p><q>Any product that needs a manual to work is broken</q></p>
-					<footer>Elon Musk</footer>
-			</blockquote>
-			<br />
-			<code>
+		<h4>Blockquote</h4>
+		<p>The blockquote tag is used to display content from another source</p>
+		<br/>
+		
+		<blockquote>
+				<p><q>Any product that needs a manual to work is broken</q></p>
+				<footer>Elon Musk</footer>
+		</blockquote>
+		<br/>
+
+		<table>
+			<tr>
+				<th>CSS</th>
+				<th>explanation</th>
+			</tr>
+			<tr>
+				<td><span class="txt-primary-0">&lt;blockquote&gt;</span></td>
+				<td> tag blockquote is used to display content from another source</td>
+			</tr>
+			<tr>
+				<td><span class="txt-primary-0">&lt;q&gt;</span></td>
+				<td> tag is used to enclose quotes.</td>
+			</tr>
+			<tr>
+				<td><span class="txt-primary-0">&lt;footer&gt;</span> </td>
+				<td> tag displays the text reference.e</td>
+			</tr>
+			<tr>
+				<td><span class="txt-primary-0">nth-of-type (even)</span></td>
+				<td> selector  will corresponds to every element that is the nth child of a certain type, its parent. The selector will include each subsequent (odd) quote on the right side of the page</td>
+			</tr>
+		</table>
+		<br/><br/>
+
+		<code>
 &lt;blockquote&gt;
-	&lt;&gt;&lt;q&gt;Any product that needs a manual to work is broken&lt;/q&gt;&lt;/p&gt;
-	&lt;ooter&gt;Elon Musk&lt;/footer&gt;
+&lt;&gt;&lt;q&gt;Any product that needs a manual to work is broken&lt;/q&gt;&lt;/p&gt;
+&lt;ooter&gt;Elon Musk&lt;/footer&gt;
 &lt;/blockquote&gt;
-			</code>
-			<small style="float: right;">HTML</small>
-			<br />
-			<code>
+		</code>
+		<small style="float: right;">HTML</small>
+		<br />
+		<code>
 blockquote {
-	margin: 0 auto;
-	padding: 1em;
-	border-left: 5px solid $color-primary;
+margin: 0 auto;
+padding: 1em;
+border-left: 5px solid $color-primary;
+&:before {
+	display: none;
+}
+p {
+	color: $color-default;
+	font-size: 12pt;
+	line-height: 1.4;
+	font-family: $font_0, $font_1, $font_2, $font_3, $font_4, $font_5, $font_6, $font_7, $font_8;
+	font-size: 14pt;
+}
+footer {
+	margin-top: .5em;
+	padding: 0;
+	color: $color-default;
+	font-size: 12pt;
+	text-align: left;
+	font-style: italic;
 	&:before {
-		display: none;
-	}
-	p {
-		color: $color-default;
-		font-size: 12pt;
-		line-height: 1.4;
-		font-family: $font_0, $font_1, $font_2, $font_3, $font_4, $font_5, $font_6, $font_7, $font_8;
-		font-size: 14pt;
-	}
-	footer {
-		margin-top: .5em;
-		padding: 0;
-		color: $color-default;
-		font-size: 12pt;
-		text-align: left;
-		font-style: italic;
-		&:before {
-			content: '— ';
-		}
-	}
-	&:nth-of-type(even) {
-		//The: nth-of-type(n) selector matches every element that is the nth child, of a particular type, of its parent. text-align: right;
-		border-left: none;
-		border-right: 5px solid $color-default;
-		padding: 1em 1em 1em 20%;
-		footer {
-			text-align: right;
-			&:before {
-				content: '';
-			}
-			&:after {
-				content: ' —';
-			}
-		}
-	}
-	&:not(:first-of-type) {
-		margin-top: .5em;
+		content: '— ';
 	}
 }
-			</code>
-			<small style="float: right;">SCSS</small>
-		</section>
+&:nth-of-type(even) {
+	//The: nth-of-type(n) selector matches every element that is the nth child, of a particular type, of its parent. text-align: right;
+	border-left: none;
+	border-right: 5px solid $color-default;
+	padding: 1em 1em 1em 20%;
+	footer {
+		text-align: right;
+		&:before {
+			content: '';
+		}
+		&:after {
+			content: ' —';
+		}
+	}
+}
+&:not(:first-of-type) {
+	margin-top: .5em;
+}
+}
+		</code>
+		<small style="float: right;">SCSS</small>
+	</section>
 </div>
 
 	<script src="../js/header.js"></script>

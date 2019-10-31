@@ -10,78 +10,56 @@
 </head>
 
 <body>
-	<header>
-		<div class="head">
-			<div class="head-item">
-				<a class="navbar-brand" href="https://www.tvz.hr">
-					<img src="../img/TvzLogo.png" alt="tvzLogo" style="width: 100px;">
-				</a>
-			</div>
-			<div class="head-item">
-				<h2>Float</h2>
-			</div>
-			<div class="head-item">
-				<!-- Main navigation -->
-				<div class="hamburger">
-					<div class="burger burger-3" id="burger">
-						<input type="checkbox" name="burger3" id="mainNav" onclick="mainNavigation()" />
-						<label for="mainNav">
-							<span class="bar bar-1"></span>
-							<span class="bar bar-2"></span>
-							<span class="bar bar-3"></span>
-						</label>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Main sidebar -->
-		<nav id="myNav"></nav>
-    </header>
+	<header id="myNav"></header>
     
  <div class="filler"></div>    
 <!--PAGE CONTENT-->
-<div class="container " id="page-content">
-    <section>     
-        <!-- Opis -->
-        <h4>Zašto float nije dobar za layout</h4>
-        <p>Kada je element u označavanju doplovio lijevo ili desno, roditelj (ili element kontejnera) prestaje ga sadržavati i uklanja ga iz toka izgleda. Učvršćivanje ovog kolapsa je potrebno kako bi se vratio protok i poravnanje elemenata u rasporedu.</p>
-        <p>Ponekad ovaj kolaps rasporeda nije vidljiv zbog transparentne pozadine, ali dobra je praksa to popraviti čišćenjem plovaka.</p>
+<div class="container">
+    <section>  
+        <h2>Float</h2>
+        <p>The float CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it</p>
+        <p>To understand its purpose and origin, we can look to print design. In a print layout, images may be set into the page such that text wraps around them as needed. This is commonly and appropriately called "text wrap".</p>
         <br />
 
-        <h5>NO FLOAT</h5>
-        <br />
-        <div class="show-bg ">
-            <div class=" box"></div>
-            <div class=" box"></div>
-        </div>
-        <br />
-        <h5 class="float-left">Float left</h5>
-        <h5 class="float-right">Float right</h5>
+        <!-- Float -->
+        <h4 class="float-left">Float left</h4>
+        <h4 class="float-right">Float right</h4>
         <br />
         <br />
         <div class="show-bg ">
             <div class="float-right box"></div>
             <div class="float-left box"></div>
         </div>
+        <br />
+        <h4>NO FLOAT</h4>
+        <br />
+        <div class="show-bg ">
+            <div class=" box"></div>
+            <div class=" box"></div>
+        </div>
+        <br />
+       
 
         <br />
         <!-- Clearfix -->
-        <h5>ClearFix</h5>
         <article>
+            <h3>ClearFix</h3>
+            <p>Micro clearfix generates pseudo-elements and displays them on a table. This creates an anonymous table cell and a new block formatting context, which means that before the pseudo-element prevents the collapse of the upper margin. A pseudo-element is used to clear floats. As a result, there is no need to hide the generated content and the total amount of code required is reduced.</p>
+
             <ul>
-                <li>Današnji stručnjaci za označavanje koriste ovu tehniku kako bi izbjegli nered u markupu. Ovu tehniku izumio je Nicolas Gallagher.Pročitajte njegov izvorni post na <a href="http://nicolasgallagher.com/micro-clearfix-hack/">micro-clearfix hack.</a></li>
-                <li>U ovoj tehnici, roditeljskom elementu se daju neke čarobne CSS-osobine kako bi očistile plovke svih svojih djece.</li>
+                <li>Today's markup experts use this technique to avoid clutter in the markup. This technique was invented by Nicolas Gallagher. Read his original post on the micro-clearfix hack</li>
+                <li>In this technique, the parent element is given some magical CSS properties to clean the floats of all its children.</li>
                 <li>Flexbox is supported from Firefox 18, Chrome 21, Opera 12.10, and Internet Explorer 10, Safari 6.1 (including Mobile Safari) and Android's default browser 4.4.</li>
             </ul>
-        </article>
-        <p>Micro clearfix generira pseudo-elemente i postavlja njihov prikaz na tablicu. Time se stvara anonimna ćelija tablice i novi kontekst oblikovanja bloka, što znači: prije pseudo-elementa sprječava kolaps gornje margine. Pseudo-element se koristi za brisanje plovaka. Kao rezultat toga, nema potrebe sakriti generirani sadržaj i ukupna količina potrebnog koda je smanjena.</p>
-        <p>Uključujući izbornik: before, nije potrebno za brisanje floats-a, ali sprječava da se gornje margine sruše u modernim preglednicima. To ima dvije prednosti:</p>
-        <article>
+
+            <p>Including the: before menu, it's not necessary to delete floats, but it prevents the upper margins from collapsing in modern browsers.</p>
             <ul>
-                <li>Ona osigurava vizualnu dosljednost s drugim tehnikama zadržavanja floata koje stvaraju novi kontekst oblikovanja bloka, <span class="tw-0">overflow:hidden;</span></li>
-                <li>Osigurava vizualnu dosljednost s IE 6/7 kada se primjenjuje <span class="tw-0">zoom: 1;</span></li>
+                <p>This has two advantages:</p>
+                <li>It provides visual consistency with other float retention techniques that create a new block formatting context, overflow: hidden;</li>
+                <li>Provides visual consistency with IE 6/7 when zoom is applied to 1</li>
             </ul>
         </article>
+
         <br />
         <div class="show-bg">
             <div class="float-left box"></div>
@@ -103,6 +81,7 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dicta labore minima distinctio placeat quos libero, perferendis reiciendis voluptatem totam assumenda quo, qui dolor laboriosam! Velit expedita minus culpa illo! Vero eligendi est qui nulla eum asperiores ullam nam aut itaque et enim, ex laudantium, incidunt iste nisi dicta autem.
         </div>
         <br />
+
         <code>
             &lt;div class="show-bg">
                 &lt;div class="float-left box"&gt:&lt;/div&gt:
@@ -141,14 +120,14 @@
             }       
         </code>
         <smal class="float-right">SCSS</smal>
-
         <br />
+
         <!-- Clear -->
-        <h5>Clear</h5>
         <article>
+                <h3>Clear</h3>
             <ul>
-                <li>Brisanje plovaka dodavanjem jasnog elementa</li>
-                <li>Dodavanje jasnog elementa nakon plutajućeg (ih) elementa najčešći je način na koji ljudi koriste za brisanje floats-a u CSS-u i možda već implementirate tu stvar u svoj markup. U ovoj tehnici, u osnovi koristimo jasan element za čišćenje plovaka braće i sestara. Jasan element se obično koristi nakon plutajućih braće i sestara bez dječjih elemenata ili sadržaja u njemu.</li>  
+                <li>Deleting floats by adding a clear element</li>
+                <li>Adding a clear element after a float (s) is the most common way people use to delete floats in CSS and you might already implement that thing in your markup. In this technique, we basically use a clear element to clean the floats of siblings. The clear element is usually used after floating siblings with no baby elements or content in it.</li>  
             </ul>
         </article>
         <br />

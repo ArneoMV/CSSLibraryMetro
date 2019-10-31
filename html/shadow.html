@@ -10,58 +10,70 @@
 </head>
 
 <body>
-	<header>
-		<div class="head">
-			<div class="head-item">
-				<a class="navbar-brand" href="https://www.tvz.hr">
-					<img src="../img/TvzLogo.png" alt="tvzLogo" style="width: 100px;">
-				</a>
-			</div>
-			<div class="head-item">
-				<h2>Shadow</h2>
-			</div>
-			<div class="head-item">
-				<!-- Main navigation -->
-				<div class="hamburger">
-					<div class="burger burger-3" id="burger">
-						<input type="checkbox" name="burger3" id="mainNav" onclick="mainNavigation()" />
-						<label for="mainNav">
-							<span class="bar bar-1"></span>
-							<span class="bar bar-2"></span>
-							<span class="bar bar-3"></span>
-						</label>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Main sidebar -->
-		<nav id="myNav"></nav>
-	</header>
+	<header id="myNav"></header>
 	
 <div class="filler"></div>
 <!--PAGE CONTENT-->
 <div class="container" id="page-content">
     <section>
-            
-		
-		<fieldset>
-			<legend>Uputstva</legend>
-			<p>Zadano stanje sjen je onemogučeno. Sjene mogu biti uključene pomoću pomoćnih klasa. Pomoćne klase se sastoje od tri veličine sjena, te klase za iskljulenu sjenu.</p>
-			<article>
-				<ul>
-					<li><span class="tw-0">noshadow</span> klasa koja isključuje sjenu elementa.</li>
-					<li><span class="tw-0">shadow-sm</span> klasa koja dodaje malu veličinu sjene .</li>
-					<li><span class="tw-0">shadow</span> klasa koja dodaje sjenu..</li>
-					<li><span class="tw-0">shadow-lg</span> klasa koja dodaje veliku veličinu sjene. .</li>
-				</ul>
-			</article>
-		</fieldset>
+		<h2>Shadow</h2>
+		<p>The shadow effect places the shadow on the frame of the element.</p>
+		<p>For the CSS framework, we have created four classes for using shadows: shadow-none, shadow, shadow-sm, and shadow-lg. The shadow-none class removes shadows from an element, while the other classes differ in the amount of shadow placed on an element.</p>
+		<br/>
+		<table>
+			<p>An explanation of the attributes that affect the shadow</p>
+			<tr>
+				<th>attributes</th>
+				<th>explanation</th>
+			</tr>
+			<tr>
+				<td><span class="txt-primary-4">Offset-x</span></td>
+				<td>Sets the horizontal offset of the shadow</td>
+			</tr>
+			<tr>
+				<td><span class="txt-primary-4">Offset-y</span></td>
+				<td>Sets the vertical offset of the shadow</td>
+			</tr>
+			<tr>
+				<td><span class="txt-primary-4">Blur radius</span></td>
+				<td>Sets the blur radius</td>
+			</tr>
+			<tr>
+				<td><span class="txt-primary-4">Color</span></td>
+				<td>Sets the color of the shadow</td>
+			</tr>
+		</table>
 		<br />
-        <div class="shadow-none box-shadow"><p>Bez sjene</p></div>
-        <div class="shadow-sm box-shadow"><p>Mala sjena</p></div>
-        <div class="shadow box-shadow"><p>Obična sjena</p></div>
-        <div class="shadow-lg box-shadow"><p>Velika sjena</p></div>
+       
+		<div class="shadow-lg box-shadow"><p>Big shadow</p></div>
+		<div class="shadow box-shadow"><p>Classic shadow</p></div>
+		<div class="shadow-sm box-shadow"><p>Small shadow</p></div>
+		<div class="shadow-none box-shadow"><p>Without a shado.</p></div>
+		<br/>
 
+
+		<table>
+			<tr>
+				<th>class</th>
+				<th>explanation</th>
+			</tr>
+			<tr>
+				<td><span class="txt-primary-4">shadow-lg</span></td>
+				<td>class that adds a large size to the shadow</td>
+			</tr>
+			<tr>
+				<td><span class="txt-primary-4">shadow</span></td>
+				<td>class that adds classic shadow</td>
+			</tr>
+			<tr>
+				<td><span class="txt-primary-4">shadow-sm</span></td>
+				<td>class that adds a small size to the shadow</td>
+			</tr>
+			<tr>
+				<td><span class="txt-primary-4">noshadow</span></td>
+				<td>class that excludes element shadow</td>
+			</tr>
+		</table>
 		<br />
 		<code>
 
