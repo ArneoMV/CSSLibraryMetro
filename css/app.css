@@ -499,6 +499,10 @@ header .mainSidebar li span a {
   font-weight: bold;
   font-style: normal;
 }
+.txt_mid {
+  font-size: 1.5em;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "LibreBaskerville";
   font-weight: 600;
@@ -774,6 +778,15 @@ table tbody tr:nth-child(even) {
 .btn-large {
   font-size: 1.0625em;
   padding: 0.5625em 1.5em;
+}
+
+.btn_grid {
+  text-align: center;
+}
+
+.toggle_grid {
+  display: grid;
+  justify-items: center;
 }
 
 .btn-primary-raised {
@@ -5627,6 +5640,7 @@ article ul li::before {
   content: "•";
   font-weight: bold;
   padding-right: 0.6rem;
+  color: #095aa2;
 }
 article ol {
   margin: 1.3rem;
@@ -5733,7 +5747,7 @@ ol li::before {
 
 code {
   height: auto;
-  max-height: 400px;
+  max-height: 200px;
   overflow-x: scroll;
 }
 

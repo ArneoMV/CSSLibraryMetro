@@ -34,6 +34,7 @@ article {
                 content: "\2022";
                 font-weight: bold;
                 padding-right: 0.6rem;
+                color: $primary-0;
             }
         }
     }
@@ -99,7 +100,7 @@ ol {
 
 code {
     height: auto;
-    max-height: 400px;
+    max-height: 200px;
     overflow-x: scroll;
 }
 .hidden {

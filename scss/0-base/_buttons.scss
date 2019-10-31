@@ -14,7 +14,13 @@
     padding: 0.5625em 1.5em;
 }
 
-
+.btn_grid{
+    text-align: center;
+}
+.toggle_grid {
+  display: grid;
+  justify-items: center;
+}
 // Button RAISED
 .btn-primary-raised {
   @include btn_base();

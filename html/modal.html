@@ -10,58 +10,58 @@
 </head>
 
 <body>
-	<header>
-		<div class="head">
-			<div class="head-item">
-				<a class="navbar-brand" href="https://www.tvz.hr">
-					<img src="../img/TvzLogo.png" alt="tvzLogo" style="width: 100px;">
-				</a>
-			</div>
-			<div class="head-item">
-				<h2>Modal</h2>
-			</div>
-			<div class="head-item">
-				<!-- Main navigation -->
-				<div class="hamburger">
-					<div class="burger burger-3" id="burger">
-						<input type="checkbox" name="burger3" id="mainNav" onclick="mainNavigation()" />
-						<label for="mainNav">
-							<span class="bar bar-1"></span>
-							<span class="bar bar-2"></span>
-							<span class="bar bar-3"></span>
-						</label>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Main sidebar -->
-		<nav id="myNav"></nav>
-	</header>
+	<header id="myNav"></header>
 	
 	<div class="filler"></div>
 <!--PAGE CONTENT-->
 
-<div class="container" id="page-content">
-		<p>Dijalozi informiraju korisnike o zadatku i mogu sadržavati kritične informacije, zahtijevati odluke ili uključivati višestruke zadatke.
-			Upozorenje pruža kontekstualne povratne poruke za tipične radnje korisnika s nekoliko dostupnih i fleksibilnih poruka upozorenja.
-		</p>
-		<p>Različiti stilovi modalnog prozora:
-		Različita upozorenja mogu imat različiti tip važnosti. Postoje šest različitih tipova upozorenja <span>default, primary, success, info, warrning, te danger</span>
-		Primjer prikaza modalnog prozora možemo vidjeti pritiskom na sljedeći gumb.
-		</p>
-
-		<fieldset>
-			<legend>Uputstva</legend>
-			<article>
+<div class="container">
+	<section>
+		<article>
+				<h2>Modal window</h2>
+				<p>A modal window helps to attract user attention, encourages user participation and provides relevant and useful information. It is the type of window that is subordinate to the parent window. A modal window is a secondary window that stands above the parent window and assumes parental control until the action is completed. The user is denied the ability to perform actions until the modal window is closed, but the parent window is still visible. The most common options offered by the modal window are: Close, Cancel, or Office.</p>
+	
 				<ul>
-					<li><span class="tw-0">id="simpleModal"</span> pomoću ovog id-a povezujemo se sa gumbom koji otvara prozor sa modal-om.</li>
-					<li><span class="tw-0">modal-content-</span> unutar njega se nalaze svi elementi koji čine modal.</li>
-					<li><span class="tw-0">modal-header</span> služi kako bi ispisao naslov poruke.</li>
-					<li><span class="tw-0">modal-body</span> mjesto gdje se ispisuje tekst.</li>
-					<li><span class="tw-0">modal-footer</span> mjesto gdje se nalaze gumbi pomoću kojih odgovaramo na pitanje koje nam modal zadaje.</li>
+					<p>Modal windows are often used in the following cases:</p>
+					<li>Drawing attention to important data</li>
+					<li>Blocking the rest of the application until the condition for continuing to work is satisfied</li>
+					<li>Warning that the actions of the current action are not reversible</li>
 				</ul>
+				<p>Modal window design is important to facilitate user journey through the application. We display the modal window after appropriate user action.
+					<br />If the modal window appears suddenly without user action, then there will be no context in which the window appears and will cause confusion for the user. In this case, the user is most likely to close the window without looking closely at the information the window displays. For example, closing your document without saving is a pre-qualified modal window event that asks you if you want to save your document.
+					<br />The modal window should gain user confidence with its design. There should be responsive design to ensure good functionality across all screen widths.</p>
 			</article>
-		</fieldset>
+			<p>The modal window of the Metro work frame consists of three parts: head, body and base; within which we put the related information. The header is where the title of the window will be displayed. Inside the body, text will be displayed, and a footer with buttons for the user's actions. In the upper right corner is the "X" button to close the window. Modal windows can display different information of different importance. For this purpose, we have created six different types of windows that differ in color.</p>
+			<p>The following colors represent the degree of importance of the window:</p>
+	
+			<table>
+				<tr>
+					<th>class</th>
+					<th>explanation</th>
+				</tr>
+				<tr>
+					<td><span class="txt-primary-4">id="simpleModal"</span></td>
+					<td>using this id, we associate with the button that opens the modal window</td>
+				</tr>
+				<tr>
+					<td><span class="txt-primary-4">modal-content</span></td>
+					<td>within this class are all the elements that make up a modal</td>
+				</tr>
+				<tr>
+					<td><span class="txt-primary-4">modal-header</span></td>
+					<td>is used to print the message title</td>
+				</tr>
+				<tr>
+					<td><span class="txt-primary-4">modal-body</span></td>
+					<td>the place where the text is printed</td>
+				</tr>
+				<tr>
+					<td><span class="txt-primary-4">modal-footer</span></td>
+					<td>is where the buttons are used to answer the question the modal asks us</td>
+				</tr>
+			</table>
+	</section>
+
 
 		<button id="modalBtn" class="btn-primary-flat btn-ripple">CLICK ME</button>
 		<div id="simpleModal" class="modal">
