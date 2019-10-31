@@ -10,58 +10,58 @@
 </head>
 
 <body>
-	<header>
-		<div class="head">
-			<div class="head-item">
-				<a class="navbar-brand" href="https://www.tvz.hr">
-					<img src="../img/TvzLogo.png" alt="tvzLogo" style="width: 100px;">
-				</a>
-			</div>
-			<div class="head-item">
-				<h2>Progress bar</h2>
-			</div>
-			<div class="head-item">
-				<!-- Main navigation -->
-				<div class="hamburger">
-					<div class="burger burger-3" id="burger">
-						<input type="checkbox" name="burger3" id="mainNav" onclick="mainNavigation()" />
-						<label for="mainNav">
-							<span class="bar bar-1"></span>
-							<span class="bar bar-2"></span>
-							<span class="bar bar-3"></span>
-						</label>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Main sidebar -->
-		<nav id="myNav"></nav>
-	</header>
+	<header id="myNav"></header>
 	
 <div class="filler"></div>
 <!--PAGE CONTENT-->
-<div class="container" id="page-content">
-
+<div class="container">
 	<section>
-		<fieldset>
-			<legend>Uputstva</legend>
-			<p>Progres bar napravljen od <span class="tw-0">&lt;progress&gt;</span> taga koji je uključen u HTML5</p>	
-			<article>
-				<ul>
-					<li><span class="tw-0">&lt;progress&gt;</span> element može se koristiti zajedno s JavaScriptom za prikaz napretka zadatka ili procesa onako kako je u tijeku.</li>
-					<li><span class="tw-0">&lt;progress&gt;</span> oznaka obično se piše kao <span class="tw-0">&lt;progress value= "0" max= "100"&gt; &lt;/progress&gt;</span> s bilo kojim sadržajem unutar početne i završne oznake. Taj sadržaj može biti trenutna vrijednost i / ili maksimalna vrijednost koja se može prikazati naslijeđenim preglednicima (tj. preglednicima koji ne podržavaju element &lt;progress&gt;).</li>
-					<li>Atribut <span class="tw-0">vrijednosti</span> predstavlja trenutnu vrijednost (tj. gdje je napredak trenutno na). Ako izostavite taj atribut, traka napretka postaje "neodređena" i neće prikazati nikakav napredak (ali većina preglednika prikazivat će animiranu traku koja će pokazati korisniku da pokušava ...).</li>
-					<li>Atribut <span class="tw-0">max</span> predstavlja ukupni iznos (tj. gdje će vrijednost trake napretka biti kad se završi).</li>
-				</ul>
-			</article>
-		</fieldset>
+		<h2>Progress Bar</h2>
+		<p>The progress bar is a graphical component that is used to visualize the progress steps when executing an action. The bar is accompanied by a textual presentation of progress in percentage format. The purpose of the progress bar is to show the user where they are during their journey through the execution of the action. It plays an important role in reducing the anxiety that many users feel when performing their action.</p>
+		<br/><br/>
+		<p>In the paper, "The Importance of Percentage-Done Progress Indicators for Computer-Human Interfaces," Dr. Brad Myers of the University of Toronto found that most users wanted to have a status indicator. 
+			<br />Research has shown that users are more pleased to see their progress. Progress indicator increases customer engagement. 
+			<br />When respondents from the no-progress group were asked if they wanted any indication of progress, 75 percent said yes. 
+			<br />So, users want to have a progress bar. The answer to the question of why progress bar is such a powerful element can be found in the human subconscious. 
+			<br />People have goals, and they want to meet those goals. The user will feel pleased when something is achieved.</p>
 		<br />
+
+		<blockquote>
+			<p><q>It turns out that when you complete a complex task, your brain releases huge amounts of endorphins</q></p>
+			<footer>Dr. Hugo Liu from MIT</footer>
+		</blockquote>
+		<br />
+
 		<progress id="downloadProgress" value="0" max="100">Hello</progress>
 		<span id="message"></span>
 		<br />
-
 		<button class="btn-primary-flat bnt-ripple" onClick="displayProgress()">Run Progress Bar</button>
 		<br />
+
+		<table>
+			<tr>
+				<th>attribute</th>
+				<th>explanation</th>
+			</tr>
+			<tr>
+				<td><span class="txt-primary-4">&lt;progress&gt;</span></td>
+				<td>element can be used in conjunction with JavaScript to display the progress of a task or process as it is in progress</td>
+			</tr>
+			<tr>
+				<td><span class="txt-primary-4">&lt;progress&gt;</span></td>
+				<td>usually written as &lt;progress value = "0" max = "100"&gt &lt;/progress&gt with any content within the start and end tags. This content may be the current value and / or maximum value that can be displayed to legacy browsers (i.e., browsers that do not support the &lt;progress&gt; element)</td>
+			</tr>
+			<tr>
+				<td><span class="txt-primary-4">value</span></td>
+				<td>attribute represents the current value (i.e. where progress is currently on). If you omit this attribute, the progress bar becomes "indefinite" and will not show any progress (but most browsers will show an animated bar that will show the user to try ...)</td>
+			</tr>
+			<tr>
+				<td><span class="txt-primary-4">&lt;max&gt;</span></td>
+				<td>attribute represents the total (i.e. where the progress bar value will be when completed).</td>
+			</tr>
+		</table>
+		<p>The &lt;progress&gt; element can be used in conjunction with JavaScript to display the progress of a task or process as it is in progress.</p>
+		<br/>
 
 		<code>
 &lt;progress id="downloadProgress" value="0" max="100"&gt;&lt;/progress&gt;
@@ -86,8 +86,7 @@ progress::-moz-progress-bar {background: linear-gradient(to right, #339c4d 0%, #
 		</code>
 		<small class="codeText">SCSS</small>
 		<br />
-
-		<p><span class="tw-0"">&lt;progress&gt;</span> tag obično je vezan za Ajaxov prijenos događaja.</p>
+		<p>The &lt;progress&gt; tag is usually related to Ajax event transmission.</p>
 		<code>
 		// Progress bar -> progress
 		var milisec = 0;
@@ -105,7 +104,7 @@ progress::-moz-progress-bar {background: linear-gradient(to right, #339c4d 0%, #
 		<small class="codeText">JS</small>
 		
 		<br />
-		<p>Progres bar napravljen od <span class="tw-0"">div</span> taga.</p>
+		<p>A progress bar made of div tags.</p>
 		<div id="myBar"></div>
 		<button class="btn-primary-flat bnt-ripple" onclick="move()">Run Progress Bar</button>
 		
@@ -153,8 +152,8 @@ elem.innerHTML = width * 1  + '%';
 	</section>
 </div>
 
-<script src="../js/header.js"></script>
-<script src="../js/myscript.js"></script>
+	<script src="../js/header.js"></script>
+	<script src="../js/myscript.js"></script>
 </body>
 </html>
 

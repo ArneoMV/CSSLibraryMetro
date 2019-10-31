@@ -31,9 +31,141 @@
 					<br />If the modal window appears suddenly without user action, then there will be no context in which the window appears and will cause confusion for the user. In this case, the user is most likely to close the window without looking closely at the information the window displays. For example, closing your document without saving is a pre-qualified modal window event that asks you if you want to save your document.
 					<br />The modal window should gain user confidence with its design. There should be responsive design to ensure good functionality across all screen widths.</p>
 			</article>
-			<p>The modal window of the Metro work frame consists of three parts: head, body and base; within which we put the related information. The header is where the title of the window will be displayed. Inside the body, text will be displayed, and a footer with buttons for the user's actions. In the upper right corner is the "X" button to close the window. Modal windows can display different information of different importance. For this purpose, we have created six different types of windows that differ in color.</p>
-			<p>The following colors represent the degree of importance of the window:</p>
 	
+			<br />
+
+			<button id="modalBtn" class="btn-primary-flat btn-ripple">CLICK ME</button>
+			<div id="simpleModal" class="modal">
+				<div class="modal-content-default">
+					<div class="modal-header">
+						<span class="closeBtn">&times;</span>
+						<h3>Default modal</h3>
+					</div>
+					<div class="modal-body">
+						<p>Hi ... I'm a modal window.
+						<br/>Pressing X or body to close the modal window!</p>
+					</div>
+					<div class="modal-footer">
+						<a>Cancel</a>
+						<a>Accept</a>
+					</div>	
+				</div>
+			</div>
+
+			<br />
+			<p>The modal window of the Metro work frame consists of three parts: head, body and footer. 
+				<br />The header is where the title of the window will be displayed. 
+				<br />Inside the body, text will be displayed, and a footer with buttons for the user's actions. 
+				<br />In the upper right corner is the "X" button to close the window. 
+				<br />Modal windows can display different information of different importance. 
+				<br />For this purpose, we have created six different types of windows that differ in color.</p>
+			<p>The following colors represent the degree of importance of the window:</p>
+
+
+			<div class="col-sm-12 col-md-6 col-lg-4">
+				<div class="modal-content-default">
+					<div class="modal-header">
+						<span class="closeBtn">&times;</span>
+						<h3>Default modal</h3>
+					</div>
+					<div class="modal-body">
+						<p>Hello...I'm modal!</p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Ipsam ducimus possimus maxime officia quam vero facere rem? 
+					</div>
+					<div class="modal-footer">
+						<a>Cancel</a>
+						<a>Accept</a>
+					</div>	
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-4">
+				<div class="modal-content-primary">
+					<div class="modal-header">
+						<span class="closeBtn">&times;</span>
+						<h3>Primary modal</h3>
+					</div>
+					<div class="modal-body">
+						<p>Hello...I'm modal!</p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Ipsam ducimus possimus maxime officia quam vero facere rem? 
+					</div>
+					<div class="modal-footer">
+						<a>Cancel</a>
+						<a>Accept</a>
+					</div>	
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-4">
+				<div class="modal-content-success">
+					<div class="modal-header">
+						<span class="closeBtn">&times;</span>
+						<h3>Success modal</h3>
+					</div>
+					<div class="modal-body">
+						<p>Hello...I'm modal!</p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Ipsam ducimus possimus maxime officia quam vero facere rem? 
+					</div>
+					<div class="modal-footer">
+						<a>Cancel</a>
+						<a>Accept</a>
+					</div>	
+				</div>
+			</div>
+	
+			<div class="col-sm-12 col-md-6 col-lg-4">
+				<div class="modal-content-info">
+					<div class="modal-header">
+						<span class="closeBtn">&times;</span>
+						<h3>Info modal</h3>
+					</div>
+					<div class="modal-body">
+						<p>Hello...I'm modal!</p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Ipsam ducimus possimus maxime officia quam vero facere rem? 
+					</div>
+					<div class="modal-footer">
+						<a>Cancel</a>
+						<a>Accept</a>
+					</div>	
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-4">
+				<div class="modal-content-warrning">
+					<div class="modal-header">
+						<span class="closeBtn">&times;</span>
+						<h3>Warrning modal</h3>
+					</div>
+					<div class="modal-body">
+						<p>Hello...I'm modal!</p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Ipsam ducimus possimus maxime officia quam vero facere rem? 
+					</div>
+					<div class="modal-footer">
+						<a>Cancel</a>
+						<a>Accept</a>
+					</div>	
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-4">
+				<div class="modal-content-danger">
+					<div class="modal-header">
+						<span class="closeBtn">&times;</span>
+						<h3>Danger modal</h3>
+					</div>
+					<div class="modal-body">
+						<p>Hello...I'm modal!</p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Ipsam ducimus possimus maxime officia quam vero facere rem? 
+					</div>
+					<div class="modal-footer">
+						<a>Cancel</a>
+						<a>Accept</a>
+					</div>	
+				</div>
+			</div>
+
 			<table>
 				<tr>
 					<th>class</th>
@@ -60,243 +192,117 @@
 					<td>is where the buttons are used to answer the question the modal asks us</td>
 				</tr>
 			</table>
+
+			<code>
+			&lt;div id="simpleModal" class="modal"&gt;
+			&lt;div class="modal-content-default"&gt;
+			&lt;div class="modal-header"&gt;
+				&lt;pan class="closeBtn"&gt;&times;&lt;/span&gt;
+				&lt;h3>Default modal&lt;/h3&gt;
+			&lt;/div&gt;
+			&lt;div class="modal-body"&gt;
+				&lt;p>Hello...I'm modal!&lt;/p&gt;
+				Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				Ipsam ducimus possimus maxime officia quam vero facere rem? 
+			&lt;/div&gt;
+			&lt;div class="modal-footer"&gt;
+				&lt;h5>Cancel&lt;/h5&gt;
+				&lt;h5>Accept&lt;/h5&gt;
+			&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;/div&gt;
+			</code>
+			<small style="float: right;">HTML</small>
+			<br />
+			<code>
+			.modal {
+			display: none;
+			position: fixed;
+			z-index: 99;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			overflow: auto;
+			background-color: rgba(0,0,0,0.5); 
+			}
+			@mixin modal-content {
+			background-color: #f4f4f4;
+			margin: 5% auto;
+			width: 70%;
+			box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+			animation-name: modalopen;
+			animation-duration: 1s; 
+			// border-left: 5px solid $color-primary;
+			}
+			.modal-content-default {
+			@include modal-content();
+			border-left: 8px solid $color-default;
+			}
+			.modal-content-primary {
+			@include modal-content();
+			border-left: 8px solid $color-primary;
+			}
+			.modal-content-success {
+			@include modal-content();
+			border-left: 8px solid $color-success;
+			}
+			.modal-content-info {
+			@include modal-content();
+			border-left: 8px solid $color-info;
+			}
+			.modal-content-warrning {
+			@include modal-content();
+			border-left: 8px solid $color-warrning;
+			}
+			.modal-content-danger {
+			@include modal-content();
+			border-left: 8px solid $color-danger;
+			}
+			.modal-header{
+			padding: 15px;
+			h3 {
+			margin: 0;
+			}
+			}
+			.modal-body {
+			padding: 10px 20px;
+			}
+			.modal-footer {
+			padding: 10px;
+			color: #444444;
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			h5 {
+			margin: 0 10px;
+			}
+			h5:hover {
+			color: #7189bf;
+			}
+			}
+			
+			.closeBtn {
+			color: #ccc;
+			float: right;
+			font-size: 30px;
+			color: #ccc
+			}
+			.closeBtn:hover,.closeBtn:focus{
+			color: #000;
+			text-decoration: none;
+			cursor: pointer;
+			}
+			@keyframes modalopen {
+			from{opacity: 0;}
+			to{opacity: 1;}
+			}
+			</code>
+			<small style="float: right;">SCSS</small>
 	</section>
-
-
-		<button id="modalBtn" class="btn-primary-flat btn-ripple">CLICK ME</button>
-		<div id="simpleModal" class="modal">
-			<div class="modal-content-default">
-				<div class="modal-header">
-					<span class="closeBtn">&times;</span>
-					<h3>Default modal</h3>
-				</div>
-				<div class="modal-body">
-					<p>Bok...Ja sam modal prozor!</p>
-					Pritiskom na X ili na body zatvaramo modal prozor!
-				</div>
-				<div class="modal-footer">
-					<a>Cancel</a>
-					<a>Accept</a>
-				</div>	
-			</div>
-		</div>
-		<br>
-
-		<div class="col-sm-12 col-md-6 col-lg-4">
-			<div class="modal-content-default">
-				<div class="modal-header">
-					<span class="closeBtn">&times;</span>
-					<h3>Default modal</h3>
-				</div>
-				<div class="modal-body">
-					<p>Hello...I'm modal!</p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Ipsam ducimus possimus maxime officia quam vero facere rem? 
-				</div>
-				<div class="modal-footer">
-					<a>Cancel</a>
-					<a>Accept</a>
-				</div>	
-			</div>
-		</div>
-		<div class="col-sm-12 col-md-6 col-lg-4">
-			<div class="modal-content-primary">
-				<div class="modal-header">
-					<span class="closeBtn">&times;</span>
-					<h3>Primary modal</h3>
-				</div>
-				<div class="modal-body">
-					<p>Hello...I'm modal!</p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Ipsam ducimus possimus maxime officia quam vero facere rem? 
-				</div>
-				<div class="modal-footer">
-					<a>Cancel</a>
-					<a>Accept</a>
-				</div>	
-			</div>
-		</div>
-		<div class="col-sm-12 col-md-6 col-lg-4">
-			<div class="modal-content-success">
-				<div class="modal-header">
-					<span class="closeBtn">&times;</span>
-					<h3>Success modal</h3>
-				</div>
-				<div class="modal-body">
-					<p>Hello...I'm modal!</p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Ipsam ducimus possimus maxime officia quam vero facere rem? 
-				</div>
-				<div class="modal-footer">
-					<a>Cancel</a>
-					<a>Accept</a>
-				</div>	
-			</div>
-		</div>
-
-		<div class="col-sm-12 col-md-6 col-lg-4">
-			<div class="modal-content-info">
-				<div class="modal-header">
-					<span class="closeBtn">&times;</span>
-					<h3>Info modal</h3>
-				</div>
-				<div class="modal-body">
-					<p>Hello...I'm modal!</p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Ipsam ducimus possimus maxime officia quam vero facere rem? 
-				</div>
-				<div class="modal-footer">
-					<a>Cancel</a>
-					<a>Accept</a>
-				</div>	
-			</div>
-		</div>
-		<div class="col-sm-12 col-md-6 col-lg-4">
-			<div class="modal-content-warrning">
-				<div class="modal-header">
-					<span class="closeBtn">&times;</span>
-					<h3>Warrning modal</h3>
-				</div>
-				<div class="modal-body">
-					<p>Hello...I'm modal!</p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Ipsam ducimus possimus maxime officia quam vero facere rem? 
-				</div>
-				<div class="modal-footer">
-					<a>Cancel</a>
-					<a>Accept</a>
-				</div>	
-			</div>
-		</div>
-		<div class="col-sm-12 col-md-6 col-lg-4">
-			<div class="modal-content-danger">
-				<div class="modal-header">
-					<span class="closeBtn">&times;</span>
-					<h3>Danger modal</h3>
-				</div>
-				<div class="modal-body">
-					<p>Hello...I'm modal!</p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Ipsam ducimus possimus maxime officia quam vero facere rem? 
-				</div>
-				<div class="modal-footer">
-					<a>Cancel</a>
-					<a>Accept</a>
-				</div>	
-			</div>
-		</div>
-		
-
-		<br />
-		<code>
-&lt;div id="simpleModal" class="modal"&gt;
-&lt;div class="modal-content-default"&gt;
-&lt;div class="modal-header"&gt;
-	&lt;pan class="closeBtn"&gt;&times;&lt;/span&gt;
-	&lt;h3>Default modal&lt;/h3&gt;
-&lt;/div&gt;
-&lt;div class="modal-body"&gt;
-	&lt;p>Hello...I'm modal!&lt;/p&gt;
-	Lorem ipsum dolor sit amet consectetur adipisicing elit.
-	Ipsam ducimus possimus maxime officia quam vero facere rem? 
-&lt;/div&gt;
-&lt;div class="modal-footer"&gt;
-	&lt;h5>Cancel&lt;/h5&gt;
-	&lt;h5>Accept&lt;/h5&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-		</code>
-		<small style="float: right;">HTML</small>
-		<br />
-		<code>
-.modal {
-display: none;
-position: fixed;
-z-index: 99;
-left: 0;
-top: 0;
-height: 100%;
-width: 100%;
-overflow: auto;
-background-color: rgba(0,0,0,0.5); 
-}
-@mixin modal-content {
-background-color: #f4f4f4;
-margin: 5% auto;
-width: 70%;
-box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
-animation-name: modalopen;
-animation-duration: 1s; 
-// border-left: 5px solid $color-primary;
-}
-.modal-content-default {
-@include modal-content();
-border-left: 8px solid $color-default;
-}
-.modal-content-primary {
-@include modal-content();
-border-left: 8px solid $color-primary;
-}
-.modal-content-success {
-@include modal-content();
-border-left: 8px solid $color-success;
-}
-.modal-content-info {
-@include modal-content();
-border-left: 8px solid $color-info;
-}
-.modal-content-warrning {
-@include modal-content();
-border-left: 8px solid $color-warrning;
-}
-.modal-content-danger {
-@include modal-content();
-border-left: 8px solid $color-danger;
-}
-.modal-header{
-padding: 15px;
-h3 {
-margin: 0;
-}
-}
-.modal-body {
-padding: 10px 20px;
-}
-.modal-footer {
-padding: 10px;
-color: #444444;
-display: flex;
-flex-direction: row;
-justify-content: flex-end;
-h5 {
-margin: 0 10px;
-}
-h5:hover {
-color: #7189bf;
-}
-}
-
-.closeBtn {
-color: #ccc;
-float: right;
-font-size: 30px;
-color: #ccc
-}
-.closeBtn:hover,.closeBtn:focus{
-color: #000;
-text-decoration: none;
-cursor: pointer;
-}
-@keyframes modalopen {
-from{opacity: 0;}
-to{opacity: 1;}
-}
-		</code>
-		<small style="float: right;">SCSS</small>
-
 </div>
-<script src="../js/header.js"></script>
-<script src="../js/myscript.js"></script>
+
+	<script src="../js/header.js"></script>
+	<script src="../js/myscript.js"></script>
 </body>
 </html>
