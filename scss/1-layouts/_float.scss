@@ -17,17 +17,17 @@
 .show-bg {
   @include clearfix;
   padding: 15px;
-  box-shadow: 0px 0px 0px 15px $danger-3;
+  box-shadow: 0px 0px 0px 15px $primary-3;
   color: $warrning-4;
   font-weight: 300px;
-  background-color: $warrning-0;
-  border: 4px solid $warrning-1;
+  background-color: $primary-0;
+  border: 4px solid $primary-1;
 
 }
 .box {
     width: 60px;
     height: 60px;
-    background-color: $primary-4;
+    background-color: $white;
     margin: 0 10px 10px 10px;
     display: flex;
     justify-content: center; /* align horizontal */

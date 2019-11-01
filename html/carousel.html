@@ -14,50 +14,64 @@
 <div class="filler"></div>
 
 <!--PAGE CONTENT-->
-<section>
-    
-    <p></p>
-               
-    <br/>
-    <fieldset>
-        <legend>Uputstva</legend>
+<div class="container">
+    <section>
         <article>
-            <ul>
-                <li><span class="tw-0"></span></li>
-                <li><span class="tw-0"></span></li>
-            </ul>
-        </article>
-    </fieldset>
-    <br /><br />
-    <div class="carousel-container">
-        <button class="arrow left" id="previousBtn">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 80" xml:space="preserve">
-                <polyline fill="none"stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="
-                45.63,75.8 0.375,38.087 45.63,0.375 "/>
-            </svg>  
-        </button>
-        <div class="carousel-slide">
-            <img src="../img/carousel/carousel1.jpeg" id="lastClone" alt="carousel">
-            <img src="../img/carousel/carousel2.jpeg" alt="carousel">
-            <img src="../img/carousel/carousel3.jpeg" alt="carousel">
-            <img src="../img/carousel/carousel4.jpeg" alt="carousel">
-            <img src="../img/carousel/carousel5.jpg" alt="carousel">
-            <img src="../img/carousel/carousel1.jpeg" id="firstClone" alt="carousel">
-        </div>
-        <button class="arrow right" id="nextBtn">
-            <svg xmln3s="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 80" xml:space="preserve">
-                <polyline fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="
-                0.375,0.375 45.63,38.087 0.375,75.8 "/>
-            </svg>
-        </button>
-    </div>
+            <h2>Carousel</h2>
+            <p> </p>
 
- 
-    <code>
+            <ul>
+                <li></li>
+                <li> </li>
+            </ul>
+
+        </article>
+        <br />
+
+        <div class="carousel-container">
+            <button class="arrow left" id="previousBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 80" xml:space="preserve">
+                    <polyline fill="none"stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="
+                    45.63,75.8 0.375,38.087 45.63,0.375 "/>
+                </svg>  
+            </button>
+            <div class="carousel-slide">
+                <img src="../img/carousel/carousel1.jpeg" id="lastClone" alt="carousel">
+                <img src="../img/carousel/carousel2.jpeg" alt="carousel">
+                <img src="../img/carousel/carousel3.jpeg" alt="carousel">
+                <img src="../img/carousel/carousel4.jpeg" alt="carousel">
+                <img src="../img/carousel/carousel5.jpg" alt="carousel">
+                <img src="../img/carousel/carousel1.jpeg" id="firstClone" alt="carousel">
+            </div>
+            <button class="arrow right" id="nextBtn">
+                <svg xmln3s="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 80" xml:space="preserve">
+                    <polyline fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="
+                    0.375,0.375 45.63,38.087 0.375,75.8 "/>
+                </svg>
+            </button>
+        </div>
+        <br />
+
+        <table>
+            <tr>
+                <th>class</th>
+                <th>explanation</th>
+            </tr>
+            <tr>
+                <td><span class="txt-primary-4"> </span></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td><span class="txt-primary-4"> </span></td>
+                <td> </td>
+            </tr>
+        </table>
+         <br />
+         <code>
     
-    </code>
-    <small class="codeText">HTML</small><br />
-    <code>
+        </code>
+        <small class="codeText">HTML</small><br />
+        <code>
         /* Carousel */
 
         .carousel-container{
@@ -80,8 +94,8 @@
                     height: 15px;
                     fill: currentColor;
                     vertical-align: bottom
-                  }
-              }
+                    }
+                }
             #previousBtn, #nextBtn{
                 z-index: 10;
             }
@@ -123,37 +137,40 @@
             }
         }
         
-          .arrow {
+            .arrow {
             cursor: pointer;
-          }
+            }
         .left, .right polyline {
             stroke: $primary-0;
         }
-          .left:hover polyline,
-          .left:focus polyline {
+            .left:hover polyline,
+            .left:focus polyline {
             stroke-width: 3;
             
-          }
-          .left:active polyline {
+            }
+            .left:active polyline {
             stroke-width: 6;
             stroke: $primary-0;
             transition: all 100ms ease-in-out;
-          }
-          .right:hover polyline,
-          .right:focus polyline {
+            }
+            .right:hover polyline,
+            .right:focus polyline {
             stroke-width: 3;
-          }
-          .right:active polyline {
+            }
+            .right:active polyline {
             stroke-width: 6;
             stroke: $primary-0;
             transition: all 100ms ease-in-out;
-          }
-          polyline {
+            }
+            polyline {
             transition: all 250ms ease-in-out;
-          }    
-    </code>
-    <small class="codeText">SCSS</small><br>
-</section>
+            }    
+        </code>
+        <small class="codeText">SCSS</small><br>
+
+    </section>   
+</div>
+
 
 
 <script src="../js/carousel.js"></script>

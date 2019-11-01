@@ -38,7 +38,7 @@ document.getElementById("myNav").innerHTML =
                     +"<li><a href='../html/typography.html'>Typography</a></li>"
                     +"<li><a href='../html/colors.html'>Colors</a></li>"
                     +"<li><a href='../html/images.html'>Images</a></li>"
-                    +"<li><a href='../html/table.html'>Tables</a></li>"
+                    +"<li><a href='../html/table.html'>Table</a></li>"
                     +"<li><a href='../html/input.html'>Input</a></li>"
                     +"<li><a href='../html/carousel.html'>Carousel</a></li>"
 
@@ -48,13 +48,13 @@ document.getElementById("myNav").innerHTML =
                     +"<li><a href='../html/breadcrumb.html'>Breadcrumb</a></li>"
 
                     +"<li><span class='tp-1'>Components</span></li>" 
-                    +"<li><a href='../html/closeIcon.html'>Close icon</a></li>"
+                    +"<li><a href='../html/hamburgerIcon.html'>Hamburger icon</a></li>"
                     +"<li><a href='../html/collapse.html'>Collapse</a></li>"
-                    +"<li><a href='../html/form.html'>Forms</a></li>"
-                    +"<li><a href='../html/cards.html'>Cards</a></li>"
-                    +"<li><a href='../html/buttons.html'>Buttons</a></li>"
+                    +"<li><a href='../html/form.html'>Form's</a></li>"
+                    +"<li><a href='../html/cards.html'>Card's</a></li>"
+                    +"<li><a href='../html/buttons.html'>Button's</a></li>"
                     +"<li><a href='../html/modal.html'>Modal</a></li>"
-                    +"<li><a href='../html/progressBar.html'>Progress Bars</a></li>"
+                    +"<li><a href='../html/progressBar.html'>Progress bar</a></li>"
                     +"<li><a href='../html/pagination.html'>Pagination</a></li>"
                     
                     +"<li><span class='tp-1'>Utilities</span></li>"              
