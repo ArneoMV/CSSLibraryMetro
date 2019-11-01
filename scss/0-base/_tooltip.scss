@@ -57,7 +57,7 @@
 	}
 	&:hover::after {
 		background-color: $gray-8;
-		padding: 5px;
+		padding: 10px;
 	}
 
 	/* FLOW: UP */
@@ -261,8 +261,9 @@
 
 /* UNRELATED to tooltips */
 .contentTooltip {
-	display:grid;
+	display: grid;
 	background:  $primary-1;
+	border: 5px solid $primary-0;
 	padding: 20px;
     box-sizing: border-box;
     border-radius: 15px;

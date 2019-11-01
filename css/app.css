@@ -3787,7 +3787,7 @@ textarea:focus, input:focus {
 }
 [tooltip]:hover::after {
   background-color: rgba(51, 51, 51, 0.8);
-  padding: 5px;
+  padding: 10px;
 }
 [tooltip]:not([flow])::before, [tooltip]:not([flow])::after, [tooltip][flow=up]::before, [tooltip][flow=up]::after {
   left: 50%;
@@ -3940,6 +3940,7 @@ textarea:focus, input:focus {
 .contentTooltip {
   display: grid;
   background: #4686bf;
+  border: 5px solid #095aa2;
   padding: 20px;
   box-sizing: border-box;
   border-radius: 15px;

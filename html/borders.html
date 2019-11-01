@@ -10,79 +10,136 @@
 </head>
 
 <body>
-	<header>
-		<div class="head">
-			<div class="head-item">
-				<a class="navbar-brand" href="https://www.tvz.hr">
-					<img src="../img/TvzLogo.png" alt="tvzLogo" style="width: 100px;">
-				</a>
-			</div>
-			<div class="head-item">
-				<h2>Borders</h2>
-			</div>
-			<div class="head-item">
-				<!-- Main navigation -->
-				<div class="hamburger">
-					<div class="burger burger-3" id="burger">
-						<input type="checkbox" name="burger3" id="mainNav" onclick="mainNavigation()" />
-						<label for="mainNav">
-							<span class="bar bar-1"></span>
-							<span class="bar bar-2"></span>
-							<span class="bar bar-3"></span>
-						</label>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Main sidebar -->
-		<nav id="myNav"></nav>
-	</header>
+	<header id="myNav"></header>
     
 <div class="filler"></div>
 <!--PAGE CONTENT-->
 
-<section>
+<div class="container">
+	<section>
+		<article>
+            <h2>Border's</h2>
+            <p> </p>
 
-    <p>
+			<ul>
+				<li></li>
+				<li> </li>
+			</ul>
 
-    </p>
-       
-    <br/>
-    <fieldset>
-        <legend>Uputstva</legend>
-        <article>
-            <ul>
-                <li><span class="tw-0"></span></li>
-                <li><span class="tw-0"></span></li>
-            </ul>
-        </article>
-    </fieldset>
-<br /><br />
+		</article>
+		<br />
 
-<div class="border-grid">
-    <span class="border border-primary"></span>
-    <span class="border border-warrning"></span>
-    <span class="border border-danger"></span>
-    <span class="border border-success"></span>
-    <span class="border border-white"></span>
-    <span class="border border-black"></span>
+		<div class="border-grid">
+			<span class="border border-primary"></span>
+			<span class="border border-warrning"></span>
+			<span class="border border-danger"></span>
+			<span class="border border-success"></span>
+			<span class="border border-white"></span>
+			<span class="border border-black"></span>
+		</div>
+
+		<br />
+		<table>
+			<tr>
+				<th>class</th>
+				<th>explanation</th>
+			</tr>
+			<tr>
+				<td><span class="txt-primary-4">border</span></td>
+				<td>class gives the thickness of the boundary line. Line thickness is 1px.</td>
+			</tr>
+			<tr>
+				<td><span class="txt-primary-4">border-primary</span></td>
+				<td>class specifies the color of the border that is the primary color</td>
+			</tr>
+			<tr>
+				<td><span class="txt-primary-4">border-warrning</span></td>
+				<td>class specifies the color of the border that is the warrning color/td> </td>
+			</tr>
+			<tr>
+				<td><span class="txt-primary-4">border-danger</span></td>
+				<td>class specifies the color of the border that is the primary color</td>
+			</tr>
+			<tr>
+				<td><span class="txt-primary-4">border-success</span></td>
+				<td>class specifies the color of the border that is the danger color</td>
+			</tr>
+			<tr>
+				<td><span class="txt-primary-4">border-white</span></td>
+				<td>class specifies the color of the border that is the white color</td>
+			</tr>
+			<tr>
+				<td><span class="txt-primary-4">border-black</span></td>
+				<td>class specifies the color of the border that is the black color</td>
+			</tr>
+		</table>
+		<br/>
+
+		<code>
+    	&lt;div class="border-grid"&gt;
+			&lt;span class="border border-primary"&gt;&lt;/span&gt;
+			&lt;span class="border border-warrning"&gt;&lt;/span&gt;
+			&lt;span class="border border-danger"&gt;&lt;/span&gt;
+			&lt;span class="border border-success"&gt;&lt;/span&gt;
+			&lt;span class="border border-white"&gt;&lt;/span&gt;
+			&lt;span class="border border-black"&gt;&lt;/span&gt;
+		&lt;/div&gt;
+		</code>
+		<small class="codeText">HTML</small><br />
+		<code>
+		/* Borders */
+
+
+		.border-grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(2, 1fr);
+			justify-items: center;
+			grid-gap: 10px;
+			span {
+				width: 60px;
+				height: 60px;
+				background-color: $gray-1;
+				border-radius: 5px;
+			}
+			@include respond-to(extrasmall-screens) { 
+				grid-template-columns: repeat(2, 1fr);
+				grid-template-rows: repeat(3, 1fr);
+				}
+			@include respond-to(small-screens) { 
+				grid-template-columns: repeat(2, 1fr);
+				grid-template-rows: repeat(3, 1fr);
+				}
+			@include respond-to(medium-screens) {  }
+			@include respond-to(large-screens) {  }
+			@include respond-to(large-2-screens) {  }
+			@include respond-to(extralarge-screens) {  }
+		}
+		.border {
+			border: 1px solid;
+		}
+		.border-primary {
+			border-color: $primary-0;
+		}
+		.border-warrning {
+			border-color: $warrning-0;
+		}
+		.border-danger {
+			border-color: $danger-0;
+		}
+		.border-success {
+			border-color: $success-0;
+		}
+		.border-white {
+			border-color: $white;
+		}
+		.border-black {
+			border-color: $black;
+		}	
+		</code>
+		<small class="codeText">SCSS</small><br>
+    </section>
 </div>
-
-
-<br /><br />
- 
-
-    <code>
-    
-    </code>
-    <small class="codeText">HTML</small><br />
-    <code>
-                
-    </code>
-    <small class="codeText">SCSS</small><br>
-</section>
-
-<!-- multi-step form -->
 
 
 <script src="../js/header.js"></script>
