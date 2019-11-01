@@ -62,10 +62,10 @@ document.getElementById("myNav").innerHTML =
                     +"<li><a href='../html/shadow.html'>Shadows</a></li>"
                     +"<li><a href='../html/float.html'>Float & Clearfix</a></li>"
                     +"<li><a href='../html/tooltip.html'>Tooltip</a></li>"
-                    +"<li><a href='scrollspy.html'>Scrollspy</a></li>"
+                    +"<li><a href='../html/scrollspy.html'>Scrollspy</a></li>"
                     +"<li><a href='../html/borders.html'>Borders</a></li>"		
-                    +"<li><a href='position'><span class='td-0'>Position</span></a></li>"
-                    +"<li><a href='sizing'><span class='td-0'>Sizing</span></a></li>"	
+                    +"<li><a href='../html/position'><span class='td-0'>Position</span></a></li>"
+                    +"<li><a href='../html/sizing'><span class='td-0'>Sizing</span></a></li>"	
                 +"</ul>"
             +"</div>"
         +"</nav>";
