@@ -18,12 +18,27 @@
     <section>
         <article>
             <h2>Carousel</h2>
-            <p> </p>
+            <p>A carousel is a component that allows us to drive through a range of content. It usually displays a series of images or text. It consists of control buttons that change the content to the left or right, and indicators that serve as navigation to see how much content is in the carousel. Indicators also serve as buttons through which we can cycle through content.</p>
 
             <ul>
-                <li></li>
-                <li> </li>
+                <h4>Benefits</h4>
+                <li>The greatest benefit of using carousels is that they enable more than one piece of content to occupy the same piece of prime real estate on the homepage, which can help diffuse any infighting about whose content is most deserving. An additional benefit is that because more information appears near the top of the viewable area, there may be greater opportunity for people to actually see it.</li>
             </ul>
+           
+            <ul>
+                <h4>Drawbacks</h4>
+                <li> Whether looking at content on a 30-inch or 3-inch display, people often immediately scroll past these large images and miss all of the content within them, or at least the content that’s in any frame other than the first</li>
+                <li> A set of images in a carousel may collectively give an accurate impression of what an organization does. But if a person sees only one image in that set he may get the wrong idea about an organization.</li>
+            </ul>
+
+            <ol>
+                <h4>Guidelines for Good Carousel Design</h4>
+                <li>Include 5 or fewer frames within the carousel, as it’s unlikely users will engage with more than that</li>
+                <li>Use crisp-looking text and images that coincide with the organization's charter</li>
+                <li>Indicate how many frames are present and where the user is within the progression, to help people feel in control</li>
+                <li>Use icons and links that are understandable and recognizable</li>
+                <li>Make links and buttons large enough to decipher and click</li>
+            </ol>
 
         </article>
         <br />
@@ -66,59 +81,150 @@
                 <th>explanation</th>
             </tr>
             <tr>
-                <td><span class="txt-primary-4"> </span></td>
+                <td><span class="txt-primary-4">carousel</span></td>
                 <td> </td>
             </tr>
             <tr>
-                <td><span class="txt-primary-4"> </span></td>
+                <td><span class="txt-primary-4">carousel_button</span></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td><span class="txt-primary-4">carousel_button--left & carousel_button--right</span></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td><span class="txt-primary-4">carousel_track-container</span></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td><span class="txt-primary-4">carousel_track</span></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td><span class="txt-primary-4">carousel_slide</span></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td><span class="txt-primary-4">current-slide</span></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td><span class="txt-primary-4">carousel_image</span></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td><span class="txt-primary-4">carousel_nav</span></td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td><span class="txt-primary-4">carousel_indicator</span></td>
                 <td> </td>
             </tr>
         </table>
          <br />
-         <code>
-    
+
+        <code>
+        &lt;div class="carousel"&gt;
+            &lt;button class="carousel_button carousel_button--left is-hidden"&gt;
+                &lt;img src="../img/icons/left-arrow.svg"&gt;
+            &lt;/button&gt;
+            &lt;div class="carousel_track-container"&gt;
+                &lt;ul class="carousel_track"&gt;
+                    &lt;li class="carousel_slide current-slide"&gt;
+                        &lt;img class="carousel_image" src="img1.jpg" alt=""&gt;
+                    &lt;/li&gt;
+                    &lt;li class="carousel_slide"&gt;
+                        &lt;img class="carousel_image" src="img2.jpg" alt=""&gt;
+                    &lt;/li&gt;
+                    &lt;li class="carousel_slide"&gt;
+                        &lt;img class="carousel_image" src="img3.jpg" alt=""&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;button class="carousel_button carousel_button--right"&gt;
+                &lt;img src="../img/icons/right-arrow.svg"&gt;
+            &lt;/button&gt;
+        
+            &lt;div class="carousel_nav"&gt;
+                &lt;button class="carousel_indicator current-slide"&gt;&lt;/button&gt;
+                &lt;button class="carousel_indicator"&gt;&lt;/button&gt;
+                &lt;button class="carousel_indicator"&gt;&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
         </code>
         <small class="codeText">HTML</small><br />
         <code>
-        /* Carousel */
-
-        .carousel-container{
-            width: 100%;
-            height: auto;
-            margin: 0 auto;
-            overflow: hidden;
+        .carousel {
             position: relative;
-            display: grid;
-            grid-template-columns: 15px auto 15px;
-            box-shadow: 0 1rem 3rem rgba(0,0,0, 0.175)!important;
-            border-radius: 15px;
-            button {
-                -webkit-appearance: none;
-                background: $white;
-                border: 0;
-                outline:0;
-                svg {
-                    width: 15px; 
-                    height: 15px;
-                    fill: currentColor;
-                    vertical-align: bottom
-                    }
-                }
-            #previousBtn, #nextBtn{
-                z-index: 10;
+            height: 400px;
+            width: 100%;
+            margin: 0 auto;
+            .carousel_button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: transparent;
+            border: 0;
+            cursor: pointer;
+            img {
+                width: 25px;
             }
-            .carousel-slide{
-                display: flex;
+            }
+            .carousel_button--left {
+            left: -40px;
+            }
+            .carousel_button--right {
+            right: -40px;
+            }
+            .carousel_track-container {
+            background: lightgreen;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            .carousel_track {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                position: relative;
+                height: 100%;
+                transition: transform 250ms ease-in;
+                .carousel_slide {
+                position: absolute;
+                top: 0;
+                bottom: 0;
                 width: 100%;
-                height: auto;
+                .carousel_image {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                }
             }
-        
+            }
+            .carousel_nav {
+            /* background: pink; */
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            .carousel_indicator {
+                border: 0;
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+                background: $gray-4;
+                margin: 0 12px;
+                cursor: pointer;
+                &.current-slide {
+                background: $primary-0;
+                }
+            }
+            }
             @include respond-to(extrasmall-screens) {  }
             @include respond-to(small-screens) {  }
             @include respond-to(medium-screens) {  }
             @include respond-to(large-screens) {
                 max-width: 400px;
-                .carousel-slide {
+                .carousel_slide {
                     max-width: 400px;
                     img {
                         max-width: 400px;
@@ -127,7 +233,7 @@
             }
             @include respond-to(large-2-screens) { 
                 max-width: 500px;
-                .carousel-slide {
+                .carousel_slide {
                     max-width: 500px;
                     img {
                         max-width: 500px;
@@ -136,7 +242,7 @@
             }
             @include respond-to(extralarge-screens) { 
                 max-width: 600px;
-                .carousel-slide {
+                .carousel_slide {
                     max-width: 600px;
                     img {
                         max-width: 600px;
@@ -145,34 +251,7 @@
             }
         }
         
-            .arrow {
-            cursor: pointer;
-            }
-        .left, .right polyline {
-            stroke: $primary-0;
-        }
-            .left:hover polyline,
-            .left:focus polyline {
-            stroke-width: 3;
-            
-            }
-            .left:active polyline {
-            stroke-width: 6;
-            stroke: $primary-0;
-            transition: all 100ms ease-in-out;
-            }
-            .right:hover polyline,
-            .right:focus polyline {
-            stroke-width: 3;
-            }
-            .right:active polyline {
-            stroke-width: 6;
-            stroke: $primary-0;
-            transition: all 100ms ease-in-out;
-            }
-            polyline {
-            transition: all 250ms ease-in-out;
-            }    
+        .is-hidden {display: none;} 
         </code>
         <small class="codeText">SCSS</small><br>
 
