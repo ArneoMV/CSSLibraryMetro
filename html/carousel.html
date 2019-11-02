@@ -28,29 +28,37 @@
         </article>
         <br />
 
-        <div class="carousel-container">
-            <button class="arrow left" id="previousBtn">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 80" xml:space="preserve">
-                    <polyline fill="none"stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="
-                    45.63,75.8 0.375,38.087 45.63,0.375 "/>
-                </svg>  
+     
+        <div class="carousel">
+            <button class="carousel_button carousel_button--left is-hidden">
+                <img src="../img/icons/left-arrow.svg">
             </button>
-            <div class="carousel-slide">
-                <img src="../img/carousel/carousel1.jpeg" id="lastClone" alt="carousel">
-                <img src="../img/carousel/carousel2.jpeg" alt="carousel">
-                <img src="../img/carousel/carousel3.jpeg" alt="carousel">
-                <img src="../img/carousel/carousel4.jpeg" alt="carousel">
-                <img src="../img/carousel/carousel5.jpg" alt="carousel">
-                <img src="../img/carousel/carousel1.jpeg" id="firstClone" alt="carousel">
+            <div class="carousel_track-container">
+                <ul class="carousel_track">
+                    <li class="carousel_slide current-slide">
+                        <img class="carousel_image" src="https://images.unsplash.com/photo-1546968375-51ddab8c30f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                    </li>
+                    <li class="carousel_slide">
+                        <img class="carousel_image" src="https://images.unsplash.com/photo-1546966137-fd2300df0b80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                    </li>
+                    <li class="carousel_slide">
+                        <img class="carousel_image" src="https://images.unsplash.com/photo-1546896811-1ed52084f6fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+                    </li>
+                </ul>
             </div>
-            <button class="arrow right" id="nextBtn">
-                <svg xmln3s="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 80" xml:space="preserve">
-                    <polyline fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="
-                    0.375,0.375 45.63,38.087 0.375,75.8 "/>
-                </svg>
+            <button class="carousel_button carousel_button--right">
+                <img src="../img/icons/right-arrow.svg">
             </button>
+        
+            <div class="carousel_nav">
+                <button class="carousel_indicator current-slide"></button>
+                <button class="carousel_indicator"></button>
+                <button class="carousel_indicator"></button>
+            </div>
         </div>
-        <br />
+
+
+        <br /> <br />
 
         <table>
             <tr>
