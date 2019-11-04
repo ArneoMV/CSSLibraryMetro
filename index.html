@@ -7,14 +7,18 @@
 
 	<link rel="stylesheet" type="text/css" href="css/app.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+	<!-- Include jQuery. -->
+	<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+
 </head>
 
 <body>
-	<header>
+	<header id="navbar">
 		<div class='head'>
 			<div class='head-item'>
 				<a class='navbar-brand' href='https://www.tvz.hr'>
-					<img src='../img/TvzLogo.png' alt='tvzLogo' style='width: 100px;'>
+					<img src='img/TvzLogo.png' alt='tvzLogo' style='width: 100px;'>
 				</a>
 			</div>
 			<div class='head-item'>
@@ -41,17 +45,17 @@
 					<li><a href='index.html'>Get started</a></li>
 
 					<li><span class='tp-1'>Layaout</span></li>
-					<li><a href='/html/grid.html'>Grid</a></li>
-					<li><a href='/html/columns.html'>Columns</a></li>
+					<li><a href='#html/grid'>Grid</a></li>
+					<li><a href='html/columns.html'>Columns</a></li>
 					<li><a href='html/flex'><span class='td-0'>Flex</span></a></li>
 		
 					<li><span class='tp-1'>Content</span></li>
-					<li><a href='html/typography.html'>Typography</a></li>
-					<li><a href='html/colors.html'>Colors</a></li>
-					<li><a href='html/images.html'>Images</a></li>
-					<li><a href='html/table.html'>Table</a></li>
-					<li><a href='html/input.html'>Input</a></li>
-					<li><a href='html/carousel.html'>Carousel</a></li>
+					<li><a href='#html/typography'>Typography</a></li>
+					<li><a href='#html/colors'>Colors</a></li>
+					<li><a href='#html/images'>Images</a></li>
+					<li><a href='html/table'>Table</a></li>
+					<li><a href='html/input'>Input</a></li>
+					<li><a href='html/carousel'>Carousel</a></li>
 
 					<li><span class='tp-1'>Navigation menu's</span></li>
 					<li><a href='html/navigationMenu.html'>Side menu</a></li>
@@ -82,37 +86,16 @@
 		</nav>
 	</header>
 
-	
 	<div class="filler"></div>
 	<!--PAGE CONTENT-->
-	<div class="container">
-			<div class="row">
 
-				<div class="col-md-12">
-					
-					<h2>Introduction</h2>
-
-					<p>Metro a SCSS development library that you can use for your own purposes to make it easy to create a website or application. 
-					Provides functionality that speeds up the frontend development process when creating an application. 
-					That way, developers don't have to write style code from scratch every time they build applications.
-					A set of small, compatible CSS modules that you can use in any web project.</p>
-
-					<p>The difference between a CSS librery CSS and a CSS framework is in the control you have over the project. In the library, you have control. 
-					This means you control when a library needs to perform a specific function, and the rest of the code is library independent. 
-					In the case of frames, control is inventoried. The control flow is in the frame and you can adjust it to fit your needs. 
-					Time saving and consistent structure are the biggest benefits of using a CSS workspace.</p>
-
-					<p>The library saves time so developers can focus on the specific problem of the application rather than styling the layout. 
-					The main advantage is the ability to reuse the code. The predefined structure provided by the framework helps maintain consistency across applications and its various components. 
-					Developers do not need to require specifications for every single design element they will get from a designer.
-					They have a consistent design scheme that is built into the frame and, if necessary, can tailor components to their needs. 
-					Designers can use frames to reduce the time they spend designing basic components. Instead, they can focus on other design priorities.</p>
-
-				</div>
-			</div>
-	</div>
+	<!-- Dynamic content will be placed here by JavaScript. -->
+	<div id="content"></div>
 
 
+	<!-- The JavaScript code for dynamic behavior. -->
+	<script src="js/mainNavigation.js"></script>
+	
 	<script src="js/header.js"></script>
 	<script src="js/myscript.js"></script>
 	
