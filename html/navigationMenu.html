@@ -127,39 +127,39 @@
     
 <!-- MAIN CONTENT -->
 <div id="main">
-    <div class="container">
-        <section>
-            <article>
-                <h3>Side menu</h3>
-                <p>We have created a navigation menu that, by clicking on the burger icon, is displayed on one of four sides</p>
 
-                <table>
-                    <tr>
-                        <th>class</th>
-                        <th>explanation</th>
-                    </tr>
-                    <tr>
-                        <td><span class="txt-primary-4">sideNavigation</span></td>
-                        <td>class that contains navigation elements. It is made using a grid consisting of three columns. The first column is for the logo, the second for the title, and the third for the burger icon.</td>
-                    </tr>
-                    <tr>
-                        <td><span class="txt-primary-4">burger</span></td>
-                        <td>class serves to animate a burger that has two states. It was created using the <span class="txt-warrning-0 ">input type ="checkbox"</span> tag. Each input is associated with a label tag. The input contains an id that associates with the for element. The input tag contains an onclick = "" element that is used to associate: a checked state with javascript that performs the sidebar rendering function.</td>
-                    </tr>
-                    <tr>
-                        <td><span class="txt-primary-4">leftSidebar,rightSidebar,topSidebar i bottomSidebar</span></td>
-                        <td>classes serve to display the sidebar. They are made using the @mixin sidebar which gives them a base structure. These classes separately encode height, width, top and bottom elements to display the sidebar on the desired side of the screen.
-                            Sidenote: Sidebars are customized for the view on this page. If you want to use the sidebar you will need to adjust them to your main navigation.</td>
-                    </tr>
-                    <tr>
-                        <td><span class="txt-primary-4">leftSidebar,rightSidebar,topSidebar i bottomSidebar </span></td>
-                        <td>ids serve to associate the sidebar with javascript that counts how much and where the sidebar will move after clicking the burger icon.</td>
-                    </tr>
-                </table>
-            </article>
-            <br />
-            <br />
-            <code>
+
+<article>
+    <h3>Side menu</h3>
+    <p>We have created a navigation menu that, by clicking on the burger icon, is displayed on one of four sides</p>
+
+    <table>
+        <tr>
+            <th>class</th>
+            <th>explanation</th>
+        </tr>
+        <tr>
+            <td><span class="txt-primary-4">sideNavigation</span></td>
+            <td>class that contains navigation elements. It is made using a grid consisting of three columns. The first column is for the logo, the second for the title, and the third for the burger icon.</td>
+        </tr>
+        <tr>
+            <td><span class="txt-primary-4">burger</span></td>
+            <td>class serves to animate a burger that has two states. It was created using the <span class="txt-warrning-0 ">input type ="checkbox"</span> tag. Each input is associated with a label tag. The input contains an id that associates with the for element. The input tag contains an onclick = "" element that is used to associate: a checked state with javascript that performs the sidebar rendering function.</td>
+        </tr>
+        <tr>
+            <td><span class="txt-primary-4">leftSidebar,rightSidebar,topSidebar i bottomSidebar</span></td>
+            <td>classes serve to display the sidebar. They are made using the @mixin sidebar which gives them a base structure. These classes separately encode height, width, top and bottom elements to display the sidebar on the desired side of the screen.
+                Sidenote: Sidebars are customized for the view on this page. If you want to use the sidebar you will need to adjust them to your main navigation.</td>
+        </tr>
+        <tr>
+            <td><span class="txt-primary-4">leftSidebar,rightSidebar,topSidebar i bottomSidebar </span></td>
+            <td>ids serve to associate the sidebar with javascript that counts how much and where the sidebar will move after clicking the burger icon.</td>
+        </tr>
+    </table>
+</article>
+<br />
+<br />
+<code>
 <!-- Left navigation -->
 &lt;div class="sideNavigation"&gt;
 &lt;div class="logo"&gt;
@@ -194,9 +194,9 @@
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-            </code>
-            <small class="float-right">HTML</small><br />
-            <code>
+</code>
+<small class="float-right">HTML</small><br />
+<code>
 @mixin sidebar {
 position: fixed;
 z-index: 100;
@@ -214,21 +214,21 @@ justify-self: center;
 .sidebar-item:nth-child(2) {
 align-self: start;
 ul {
-    padding: 10px;
-    li {
-        list-style: none;
-        a {
-            padding: 8px 8px 8px 32px;
-            text-decoration: none;
-            font-size: 25px;
-            color: #818181;
-            display: block;
-            transition: 0.3s;
-            &:hover {
-                color: $black;
-            }
-        }
-    }
+padding: 10px;
+li {
+list-style: none;
+a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 25px;
+color: #818181;
+display: block;
+transition: 0.3s;
+&:hover {
+    color: $black;
+}
+}
+}
 }
 }
 }
@@ -251,7 +251,7 @@ top: 195px;
 right: 0;
 .sidebar-item:nth-child(2) {
 ul li a {
-    text-align: left;
+text-align: left;
 }
 }
 }
@@ -263,7 +263,7 @@ top: 260px;
 left: 0;
 .sidebar-item:nth-child(2) {
 ul li a {
-    text-align: center;
+text-align: center;
 }
 }
 }
@@ -275,67 +275,67 @@ bottom: 0;
 // top: 325px;
 .sidebar-item:nth-child(2) {
 ul li a {
-    text-align: center;
+text-align: center;
 }
 }
 }
-            </code>
-            <small class="float-right">SCSS</small><br />
-            <code>
+</code>
+<small class="float-right">SCSS</small><br />
+<code>
 // LEFT NAVIGATION
 function leftNavigation() {
-    var checkBox = document.getElementById("leftNav");
-    
-    if (checkBox.checked == true){
-        document.getElementById("leftSidebar").style.width = "350px";
-        document.getElementById("main").style.marginLeft = "350px";
-        
-    } else {
-        document.getElementById("leftSidebar").style.width = "0";
-        document.getElementById("main").style.marginLeft= "0";
-    }
-    }
+var checkBox = document.getElementById("leftNav");
+
+if (checkBox.checked == true){
+document.getElementById("leftSidebar").style.width = "350px";
+document.getElementById("main").style.marginLeft = "350px";
+
+} else {
+document.getElementById("leftSidebar").style.width = "0";
+document.getElementById("main").style.marginLeft= "0";
+}
+}
 // RIGHT NAVIGATION
 function rightNavigation() {
-    var checkBox = document.getElementById("rightNav");
-    
-    if (checkBox.checked == true){
-        document.getElementById("rightSidebar").style.width = "350px";
-        document.getElementById("main").style.marginRight = "350px";
-        
-    } else {
-        document.getElementById("rightSidebar").style.width = "0";
-        document.getElementById("main").style.marginRight= "0";
-    }
+var checkBox = document.getElementById("rightNav");
+
+if (checkBox.checked == true){
+document.getElementById("rightSidebar").style.width = "350px";
+document.getElementById("main").style.marginRight = "350px";
+
+} else {
+document.getElementById("rightSidebar").style.width = "0";
+document.getElementById("main").style.marginRight= "0";
+}
 }
 // TOP NAVIGATION
 function topNavigation() {
-    var checkBox = document.getElementById("topNav");
-    
-    if (checkBox.checked == true){
-        document.getElementById("topSidebar").style.height = "100%";
-        // document.getElementById("main").style.marginTop = "auto";
-        
-    } else {
-        document.getElementById("topSidebar").style.height = "0";
-        // document.getElementById("main").style.marginTop= "0";
-    }
+var checkBox = document.getElementById("topNav");
+
+if (checkBox.checked == true){
+document.getElementById("topSidebar").style.height = "100%";
+// document.getElementById("main").style.marginTop = "auto";
+
+} else {
+document.getElementById("topSidebar").style.height = "0";
+// document.getElementById("main").style.marginTop= "0";
+}
 }
 // BOTTOM NAVIGATION
 function bottomNavigation() {
-    var checkBox = document.getElementById("bottomNav");
-    
-    if (checkBox.checked == true){
-        document.getElementById("bottomSidebar").style.height = "calc(100% - 325px)";
-    } else {
-        document.getElementById("bottomSidebar").style.height = "0";
-    }
+var checkBox = document.getElementById("bottomNav");
+
+if (checkBox.checked == true){
+document.getElementById("bottomSidebar").style.height = "calc(100% - 325px)";
+} else {
+document.getElementById("bottomSidebar").style.height = "0";
 }
-                    
-            </code>
-            <small class="float-right">JS</small> 
-        </section>
-    </div>
+}
+        
+</code>
+<small class="float-right">JS</small> 
+
+
 </div>
 
 
