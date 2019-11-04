@@ -1,127 +1,110 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8" lang="hr" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Collapse</title>
 
-	<link rel="stylesheet" type="text/css" href="../css/app.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-</head>
+	<article>
+		<h2>Collapse</h2>
+		<p>Collapse is a collapsible component that is used when you want to display or hide a large amount of content. Allows easy display of content at the touch of a button. It serves to rid the page of redundant content and give it a modern minimalist look.</p>
+		
+		<ul>
+			<p>It is useful for:</p>
+			<li>grouping content</li>
+			<li>displaying long lists</li>
+			<li>displaying hidden data and more</li>
+		</ul>
+	</article>
+	<br />
 
-<body>
-	<header id="myNav"></header>
-	
-<div class="filler"></div>
-<!--PAGE CONTENT-->
-<div class="container">
-	<section>
-		<article>
-			<h2>Collapse</h2>
-			<p>Collapse is a collapsible component that is used when you want to display or hide a large amount of content. Allows easy display of content at the touch of a button. It serves to rid the page of redundant content and give it a modern minimalist look.</p>
-			
+	<div class="kolaps">Primjer teksta</div>
+	<div class="kolapsSadrzaj">
+		<div class="kolapsInner">
+			<h4>It's art! A statement on modern society</h4>
+			<p>I hate yogurt. It's just stuff with bits in. You hit me with a cricket bat. Did I mention we have comfy chairs? I am the last of my species, and I know how that weighs on the heart so don't lie to me!</p>
+			<article>
 			<ul>
-				<p>It is useful for:</p>
-				<li>grouping content</li>
-				<li>displaying long lists</li>
-				<li>displaying hidden data and more</li>
+				<li>I'm the Doctor. Well, they call me the Doctor. I don't know why. I call me the Doctor too. I still don't know why.</li>
+				<li>Father Christmas. Santa Claus. Or as I've always known him: Jeff.</li>
+				<li>Aw, you're all Mr. Grumpy Face today.</li>
 			</ul>
-		</article>
-		<br />
-
-		<div class="kolaps">Primjer teksta</div>
-		<div class="kolapsSadrzaj">
-			<div class="kolapsInner">
-				<h4>It's art! A statement on modern society</h4>
-				<p>I hate yogurt. It's just stuff with bits in. You hit me with a cricket bat. Did I mention we have comfy chairs? I am the last of my species, and I know how that weighs on the heart so don't lie to me!</p>
-				<article>
-				<ul>
-					<li>I'm the Doctor. Well, they call me the Doctor. I don't know why. I call me the Doctor too. I still don't know why.</li>
-					<li>Father Christmas. Santa Claus. Or as I've always known him: Jeff.</li>
-					<li>Aw, you're all Mr. Grumpy Face today.</li>
-				</ul>
-				</article> 
-			</div>
+			</article> 
 		</div>
-		<div class="kolaps">Primjer forme</div>
-		<div class="kolapsSadrzaj">
-			<div class="kolapsInner">
-				<form class="form">
-					<h6>Formular</h6>
-					<fieldset>
-						<legend>Text</legend>
-						<div class="form-group">
-							<input type="text" required="required"/>
-							<label for="input" class="control-label">Textfield</label>
-							<i class="bar-form"></i>
-						</div>
-						<div class="form-group">
-							<textarea required="required"></textarea>
-							<label for="textarea" class="control-label">Textarea</label>
-							<i class="bar-form"></i>
-						</div>
-					</fieldset>
-					
-					<fieldset>
-						<legend>Select</legend>
-						<div class="selectStyle">
-							<select>
-								<optgroup label="Option Group 1">
-									<option>Option 1</option>
-									<option>Option 2</option>
-									<option>Option 3</option>
-									<option>Option 4</option>
-									<option>Option 5</option>
-									<option>Option 6</option>
-									<option>Option 7</option>
-								</optgroup>
-							</select>
-						</div>
-					</fieldset>
-					
-					<div class="button-container">
-						<button class="btn-primary-raised btn-ripple">Submit</button>
+	</div>
+	<div class="kolaps">Primjer forme</div>
+	<div class="kolapsSadrzaj">
+		<div class="kolapsInner">
+			<form class="form">
+				<h6>Formular</h6>
+				<fieldset>
+					<legend>Text</legend>
+					<div class="form-group">
+						<input type="text" required="required"/>
+						<label for="input" class="control-label">Textfield</label>
+						<i class="bar-form"></i>
 					</div>
-				</form>
-			</div>
-		</div>
-		<div class="kolaps">Primjer gumba</div>
-		<div class="kolapsSadrzaj">
-			<div class="kolapsInner">
-				<h4>Naslov</h4>
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste quia rerum vero necessitatibus? Aliquam ea temporibus unde tenetur perferendis maiores ad, sed sint minus at expedita doloribus. Tenetur, labore cumque.</p>
+					<div class="form-group">
+						<textarea required="required"></textarea>
+						<label for="textarea" class="control-label">Textarea</label>
+						<i class="bar-form"></i>
+					</div>
+				</fieldset>
+				
+				<fieldset>
+					<legend>Select</legend>
+					<div class="selectStyle">
+						<select>
+							<optgroup label="Option Group 1">
+								<option>Option 1</option>
+								<option>Option 2</option>
+								<option>Option 3</option>
+								<option>Option 4</option>
+								<option>Option 5</option>
+								<option>Option 6</option>
+								<option>Option 7</option>
+							</optgroup>
+						</select>
+					</div>
+				</fieldset>
+				
 				<div class="button-container">
-					<button class="btn-primary-flat btn-ripple">Submit</button>
+					<button class="btn-primary-raised btn-ripple">Submit</button>
 				</div>
-			</div>
-			
+			</form>
 		</div>
-		<br /><br />
+	</div>
+	<div class="kolaps">Primjer gumba</div>
+	<div class="kolapsSadrzaj">
+		<div class="kolapsInner">
+			<h4>Naslov</h4>
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste quia rerum vero necessitatibus? Aliquam ea temporibus unde tenetur perferendis maiores ad, sed sint minus at expedita doloribus. Tenetur, labore cumque.</p>
+			<div class="button-container">
+				<button class="btn-primary-flat btn-ripple">Submit</button>
+			</div>
+		</div>
+		
+	</div>
+	<br /><br />
 
-		<table>
-			<tr>
-				<th>class</th>
-				<th>explanation</th>
-			</tr>
-			<tr>
-				<td><span class="txt-primary-4">kolaps</span></td>
-				<td>class contains a title and a button that displays content.</td>
-			</tr>
-			<tr>
-				<td><span class="txt-primary-4">kolapsSadrzaj</span></td>
-				<td>class contains the information we want to show and / or hide. Content can accept various components such as buttons, progress bar, form and more.</td>
-			</tr>
-		</table>
-		<br /><br />
+	<table>
+		<tr>
+			<th>class</th>
+			<th>explanation</th>
+		</tr>
+		<tr>
+			<td><span class="txt-primary-4">kolaps</span></td>
+			<td>class contains a title and a button that displays content.</td>
+		</tr>
+		<tr>
+			<td><span class="txt-primary-4">kolapsSadrzaj</span></td>
+			<td>class contains the information we want to show and / or hide. Content can accept various components such as buttons, progress bar, form and more.</td>
+		</tr>
+	</table>
+	<br /><br />
 
-		<code>
+	<code>
 &lt;div class="kolaps">Naslov&lt;/div&gt;
 &lt;div class="kolapsSadrzaj"&gt;
 //Ovdije ubacite sadržaj 
 &lt;/div&gt;
-		</code>
-		<small class="codeText">HTML</small><br>
-		<code>
+	</code>
+	<small class="codeText">HTML</small><br>
+	<code>
 .kolaps {
 background-color: $primary-1;
 color: $white;
@@ -167,17 +150,5 @@ margin: 15px;
 text-align: right;
 }
 }
-		</code>
-		<small class="codeText">SCSS</small><br>
-
-	</section>
-</div>
-
-<script src="../js/header.js"></script>
-<script src="../js/myscript.js"></script>
-<script src="../js/collapse.js"></script>
-<script src="../js/form.js"></script>
-</body>
-</html>
-
-	
+	</code>
+	<small class="codeText">SCSS</small><br>

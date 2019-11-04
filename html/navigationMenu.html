@@ -1,362 +1,342 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8" lang="hr" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Navigation</title>
 
-	<link rel="stylesheet" type="text/css" href="../css/app.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-</head>
-
-<body>
-	<header id="myNav"></header>
-
-<div class="filler"></div>
-<!--PAGE CONTENT-->
-    <div class="container">
-        <!-- Left navigation -->
-        <div class="sideNavigation">
-            <div class="logo">
-                <img src="../img/icons/left-arrow.svg" />
-            </div>
-            <div class="hamburger">
-                <div class="burger burger-3" id="burger">
-                    <input type="checkbox" name="burger3" id="leftNav" onclick="leftNavigation()" />
-                    <label for="leftNav">
-                        <span class="bar bar-1"></span>
-                        <span class="bar bar-2"></span>
-                        <span class="bar bar-3"></span>
-                    </label>
-                </div>
-            </div>
-        </div>
-        <!-- Left sidebar -->
-        <div id="leftSidebar" class="leftSidebar">
-            <div class="sidebar-item">
-                <h5>Lijevi sidebar</h5>
-            </div>
-            <div class="sidebar-item">
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Galery</a></li>
-                    <li><a href="#">Stay in touch</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">FAQ</a></li>		
-                </ul>
-            </div>
-        </div>
-        <!-- Right navigastion -->
-        <div class="sideNavigation">
-            <div class="logo">
-                <img src="../img/icons/right-arrow.svg" />
-            </div>
-            <div class="hamburger">
-                <div class="burger burger-3" id="burger">
-                    <input type="checkbox" name="burger3" id="rightNav" onclick="rightNavigation()" />
-                    <label for="rightNav">
-                        <span class="bar bar-1"></span>
-                        <span class="bar bar-2"></span>
-                        <span class="bar bar-3"></span>
-                    </label>
-                </div>
-            </div>
-        </div>
-        <!-- Right sidebar -->
-        <div id="rightSidebar" class="rightSidebar">
-            <div class="sidebar-item">
-                <h5>Desni sidebar</h5>
-            </div>
-            <div class="sidebar-item">
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Galery</a></li>
-                    <li><a href="#">Stay in touch</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">FAQ</a></li>		
-                </ul>
-            </div>
-        </div>
-         <!-- Top navigastion -->
-         <div class="sideNavigation">
-            <div class="logo">
-                <img src="../img/icons/top-arrow.svg" />
-            </div>
-            <div class="hamburger">
-                <div class="burger burger-3" id="burger">
-                    <input type="checkbox" name="burger3" id="topNav" onclick="topNavigation()" />
-                    <label for="topNav">
-                        <span class="bar bar-1"></span>
-                        <span class="bar bar-2"></span>
-                        <span class="bar bar-3"></span>
-                    </label>
-                </div>
-            </div>
-        </div>
-         <!-- Top sidebar -->
-        <div id="topSidebar" class="topSidebar">
-            <div class="sidebar-item">
-                <h5>Top sidebar</h5>
-            </div>
-            <div class="sidebar-item">
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Galery</a></li>
-                    <li><a href="#">Stay in touch</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">FAQ</a></li>		
-                </ul>
-            </div>
-        </div>
-        <!-- Bottom navigastion -->
-        <div class="sideNavigation">
-            <div class="logo">
-                <img src="../img/icons/bottom-arrow.svg" />
-            </div>
-            <div class="hamburger">
-                <div class="burger burger-3" id="burger">
-                    <input type="checkbox" name="burger3" id="bottomNav" onclick="bottomNavigation()" />
-                    <label for="bottomNav">
-                        <span class="bar bar-1"></span>
-                        <span class="bar bar-2"></span>
-                        <span class="bar bar-3"></span>
-                    </label>
-                </div>
-            </div>
-        </div>
-        <!-- Bottom sidebar -->
-        <div id="bottomSidebar" class="bottomSidebar">
-            <div class="sidebar-item">
-                <h5>Bottom sidebar</h5>
-            </div>
-            <div class="sidebar-item">
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Galery</a></li>
-                    <li><a href="#">Stay in touch</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">FAQ</a></li>		
-                </ul>
-            </div>
+<!-- Left navigation -->
+<div class="sideNavigation">
+    <div class="logo">
+        <img src="../img/icons/left-arrow.svg" />
+    </div>
+    <div class="hamburger">
+        <div class="burger burger-3" id="burger">
+            <input type="checkbox" name="burger3" id="leftNav" onclick="leftNavigation()" />
+            <label for="leftNav">
+                <span class="bar bar-1"></span>
+                <span class="bar bar-2"></span>
+                <span class="bar bar-3"></span>
+            </label>
         </div>
     </div>
-    <!-- MAIN CONTENT -->
-    <div id="main">
-        <div class="container">
-            <section>
-                <article>
-                    <h3>Side menu</h3>
-                    <p>We have created a navigation menu that, by clicking on the burger icon, is displayed on one of four sides</p>
+</div>
+<!-- Left sidebar -->
+<div id="leftSidebar" class="leftSidebar">
+    <div class="sidebar-item">
+        <h5>Lijevi sidebar</h5>
+    </div>
+    <div class="sidebar-item">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Galery</a></li>
+            <li><a href="#">Stay in touch</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQ</a></li>		
+        </ul>
+    </div>
+</div>
+<!-- Right navigastion -->
+<div class="sideNavigation">
+    <div class="logo">
+        <img src="../img/icons/right-arrow.svg" />
+    </div>
+    <div class="hamburger">
+        <div class="burger burger-3" id="burger">
+            <input type="checkbox" name="burger3" id="rightNav" onclick="rightNavigation()" />
+            <label for="rightNav">
+                <span class="bar bar-1"></span>
+                <span class="bar bar-2"></span>
+                <span class="bar bar-3"></span>
+            </label>
+        </div>
+    </div>
+</div>
+<!-- Right sidebar -->
+<div id="rightSidebar" class="rightSidebar">
+    <div class="sidebar-item">
+        <h5>Desni sidebar</h5>
+    </div>
+    <div class="sidebar-item">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Galery</a></li>
+            <li><a href="#">Stay in touch</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQ</a></li>		
+        </ul>
+    </div>
+</div>
+    <!-- Top navigastion -->
+    <div class="sideNavigation">
+    <div class="logo">
+        <img src="../img/icons/top-arrow.svg" />
+    </div>
+    <div class="hamburger">
+        <div class="burger burger-3" id="burger">
+            <input type="checkbox" name="burger3" id="topNav" onclick="topNavigation()" />
+            <label for="topNav">
+                <span class="bar bar-1"></span>
+                <span class="bar bar-2"></span>
+                <span class="bar bar-3"></span>
+            </label>
+        </div>
+    </div>
+</div>
+    <!-- Top sidebar -->
+<div id="topSidebar" class="topSidebar">
+    <div class="sidebar-item">
+        <h5>Top sidebar</h5>
+    </div>
+    <div class="sidebar-item">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Galery</a></li>
+            <li><a href="#">Stay in touch</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQ</a></li>		
+        </ul>
+    </div>
+</div>
+<!-- Bottom navigastion -->
+<div class="sideNavigation">
+    <div class="logo">
+        <img src="../img/icons/bottom-arrow.svg" />
+    </div>
+    <div class="hamburger">
+        <div class="burger burger-3" id="burger">
+            <input type="checkbox" name="burger3" id="bottomNav" onclick="bottomNavigation()" />
+            <label for="bottomNav">
+                <span class="bar bar-1"></span>
+                <span class="bar bar-2"></span>
+                <span class="bar bar-3"></span>
+            </label>
+        </div>
+    </div>
+</div>
+<!-- Bottom sidebar -->
+<div id="bottomSidebar" class="bottomSidebar">
+    <div class="sidebar-item">
+        <h5>Bottom sidebar</h5>
+    </div>
+    <div class="sidebar-item">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Galery</a></li>
+            <li><a href="#">Stay in touch</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQ</a></li>		
+        </ul>
+    </div>
+</div>
 
-                    <table>
-                        <tr>
-                            <th>class</th>
-                            <th>explanation</th>
-                        </tr>
-                        <tr>
-                            <td><span class="txt-primary-4">sideNavigation</span></td>
-                            <td>class that contains navigation elements. It is made using a grid consisting of three columns. The first column is for the logo, the second for the title, and the third for the burger icon.</td>
-                        </tr>
-                        <tr>
-                            <td><span class="txt-primary-4">burger</span></td>
-                            <td>class serves to animate a burger that has two states. It was created using the <span class="txt-warrning-0 ">input type ="checkbox"</span> tag. Each input is associated with a label tag. The input contains an id that associates with the for element. The input tag contains an onclick = "" element that is used to associate: a checked state with javascript that performs the sidebar rendering function.</td>
-                        </tr>
-                        <tr>
-                            <td><span class="txt-primary-4">leftSidebar,rightSidebar,topSidebar i bottomSidebar</span></td>
-                            <td>classes serve to display the sidebar. They are made using the @mixin sidebar which gives them a base structure. These classes separately encode height, width, top and bottom elements to display the sidebar on the desired side of the screen.
-                                Sidenote: Sidebars are customized for the view on this page. If you want to use the sidebar you will need to adjust them to your main navigation.</td>
-                        </tr>
-                        <tr>
-                            <td><span class="txt-primary-4">leftSidebar,rightSidebar,topSidebar i bottomSidebar </span></td>
-                            <td>ids serve to associate the sidebar with javascript that counts how much and where the sidebar will move after clicking the burger icon.</td>
-                        </tr>
-                    </table>
-                </article>
-                <br />
-                <br />
-                <code>
-    <!-- Left navigation -->
-    &lt;div class="sideNavigation"&gt;
-    &lt;div class="logo"&gt;
-    &lt;mg src="../img/icons/left-arrow.svg" /&gt;
-    &lt;/div&gt;
-    &lt;div class="naslov"&gt;
-    &lt;h4>Left nav&lt;/h4&gt;
-    &lt;/div&gt;
-    &lt;div class="hamburger"&gt;
-    &lt;div class="burger burger-3" id="burger"&gt;
-    &lt;input type="checkbox" name="burger3" id="leftNav" onclick="leftNavigation()" /&gt;
-    &lt;label for="leftNav"&gt;
-    &lt;span class="bar bar-1"&gt;&lt;/span&gt;
-    &lt;span class="bar bar-2"&gt;&lt;/span&gt;
-    &lt;span class="bar bar-3"&gt;&lt;/span&gt;
-    &lt;/label&gt;
-    &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;/div&gt;
-    <!-- Left sidebar -->
-    &lt;div id="leftSidebar" class="leftSidebar"&gt;
-    &lt;div class="sidebar-item"&gt;
-    &lt;h5>Left sidebar&lt;/h5&gt;
-    &lt;/div&gt;
-    &lt;div class="sidebar-item"&gt;
-    &lt;ul>
-    &lt;li>&lt;a href="#">About&lt;/a&gt;&lt;/li&gt;
-    &lt;li>&lt;a href="#">Galery&lt;/a&gt;&lt;/li&gt;
-    &lt;li>&lt;a href="#">Stay in touch&lt;/a&gt;&lt;/li&gt;
-    &lt;li>&lt;a href="#">Contact&lt;a&gt;&lt;/li&gt;
-    &lt;li>&lt;a href="#">FAQ&lt;/a&gt;&lt;/li&gt;		
-    &lt;/ul&gt;
-    &lt;/div&gt;
-    &lt;/div&gt;
-                </code>
-                <small class="float-right">HTML</small><br />
-                <code>
-    @mixin sidebar {
-    position: fixed;
-    z-index: 100;
-    background-color: $white;
-    overflow-x: hidden;
-    transition: 0.5s;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 5fr;
-    align-items: center;
-    box-shadow: 6px -1px 13px -5px rgba(0,0,0,1);
-    .sidebar-item:nth-child(1) {
-    justify-self: center;
-    }
-    .sidebar-item:nth-child(2) {
-    align-self: start;
-    ul {
-        padding: 10px;
-        li {
-            list-style: none;
-            a {
-                padding: 8px 8px 8px 32px;
-                text-decoration: none;
-                font-size: 25px;
-                color: #818181;
-                display: block;
-                transition: 0.3s;
-                &:hover {
-                    color: $black;
-                }
+    
+<!-- MAIN CONTENT -->
+<div id="main">
+    <div class="container">
+        <section>
+            <article>
+                <h3>Side menu</h3>
+                <p>We have created a navigation menu that, by clicking on the burger icon, is displayed on one of four sides</p>
+
+                <table>
+                    <tr>
+                        <th>class</th>
+                        <th>explanation</th>
+                    </tr>
+                    <tr>
+                        <td><span class="txt-primary-4">sideNavigation</span></td>
+                        <td>class that contains navigation elements. It is made using a grid consisting of three columns. The first column is for the logo, the second for the title, and the third for the burger icon.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="txt-primary-4">burger</span></td>
+                        <td>class serves to animate a burger that has two states. It was created using the <span class="txt-warrning-0 ">input type ="checkbox"</span> tag. Each input is associated with a label tag. The input contains an id that associates with the for element. The input tag contains an onclick = "" element that is used to associate: a checked state with javascript that performs the sidebar rendering function.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="txt-primary-4">leftSidebar,rightSidebar,topSidebar i bottomSidebar</span></td>
+                        <td>classes serve to display the sidebar. They are made using the @mixin sidebar which gives them a base structure. These classes separately encode height, width, top and bottom elements to display the sidebar on the desired side of the screen.
+                            Sidenote: Sidebars are customized for the view on this page. If you want to use the sidebar you will need to adjust them to your main navigation.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="txt-primary-4">leftSidebar,rightSidebar,topSidebar i bottomSidebar </span></td>
+                        <td>ids serve to associate the sidebar with javascript that counts how much and where the sidebar will move after clicking the burger icon.</td>
+                    </tr>
+                </table>
+            </article>
+            <br />
+            <br />
+            <code>
+<!-- Left navigation -->
+&lt;div class="sideNavigation"&gt;
+&lt;div class="logo"&gt;
+&lt;mg src="../img/icons/left-arrow.svg" /&gt;
+&lt;/div&gt;
+&lt;div class="naslov"&gt;
+&lt;h4>Left nav&lt;/h4&gt;
+&lt;/div&gt;
+&lt;div class="hamburger"&gt;
+&lt;div class="burger burger-3" id="burger"&gt;
+&lt;input type="checkbox" name="burger3" id="leftNav" onclick="leftNavigation()" /&gt;
+&lt;label for="leftNav"&gt;
+&lt;span class="bar bar-1"&gt;&lt;/span&gt;
+&lt;span class="bar bar-2"&gt;&lt;/span&gt;
+&lt;span class="bar bar-3"&gt;&lt;/span&gt;
+&lt;/label&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+<!-- Left sidebar -->
+&lt;div id="leftSidebar" class="leftSidebar"&gt;
+&lt;div class="sidebar-item"&gt;
+&lt;h5>Left sidebar&lt;/h5&gt;
+&lt;/div&gt;
+&lt;div class="sidebar-item"&gt;
+&lt;ul>
+&lt;li>&lt;a href="#">About&lt;/a&gt;&lt;/li&gt;
+&lt;li>&lt;a href="#">Galery&lt;/a&gt;&lt;/li&gt;
+&lt;li>&lt;a href="#">Stay in touch&lt;/a&gt;&lt;/li&gt;
+&lt;li>&lt;a href="#">Contact&lt;a&gt;&lt;/li&gt;
+&lt;li>&lt;a href="#">FAQ&lt;/a&gt;&lt;/li&gt;		
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+            </code>
+            <small class="float-right">HTML</small><br />
+            <code>
+@mixin sidebar {
+position: fixed;
+z-index: 100;
+background-color: $white;
+overflow-x: hidden;
+transition: 0.5s;
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 0.5fr 5fr;
+align-items: center;
+box-shadow: 6px -1px 13px -5px rgba(0,0,0,1);
+.sidebar-item:nth-child(1) {
+justify-self: center;
+}
+.sidebar-item:nth-child(2) {
+align-self: start;
+ul {
+    padding: 10px;
+    li {
+        list-style: none;
+        a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+            &:hover {
+                color: $black;
             }
         }
     }
-    }
-    }
+}
+}
+}
 
-    .leftSidebar {
-    @include sidebar();
-    height: 100%;
-    width: 0;
-    top: 130px;
-    left: 0;
-    ul li a {
-    text-align: right;
-    }
-    }
-    .rightSidebar {
-    @include sidebar();
-    height: 100%;
-    width: 0;
-    top: 195px;
-    right: 0;
-    .sidebar-item:nth-child(2) {
-    ul li a {
-        text-align: left;
-    }
-    }
-    }
-    .topSidebar {
-    @include sidebar();
-    height: 0;
-    width: 100%;
-    top: 260px;
-    left: 0;
-    .sidebar-item:nth-child(2) {
-    ul li a {
-        text-align: center;
-    }
-    }
-    }
-    .bottomSidebar {
-    @include sidebar();
-    height: 0;
-    width: 100%;
-    bottom: 0;
-    // top: 325px;
-    .sidebar-item:nth-child(2) {
-    ul li a {
-        text-align: center;
-    }
-    }
-    }
-                </code>
-                <small class="float-right">SCSS</small><br />
-                <code>
-    // LEFT NAVIGATION
-    function leftNavigation() {
-        var checkBox = document.getElementById("leftNav");
+.leftSidebar {
+@include sidebar();
+height: 100%;
+width: 0;
+top: 130px;
+left: 0;
+ul li a {
+text-align: right;
+}
+}
+.rightSidebar {
+@include sidebar();
+height: 100%;
+width: 0;
+top: 195px;
+right: 0;
+.sidebar-item:nth-child(2) {
+ul li a {
+    text-align: left;
+}
+}
+}
+.topSidebar {
+@include sidebar();
+height: 0;
+width: 100%;
+top: 260px;
+left: 0;
+.sidebar-item:nth-child(2) {
+ul li a {
+    text-align: center;
+}
+}
+}
+.bottomSidebar {
+@include sidebar();
+height: 0;
+width: 100%;
+bottom: 0;
+// top: 325px;
+.sidebar-item:nth-child(2) {
+ul li a {
+    text-align: center;
+}
+}
+}
+            </code>
+            <small class="float-right">SCSS</small><br />
+            <code>
+// LEFT NAVIGATION
+function leftNavigation() {
+    var checkBox = document.getElementById("leftNav");
+    
+    if (checkBox.checked == true){
+        document.getElementById("leftSidebar").style.width = "350px";
+        document.getElementById("main").style.marginLeft = "350px";
         
-        if (checkBox.checked == true){
-            document.getElementById("leftSidebar").style.width = "350px";
-            document.getElementById("main").style.marginLeft = "350px";
-            
-        } else {
-            document.getElementById("leftSidebar").style.width = "0";
-            document.getElementById("main").style.marginLeft= "0";
-        }
-        }
-    // RIGHT NAVIGATION
-    function rightNavigation() {
-        var checkBox = document.getElementById("rightNav");
-        
-        if (checkBox.checked == true){
-            document.getElementById("rightSidebar").style.width = "350px";
-            document.getElementById("main").style.marginRight = "350px";
-            
-        } else {
-            document.getElementById("rightSidebar").style.width = "0";
-            document.getElementById("main").style.marginRight= "0";
-        }
+    } else {
+        document.getElementById("leftSidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
     }
-    // TOP NAVIGATION
-    function topNavigation() {
-        var checkBox = document.getElementById("topNav");
-        
-        if (checkBox.checked == true){
-            document.getElementById("topSidebar").style.height = "100%";
-            // document.getElementById("main").style.marginTop = "auto";
-            
-        } else {
-            document.getElementById("topSidebar").style.height = "0";
-            // document.getElementById("main").style.marginTop= "0";
-        }
     }
-    // BOTTOM NAVIGATION
-    function bottomNavigation() {
-        var checkBox = document.getElementById("bottomNav");
+// RIGHT NAVIGATION
+function rightNavigation() {
+    var checkBox = document.getElementById("rightNav");
+    
+    if (checkBox.checked == true){
+        document.getElementById("rightSidebar").style.width = "350px";
+        document.getElementById("main").style.marginRight = "350px";
         
-        if (checkBox.checked == true){
-            document.getElementById("bottomSidebar").style.height = "calc(100% - 325px)";
-        } else {
-            document.getElementById("bottomSidebar").style.height = "0";
-        }
+    } else {
+        document.getElementById("rightSidebar").style.width = "0";
+        document.getElementById("main").style.marginRight= "0";
     }
-                        
-                </code>
-                <small class="float-right">JS</small> 
-            </section>
-        </div>
+}
+// TOP NAVIGATION
+function topNavigation() {
+    var checkBox = document.getElementById("topNav");
+    
+    if (checkBox.checked == true){
+        document.getElementById("topSidebar").style.height = "100%";
+        // document.getElementById("main").style.marginTop = "auto";
+        
+    } else {
+        document.getElementById("topSidebar").style.height = "0";
+        // document.getElementById("main").style.marginTop= "0";
+    }
+}
+// BOTTOM NAVIGATION
+function bottomNavigation() {
+    var checkBox = document.getElementById("bottomNav");
+    
+    if (checkBox.checked == true){
+        document.getElementById("bottomSidebar").style.height = "calc(100% - 325px)";
+    } else {
+        document.getElementById("bottomSidebar").style.height = "0";
+    }
+}
+                    
+            </code>
+            <small class="float-right">JS</small> 
+        </section>
     </div>
+</div>
 
-    <script src="../js/header.js"></script>
-    <script src="../js/myscript.js"></script>
-    <script src="../js/navigationMenu.js"></script>
-</body>
-</html>
 
 	

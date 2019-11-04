@@ -1,416 +1,387 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8" lang="hr" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Tooltip</title>
 
-	<link rel="stylesheet" type="text/css" href="../css/app.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-</head>
+<h2>Tooltip</h2>
+<p>A tooltip is a graphical user interface element used in conjunction with the cursor or mouse pointer to display information about an item without needing to click on it</p>
+<p>A tooltip is also known as a hint, infotip or screentip.</p>
+<p>We add the Tooltip to an element using the associated class.
+    The text we want to present findings
+    The text that we want to display is called by a data attribute named "tooltip", the data attribute "tooltip" is linked to the data attribute "flow" by which we determine where the text will be displayed.</p>
+<br />
 
-<body>
-<header id="myNav"></header>
-    
-<div class="filler"></div>
-<!--PAGE CONTENT-->
-<div class="container">
-    <section>
-        <h2>Tooltip</h2>
-        <p>A tooltip is a graphical user interface element used in conjunction with the cursor or mouse pointer to display information about an item without needing to click on it</p>
-        <p>A tooltip is also known as a hint, infotip or screentip.</p>
-        <p>We add the Tooltip to an element using the associated class.
-            The text we want to present findings
-            The text that we want to display is called by a data attribute named "tooltip", the data attribute "tooltip" is linked to the data attribute "flow" by which we determine where the text will be displayed.</p>
-        <br />
-
-        <div class="contentTooltip">
-            <p class="left" tooltip="Left" flow="left">Left</p>
-            <p class="right" tooltip="Right" flow="right">Right</p>
-            <p class="up" tooltip="Up" flow="up">Up</p>
-            <p class="down" tooltip="Down" flow="down">Down</p>
-            <p class="left-down" tooltip="Left down" flow="leftDown">Left-down</p>
-            <p class="right-down" tooltip="Right down" flow="rightDown">Right-down</p>
-            <p class="left-up" tooltip="Left up" flow="leftUp">Left-up</p>
-            <p class="right-up" tooltip="Right up" flow="rightUp">Right-up</p>
-        </div>
-        <br />
-
-
-        
-        <table>
-            <tr>
-                <th>class</th>
-                <th>explanation</th>
-            </tr>
-            <tr>
-                <td><span class="txt-primary-4">left</span></td>
-                <td>class shows the text on the left of the element</td>
-            </tr>
-            <tr>
-                <td><span class="txt-primary-4">right</span></td>
-                <td>class displays the text to the right of the element</td>
-            </tr>
-            <tr>
-                <td><span class="txt-primary-4">up</span></td>
-                <td>class displays the text above the elements</td>
-            </tr>
-            <tr>
-                <td><span class="txt-primary-4">down</span></td>
-                <td>class shows the text below the element</td>
-            </tr>
-            <tr>
-                <td><span class="txt-primary-4">left-down</span></td>
-                <td>class displays the text in the lower-left corner of the element</td>
-            </tr>
-            <tr>
-                <td><span class="txt-primary-4">right-down</span></td>
-                <td>class displays the text in the right-left corner of the element</td>
-            </tr>
-            <tr>
-                <td><span class="txt-primary-4">left-up</span></td>
-                <td>class displays the text in the upper-left corner of the element</td>
-            </tr>
-            <tr>
-                <td><span class="txt-primary-4">right-up</span></td>
-                <td>class displays the text in the upper-right corner of the element</td>
-            </tr>
-        </table>
-
-
-        <code>
-        &lt;div class="contentTooltip"&gt;
-            &lt;p class="left" tooltip="Left" flow="left"&lt;Left&gt;/p&gt;
-            &lt;p class="right" tooltip="Right" flow="right"&lt;Right&gt;/p&gt;
-            &lt;p class="up" tooltip="Up" flow="up"&lt;Up&gt;/p&gt;
-            &lt;p class="down" tooltip="Down" flow="down"&lt;Down&gt;/p&gt;
-            &lt;p class="left-down" tooltip="Left down" flow="leftDown"&lt;Left-down&gt;/p&gt;
-            &lt;p class="right-down" tooltip="Right down" flow="rightDown"&lt;Right-down&gt;/p&gt;
-            &lt;p class="left-up" tooltip="Left up" flow="leftUp"&lt;Left-up&gt;/p&gt;
-            &lt;p class="right-up" tooltip="Right up" flow="rightUp"&lt;Right-up&gt;/p&gt;
-        &lt;/div&gt;
-        </code>
-        <small class="codeText">HTML</small><br />
-        <code>
-        :root {
-            --delay: 100ms;
-            --duration: 100ms; 
-            --distance: 0em;
-            --borderArrow: 5px;
-            --move: 1em;
-            --borderRadius: .3ch;
-            --boxShadow: 0 1em 2em -.5em rgba(0, 0, 0, 0.35);
-            --tooltip-color: rgba(51, 51, 51,0.8);
-        }
-        
-        /* START TOOLTIP STYLES */
-        [tooltip] {
-            position: relative;
-        
-            &::before,
-            &::after {
-                text-transform: none;
-                font-size: 0.9em; 
-                line-height: 1;
-                user-select: none;
-                pointer-events: none;
-                position: absolute;
-                display: none;
-                opacity: 0;
-            }
-        
-            &::before {
-                content: '';
-                border: var(--borderArrow) solid transparent;
-                z-index: 1001;
-            }
-        
-            &::after {
-                content: attr(tooltip); /* magic! */
-                font-family: 'UbuntuMono' ;
-                text-align: center;
-                min-width: 3em;
-                max-width: 21em;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                padding: var(--padding);
-                border-radius: var(--borderRadius);
-                box-shadow: var(--boxShadow);
-                background-color: var(--tooltip-color);
-                color: $white;
-                z-index: 1000;
-            }
-        
-            &:hover::before,
-            &:hover::after {
-                display: block;
-            }
-            &:hover::after {
-                background-color: $gray-8;
-                padding: 10px;
-            }
-        
-            /* FLOW: UP */
-            &:not([flow]), &[flow="up"] {
-                &::before, &::after {
-                    left: 50%;
-                    transform: translate(-50%, calc(-1 * var(--move)));
-                }
-                &::before {
-                    bottom: calc(100% + var(--distance));
-                    border-bottom-width: 0;
-                    border-top-color: var(--tooltip-color);
-                }
-                &::after {
-                    bottom: calc(100% + var(--distance) + var(--borderArrow));
-                }
-            }
-        
-            /* FLOW: DOWN */
-            &[flow="down"] {
-                &::before, &::after {
-                    left: 50%;
-                        transform: translate(-50%, var(--move));
-                }
-                &::before {
-                    top: calc(100% + var(--distance));
-                    border-top-width: 0;
-                    border-bottom-color: var(--tooltip-color);
-                }
-                &::after {
-                    top: calc(100% + var(--distance) + var(--borderArrow));
-                }
-            }
-        
-            /* FLOW: LEFT */
-            &[flow="left"] {
-                &::before, &::after {
-                    top: 50%;
-                    transform: translate(calc(-1 * var(--move)), -50%);
-                }
-                &::before {
-                    border-right-width: 0;
-                    border-left-color: var(--tooltip-color);
-                    left: calc(0em - var(--distance) - var(--borderArrow));
-                }
-                &::after {
-                    right: calc(100% + var(--distance) + var(--borderArrow));
-                }
-            }
-        
-            /* FLOW: RIGHT */
-            &[flow="right"] {
-                &::before, &::after {
-                    top: 50%;
-                    transform: translate(var(--move), -50%);
-                }
-                &::before {
-                    border-left-width: 0;
-                    border-right-color: var(--tooltip-color);
-                    right: calc(0em - var(--distance) - var(--borderArrow));
-                }
-                &::after {
-                    left: calc(100% + var(--distance) + var(--borderArrow));
-                }
-            }
-        
-            /* FLOW: RIGHT-UP */
-            &[flow="rightUp"] {
-                &::before {
-                    left: 40%;
-                    bottom: calc(100% + var(--distance));
-                    border-bottom-width: 0;
-                    border-top-color: var(--tooltip-color);
-                    transform: translate(-50%, calc(-1 * var(--move)));
-                }
-                &::after {
-                    right: 50%;
-                    bottom: calc(100% + var(--distance) + var(--borderArrow));
-                    transform: translate(calc(var(--fontSize) + var(--borderArrow)), calc(-1 * var(--move)));
-                }
-            }
-        
-            /* FLOW: RIGHT-DOWN */
-            &[flow="rightDown"] {
-                &::before {
-                    left: 40%;
-                    top: calc(100% + var(--distance));
-                    border-top-width: 0;
-                    border-bottom-color: var(--tooltip-color);
-                    transform: translate(-50%, var(--move));
-                }
-                &::after {
-                    right: 50%;
-                    top: calc(100% + var(--distance) + var(--borderArrow));
-                    transform: translate(calc(var(--fontSize) + var(--borderArrow)), var(--move));
-                }
-            }
-        
-            /* FLOW: LEFT-UP */
-            &[flow="leftUp"] {
-                &::before {
-                    left: 60%;
-                    bottom: calc(100% + var(--distance));
-                    border-bottom-width: 0;
-                    border-top-color: var(--tooltip-color);
-                    transform: translate(-50%, calc(-1 * var(--move)));
-                }
-                &::after {
-                    left: 50%;
-                    bottom: calc(100% + var(--distance) + var(--borderArrow));
-                    transform: translate(calc(-1 * var(--fontSize) - var(--borderArrow)), calc(-1 * var(--move)));
-                }
-            }
-        
-            /* FLOW: LEFT-DOWN */
-            &[flow="leftDown"] {
-                &::before, &::after {
-                    left: 60%;
-                }
-                &::before {
-                    top: calc(100% + var(--distance));
-                    border-top-width: 0;
-                    border-bottom-color: var(--tooltip-color);
-                    transform: translate(-50%, var(--move));
-                }
-                &::after {
-                    left: 50%;
-                    top: calc(100% + var(--distance) + var(--borderArrow));
-                    transform: translate(calc(-1 * var(--fontSize) - var(--borderArrow)), var(--move));
-                }
-            }
-        
-        
-            /* FX All The Things */ 
-            &:not([flow]):hover, &[flow="down"]:hover, &[flow="up"]:hover {
-                &::before, &::after {
-                    animation: tooltipsVert var(--duration) ease-out var(--delay) forwards;
-                }
-            }
-        
-            &[flow="left"]:hover, &[flow="right"]:hover {
-                &::before, &::after {
-                    animation: tooltipsHorz var(--duration) ease-out var(--delay) forwards;
-                }
-            }
-        
-            &[flow="leftUp"]:hover, &[flow="leftDown"]:hover {
-                &::before {
-                    animation: tooltipsVert var(--duration) ease-out var(--delay) forwards;
-                }
-                &::after {
-                    animation: tooltipsVertAfterLeft var(--duration) ease-out var(--delay) forwards;
-                }
-            }
-        
-            &[flow="rightDown"]:hover, &[flow="rightUp"]:hover {
-                &::before {
-                    animation: tooltipsVert var(--duration) ease-out var(--delay) forwards;
-                }
-                &::after {
-                    animation: tooltipsVertAfterRight var(--duration) ease-out var(--delay) forwards;
-                }
-            }
-        }
-        
-        
-        [tooltip='']::before,
-        [tooltip='']::after {
-            display: none !important;
-        }
-        
-        
-        
-        /* KEYFRAMES */
-        @keyframes tooltipsVert {
-            to {
-            opacity: var(--opacity);
-            transform: translate(-50%, 0);
-            }
-        }
-        @keyframes tooltipsHorz {
-            to {
-            opacity: var(--opacity);
-            transform: translate(0, -50%);
-            }
-        }
-        @keyframes tooltipsVertAfterLeft {
-            to {
-            opacity: var(--opacity);
-            transform: translate(calc(-1 * var(--fontSize) - var(--borderArrow)), 0);
-            }
-        }
-        @keyframes tooltipsVertAfterRight {
-            to {
-            opacity: var(--opacity);
-            transform: translate(calc(var(--fontSize) + var(--borderArrow)), 0);
-            }
-        }
-        
-        
-        
-        /* UNRELATED to tooltips */
-        .contentTooltip {
-            display: grid;
-            background:  $primary-1;
-            border: 5px solid $primary-0;
-            padding: 20px;
-            box-sizing: border-box;
-            border-radius: 15px;
-            grid-template-columns: repeat(3,1fr);
-            grid-template-rows: repeat(3,1fr);
-            grid-template-areas:
-                "left-up up right-up"
-                "left . right"
-                "left-down down right-down";
-            grid-gap:1em;
-            text-align:center;
-            height:100%;
-            place-items:center center;
-            color:#fff;
-            font-family: sans-serif;
-            p {
-                // min-width: 70px;
-                background:$primary-0;
-                padding: 0.3em;
-                border-radius: 5px;
-                cursor: pointer;
-            }
-            .left {
-                grid-area:left;
-            }
-            .right {
-                grid-area:right;
-            }
-            .up {
-                grid-area:up;
-            }
-            .down {
-                grid-area:down;
-            }
-            .left-down {
-                grid-area:left-down;
-            }
-            .left-up {
-                grid-area:left-up;
-            }
-            .right-down {
-                grid-area:right-down;
-            }
-            .right-up {
-                grid-area:right-up;
-            }
-        }       
-        </code>
-        <small class="codeText">SCSS</small><br>
-
-    </section>
+<div class="contentTooltip">
+    <p class="left" tooltip="Left" flow="left">Left</p>
+    <p class="right" tooltip="Right" flow="right">Right</p>
+    <p class="up" tooltip="Up" flow="up">Up</p>
+    <p class="down" tooltip="Down" flow="down">Down</p>
+    <p class="left-down" tooltip="Left down" flow="leftDown">Left-down</p>
+    <p class="right-down" tooltip="Right down" flow="rightDown">Right-down</p>
+    <p class="left-up" tooltip="Left up" flow="leftUp">Left-up</p>
+    <p class="right-up" tooltip="Right up" flow="rightUp">Right-up</p>
 </div>
+<br />
+
+<table>
+    <tr>
+        <th>class</th>
+        <th>explanation</th>
+    </tr>
+    <tr>
+        <td><span class="txt-primary-4">left</span></td>
+        <td>class shows the text on the left of the element</td>
+    </tr>
+    <tr>
+        <td><span class="txt-primary-4">right</span></td>
+        <td>class displays the text to the right of the element</td>
+    </tr>
+    <tr>
+        <td><span class="txt-primary-4">up</span></td>
+        <td>class displays the text above the elements</td>
+    </tr>
+    <tr>
+        <td><span class="txt-primary-4">down</span></td>
+        <td>class shows the text below the element</td>
+    </tr>
+    <tr>
+        <td><span class="txt-primary-4">left-down</span></td>
+        <td>class displays the text in the lower-left corner of the element</td>
+    </tr>
+    <tr>
+        <td><span class="txt-primary-4">right-down</span></td>
+        <td>class displays the text in the right-left corner of the element</td>
+    </tr>
+    <tr>
+        <td><span class="txt-primary-4">left-up</span></td>
+        <td>class displays the text in the upper-left corner of the element</td>
+    </tr>
+    <tr>
+        <td><span class="txt-primary-4">right-up</span></td>
+        <td>class displays the text in the upper-right corner of the element</td>
+    </tr>
+</table>
+
+
+<code>
+&lt;div class="contentTooltip"&gt;
+    &lt;p class="left" tooltip="Left" flow="left"&lt;Left&gt;/p&gt;
+    &lt;p class="right" tooltip="Right" flow="right"&lt;Right&gt;/p&gt;
+    &lt;p class="up" tooltip="Up" flow="up"&lt;Up&gt;/p&gt;
+    &lt;p class="down" tooltip="Down" flow="down"&lt;Down&gt;/p&gt;
+    &lt;p class="left-down" tooltip="Left down" flow="leftDown"&lt;Left-down&gt;/p&gt;
+    &lt;p class="right-down" tooltip="Right down" flow="rightDown"&lt;Right-down&gt;/p&gt;
+    &lt;p class="left-up" tooltip="Left up" flow="leftUp"&lt;Left-up&gt;/p&gt;
+    &lt;p class="right-up" tooltip="Right up" flow="rightUp"&lt;Right-up&gt;/p&gt;
+&lt;/div&gt;
+</code>
+<small class="codeText">HTML</small><br />
+<code>
+:root {
+    --delay: 100ms;
+    --duration: 100ms; 
+    --distance: 0em;
+    --borderArrow: 5px;
+    --move: 1em;
+    --borderRadius: .3ch;
+    --boxShadow: 0 1em 2em -.5em rgba(0, 0, 0, 0.35);
+    --tooltip-color: rgba(51, 51, 51,0.8);
+}
+
+/* START TOOLTIP STYLES */
+[tooltip] {
+    position: relative;
+
+    &::before,
+    &::after {
+        text-transform: none;
+        font-size: 0.9em; 
+        line-height: 1;
+        user-select: none;
+        pointer-events: none;
+        position: absolute;
+        display: none;
+        opacity: 0;
+    }
+
+    &::before {
+        content: '';
+        border: var(--borderArrow) solid transparent;
+        z-index: 1001;
+    }
+
+    &::after {
+        content: attr(tooltip); /* magic! */
+        font-family: 'UbuntuMono' ;
+        text-align: center;
+        min-width: 3em;
+        max-width: 21em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: var(--padding);
+        border-radius: var(--borderRadius);
+        box-shadow: var(--boxShadow);
+        background-color: var(--tooltip-color);
+        color: $white;
+        z-index: 1000;
+    }
+
+    &:hover::before,
+    &:hover::after {
+        display: block;
+    }
+    &:hover::after {
+        background-color: $gray-8;
+        padding: 10px;
+    }
+
+    /* FLOW: UP */
+    &:not([flow]), &[flow="up"] {
+        &::before, &::after {
+            left: 50%;
+            transform: translate(-50%, calc(-1 * var(--move)));
+        }
+        &::before {
+            bottom: calc(100% + var(--distance));
+            border-bottom-width: 0;
+            border-top-color: var(--tooltip-color);
+        }
+        &::after {
+            bottom: calc(100% + var(--distance) + var(--borderArrow));
+        }
+    }
+
+    /* FLOW: DOWN */
+    &[flow="down"] {
+        &::before, &::after {
+            left: 50%;
+                transform: translate(-50%, var(--move));
+        }
+        &::before {
+            top: calc(100% + var(--distance));
+            border-top-width: 0;
+            border-bottom-color: var(--tooltip-color);
+        }
+        &::after {
+            top: calc(100% + var(--distance) + var(--borderArrow));
+        }
+    }
+
+    /* FLOW: LEFT */
+    &[flow="left"] {
+        &::before, &::after {
+            top: 50%;
+            transform: translate(calc(-1 * var(--move)), -50%);
+        }
+        &::before {
+            border-right-width: 0;
+            border-left-color: var(--tooltip-color);
+            left: calc(0em - var(--distance) - var(--borderArrow));
+        }
+        &::after {
+            right: calc(100% + var(--distance) + var(--borderArrow));
+        }
+    }
+
+    /* FLOW: RIGHT */
+    &[flow="right"] {
+        &::before, &::after {
+            top: 50%;
+            transform: translate(var(--move), -50%);
+        }
+        &::before {
+            border-left-width: 0;
+            border-right-color: var(--tooltip-color);
+            right: calc(0em - var(--distance) - var(--borderArrow));
+        }
+        &::after {
+            left: calc(100% + var(--distance) + var(--borderArrow));
+        }
+    }
+
+    /* FLOW: RIGHT-UP */
+    &[flow="rightUp"] {
+        &::before {
+            left: 40%;
+            bottom: calc(100% + var(--distance));
+            border-bottom-width: 0;
+            border-top-color: var(--tooltip-color);
+            transform: translate(-50%, calc(-1 * var(--move)));
+        }
+        &::after {
+            right: 50%;
+            bottom: calc(100% + var(--distance) + var(--borderArrow));
+            transform: translate(calc(var(--fontSize) + var(--borderArrow)), calc(-1 * var(--move)));
+        }
+    }
+
+    /* FLOW: RIGHT-DOWN */
+    &[flow="rightDown"] {
+        &::before {
+            left: 40%;
+            top: calc(100% + var(--distance));
+            border-top-width: 0;
+            border-bottom-color: var(--tooltip-color);
+            transform: translate(-50%, var(--move));
+        }
+        &::after {
+            right: 50%;
+            top: calc(100% + var(--distance) + var(--borderArrow));
+            transform: translate(calc(var(--fontSize) + var(--borderArrow)), var(--move));
+        }
+    }
+
+    /* FLOW: LEFT-UP */
+    &[flow="leftUp"] {
+        &::before {
+            left: 60%;
+            bottom: calc(100% + var(--distance));
+            border-bottom-width: 0;
+            border-top-color: var(--tooltip-color);
+            transform: translate(-50%, calc(-1 * var(--move)));
+        }
+        &::after {
+            left: 50%;
+            bottom: calc(100% + var(--distance) + var(--borderArrow));
+            transform: translate(calc(-1 * var(--fontSize) - var(--borderArrow)), calc(-1 * var(--move)));
+        }
+    }
+
+    /* FLOW: LEFT-DOWN */
+    &[flow="leftDown"] {
+        &::before, &::after {
+            left: 60%;
+        }
+        &::before {
+            top: calc(100% + var(--distance));
+            border-top-width: 0;
+            border-bottom-color: var(--tooltip-color);
+            transform: translate(-50%, var(--move));
+        }
+        &::after {
+            left: 50%;
+            top: calc(100% + var(--distance) + var(--borderArrow));
+            transform: translate(calc(-1 * var(--fontSize) - var(--borderArrow)), var(--move));
+        }
+    }
+
+
+    /* FX All The Things */ 
+    &:not([flow]):hover, &[flow="down"]:hover, &[flow="up"]:hover {
+        &::before, &::after {
+            animation: tooltipsVert var(--duration) ease-out var(--delay) forwards;
+        }
+    }
+
+    &[flow="left"]:hover, &[flow="right"]:hover {
+        &::before, &::after {
+            animation: tooltipsHorz var(--duration) ease-out var(--delay) forwards;
+        }
+    }
+
+    &[flow="leftUp"]:hover, &[flow="leftDown"]:hover {
+        &::before {
+            animation: tooltipsVert var(--duration) ease-out var(--delay) forwards;
+        }
+        &::after {
+            animation: tooltipsVertAfterLeft var(--duration) ease-out var(--delay) forwards;
+        }
+    }
+
+    &[flow="rightDown"]:hover, &[flow="rightUp"]:hover {
+        &::before {
+            animation: tooltipsVert var(--duration) ease-out var(--delay) forwards;
+        }
+        &::after {
+            animation: tooltipsVertAfterRight var(--duration) ease-out var(--delay) forwards;
+        }
+    }
+}
+
+
+[tooltip='']::before,
+[tooltip='']::after {
+    display: none !important;
+}
 
 
 
-<script src="../js/header.js"></script>
-<script src="../js/myscript.js"></script>
-</body>
-</html>
+/* KEYFRAMES */
+@keyframes tooltipsVert {
+    to {
+    opacity: var(--opacity);
+    transform: translate(-50%, 0);
+    }
+}
+@keyframes tooltipsHorz {
+    to {
+    opacity: var(--opacity);
+    transform: translate(0, -50%);
+    }
+}
+@keyframes tooltipsVertAfterLeft {
+    to {
+    opacity: var(--opacity);
+    transform: translate(calc(-1 * var(--fontSize) - var(--borderArrow)), 0);
+    }
+}
+@keyframes tooltipsVertAfterRight {
+    to {
+    opacity: var(--opacity);
+    transform: translate(calc(var(--fontSize) + var(--borderArrow)), 0);
+    }
+}
+
+
+
+/* UNRELATED to tooltips */
+.contentTooltip {
+    display: grid;
+    background:  $primary-1;
+    border: 5px solid $primary-0;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas:
+        "left-up up right-up"
+        "left . right"
+        "left-down down right-down";
+    grid-gap:1em;
+    text-align:center;
+    height:100%;
+    place-items:center center;
+    color:#fff;
+    font-family: sans-serif;
+    p {
+        // min-width: 70px;
+        background:$primary-0;
+        padding: 0.3em;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .left {
+        grid-area:left;
+    }
+    .right {
+        grid-area:right;
+    }
+    .up {
+        grid-area:up;
+    }
+    .down {
+        grid-area:down;
+    }
+    .left-down {
+        grid-area:left-down;
+    }
+    .left-up {
+        grid-area:left-up;
+    }
+    .right-down {
+        grid-area:right-down;
+    }
+    .right-up {
+        grid-area:right-up;
+    }
+}       
+</code>
+<small class="codeText">SCSS</small><br>

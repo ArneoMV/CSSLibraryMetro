@@ -1,267 +1,243 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8" lang="hr" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Columns</title>
 
-	<link rel="stylesheet" type="text/css" href="../css/app.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-</head>
+	<article>
+		<h2>Columns</h2>
+		<p>Columns system is a structure that allows for content to be stacked both vertically and horizontally in a consistent and easily manageable fashion. Additionally, grid system code is project-agnostic giving it a high degree of portability so that it may be adopted on new projects.</p>
+		
+		<ul>
+			<h4>The Benefits</h4>
+			<li><span class="txt-warrning-0">They increase productivity</span>  by providing simple and predictable layout scaffolding to HTML design. The structure of a page can be formulated quickly without second guessing its precision or cross-browser compatibility.</li>
+			<li><span class="txt-warrning-0">They are versatile</span>  in how layouts can be constructed, being adaptable in varying combinations of rows and columns. They even support nested grids for more complex use cases. No matter your layout requirements, a grid system is almost certainly well suited.</li>
+			<li><span class="txt-warrning-0">They are ideal for responsive layouts</span> This is where grid systems reign supreme. They make it incredibly easy to create mobile friendly interfaces that are adaptable to different sized viewports.</li>
+		</ul>
 
-<body>
-	<header id="myNav"> </header>
-	
-<div class="filler"></div>
-<!--PAGE CONTENT-->
-<div class="container">	
-	<section>
-		<article>
-			<h2>Columns</h2>
-			<p>Columns system is a structure that allows for content to be stacked both vertically and horizontally in a consistent and easily manageable fashion. Additionally, grid system code is project-agnostic giving it a high degree of portability so that it may be adopted on new projects.</p>
-			
-			<ul>
-				<h4>The Benefits</h4>
-				<li><span class="txt-warrning-0">They increase productivity</span>  by providing simple and predictable layout scaffolding to HTML design. The structure of a page can be formulated quickly without second guessing its precision or cross-browser compatibility.</li>
-				<li><span class="txt-warrning-0">They are versatile</span>  in how layouts can be constructed, being adaptable in varying combinations of rows and columns. They even support nested grids for more complex use cases. No matter your layout requirements, a grid system is almost certainly well suited.</li>
-				<li><span class="txt-warrning-0">They are ideal for responsive layouts</span> This is where grid systems reign supreme. They make it incredibly easy to create mobile friendly interfaces that are adaptable to different sized viewports.</li>
-			</ul>
+		<h4>The Primary Components</h4>
+		<p>Grid systems include two key components: rows and columns. Rows are used to accommodate the columns. Columns make up the final structure and contain the actual content. Grid system also includes containers, which serve as wrappers for the layout.</p>
 
-			<h4>The Primary Components</h4>
-			<p>Grid systems include two key components: rows and columns. Rows are used to accommodate the columns. Columns make up the final structure and contain the actual content. Grid system also includes containers, which serve as wrappers for the layout.</p>
-
-			<h4>Calculating Column Widths</h4>
-			<p>
-				Before we can begin making calculations, we need to determine the maximum amount of columns per row. A popular choice is 12 as it boasts flexibility given that it is divisible by 1, 2, 3, 4, and 6. This permits a variety of different combinations that still allow for evenly distributed columns of the same size.
-				<br />
-				It’s important to understand that by going with a maximum of 12 columns per row, you need to fulfill that amount for every row regardless of how many columns you want. For example, if you wanted only a row of 3 equal columns, you would use 3 elements that each span 4 columns (4×3=12). Exceeding the sum of 12 will result in the extra column(s) wrapping to a new line.
-				<br />
-				Now that we know the maximum number of columns, next we need to determine the width of a single (1/12) column using the following formula:
-				<br />
-				scw = (100 – (m * (mc – 1))) / mc
-				<br /><br />
-				Where:
-				<br />
-				scw = single column width<br />
-				m = margin (1.6%)<br />
-				mc = maximum columns (12)<br />
-				When we plug in the numbers, we get a single column width of 8.33%. From here we can use this number to calculate the rest of the column widths. The formula for this is:
-				<br />
-				cw = (scw * cs) + (m * (cs – 1))
-				<br /><br />
-				Where:
-				<br />
-				cw = column width<br />
-				scw = single column width (8.33%)<br />
-				cs = column span (1-12)<br />
-				m = margin (1.6%)<br />
-				Applying this formula for each of the 12 columns results in the following CSS.
-			</p>
+		<h4>Calculating Column Widths</h4>
+		<p>
+			Before we can begin making calculations, we need to determine the maximum amount of columns per row. A popular choice is 12 as it boasts flexibility given that it is divisible by 1, 2, 3, 4, and 6. This permits a variety of different combinations that still allow for evenly distributed columns of the same size.
+			<br />
+			It’s important to understand that by going with a maximum of 12 columns per row, you need to fulfill that amount for every row regardless of how many columns you want. For example, if you wanted only a row of 3 equal columns, you would use 3 elements that each span 4 columns (4×3=12). Exceeding the sum of 12 will result in the extra column(s) wrapping to a new line.
+			<br />
+			Now that we know the maximum number of columns, next we need to determine the width of a single (1/12) column using the following formula:
+			<br />
+			scw = (100 – (m * (mc – 1))) / mc
 			<br /><br />
-		</article>
+			Where:
+			<br />
+			scw = single column width<br />
+			m = margin (1.6%)<br />
+			mc = maximum columns (12)<br />
+			When we plug in the numbers, we get a single column width of 8.33%. From here we can use this number to calculate the rest of the column widths. The formula for this is:
+			<br />
+			cw = (scw * cs) + (m * (cs – 1))
+			<br /><br />
+			Where:
+			<br />
+			cw = column width<br />
+			scw = single column width (8.33%)<br />
+			cs = column span (1-12)<br />
+			m = margin (1.6%)<br />
+			Applying this formula for each of the 12 columns results in the following CSS.
+		</p>
+		<br /><br />
+	</article>
 
-		<p>The classes listed can be combined to create more dynamic and flexible schedules</p>
-		<br />
+	<p>The classes listed can be combined to create more dynamic and flexible schedules</p>
+	<br />
 
-		<div class="col-wd-12">
-			<div class="col">12 Column</div>
-		</div>
-		<div class="col-wd-6">
-			<div class="col">6 Column</div>
-		</div>
-		<div class="col-wd-6">
-			<div class="col">6 Column</div>
-		</div>
-		<div class="col-wd-6 col-md-4">
-			<div class="col">4 Column</div>
-		</div>
-		<div class="col-wd-6 col-md-4">
-			<div class="col">4 Column</div>
-		</div>
-		<div class="col-wd-12 col-md-4">
-			<div class="col">4 Column</div>
-		</div>
-		<div class="col-wd-6 col-md-3">
-			<div class="col">3 Column</div>
-		</div>
-		<div class="col-wd-6 col-md-3">
-			<div class="col">3 Column</div>
-		</div>
-		<div class="col-wd-6 col-md-3">
-			<div class="col">3 Column</div>
-		</div>
-		<div class="col-wd-6 col-md-3">
-			<div class="col">3 Column</div>
-		</div>
-		<div class="col-wd-6 col-md-4 col-sm-2">
-			<div class="col">2 Column</div>
-		</div>
-		<div class="col-wd-6 col-md-4 col-sm-2">
-			<div class="col">2 Column</div>
-		</div>
-		<div class="col-wd-6 col-md-4 col-sm-2">
-			<div class="col">2 Column</div>
-		</div>
-		<div class="col-wd-6 col-md-4 col-sm-2">
-			<div class="col">2 Column</div>
-		</div>
-		<div class="col-wd-6 col-md-4 col-sm-2">
-			<div class="col">2 Column</div>
-		</div>
-		<div class="col-wd-6 col-md-4 col-sm-2">
-			<div class="col">2 Column</div>
-		</div>
-		<div class="col-wd-3 col-md-2 col-sm-1">
-			<div class="col">1</div>
-		</div>
-		<div class="col-wd-3 col-md-2 col-sm-1">
-			<div class="col">1</div>
-		</div>
-		<div class="col-wd-3 col-md-2 col-sm-1">
-			<div class="col">1</div>
-		</div>
-		<div class="col-wd-3 col-md-2 col-sm-1">
-			<div class="col">1</div>
-		</div>
-		<div class="col-wd-3 col-md-2 col-sm-1">
-			<div class="col">1</div>
-		</div>
-		<div class="col-wd-3 col-md-2 col-sm-1">
-			<div class="col">1</div>
-		</div>
-		<div class="col-wd-3 col-md-2 col-sm-1">
-			<div class="col">1</div>
-		</div>
-		<div class="col-wd-3 col-md-2 col-sm-1">
-			<div class="col">1</div>
-		</div>
-		<div class="col-wd-3 col-md-2 col-sm-1">
-			<div class="col">1</div>
-		</div>
-		<div class="col-wd-3 col-md-2 col-sm-1">
-			<div class="col">1</div>
-		</div>
-		<div class="col-wd-3 col-md-2 col-sm-1">
-			<div class="col">1</div>
-		</div>
-		<div class="col-wd-3 col-md-2 col-sm-1">
-			<div class="col">1</div>
-		</div>
-		<br />
+	<div class="col-wd-12">
+		<div class="col">12 Column</div>
+	</div>
+	<div class="col-wd-6">
+		<div class="col">6 Column</div>
+	</div>
+	<div class="col-wd-6">
+		<div class="col">6 Column</div>
+	</div>
+	<div class="col-wd-6 col-md-4">
+		<div class="col">4 Column</div>
+	</div>
+	<div class="col-wd-6 col-md-4">
+		<div class="col">4 Column</div>
+	</div>
+	<div class="col-wd-12 col-md-4">
+		<div class="col">4 Column</div>
+	</div>
+	<div class="col-wd-6 col-md-3">
+		<div class="col">3 Column</div>
+	</div>
+	<div class="col-wd-6 col-md-3">
+		<div class="col">3 Column</div>
+	</div>
+	<div class="col-wd-6 col-md-3">
+		<div class="col">3 Column</div>
+	</div>
+	<div class="col-wd-6 col-md-3">
+		<div class="col">3 Column</div>
+	</div>
+	<div class="col-wd-6 col-md-4 col-sm-2">
+		<div class="col">2 Column</div>
+	</div>
+	<div class="col-wd-6 col-md-4 col-sm-2">
+		<div class="col">2 Column</div>
+	</div>
+	<div class="col-wd-6 col-md-4 col-sm-2">
+		<div class="col">2 Column</div>
+	</div>
+	<div class="col-wd-6 col-md-4 col-sm-2">
+		<div class="col">2 Column</div>
+	</div>
+	<div class="col-wd-6 col-md-4 col-sm-2">
+		<div class="col">2 Column</div>
+	</div>
+	<div class="col-wd-6 col-md-4 col-sm-2">
+		<div class="col">2 Column</div>
+	</div>
+	<div class="col-wd-3 col-md-2 col-sm-1">
+		<div class="col">1</div>
+	</div>
+	<div class="col-wd-3 col-md-2 col-sm-1">
+		<div class="col">1</div>
+	</div>
+	<div class="col-wd-3 col-md-2 col-sm-1">
+		<div class="col">1</div>
+	</div>
+	<div class="col-wd-3 col-md-2 col-sm-1">
+		<div class="col">1</div>
+	</div>
+	<div class="col-wd-3 col-md-2 col-sm-1">
+		<div class="col">1</div>
+	</div>
+	<div class="col-wd-3 col-md-2 col-sm-1">
+		<div class="col">1</div>
+	</div>
+	<div class="col-wd-3 col-md-2 col-sm-1">
+		<div class="col">1</div>
+	</div>
+	<div class="col-wd-3 col-md-2 col-sm-1">
+		<div class="col">1</div>
+	</div>
+	<div class="col-wd-3 col-md-2 col-sm-1">
+		<div class="col">1</div>
+	</div>
+	<div class="col-wd-3 col-md-2 col-sm-1">
+		<div class="col">1</div>
+	</div>
+	<div class="col-wd-3 col-md-2 col-sm-1">
+		<div class="col">1</div>
+	</div>
+	<div class="col-wd-3 col-md-2 col-sm-1">
+		<div class="col">1</div>
+	</div>
+	<br />
 
-		<table>
-			<tr>
-				<th>class</th>
-				<th>explanation</th>
-			</tr>
-			<tr>
-				<td><span class="txt-primary-4">col-xs-*</span></td>
-				<td> - for phones - screens smaller than 768px</td>
-			</tr>
-			<tr>
-				<td><span class="txt-primary-4">col-sm-*</span></td>
-				<td> - for tables - screens equal to or greater than 768px wide</td>
-			</tr>
-			<tr>
-				<td><span class="txt-primary-4">col-md-*</span></td>
-				<td> - for small laptops - Screens equal to or greater than 992px wide</td>
-			</tr>
-			<tr>
-				<td><span class="txt-primary-4">col-lg-*</span></td>
-				<td> - for laptops and desktops - screens equal to or larger than 1200px wide</td>
-			</tr>
-		</table>
-		<br />
+	<table>
+		<tr>
+			<th>class</th>
+			<th>explanation</th>
+		</tr>
+		<tr>
+			<td><span class="txt-primary-4">col-xs-*</span></td>
+			<td> - for phones - screens smaller than 768px</td>
+		</tr>
+		<tr>
+			<td><span class="txt-primary-4">col-sm-*</span></td>
+			<td> - for tables - screens equal to or greater than 768px wide</td>
+		</tr>
+		<tr>
+			<td><span class="txt-primary-4">col-md-*</span></td>
+			<td> - for small laptops - Screens equal to or greater than 992px wide</td>
+		</tr>
+		<tr>
+			<td><span class="txt-primary-4">col-lg-*</span></td>
+			<td> - for laptops and desktops - screens equal to or larger than 1200px wide</td>
+		</tr>
+	</table>
+	<br />
 
-		<code>
-	&lt;div class="container"&gt;
-		&lt;div class="row"&gt;
-			&lt;div class="col-wd-6 col-md-3"&gt;
-				&lt;div class="col"&gt;3 Column&lt;/div&gt;
-			&lt;/div&gt;
-			&lt;div class="col-wd-6 col-md-3"&gt;
-				&lt;div class="col"v3 Column&lt;/div&gt;
-			&lt;/div &gt;
-			&lt;div class="col-wd-6 col-md-3"&gt;
-				&lt;div class="col"&gt;3 Column&lt;/div&gt;
-			&lt;/div&gt;
-			&lt;div class="col-wd-6 col-md-3"&gt;
-				&lt;div class="col"&gt;3 Column&lt;/div&gt;
-			&lt;/div &gt;
+	<code>
+&lt;div class="container"&gt;
+	&lt;div class="row"&gt;
+		&lt;div class="col-wd-6 col-md-3"&gt;
+			&lt;div class="col"&gt;3 Column&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="col-wd-6 col-md-3"&gt;
+			&lt;div class="col"v3 Column&lt;/div&gt;
+		&lt;/div &gt;
+		&lt;div class="col-wd-6 col-md-3"&gt;
+			&lt;div class="col"&gt;3 Column&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="col-wd-6 col-md-3"&gt;
+			&lt;div class="col"&gt;3 Column&lt;/div&gt;
 		&lt;/div &gt;
 	&lt;/div &gt;
-		</code>
-		<small style="float: right;">HTML</small>
-		<br>
-		<code>
-	.container {
-		width: 80%;
-		height: auto;
-		margin: 0 auto;
-	}
-	[class*='col-'] {
-		width: 100%;
-		float: left;
-		min-height: 1px;
-	}
-	.col {
-		padding: 1em;
-		margin: 8px;
-		background: $color-primary;
-		border-radius: 3px;
-		box-shadow: 0 1px 1px rgba(0,0,0,.3);
-		color: $black;
-		font-weight: bolder;
-		text-align: center;
-	}
-	@media screen and (min-width: 320px) {
-		.col-wd-1 {width: 8.33333%;}
-		.col-wd-2 {width: 16.66667%;}
-		.col-wd-3 {width: 25%;}
-		.col-wd-4 {width: 33.33333%;}
-		.col-wd-5 {width: 41.66667%;}
-		.col-wd-6 {width: 50%;}
-		.col-wd-7 {width: 58.33333%;}
-		.col-wd-8 {width: 66.66667%;}
-		.col-wd-9 {width: 75%;}
-		.col-wd-10 {width: 83.33333%;}
-		.col-wd-11 {width: 91.66667%;}
-		.col-wd-12 {width: 100%;}
-	}
-	@media screen and (min-width: 640px) {
-		.col-md-1 {width: 8.33333%;}
-		.col-md-2 {width: 16.66667%;}
-		.col-md-3 {width: 25%;}
-		.col-md-4 {width: 33.33333%;}
-		.col-md-5 {width: 41.66667%;}
-		.col-md-6 {width: 50%;}
-		.col-md-7 {width: 58.33333%;}
-		.col-md-8 {width: 66.66667%;}
-		.col-md-9 {width: 75%;}
-		.col-md-10 {width: 83.33333%;}
-		.col-md-11 {width: 91.66667%;}
-		.col-md-12 {width: 100%;}
-	}
-	@media screen and (min-width: 960px) {
-		.col-sm-1 {width: 8.33333%;}
-		.col-sm-2 {width: 16.66667%;}
-		.col-sm-3 {width: 25%;}
-		.col-sm-4 {width: 33.33333%;}
-		.col-sm-5 {width: 41.66667%;}
-		.col-sm-6 {width: 50%;}
-		.col-sm-7 {width: 58.33333%;}
-		.col-sm-8 {width: 66.66667%;}
-		.col-sm-9 {width: 75%;}
-		.col-sm-10 {width: 83.33333%;}
-		.col-sm-11 {width: 91.66667%;}
-		.col-sm-12 {width: 100%;}
-	}
-		</code>
-		<small style="float: right;">CSS</small>
-	</section>
-</div>
-
-<script src="../js/header.js"></script>
-<script src="../js/myscript.js"></script>
-</body>
-</html>
+&lt;/div &gt;
+	</code>
+	<small style="float: right;">HTML</small>
+	<br>
+	<code>
+.container {
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+}
+[class*='col-'] {
+	width: 100%;
+	float: left;
+	min-height: 1px;
+}
+.col {
+	padding: 1em;
+	margin: 8px;
+	background: $color-primary;
+	border-radius: 3px;
+	box-shadow: 0 1px 1px rgba(0,0,0,.3);
+	color: $black;
+	font-weight: bolder;
+	text-align: center;
+}
+@media screen and (min-width: 320px) {
+	.col-wd-1 {width: 8.33333%;}
+	.col-wd-2 {width: 16.66667%;}
+	.col-wd-3 {width: 25%;}
+	.col-wd-4 {width: 33.33333%;}
+	.col-wd-5 {width: 41.66667%;}
+	.col-wd-6 {width: 50%;}
+	.col-wd-7 {width: 58.33333%;}
+	.col-wd-8 {width: 66.66667%;}
+	.col-wd-9 {width: 75%;}
+	.col-wd-10 {width: 83.33333%;}
+	.col-wd-11 {width: 91.66667%;}
+	.col-wd-12 {width: 100%;}
+}
+@media screen and (min-width: 640px) {
+	.col-md-1 {width: 8.33333%;}
+	.col-md-2 {width: 16.66667%;}
+	.col-md-3 {width: 25%;}
+	.col-md-4 {width: 33.33333%;}
+	.col-md-5 {width: 41.66667%;}
+	.col-md-6 {width: 50%;}
+	.col-md-7 {width: 58.33333%;}
+	.col-md-8 {width: 66.66667%;}
+	.col-md-9 {width: 75%;}
+	.col-md-10 {width: 83.33333%;}
+	.col-md-11 {width: 91.66667%;}
+	.col-md-12 {width: 100%;}
+}
+@media screen and (min-width: 960px) {
+	.col-sm-1 {width: 8.33333%;}
+	.col-sm-2 {width: 16.66667%;}
+	.col-sm-3 {width: 25%;}
+	.col-sm-4 {width: 33.33333%;}
+	.col-sm-5 {width: 41.66667%;}
+	.col-sm-6 {width: 50%;}
+	.col-sm-7 {width: 58.33333%;}
+	.col-sm-8 {width: 66.66667%;}
+	.col-sm-9 {width: 75%;}
+	.col-sm-10 {width: 83.33333%;}
+	.col-sm-11 {width: 91.66667%;}
+	.col-sm-12 {width: 100%;}
+}
+	</code>
+	<small style="float: right;">CSS</small>

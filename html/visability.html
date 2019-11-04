@@ -1,58 +1,41 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8" lang="hr" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Visability</title>
 
-	<link rel="stylesheet" type="text/css" href="../css/app.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-</head>
+<h2>Visability</h2>
+<p>Visibility in CSS has two different functions. Hides an element without changing its appearance, and hides columns and rows of a table. Visibility has four values: visible, hidden, collapsing, and inheriting. </p>
+<br />
 
-<body>
-<header id="myNav"></header>
+<div class="invisible-demo">
+	Hi, I'm hidden. Notice that all my style is hidden too, and I still occupy space, though you can't see me.
+	<div class="visible">
+		Hi, my parent element is hidden, but I'm still visible.
+		Hover over me for the parent to be visible.
+	</div>
+</div>
+<br />
 
-<div class="filler"></div>
-<!--PAGE CONTENT-->
-<div class="container">
-	<section>
-		<h2>Visability</h2>
-		<p>Visibility in CSS has two different functions. Hides an element without changing its appearance, and hides columns and rows of a table. Visibility has four values: visible, hidden, collapsing, and inheriting. </p>
-		<br />
-		
-		<div class="invisible-demo">
-			Hi, I'm hidden. Notice that all my style is hidden too, and I still occupy space, though you can't see me.
-			<div class="visible">
-				Hi, my parent element is hidden, but I'm still visible.
-				Hover over me for the parent to be visible.
-			</div>
-		</div>
-		<br />
+<table>
+	<p>For the purposes of the CSS framework, we have created two classes for using visibility: visible and invisible.</p>
+	<tr>
+		<th>class</th>
+		<th>explanation</th>
+	</tr>
+	<tr>
+		<td><span class="txt-primary-4">visible</span></td>
+		<td>Makes elements visible.</td>
+	</tr>
+	<tr>
+		<td><span class="txt-primary-4">invisible</span></td>
+		<td>Makes the element hidden. The element is still in space but not visible. The 'display: none' property works in a similar way, but the difference is that 'display: none' completely removes an element from space while 'visibility: hidden' hides an element still inside the space.</td>
+	</tr>
+</table>
+<br/>
 
-		<table>
-			<p>For the purposes of the CSS framework, we have created two classes for using visibility: visible and invisible.</p>
-			<tr>
-				<th>class</th>
-				<th>explanation</th>
-			</tr>
-			<tr>
-				<td><span class="txt-primary-4">visible</span></td>
-				<td>Makes elements visible.</td>
-			</tr>
-			<tr>
-				<td><span class="txt-primary-4">invisible</span></td>
-				<td>Makes the element hidden. The element is still in space but not visible. The 'display: none' property works in a similar way, but the difference is that 'display: none' completely removes an element from space while 'visibility: hidden' hides an element still inside the space.</td>
-			</tr>
-		</table>
-		<br/>
-
-		<code>
+<code>
 &lt;div class="visible"&gt;...&lt;/div&gt;
 &lt;div class="invisible"&gt;...&lt;/div&gt;
-		</code>
-		<small style="float: right;">HTML</small>
-		<br/>
-		<code>
+</code>
+<small style="float: right;">HTML</small>
+<br/>
+<code>
 /* VISABILITY */
 
 // Class
@@ -74,16 +57,7 @@ visibility: $visibility !important;
 .element {
 @include invisible(hidden);
 }
-		</code>
-		<small style="float: right;">SCSS</small>              
-		
-	</section>
-</div>
-
-
-	<script src="../js/header.js"></script>
-	<script src="../js/myscript.js"></script>
-</body>
-</html>
+</code>
+<small style="float: right;">SCSS</small>              
 
 	

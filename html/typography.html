@@ -1,90 +1,73 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8" lang="hr" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Typography</title>
 
-	<link rel="stylesheet" type="text/css" href="../css/app.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-</head>
+<!-- opčenito o fontovima -->
+<article>
+	<h2>Typography</h2>
+	<p>We use three font families. The titles use the Libre Baskerville font, which is a serif font and looks antique, for paragraphs we use the Montserrat font, which is a sans-serif font and looks modern, and for lists use Ubuntu Mono, which is a monospaced font. Libre Baskerville, Montserrat and Ubuntu Mono fonts work visually in harmony with the contrast they create. The reader will be able to distinguish sections of the text while spending time on the website.</p>
 
-<body> -->
-	<header id="myNav"></header>
-	
-<div class="filler"></div>	
-<!--PAGE CONTENT-->
-<div class="container">
-	<section>
-		<!-- opčenito o fontovima -->
-		<article>
-			<h2>Typography</h2>
-			<p>We use three font families. The titles use the Libre Baskerville font, which is a serif font and looks antique, for paragraphs we use the Montserrat font, which is a sans-serif font and looks modern, and for lists use Ubuntu Mono, which is a monospaced font. Libre Baskerville, Montserrat and Ubuntu Mono fonts work visually in harmony with the contrast they create. The reader will be able to distinguish sections of the text while spending time on the website.</p>
-
-			<ul>
-				<li><span class="txt-warrning-0">Libre Baskerville</span> is a serif font and we use it for titles.</li>
-				<li><span class="txt-warrning-0">Montserrat</span> is sans-serif and we use it for paragraphs. </li>
-				<li><span class="txt-warrning-0">Ubuntu Mono</span> is a monospace font and we use it for lists.</li>
-			</ul>
-			<p>The @font-face rule is used to retrieve the fonts that were added inside the root folder where we stored our fonts. When a font is added to CSS, the rule tells the web browser where to fetch the font. For a web browser to successfully print a font, the font must be stored with the Web Open Font Format (WOFF2) extension. WOFF2 serves to store compressed data that supports TrueType (.ttf) and OpenType (.otf) extensions.</p>
-		</article>			
-		<br/>
-		<fieldset>
-			<legend>Font's</legend>
-			<h3>Hello Morbo, how's the family?</h3>
-			<p>No! The kind with looting and maybe starting a few fires! I don't 'need' to drink. I can quit anytime I want! Also Zoidberg. Oh Leela! You're the only person I could turn to; you're the only person who ever loved me.</p>
-			<article>
-				<ul>
-					<li>Yes, except the Dave Matthews Band doesn't rock.</li>
-					<li>Just once I'd like to eat dinner with a celebrity who isn't bound and gagged.</li>
-					<li>And until then, I can never die?</li>
-				</ul>
-			</article>
-		</fieldset>
-		<br />
-		<p><span class="txt-warrning-0">@font-face</span> pravilo služi kako bi dohvatili fontove koji su dodani u naš root folder gdje smo spremili fontove. 
-			Jednom kada je opcija dodana u CSS, pravilo govori web pregledniku gdje treba dohvatiti font. 
-			Kako bi mrežni preglednik uspješno ispisao font, font treba biti WOFF2 (Web Open Font Format) ekstenziji. 
-			Ona služi kako bi spremili komprimirane podatke koji podržavaju TrueType (.ttf) i OpenType (.otf) ekstenzije. 
-		</p>
-		<code>
+	<ul>
+		<li><span class="txt-warrning-0">Libre Baskerville</span> is a serif font and we use it for titles.</li>
+		<li><span class="txt-warrning-0">Montserrat</span> is sans-serif and we use it for paragraphs. </li>
+		<li><span class="txt-warrning-0">Ubuntu Mono</span> is a monospace font and we use it for lists.</li>
+	</ul>
+	<p>The @font-face rule is used to retrieve the fonts that were added inside the root folder where we stored our fonts. When a font is added to CSS, the rule tells the web browser where to fetch the font. For a web browser to successfully print a font, the font must be stored with the Web Open Font Format (WOFF2) extension. WOFF2 serves to store compressed data that supports TrueType (.ttf) and OpenType (.otf) extensions.</p>
+</article>			
+<br/>
+<fieldset>
+	<legend>Font's</legend>
+	<h3>Hello Morbo, how's the family?</h3>
+	<p>No! The kind with looting and maybe starting a few fires! I don't 'need' to drink. I can quit anytime I want! Also Zoidberg. Oh Leela! You're the only person I could turn to; you're the only person who ever loved me.</p>
+	<article>
+		<ul>
+			<li>Yes, except the Dave Matthews Band doesn't rock.</li>
+			<li>Just once I'd like to eat dinner with a celebrity who isn't bound and gagged.</li>
+			<li>And until then, I can never die?</li>
+		</ul>
+	</article>
+</fieldset>
+<br />
+<p><span class="txt-warrning-0">@font-face</span> pravilo služi kako bi dohvatili fontove koji su dodani u naš root folder gdje smo spremili fontove. 
+	Jednom kada je opcija dodana u CSS, pravilo govori web pregledniku gdje treba dohvatiti font. 
+	Kako bi mrežni preglednik uspješno ispisao font, font treba biti WOFF2 (Web Open Font Format) ekstenziji. 
+	Ona služi kako bi spremili komprimirane podatke koji podržavaju TrueType (.ttf) i OpenType (.otf) ekstenzije. 
+</p>
+<code>
 @font-face {
 font-family: 'Montserrat';
 src: url('../fonts/montserrat-webfont.woff2') format('woff2'),
-		url('../fonts/montserrat-webfont.woff') format('woff'),
-		url('../fonts/europaextended-webfont.ttf')  format('truetype');
+url('../fonts/montserrat-webfont.woff') format('woff'),
+url('../fonts/europaextended-webfont.ttf')  format('truetype');
 font-weight: normal;
 font-style: normal;
 }
 @font-face {
 font-family: 'UpheavalTT';
 src: url('../fonts/upheavtt-webfont.woff2') format('woff2'),
-		url('../fonts/upheavtt-webfont.woff') format('woff'),
-		url('../fonts/europaextended-webfont.ttf')  format('truetype');
+url('../fonts/upheavtt-webfont.woff') format('woff'),
+url('../fonts/europaextended-webfont.ttf')  format('truetype');
 font-weight: normal;
 font-style: normal;
 }
 @font-face {
 font-family: 'UbuntuMono';
 src: url('../fonts/UbuntuMono/UbuntuMono-Regular.woff2') format('woff2'),
-		url('../fonts/UbuntuMono/UbuntuMono-Regular.woff') format('woff'),
-		url('../fonts/UbuntuMono/UbuntuMono-Regular.ttf')  format('truetype');
+url('../fonts/UbuntuMono/UbuntuMono-Regular.woff') format('woff'),
+url('../fonts/UbuntuMono/UbuntuMono-Regular.ttf')  format('truetype');
 font-weight: normal;
 font-style: normal;
 }
 @font-face {
 font-family: 'LibreBaskerville';
 src: url('../fonts/LibreBaskerville/LibreBaskerville-Regular.woff2') format('woff2'),
-	url('../fonts/LibreBaskerville/LibreBaskerville-Regular.woff') format('woff'),
-	url('..fonts/LibreBaskerville/LibreBaskerville-Bold.ttf')  format('truetype');
+url('../fonts/LibreBaskerville/LibreBaskerville-Regular.woff') format('woff'),
+url('..fonts/LibreBaskerville/LibreBaskerville-Bold.ttf')  format('truetype');
 font-weight: normal;
 font-style: normal;
 }
 @font-face {
 font-family: 'LibreBaskerville-Italic';
 src: url('../fonts/LibreBaskerville/LibreBaskerville-Italic.woff2') format('woff2'),
-	url('../fonts/LibreBaskerville/LibreBaskerville-Italic.woff') format('woff'),
-	url('..fonts/LibreBaskerville/LibreBaskerville-Italic.ttf')  format('truetype');
+url('../fonts/LibreBaskerville/LibreBaskerville-Italic.woff') format('woff'),
+url('..fonts/LibreBaskerville/LibreBaskerville-Italic.ttf')  format('truetype');
 font-weight: normal;
 font-style: italic;
 }
@@ -92,38 +75,38 @@ font-style: italic;
 @font-face {
 font-family: 'LibreBaskerville-Bold';
 src: url('../fonts/LibreBaskerville/LibreBaskerville-Bold.woff2') format('woff2'),
-	url('../fonts/LibreBaskerville/LibreBaskerville-Bold.woff') format('woff'),
-	url('../fonts/LibreBaskerville/LibreBaskerville-Regular.ttf')  format('truetype');
+url('../fonts/LibreBaskerville/LibreBaskerville-Bold.woff') format('woff'),
+url('../fonts/LibreBaskerville/LibreBaskerville-Regular.ttf')  format('truetype');
 font-weight: bold;
 font-style: normal;
 }
-		</code>
-		<small style="float: right;">SCSS</small>
+</code>
+<small style="float: right;">SCSS</small>
 
-		<!-- h1 - h6 -->
-		<article>
-			<h4>Title</h4>
-			<ul>
-				<li><span class="txt-warrning-0">&lt;h1&gt; / &lt;h6&gt; </span> tags serve to display titles</li>
-			</ul>
-			<h1>h1</h1>
-			<h2>h2</h2>
-			<h3>h3</h3>
-			<h4>h4</h4>
-			<h5>h5</h5>
-			<h6>h6</h6>
-		</article>
-		<code>
+<!-- h1 - h6 -->
+<article>
+	<h4>Title</h4>
+	<ul>
+		<li><span class="txt-warrning-0">&lt;h1&gt; / &lt;h6&gt; </span> tags serve to display titles</li>
+	</ul>
+	<h1>h1</h1>
+	<h2>h2</h2>
+	<h3>h3</h3>
+	<h4>h4</h4>
+	<h5>h5</h5>
+	<h6>h6</h6>
+</article>
+<code>
 &lt;h1&gt;h1&lt;h1&gt;
 &lt;h2&gt;h2&lt;h2&gt;
 &lt;h3&gt;h3&lt;h3&gt;
 &lt;h4&gt;h4&lt;h4&gt;
 &lt;h5&gt;h5&lt;h5&gt;
 &lt;h6&gt;h6&lt;h6&gt;
-		</code>
-		<small style="float: right;">HTML</small>
-		<br />
-		<code>
+</code>
+<small style="float: right;">HTML</small>
+<br />
+<code>
 h1, h2, h3, h4, h5, h6 {
 font-family: 600 1.5em/1 'Raleway', sans-serif;
 font-weight: 600;
@@ -139,25 +122,25 @@ h3 {font-size: 1.5em;}
 h4 {font-size: 1.125em;}
 h5 {font-size: 0.875em;}
 h6 {font-size: 0.75em;}
-		</code>
-		<small style="float: right;">CSS</small>	
+</code>
+<small style="float: right;">CSS</small>	
 
-		<!-- p -->
-		<h4>Paragraph</h4>
-		<article>
-			<ul>
-				<li><span class="txt-warrning-0">&lt;p&gt;</span> tag serves to display a paragraph</li>
-			</ul>
-		</article>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum distinctio vitae amet nam quas. Adipisci!</p>
-		<br />
-		<code>
-		&lt;p&gt; Lorem ipsum dolor &lt;p&gt;
-		</code>
-		<small style="float: right;">HTML</small>
-		<br />
-		<code>
+<!-- p -->
+<h4>Paragraph</h4>
+<article>
+	<ul>
+		<li><span class="txt-warrning-0">&lt;p&gt;</span> tag serves to display a paragraph</li>
+	</ul>
+</article>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+	Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum distinctio vitae amet nam quas. Adipisci!</p>
+<br />
+<code>
+&lt;p&gt; Lorem ipsum dolor &lt;p&gt;
+</code>
+<small style="float: right;">HTML</small>
+<br />
+<code>
 p {
 color: #black; 
 font-family: "Roboto","Helvetica Neue",Arial,sans-serif; 
@@ -165,103 +148,96 @@ font-size: 16px;
 font-weight: 500; 
 line-height: 1.4;
 }
-		</code>
-		<small style="float: right;">SCSS</small>
+</code>
+<small style="float: right;">SCSS</small>
 
-		<!-- blockquote -->
-		<h4>Blockquote</h4>
-		<p>The blockquote tag is used to display content from another source</p>
-		<br/>
-		
-		<blockquote>
-				<p><q>Any product that needs a manual to work is broken</q></p>
-				<footer>Elon Musk</footer>
-		</blockquote>
-		<br/>
+<!-- blockquote -->
+<h4>Blockquote</h4>
+<p>The blockquote tag is used to display content from another source</p>
+<br/>
 
-		<table>
-			<tr>
-				<th>CSS</th>
-				<th>explanation</th>
-			</tr>
-			<tr>
-				<td><span class="txt-primary-0">&lt;blockquote&gt;</span></td>
-				<td> tag blockquote is used to display content from another source</td>
-			</tr>
-			<tr>
-				<td><span class="txt-primary-0">&lt;q&gt;</span></td>
-				<td> tag is used to enclose quotes.</td>
-			</tr>
-			<tr>
-				<td><span class="txt-primary-0">&lt;footer&gt;</span> </td>
-				<td> tag displays the text reference.e</td>
-			</tr>
-			<tr>
-				<td><span class="txt-primary-0">nth-of-type (even)</span></td>
-				<td> selector  will corresponds to every element that is the nth child of a certain type, its parent. The selector will include each subsequent (odd) quote on the right side of the page</td>
-			</tr>
-		</table>
-		<br/><br/>
+<blockquote>
+		<p><q>Any product that needs a manual to work is broken</q></p>
+		<footer>Elon Musk</footer>
+</blockquote>
+<br/>
 
-		<code>
+<table>
+	<tr>
+		<th>CSS</th>
+		<th>explanation</th>
+	</tr>
+	<tr>
+		<td><span class="txt-primary-0">&lt;blockquote&gt;</span></td>
+		<td> tag blockquote is used to display content from another source</td>
+	</tr>
+	<tr>
+		<td><span class="txt-primary-0">&lt;q&gt;</span></td>
+		<td> tag is used to enclose quotes.</td>
+	</tr>
+	<tr>
+		<td><span class="txt-primary-0">&lt;footer&gt;</span> </td>
+		<td> tag displays the text reference.e</td>
+	</tr>
+	<tr>
+		<td><span class="txt-primary-0">nth-of-type (even)</span></td>
+		<td> selector  will corresponds to every element that is the nth child of a certain type, its parent. The selector will include each subsequent (odd) quote on the right side of the page</td>
+	</tr>
+</table>
+<br/><br/>
+
+<code>
 &lt;blockquote&gt;
 &lt;&gt;&lt;q&gt;Any product that needs a manual to work is broken&lt;/q&gt;&lt;/p&gt;
 &lt;ooter&gt;Elon Musk&lt;/footer&gt;
 &lt;/blockquote&gt;
-		</code>
-		<small style="float: right;">HTML</small>
-		<br />
-		<code>
+</code>
+<small style="float: right;">HTML</small>
+<br />
+<code>
 blockquote {
 margin: 0 auto;
 padding: 1em;
 border-left: 5px solid $color-primary;
 &:before {
-	display: none;
+display: none;
 }
 p {
-	color: $color-default;
-	font-size: 12pt;
-	line-height: 1.4;
-	font-family: $font_0, $font_1, $font_2, $font_3, $font_4, $font_5, $font_6, $font_7, $font_8;
-	font-size: 14pt;
+color: $color-default;
+font-size: 12pt;
+line-height: 1.4;
+font-family: $font_0, $font_1, $font_2, $font_3, $font_4, $font_5, $font_6, $font_7, $font_8;
+font-size: 14pt;
 }
 footer {
-	margin-top: .5em;
-	padding: 0;
-	color: $color-default;
-	font-size: 12pt;
-	text-align: left;
-	font-style: italic;
-	&:before {
-		content: '— ';
-	}
+margin-top: .5em;
+padding: 0;
+color: $color-default;
+font-size: 12pt;
+text-align: left;
+font-style: italic;
+&:before {
+content: '— ';
+}
 }
 &:nth-of-type(even) {
-	//The: nth-of-type(n) selector matches every element that is the nth child, of a particular type, of its parent. text-align: right;
-	border-left: none;
-	border-right: 5px solid $color-default;
-	padding: 1em 1em 1em 20%;
-	footer {
-		text-align: right;
-		&:before {
-			content: '';
-		}
-		&:after {
-			content: ' —';
-		}
-	}
+//The: nth-of-type(n) selector matches every element that is the nth child, of a particular type, of its parent. text-align: right;
+border-left: none;
+border-right: 5px solid $color-default;
+padding: 1em 1em 1em 20%;
+footer {
+text-align: right;
+&:before {
+	content: '';
+}
+&:after {
+	content: ' —';
+}
+}
 }
 &:not(:first-of-type) {
-	margin-top: .5em;
+margin-top: .5em;
 }
 }
-		</code>
-		<small style="float: right;">SCSS</small>
-	</section>
-</div>
-<!-- 
-	<script src="../js/header.js"></script>
-	<script src="../js/myscript.js"></script>
-</body>
-</html> -->
+</code>
+<small style="float: right;">SCSS</small>

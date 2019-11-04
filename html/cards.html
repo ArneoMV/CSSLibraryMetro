@@ -1,1466 +1,1437 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8" lang="hr" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Cards</title>
 
-	<link rel="stylesheet" type="text/css" href="../css/app.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-</head>
+    <!-- Kartica profila -->
+    <article>
+        <h2>Card's</h2>
+        <p>The cards serve to display larger amounts of data within a smaller whole. They have become popular over the last few years as cards are the perfect response to the rise of responsive design. Cards are standalone elements that can be combined with different content. They respond easily to different screen sizes.</p> 
+        <p>There are three types of cards that we can use in future application development; profile card, product card and portfolio card. When implementing a card within the app, we need to follow the guidelines for a better user experience:</p>
+        <ul>
+            <li>Too many visible cards at one time can create a problem. Too many tabs on the screen can become overwhelming for the user when scanning content.</li>
+            <li>Optimum number of actions possible within the card. Making every part of the card interactive can be confusing for the user</li>
+            <li>Avoid overloading the card with unnecessary content and illustrations. We split the tabs into three sections that represent primary, secondary, and tertiary content to allow users to focus on content that interests them</li>
+        </ul>
+    </article>
 
-<body>
-
-	<header id="myNav"></header>
-            
-    <div class="filler"></div> 
-    <!--PAGE CONTENT-->
-	<div class="container">
-        <section>
-            <!-- Kartica profila -->
-                <article>
-                    <h2>Card's</h2>
-                    <p>The cards serve to display larger amounts of data within a smaller whole. They have become popular over the last few years as cards are the perfect response to the rise of responsive design. Cards are standalone elements that can be combined with different content. They respond easily to different screen sizes.</p> 
-                    <p>There are three types of cards that we can use in future application development; profile card, product card and portfolio card. When implementing a card within the app, we need to follow the guidelines for a better user experience:</p>
-                    <ul>
-                        <li>Too many visible cards at one time can create a problem. Too many tabs on the screen can become overwhelming for the user when scanning content.</li>
-                        <li>Optimum number of actions possible within the card. Making every part of the card interactive can be confusing for the user</li>
-                        <li>Avoid overloading the card with unnecessary content and illustrations. We split the tabs into three sections that represent primary, secondary, and tertiary content to allow users to focus on content that interests them</li>
-                    </ul>
-                </article>
-            
-                 <!-- Card product 1-->
-                 <h3>Product Card 1</h3>
-                 <div class="scrolling-wrapper-flexbox">
-                    <div class="card">
-                        <input type="checkbox" id="card1" class="more" aria-hidden="true">
-                        <div class="content">
-                            <div class="front">  <!--  style="background-image: url('../img/card/sneakerV-10.png')" -->
-                                <div class="inner">
-                                    <img src="../img/card/sneakerV-10.png" alt="sneakerV">
-                                    <article>
-                                        <p>Originals</p>
-                                        <h4>V-10</h4>
-                                        <p>$110</p>
-                                        <p><small>10 colors</small></p>
-                                    </article>
-                                    <label for="card1" class="button" aria-hidden="true">Details</label>
-                                </div>
-                            </div>
-                            <div class="back">
-                                <div class="inner">
-                                        <img src="../img/card/sneakerV-10.png" alt="">
-                                        <div class="slider">
-                                            <div class="grid-slider">
-                                                <div class="mySlides9">
-                                                    <img src="../img/card/sneakerAirMax97.png">
-                                                </div>
-                                                <div class="mySlides9">
-                                                    <img src="../img/card/sneakerAirMax270-2.png">
-                                                </div>
-                                                <div class="mySlides9">
-                                                    <img src="../img/card/sneakerAirMax270.png">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="slider-2">
-                                            <a onclick="plusSlides(-1, 8)">&#10094;</a>
-                                            <article>
-                                                <p>V-10 EXTRA WHITE NAUTICO PEKIN</p>
-                                                <a>VIEW THIS &#10095;</a> 
-                                            </article>
-                                            <a onclick="plusSlides(1, 8)">&#10095;</a>
-                                        </div>
-                                    <label for="card1" class="button return" aria-hidden="true">Back</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <input type="checkbox" id="card2" class="more" aria-hidden="true">
-                        <div class="content">
-                            <div class="front">  <!--  style="background-image: url('../img/card/sneakerV-10.png')" -->
-                                <div class="inner">
-                                    <img src="../img/card/sneakerGucci.png" alt="sneakerV">
-                                    <article>
-                                        <p>Men's Screener GG sneaker</p>
-                                        <h4>Gucci</h4>
-                                        <p>$510</p>
-                                        <p><small>3 colors</small></p>
-                                    </article>
-                                    <label for="card2" class="button" aria-hidden="true">Details</label>
-                                </div>
-                            </div>
-                            <div class="back">
-                                <div class="inner">
-                                        <img src="../img/card/sneakerGucci.png" alt="">
-                                        <div class="slider">
-                                            <div class="grid-slider10">
-                                                <div class="mySlides10">
-                                                    <img src="../img/card/sneakerAirMax97.png">
-                                                </div>
-                                                <div class="mySlides10">
-                                                    <img src="../img/card/sneakerChristianLouboutin.png">
-                                                </div>
-                                                <div class="mySlides10">
-                                                    <img src="../img/card/sneakerBalenciaga.png">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="slider-2">
-                                            <a onclick="plusSlides(-1, 9)">&#10094;</a>
-                                            <article>
-                                                <p>Men's Screener GG sneaker</p>
-                                                <a>VIEW THIS &#10095;</a> 
-                                            </article>
-                                            <a onclick="plusSlides(1, 9)">&#10095;</a>
-                                        </div>
-                                    <label for="card2" class="button return" aria-hidden="true">Back</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <input type="checkbox" id="card3" class="more" aria-hidden="true">
-                        <div class="content">
-                                <div class="front">  <!--  style="background-image: url('../img/card/sneakerV-10.png')" -->
-                                <div class="inner">
-                                    <img src="../img/card/sneakerAirMax270-2.png" alt="sneakerV">
-                                    <article>
-                                        <p>Nike</p>
-                                        <h4>Air Max 270</h4>
-                                        <p>$110</p>
-                                        <p><small>10 colors</small></p>
-                                    </article>
-                                    <label for="card3" class="button" aria-hidden="true">Details</label>
-                                </div>
-                            </div>
-                            <div class="back">
-                                <div class="inner">
-                                        <img src="../img/card/sneakerAirMax270-2.png" alt="">
-                                        <div class="slider">
-                                            <div class="grid-slider">
-                                                <div class="mySlides11">
-                                                    <img src="../img/card/sneakerAirMax270-2.png">
-                                                </div>
-                                                <div class="mySlides11">
-                                                    <img src="../img/card/sneakerAirMax270.png">
-                                                </div>
-                                                <div class="mySlides11">
-                                                    <img src="../img/card/sneakerBalenciaga.png">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="slider-2">
-                                            <a onclick="plusSlides(-1, 10)">&#10094;</a>
-                                            <article>
-                                                <p>Nike Air Max 270 React (American Modern Art)</p>
-                                                <a>VIEW THIS &#10095;</a> 
-                                            </article>
-                                            <a onclick="plusSlides(1, 10)">&#10095;</a>
-                                        </div>
-                                    <label for="card3" class="button return" aria-hidden="true">Back</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <input type="checkbox" id="card4" class="more" aria-hidden="true">
-                        <div class="content">
-                                <div class="front">  <!--  style="background-image: url('../img/card/sneakerV-10.png')" -->
-                                <div class="inner">
-                                    <img src="../img/card/sneakerChristianLouboutin.png" alt="sneakerV">
-                                    <article>
-                                        <p>Nike</p>
-                                        <h4>Air Max 270</h4>
-                                        <p>$110</p>
-                                        <p><small>10 colors</small></p>
-                                    </article>
-                                    <label for="card4" class="button" aria-hidden="true">Details</label>
-                                </div>
-                            </div>
-                            <div class="back">
-                                <div class="inner">
-                                        <img src="../img/card/sneakerChristianLouboutin.png" alt="">
-                                        <div class="slider">
-                                            <div class="grid-slider">
-                                                <div class="mySlides12">
-                                                    <img src="../img/card/sneakerGucci.png">
-                                                </div>
-                                                <div class="mySlides12">
-                                                    <img src="../img/card/sneakerBalenciaga.png">
-                                                </div>
-                                                <div class="mySlides12">
-                                                    <img src="../img/card/sneakerV-10.png">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="slider-2">
-                                            <a onclick="plusSlides(-1, 11)">&#10094;</a>
-                                            <article>
-                                                <p>Nike Air Max 270 React</p>
-                                                <a>VIEW THIS &#10095;</a> 
-                                            </article>
-                                            <a onclick="plusSlides(1, 11)">&#10095;</a>
-                                        </div>
-                                    <label for="card4" class="button return" aria-hidden="true">Back</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <input type="checkbox" id="card5" class="more" aria-hidden="true">
-                        <div class="content">
-                                <div class="front">  <!--  style="background-image: url('../img/card/sneakerV-10.png')" -->
-                                <div class="inner">
-                                    <img src="../img/card/sneakerBalenciaga.png" alt="sneakerV">
-                                    <article>
-                                        <p>Balenciaga</p>
-                                        <h4>TRIPLE S TRAINERS</h4>
-                                        <p>$110</p>
-                                        <p><small>10 colors</small></p>
-                                    </article>
-                                    <label for="card5" class="button" aria-hidden="true">Details</label>
-                                </div>
-                            </div>
-                            <div class="back">
-                                <div class="inner">
-                                        <img src="../img/card/sneakerBalenciaga.png" alt="">
-                                        <div class="slider">
-                                            <div class="grid-slider">
-                                                <div class="mySlides13">
-                                                    <img src="../img/card/sneakerAirMax97.png">
-                                                </div>
-                                                <div class="mySlides13">
-                                                    <img src="../img/card/sneakerAirMax270-2.png">
-                                                </div>
-                                                <div class="mySlides13">
-                                                    <img src="../img/card/sneakerAirMax270.png">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="slider-2">
-                                            <a onclick="plusSlides(-1, 12)">&#10094;</a>
-                                            <article>
-                                                <p>TRIPLE S TRAINERS</p>
-                                                <p>Triple S in red.</p>
-                                                <a>VIEW THIS &#10095;</a> 
-                                            </article>
-                                            <a onclick="plusSlides(1, 12)">&#10095;</a>
-                                        </div>
-                                    <label for="card5" class="button return" aria-hidden="true">Back</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <br /><br />
-                <code>
-        // flip card
-        .scrolling-wrapper-flexbox {
-            display: flex;
-            flex-wrap: nowrap;
-            overflow-x: auto;
-            box-sizing: border-box;
-            width: 100%;
-            padding-top: 30px;
-            .card {
-                flex: 0 0 auto;
-            }
-            .card2 {
-                flex: 0 0 auto;
-            }
-        }
-
-        .scrolling-wrapper, .scrolling-wrapper-flexbox {
-            width: 100%;
-            -webkit-overflow-scrolling: touch;
-            &::-webkit-scrollbar {
-                display: none;
-            }
-        }
-
-        .card {
-            margin: 0 0 0 10px;
-            width: 330px;
-            height: 330px;
-            .content {
-                position: relative;
-                width: 100%;
-                height: 100%;
-                transform-style: preserve-3d;
-                transition: transform 1s cubic-bezier(0.75, 0, 0.85, 1);
-            }
-        }
-
-        .more {
-            display: none;
-
-            &:checked ~ .content {
-                transform: rotateY(180deg);
-            }
-        }
-
-        .front,
-        .back {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            transform-style: preserve-3d;
-            border-radius: 6px;
-            .inner {
-                height: 100%;
-                display: grid;
-                transform: translateZ(80px) scale(0.94);
-            }
-        }
-
-        .front {
-            background-color: #33313b;
-            background-size: cover;
-            background-position: center center;
-            background-size: 100%;
-            background-repeat: no-repeat;
-            &:after {
-                content: '';
-            }
-            .inner {
-                grid-template-rows: 5fr;
-                justify-items: center;
-            }
-        }
-
-        .back {
-            transform: rotateY(180deg);
-            background-color: var(--dark);
-            .inner {
-                grid-template-rows: 1fr 2fr 1fr;
-                grid-template-columns: 1fr;
-                grid-column-gap: 0.8em;
-                justify-items: center;
-            }
-            h4, p, label {
-                color: var(--light);
-            }
-            h4 {
-                font-size: 2em;
-                margin: 30px 0 30px 0;
-            }
-            p {
-                font-family: 'Montserrat', 'Roboto', 'Arial', serif;
-                padding: 0 15px 0 15px; 
-            }
-            &:not(:first-of-type):before {
-                content: '';
-                position: absolute;
-                left: -0.9em;
-                height: 18px;
-                width: 1px;
-                background-color: #ccc;
-            }
-
-            .description {
-                font-size: 0.86em;
-                border-radius: 5px;
-                font-weight: 600;
-                line-height: 1.4em;
-                overflow: auto;
-                color: $accent-color;
-                padding-right: 10px;
-            }
-            .button {
-                justify-self: center;
-            }
-        }
-
-        .button {
-            height: 3em;
-            min-width: 3em;
-            padding: 0 1.5em;
-            align-self: end;
-            
-            font-family: 'UpheavalTT', monospace;
-            text-transform: uppercase;
-            font-size: 1.2em;
-            letter-spacing: 5px;
-            font-weight: 400;
-            line-height: 2.9em;
-            text-align: center;
-            text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-            cursor: pointer;
-            display: block;
-
-            background-color: transparent;
-            border: 1px solid var(--light);
-            color: var(--light);
-            border-radius: 50px;
-            
-            left: 50%;
-            backface-visibility: hidden;
-            transition: 0.3s ease-in-out;
-            
-            &:hover {
-                background-color: var(--light);
-                box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-                text-shadow: none;
-                color: $accent-color;
-            }
-            &.return {
-                line-height: 3em;
-                color: var(--light);
-                border-color: var(--light);
-                text-shadow: none;
-                &:hover {
-                    background-color: $accent-color;
-                    color: #fff;
-                    box-shadow: none;
-                }
-            }
-        }
-
-        ::-webkit-scrollbar {
-            width: 5px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: lighten($accent-color, 20%);
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: $accent-color;
-        }
-                </code>
-                <small class="codeText">SCSS</small><br />
-    
-                <!-- Card product  2-->
-                <h3>Product Card 2</h3>
-
-                <div class="card-products">                  
-                    <div class="card-product">
-                        <img src="../img/card/slika-1.png" alt="">
-                        <div class="slider">
-                            <div class="grid-slider">
-                                <a onclick="plusSlides(-1, 0)">&#10094;</a>
-                            </div>
-                            <div class="grid-slider">
-                                <div class="mySlides1">
-                                    <img src="../img/card/slika-2.png">
-                                </div>
-                                <div class="mySlides1">
-                                    <img src="../img/card/slika-3.png">
-                                </div>
-                                <div class="mySlides1">
-                                    <img src="../img/card/slika-4.png">
-                                </div>
-                            </div>
-                            <div class="grid-slider">
-                                <a onclick="plusSlides(1, 0)">&#10095;</a>
-                            </div>
-                            <div class="grid-slider"></div>
-                            <div class="grid-slider">
-                                <p>Gucci odijelo</p>
-                                <a>VIEW THIS &#10095;</a> 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-product">
-                        <img src="../img/card/slika-1.png" alt="">
-                        <div class="slider">
-                            <div class="grid-slider">
-                                <a onclick="plusSlides(-1, 1)">&#10094;</a>
-                            </div>
-                            <div class="grid-slider">
-                                <div class="mySlides2">
-                                    <img src="../img/card/slika-2.png">
-                                </div>
-                                <div class="mySlides2">
-                                    <img src="../img/card/slika-3.png">
-                                </div>
-                                <div class="mySlides2">
-                                    <img src="../img/card/slika-4.png">
-                                </div>
-                            </div>
-                            <div class="grid-slider">
-                                <a onclick="plusSlides(1, 1)">&#10095;</a>
-                            </div>
-                            <div class="grid-slider"></div>
-                            <div class="grid-slider">
-                                <p>Gucci odijelo</p>
-                                <a>VIEW THIS &#10095;</a> 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-product">
-                        <img src="../img/card/slika-1.png" alt="">
-                        <div class="slider">
-                            <div class="grid-slider">
-                                <a onclick="plusSlides(-1, 2)">&#10094;</a>
-                            </div>
-                            <div class="grid-slider">
-                                <div class="mySlides3">
-                                    <img src="../img/card/slika-2.png">
-                                </div>
-                                <div class="mySlides3">
-                                    <img src="../img/card/slika-3.png">
-                                </div>
-                                <div class="mySlides3">
-                                    <img src="../img/card/slika-4.png">
-                                </div>
-                            </div>
-                            <div class="grid-slider">
-                                <a onclick="plusSlides(1, 2)">&#10095;</a>
-                            </div>
-                            <div class="grid-slider"></div>
-                            <div class="grid-slider">
-                                <p>Gucci odijelo</p>
-                                <a>VIEW THIS &#10095;</a> 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-product">
-                        <img src="../img/card/slika-1.png" alt="">
-                        <div class="slider">
-                            <div class="grid-slider">
-                                <a onclick="plusSlides(-1, 3)">&#10094;</a>
-                            </div>
-                            <div class="grid-slider">
-                                <div class="mySlides4">
-                                    <img src="../img/card/slika-2.png">
-                                </div>
-                                <div class="mySlides4">
-                                    <img src="../img/card/slika-3.png">
-                                </div>
-                                <div class="mySlides4">
-                                    <img src="../img/card/slika-4.png">
-                                </div>
-                            </div>
-                            <div class="grid-slider">
-                                <a onclick="plusSlides(1, 3)">&#10095;</a>
-                            </div>
-                            <div class="grid-slider"></div>
-                            <div class="grid-slider">
-                                <p>Gucci odijelo</p>
-                                <a>VIEW THIS &#10095;</a> 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-product">
-                        <img src="../img/card/slika-1.png" alt="">
-                        <div class="slider">
-                            <div class="grid-slider">
-                                <a onclick="plusSlides(-1, 4)">&#10094;</a>
-                            </div>
-                            <div class="grid-slider">
-                                <div class="mySlides5">
-                                    <img src="../img/card/slika-2.png">
-                                </div>
-                                <div class="mySlides5">
-                                    <img src="../img/card/slika-3.png">
-                                </div>
-                                <div class="mySlides5">
-                                    <img src="../img/card/slika-4.png">
-                                </div>
-                            </div>
-                            <div class="grid-slider">
-                                <a onclick="plusSlides(1, 4)">&#10095;</a>
-                            </div>
-                            <div class="grid-slider"></div>
-                            <div class="grid-slider">
-                                <p>Gucci odijelo</p>
-                                <a>VIEW THIS &#10095;</a> 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-product">
-                        <img src="../img/card/slika-1.png" alt="">
-                        <div class="slider">
-                            <div class="grid-slider">
-                                <a onclick="plusSlides(-1, 5)">&#10094;</a>
-                            </div>
-                            <div class="grid-slider">
-                                <div class="mySlides6">
-                                    <img src="../img/card/slika-2.png">
-                                </div>
-                                <div class="mySlides6">
-                                    <img src="../img/card/slika-3.png">
-                                </div>
-                                <div class="mySlides6">
-                                    <img src="../img/card/slika-4.png">
-                                </div>
-                            </div>
-                            <div class="grid-slider">
-                                <a onclick="plusSlides(1, 5)">&#10095;</a>
-                            </div>
-                            <div class="grid-slider"></div>
-                            <div class="grid-slider">
-                                <p>Gucci odijelo</p>
-                                <a>VIEW THIS &#10095;</a> 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-product">
-                        <img src="../img/card/slika-1.png" alt="">
-                        <div class="slider">
-                            <div class="grid-slider">
-                                <a onclick="plusSlides(-1, 6)">&#10094;</a>
-                            </div>
-                            <div class="grid-slider">
-                                <div class="mySlides7">
-                                    <img src="../img/card/slika-2.png">
-                                </div>
-                                <div class="mySlides7">
-                                    <img src="../img/card/slika-3.png">
-                                </div>
-                                <div class="mySlides7">
-                                    <img src="../img/card/slika-4.png">
-                                </div>
-                            </div>
-                            <div class="grid-slider">
-                                <a onclick="plusSlides(1, 6)">&#10095;</a>
-                            </div>
-                            <div class="grid-slider"></div>
-                            <div class="grid-slider">
-                                <p>Gucci odijelo</p>
-                                <a>VIEW THIS &#10095;</a> 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-product">
-                        <img src="../img/card/slika-1.png" alt="">
-                        <div class="slider">
-                            <div class="grid-slider">
-                                <a onclick="plusSlides(-1, 7)">&#10094;</a>
-                            </div>
-                            <div class="grid-slider">
-                                <div class="mySlides8">
-                                    <img src="../img/card/slika-2.png">
-                                </div>
-                                <div class="mySlides8">
-                                    <img src="../img/card/slika-3.png">
-                                </div>
-                                <div class="mySlides8">
-                                    <img src="../img/card/slika-4.png">
-                                </div>
-                            </div>
-                            <div class="grid-slider">
-                                <a onclick="plusSlides(1, 7)">&#10095;</a>
-                            </div>
-                            <div class="grid-slider"></div>
-                            <div class="grid-slider">
-                                <p>Gucci odijelo</p>
-                                <a>VIEW THIS &#10095;</a> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <table>
-                    <tr>
-                        <th>class</th>
-                        <th>explanation</th>
-                    </tr>
-                    <tr>
-                        <td><span class="txt-primary-4">card-products</span></td>
-                        <td>class enables grid layout of elements. Contains four cards per line.</td>
-                    </tr>
-                    <tr>
-                        <td><span class="txt-primary-4">card-product</span></td>
-                        <td>class for arrangement of elements within a card.</td>
-                    </tr>
-                    <tr>
-                        <td><span class="txt-primary-4">slider</span></td>
-                        <td>class is activated by moving the mouse over the card. It allows us to view different product images, and displays a description of the product.</td>
-                    </tr>
-                    <tr>
-                        <td><span class="txt-primary-4">onclick="plusSlides(-1, 0)"</span></td>
-                        <td>is used to move the slider to the left.</td>
-                    </tr>
-                    <tr>
-                        <td><span class="txt-primary-4">onclick="plusSlides(-1, 1)"</span></td>
-                        <td>is used to move the slider to the right.</td>
-                    </tr>
-                    <tr>
-                        <td><span class="txt-primary-4">mySlides1</span></td>
-                        <td> each card has its own slider class. A new ordinal number should be added for each new card. A new class in javascript should also be added.</td>
-                    </tr>
-                </table>
-
-                <code>
-                &lt;div class="card-products"&gt;
-                &lt;div class="card-product"&gt;
-                &lt;img src="../img/card/slika-1.png" alt=""&gt;
-                &lt;div class="slider"&gt;
-                &lt;a onclick="plusSlides(-1, 0)"&gt;&#10094;&lt;/a&gt;
-                &lt;a onclick="plusSlides(1, 0)"&gt;&#10095;&lt;/a&gt;
-                &lt;div class="mySlides1"&gt;
-                    &lt;img src="../img/card/slika-2.png"&gt;
-                &lt;/div&gt;
-                &lt;div class="mySlides1"&gt;
-                    &lt;img src="../img/card/slika-3.png"&gt;
-                &lt;/div&gt;
-                &lt;div class="mySlides1"&gt;
-                    &lt;img src="../img/card/slika-4.png"&gt;
-                &lt;/div&gt;
-                &lt;p&gt;Gucci odijelo&lt;/p&gt;
-                &lt;a"&gt;VIEW THIS &#10095;&lt;/a>&gt;       
-                &lt;/div&gt;
-                &lt;/div&gt;
-                &lt;/div&gt;
-                </code>
-                <small class="codeText">HTML</small><br />
-                <code>
-                //PRODUCT CARD
-
-                .card-products {
-                display: grid;
-                // grid-template-columns: repeat(4, 1fr);
-                grid-gap: 3px;
-                max-width: 1000px;
-                .card-product { 
-                position: relative; 
-                padding: 5%;
-                border: 1px solid gray;
-                img {
-                max-width: 100%;
-                height: auto;
-                }
-                .slider {
-                position: absolute;
-                background: white;
-                top: 0;
-                right: 0;
-                left: 0;
-                margin-bottom: 20px;
-                box-shadow: 0 0 10px;
-                display: none;
-                z-index: 20;
-                text-align: center;
-                a:nth-child(1) {
-                right: 90px;
-                }
-                a:nth-child(2) {
-                left: 90px;
-                }
-                a:nth-child(-n+2) {
-                position: relative;
-                top: 100px;
-                }
-                a:nth-child(3) {
-                cursor: pointer;
-                &:hover {
-                    color: $primary-1;
-                }
-                }
-                }
-                &:hover .slider  {
-                display: block;
-                padding: 10%;
-                background-color: $white;
-                p, a{
-                margin: 10px 0 15px 0;
-                }
-                }
-                }
-                @include respond-to(small-screens) {
-                grid-template-columns: repeat(2, 50%);
-                }
-                @include respond-to(medium-screens) {
-                grid-template-columns: repeat(2, 50%);
-                }
-                @include respond-to(large-screens) {
-                grid-template-columns: repeat(3, 33%);
-                }
-                @include respond-to(extralarge-screens) {
-                grid-template-columns: repeat(4, 25%);
-                }
-                }
-                </code>
-                <small class="codeText">SCSS</small><br />
-
-                <!-- Kartica profila -->
-                <article>
-                    <h3>Profile Card</h3>
-                    <p>Enter the following classes to get a profile card. The card can be customized to different profiles, with self-refinement.</p>
-                    <p>After the &lt;article&gt; element, we inserted a collapse component that we customize as needed.</p>
-                    <p>The following information is required to complete all profile card information</p>
-                    <ul>
-                        <li>Background image</li>
-                        <li>Profile picture</li>
-                        <li>Name</li>
-                        <li>Title</li>
-                        <li>Description</li>
-                    </ul>
-                </article>
-                <br />
-
-                <div class="card-wrapper">
-                    <div class="profil-card">  
-                        <!-- background slika -->
-                        <img class="card-img" src="../img/card/tesla-bg.jpg" alt="card background">
+        <!-- Card product 1-->
+    <h3>Product Card 1</h3>
+    <div class="scrolling-wrapper-flexbox">
+        <div class="card">
+            <input type="checkbox" id="card1" class="more" aria-hidden="true">
+            <div class="content">
+                <div class="front">  <!--  style="background-image: url('../img/card/sneakerV-10.png')" -->
+                    <div class="inner">
+                        <img src="../img/card/sneakerV-10.png" alt="sneakerV">
                         <article>
-                            <!-- slika profila -->
-                            <img class="profile-img" src="../img/card/tesla.jpeg" alt="profil image">
-                            <h4>Nikola Tesla</h4>
-                            <h5>Izumitelj</h5>
-                            <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quam eum ea consectetur, impedit cupiditate numquam amet placeat repellat libero? Impedit esse animi enim. Dolorum pariatur quasi provident obcaecati atque.</p>
+                            <p>Originals</p>
+                            <h4>V-10</h4>
+                            <p>$110</p>
+                            <p><small>10 colors</small></p>
                         </article>
-                        
-                        <div class= "kolaps">Kontakt</div>
-                        <div class= "kolapsSadrzaj">
-                            <div class="social">
-                                <!-- // ikona socialne mreže-->
-                                <div class="icon">
-                                    <img src="../img/card/gmail.svg" alt="gmail">
-                                </div>
-                                <!-- //  podaci solcialne mreže -->
-                                <div class="content">
-                                    <p><strong>Email</strong></p>
-                                    <p>nikola.tesla@gmail.com</p>
-                                </div>
-                            </div>
-                            <div class="social">
-                                <div class="icon">
-                                    <i class="fa fa-instagram"></i>
-                                </div>
-                                <div class="content">
-                                    <p><strong>Instagram</strong></p>
-                                    <p>nikola_tesla</p>
-                                </div>
-                            </div>
-                            <div class="social">
-                                <div class="icon">
-                                    <i class="fab fa-facebook-f"></i>
-                                </div>
-                                <div class="content">
-                                    <p><strong>Facebook</strong></p>
-                                    <p>Nikola Tesla</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class= "kolaps">Vještine</div>
-                        <div class= "kolapsSadrzaj">
-                            <div class="skills">
-                                <!-- naziv vježtine -->
-                                <p>Izmjenična el. struja</p>
-                                <!-- progress bar -->
-                                <progress  value="80" max="100"></progress>
-                            </div>
-                            <div class="skills">
-                                <p>Fizika</p>
-                                <progress  value="90" max="100"></progress>
-                            </div> 
-                        </div>
-                    </div>
-
-                    <div class="profil-card-2">
-                            <input type="checkbox" id="cardMestrovic" class="jos" aria-hidden="true">
-                        <div class="sadrzaj">
-                            <div class="ispred">
-                                    
-                                <div class="unutra">
-                                    <img class="card-img" src="../img/card/mestrovicAtelje.jpg" alt="card background">
-                                    <article>
-                                        <img class="profile-img" src="../img/card/mestrovic.jpeg" alt="profil image">
-                                        <h4>Ivan Meštrović</h4>
-                                        <h5>Kipar</h5>
-                                        <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quam eum ea consectetur, impedit cupiditate numquam amet placeat repellat libero? Impedit esse animi enim. Dolorum pariatur quasi provident obcaecati atque.</p>
-                                        
-                                    </article>
-                                    <label class="" for="cardMestrovic"  aria-hidden="true">Okreni</label>
-                                </div>
-                            </div>
-                            <div class="iza">
-                                <div class="unutra">
-                                    <h4>Kontakt</h4>
-                                    <div class="social">
-                                        <!-- // ikona socialne mreže-->
-                                        <div class="icon">
-                                            <img src="../img/card/gmail.svg" alt="gmail">
-                                        </div>
-                                        <!-- //  podaci solcialne mreže -->
-                                        <div class="content">
-                                            <p><strong>Email</strong></p>
-                                            <p>nikola.tesla@gmail.com</p>
-                                        </div>
-                                    </div>
-                                    <div class="social">
-                                        <div class="icon">
-                                            <i class="fa fa-instagram"></i>
-                                        </div>
-                                        <div class="content">
-                                            <p><strong>Instagram</strong></p>
-                                            <p>nikola_tesla</p>
-                                        </div>
-                                    </div>
-                                    <div class="social">
-                                        <div class="icon">
-                                            <i class="fab fa-facebook-f"></i>
-                                        </div>
-                                        <div class="content">
-                                            <p><strong>Facebook</strong></p>
-                                            <p>Nikola Tesla</p>
-                                        </div>
-                                    </div>
-                                    <h4>Vještine</h4>
-                                    <div class="skills">
-                                        <!-- naziv vježtine -->
-                                        <p>Izmjenična el. struja</p>
-                                        <!-- progress bar -->
-                                        <progress  value="80" max="100"></progress>
-                                    </div>
-                                    <div class="skills">
-                                        <p>Fizika</p>
-                                        <progress  value="90" max="100"></progress>
-                                    </div> 
-                                    <label for="cardMestrovic" class="return" aria-hidden="true">Okreni</label>
-                                </div>         
-                            </div>
-                        </div>
+                        <label for="card1" class="button" aria-hidden="true">Details</label>
                     </div>
                 </div>
-                <br />
-
-                <table>
-                    <tr>
-                        <th>class</th>
-                        <th>explanation</th>
-                    </tr>
-                    <tr>
-                        <td><span class="txt-primary-4">profil-card</span></td>
-                        <td>using this class grid layout within which the cards are housed</td>
-                    </tr>
-                    <tr>
-                        <td><span class="txt-primary-4">card-img</span></td>
-                        <td> class for background image below profile picture.</td>
-                    </tr>
-                    <tr>
-                        <td><span class="txt-primary-4">profile-img</span></td>
-                        <td>class is used to enter a profile picture</td>
-                    </tr>
-                    <tr>
-                        <td><span class="txt-primary-4">about</span></td>
-                        <td>class is used for text input.</td>
-                    </tr>
-                    <tr>
-                        <td><span class="txt-primary-4"> </span></td>
-                        <td> </td>
-                    </tr>
-                </table>
-                <br />
-
-                <code>
-        &lt;div class="profil-card"&gt;
-            // background slika
-            &lt;img class="card-img" src="../img/card/tesla-bg.jpg" alt="card background"&gt;
-            &lt;article&gt;
-                // slika profila
-                &lt;img class="profile-img" src="../img/card/tesla.jpeg" alt="profil image"&gt;
-                &lt;h4&gt;Nikola Tesla&lt;/h4&gt;
-                &lt;h5&gt;Izumitelj&lt;/h5&gt;
-                &lt;p class="about"&gt;
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quam eum ea consectetur.
-            &lt;/article&gt;
-            
-            &lt;div class= "kolaps">Kontakt&lt;/div&gt;
-            &lt;div class= "kolapsSadrzaj"&gt;
-                &lt;div class="social"&gt;
-                    // ikona socialne mreže
-                    &lt;div class="icon"&gt;
-                        &lt;img src="../img/card/gmail.svg" alt="gmail"&gt;
-                    &lt;/div&gt;
-                    //  podaci solcialne mreže
-                    &lt;div class="content"&gt;
-                        &lt;p&gt;&lt;strong>Email&lt;/strong>&lt;/p&gt;
-                        &lt;p&gt;nikola.tesla@gmail.com&lt;/p&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-                &lt;div class="social"&gt;
-                    &lt;div class="icon"&gt;
-                        &lt;i class="fa fa-instagram"&gt;&lt;/i&gt;
-                    &lt;/div&gt;
-                    &lt;div class="content"&gt;
-                        &lt;p>&lt;strong>Instagram&lt;/strong>&lt;/p&gt;
-                        &lt;p>nikola_tesla&lt;/p&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-                &lt;div class="social"&gt;
-                    &lt;div class="icon"&gt;
-                        &lt;i class="fab fa-facebook-f">&lt;/i&gt;
-                    &lt;/div&gt;
-                    &lt;div class="content"&gt;
-                        &lt;p&gt;&lt;strong>Facebook&lt;/strong&gt;&lt;/p&gt;
-                        &lt;p&gt;Nikola Tesla&lt;/p&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-            &lt;div class= "kolaps">Vještine&lt;/div&gt;
-            &lt;div class= "kolapsSadrzaj"&gt;
-                &lt;div class="skills"&gt;
-                    // naziv vježtine
-                    &lt;p&gt;Izmjenična el. struja&lt;/p&gt;
-                    // progress bar
-                    &lt;progress  value="80" max="100">&lt;/progress&gt;
-                &lt;/div&gt;
-                &lt;div class="skills"&gt;
-                    &lt;p&gt;Fizika&lt;/p&gt;
-                    &lt;progress  value="90" max="100">&lt;/progress&gt;
-                &lt;/div&gt; 
-            &lt;/div&gt;
-        &lt;/div&gt;
-                </code>
-                <small class="codeText">HTML</small><br />
-                <code>
-        // PROFIL CARD
-        .card-wrapper {
-        display: flex;
-        align-items: center;
-        align-content: center;
-        flex-direction: column;
-        @include respond-to(small-screens) {
-            grid-template-columns: repeat(2, 50%);
-        }
-        @include respond-to(medium-screens) {
-            grid-template-columns: repeat(2, 50%);
-        }
-        @include respond-to(large-screens) {
-            grid-template-columns: repeat(3, 33%);
-        }
-        @include respond-to(extralarge-screens) {
-            grid-template-columns: repeat(4, 25%);
-
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            .profil-card {
-                margin: 2rem;
-                transition: transform 0.5s;
-            }
-            @keyframes fideIn {
-                from { opacity: 0;}
-                to { opacity: 1;}
-            }
-            .profil-card:nth-child(1) {
-                animation: fideIn .5s .5s backwards;
-            }
-            .profil-card:nth-child(2) {
-                animation: fideIn .5s 1s backwards;
-            }
-            .profil-card:nth-child(3) {
-                animation: fideIn .5s 1.5s backwards;
-            }
-            .profil-card:nth-child(4) {
-                animation: fideIn .5s 2s backwards;
-            }
-        }
-        }
-
-        .profil-card {
-        width: 20rem;
-        background-color: #ebeef8;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 2rem 0;
-        box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, 0.2);
-        p {
-            font-size: 0.9em;
-            letter-spacing: 0.1em;
-            color: white;
-            margin: 0;
-        }
-        article {
-            z-index: 100;
-            padding: 0 1.5rem 0 1.5rem;
-        }
-        .card-img {
-            width: 100%;
-            height: 15rem;
-            object-fit: cover;
-            -webkit-clip-path: polygon(0 0, 100% 0, 100% 73%, 0% 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 73%, 0% 100%);
-        }
-        .profile-img {
-            width: 13rem;
-            height: 13rem;
-            object-fit: cover;
-            text-align: center;
-            border-radius: 50%;
-            margin-top: -9rem;
-            z-index: 10;
-            border: 0.5rem solid #ebeef8;
-            position: relative;
-            left: 60px;
-        }
-        h4, h5 {
-            margin:  1.5rem 0;
-            font-weight: 300;
-            font-size: 1.5rem;
-            color: #55acee;
-            text-align: center;
-        }
-        .about {
-            margin: 1.5rem 0;
-            font-style: italic;
-            text-align: left;
-            color: #333;
-            text-align: left;
-        }
-        // KONTAKT
-        .social {
-            width: 100%;
-            height: auto;
-            background-color: $primary-1;
-            display: grid;
-            grid-template-columns: 1fr 3fr;
-
-            .icon {
-                width: 40px;
-                height: 40px;
-                overflow: hidden;
-                background-color: $white;
-                border-radius: 50%;
-                justify-self: center;
-                align-self: center;
-                img, svg{
-                    width: 100%;
-                    height: 100%;
-                    padding: 10px;
-                }
-                i {
-                    font-size: 24px;
-                    padding: 9px;
-                    display: block;
-                }
-            }
-            .content {
-                justify-self: start;
-                align-self: center;
-                img {
-                    width: 20px;
-                }
-            }
-        }
-        // SKILSS
-        .skills {
-            background-color: #4686bf;
-            display: grid;
-            grid-template-rows: 30px 40px;
-            align-items: center;
-            padding: 0 20px;
-            
-        }
-        }
-                </code>
-                <small class="codeText">SCSS</small><br />
-                <br /><br />
-
-                <!-- Price card -->
-                <h3>Price Card</h3>
-
-                <div class="price-cards">
-                    <div class="price-card">  
-                        <!-- background slika -->
-                        <!-- <img class="card-img" src="../img/card/tesla-bg.jpg" alt="card background"> -->
-                        <!-- slika profila -->
-                        <i class="fa fa-cog fa-fw fa-4x"></i>
-
-                        <!-- <img class="profile-img" src="../img/card/tesla.jpeg" alt="profil image"> -->
-                        <article>
-                            <h4>Basic</h4>
-                            <h5 class="plan-price">999<sup><small>$</small></sup></h5>
-                        </article>
-                        
-                        <article class="about">
-                            <ul>
-                                <li>Unlimited Access</li>
-                                <li>100GB Storage</li>
-                                <li>Limited Customer Support</li>
-                                <li>Forum Access</li>
-                                <li>Unlimited Downloads</li>
-                            </ul>
-                        </article>
-                    </div>
-                    <div class="price-card">  
-                            <!-- background slika -->
-                            <!-- <img class="card-img" src="../img/card/tesla-bg.jpg" alt="card background"> -->
-                            <!-- slika profila -->
-                            <i class="fa fa-cogs fa-fw fa-4x"></i>
-
-                            <!-- <img class="profile-img" src="../img/card/tesla.jpeg" alt="profil image"> -->
-                            <article>
-                                <h4>Professional</h4>
-                                <h5 class="plan-price">1400<sup><small>$</small></sup></h5>
-                            </article>
-                            
-                            <article class="about">
-                                <ul>
-                                    <li>Unlimited Access</li>
-                                    <li>100GB Storage</li>
-                                    <li>Limited Customer Support</li>
-                                    <li>Forum Access</li>
-                                    <li>Unlimited Downloads</li>
-                                </ul>
-                            </article>
-                    </div>
-                    <div class="price-card">  
-                            <!-- background slika -->
-                            <!-- <img class="card-img" src="../img/card/tesla-bg.jpg" alt="card background"> -->
-                            <!-- slika profila -->
-                            <i class="fa fa-calendar fa-fw fa-4x"></i>
-
-                            <!-- <img class="profile-img" src="../img/card/tesla.jpeg" alt="profil image"> -->
-                            <article>
-                                <h4>Premium</h4>
-                                <h5 class="plan-price">2000<sup><small>$</small></sup></h5>
-                            </article>
-                            
-                            <article class="about">
-                                <ul>
-                                    <li>Unlimited Access</li>
-                                    <li>100GB Storage</li>
-                                    <li>Limited Customer Support</li>
-                                    <li>Forum Access</li>
-                                    <li>Unlimited Downloads</li>
-                                </ul>
-                            </article>
-                    </div>
-                    <div class="price-card">  
-                        <!-- background slika -->
-                        <!-- <img class="card-img" src="../img/card/tesla-bg.jpg" alt="card background"> -->
-                        <!-- slika profila -->
-                        <i class="fa fa-rocket fa-fw fa-4x"></i>
-
-                        <!-- <img class="profile-img" src="../img/card/tesla.jpeg" alt="profil image"> -->
-                        <article>
-                            <h4>Ultra Premium</h4>
-                            <h5 class="plan-price">2500<sup><small>$</small></sup></h5>
-                        </article>
-                        
-                        <article class="about">
-                            <ul>
-                                <li>Unlimited Access</li>
-                                <li>100GB Storage</li>
-                                <li>Limited Customer Support</li>
-                                <li>Forum Access</li>
-                                <li>Unlimited Downloads</li>
-                            </ul>
-                        </article>
+                <div class="back">
+                    <div class="inner">
+                            <img src="../img/card/sneakerV-10.png" alt="">
+                            <div class="slider">
+                                <div class="grid-slider">
+                                    <div class="mySlides9">
+                                        <img src="../img/card/sneakerAirMax97.png">
+                                    </div>
+                                    <div class="mySlides9">
+                                        <img src="../img/card/sneakerAirMax270-2.png">
+                                    </div>
+                                    <div class="mySlides9">
+                                        <img src="../img/card/sneakerAirMax270.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-2">
+                                <a onclick="plusSlides(-1, 8)">&#10094;</a>
+                                <article>
+                                    <p>V-10 EXTRA WHITE NAUTICO PEKIN</p>
+                                    <a>VIEW THIS &#10095;</a> 
+                                </article>
+                                <a onclick="plusSlides(1, 8)">&#10095;</a>
+                            </div>
+                        <label for="card1" class="button return" aria-hidden="true">Back</label>
                     </div>
                 </div>
-                <br />
-
-                <table>
-                    <tr>
-                        <th>class</th>
-                        <th>explanation</th>
-                    </tr>
-                    <tr>
-                        <td><span class="txt-primary-4">pricing-table</span></td>
-                        <td>class is the main class of the table. It contains the sub-classes tb-border, lr-border, pricing-inner, plan-name, plan-price-container, and plan-desc.</td>
-                    </tr>
-                    <tr>
-                        <td><span class="txt-primary-4">tb-border and lr-border</span></td>
-                        <td>classes serve to get hover animation of the border element</td>
-                    </tr>
-                    <tr>
-                        <td><span class="txt-primary-4">pricing-inner</span></td>
-                        <td>class that contains textual table information and a button</td>
-                    </tr>
-                    <tr>
-                        <td><span class="txt-primary-4">plan-price-contaner</span></td>
-                        <td>class determines where the product price will be written. The &lt;sup&gt; tag is used to write superscript text.</td>
-                    </tr>
-                    <tr>
-                        <td><span class="txt-primary-4">plan-desc</span></td>
-                        <td>class in the middle of which we place the &lt;article&gt; tag within which the list is placed.</td>
-                    </tr>
-                    <tr>
-                        <td><span class="txt-primary-4">&lt;button&gt;</span></td>
-                        <td>tag by which we do an action on the selected list.</td>
-                    </tr>
-                    <tr>
-                        <td><span class="txt-primary-4">price table</span></td>
-                        <td>should be placed inside the column element. Col-sm-3 is recommended, but the table will work on other sizes as well.</td>
-                    </tr>
-                </table>
-                <br />
-
-                <code>
-        &lt;div class="row"&gt;
-        &lt;div class="col-sm-3"&gt;
-        &lt;div class="pricing-table"&gt;
-        &lt;div class="tb-border"&gt;&lt;/div&gt;
-        &lt;div class="lr-border"&gt;&lt;/div&gt;
-        &lt;div class="pricing-inner"&gt;
-        &lt;div class="plan-name"&gt;
-            &lt;p&gt;&lt;i class="fa fa-cog fa-fw fa-4x"&gt;&lt;/i&gt;&lt;/p&gt;
-            &lt;small>Basic&lt;/small&gt;
-        &lt;/div&gt;
-        &lt;div class="plan-price-container"&gt;
-            &lt;p class="plan-price"&gt;999&lt;sup&gt;&lt;small&gt;$&lt;/small&gt;&lt;/sup&gt;&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div class="plan-desc"&gt;
-            &lt;article&gt;
-                &lt;ul&gt;
-                    &lt;li&gt;Unlimited Access&lt;/li&gt;
-                    &lt;li&gt;100GB Storage&lt;/li&gt;
-                    &lt;li&gt;Limited Customer Support&lt;/li&gt;
-                    &lt;li&gt;Forum Access&lt;/li&gt;
-                    &lt;li&gt;Unlimited Downloads&lt;/li&gt;
-                &lt;/ul&gt;
-            &lt;/article&gt;
-        &lt;/div&gt;
-        &lt;button class="btn-white-ghost btn-ripple"&gt;Choose Plan&lt;/button&gt;
-        &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;/div&gt;
-                </code>
-                <small style="float: right;">HTML</small>
-                <br/>
-                <code>
-        // PRICE TABLE
-
-        .pricing-table {
-        position: relative;
-        margin-bottom: 15px;
-        box-shadow: 0 12px 5px rgba(0, 0, 0, .3);
-
-        .tb-border {
-        &:before {
-        content: '';
-        display: block;
-        height: 5px;
-        top: 0;
-        left: 0;
-        right: 100%;
-        background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
-        position: absolute;
-        z-index: 1;
-        transition: right 0.2s linear 0.6s;
-        }
-        &:after {
-        content: '';
-        display: block;
-        height: 5px;
-        bottom: 0;
-        left: 100%;
-        right: 0;
-        background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
-        position: absolute;
-        z-index: 1;
-        transition: left 0.2s linear 0.2s;	
-        }
-        }
-        .lr-border {
-        &:before {
-        content: '';
-        display: block;
-        width: 5px;
-        top: 100%;
-        left: 0;
-        bottom: 0;
-        background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
-        position: absolute;
-        z-index: 1;
-        transition: top 0.2s linear;
-        }
-        &:after {
-        content: '';
-        display: block;
-        width: 5px;
-        top: 0;
-        right: 0;
-        bottom: 100%;
-        background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
-        position: absolute;
-        z-index: 1;
-        transition: bottom 0.2s linear 0.4s;	
-        }
-        }
-        &:hover {
-        .pricing-inner {
-        background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
-        color: $white;
-        }
-        .plan-price {
-        // color: #2ecc71;
-        }
-        .tb-border {
-        &:before {
-        right: 0;
-        transition: right 0.2s linear;
-        }
-        &:after {
-        left: 0;
-        transition: left 0.2s linear 0.4s;
-        }
-        }
-        .lr-border {
-        &:before {
-        top: 0;
-        transition: top 0.2s linear 0.6s;
-        }
-        &:after {
-        bottom: 0;
-        transition: bottom 0.2s linear 0.2s;
-        }
-        } 
-        button {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-        opacity: 1;
-        }
-        }
-        }
-
-        .pricing-inner {
-        background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
-        text-align: center;
-        color: $white;
-        -webkit-transition: background 0.4s ease-in, color 0.4s ease-in;
-        .plan-name {
-        padding: 25px 15px 0 15px;
-        position: relative;
-        }
-        .plan-price-container {
-        overflow: hidden;
-        }
-        .plan-price {
-        font-size: 46px;
-        margin: 0;
-        font-weight: 800;
-        }
-        .plan-desc {
-        font-size: 0.9em;
-        }
-        button {
-        padding: 15px 15px;
-        margin: 0 15px 25px;
-        opacity: 0;
-        -webkit-transform: translate3d(0, -15px, 0);
-        transform: translate3d(0, -15px, 0);
-        -webkit-transition: opacity 0.3s, transform 0.3s;
-        transition: opacity 0.3s, transform 0.3s;
-        }
-        }		
-                </code>
-                <small style="float: right;">SCSS</small>
-                    
-        </section>
+            </div>
+        </div>
+        <div class="card">
+            <input type="checkbox" id="card2" class="more" aria-hidden="true">
+            <div class="content">
+                <div class="front">  <!--  style="background-image: url('../img/card/sneakerV-10.png')" -->
+                    <div class="inner">
+                        <img src="../img/card/sneakerGucci.png" alt="sneakerV">
+                        <article>
+                            <p>Men's Screener GG sneaker</p>
+                            <h4>Gucci</h4>
+                            <p>$510</p>
+                            <p><small>3 colors</small></p>
+                        </article>
+                        <label for="card2" class="button" aria-hidden="true">Details</label>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+                            <img src="../img/card/sneakerGucci.png" alt="">
+                            <div class="slider">
+                                <div class="grid-slider10">
+                                    <div class="mySlides10">
+                                        <img src="../img/card/sneakerAirMax97.png">
+                                    </div>
+                                    <div class="mySlides10">
+                                        <img src="../img/card/sneakerChristianLouboutin.png">
+                                    </div>
+                                    <div class="mySlides10">
+                                        <img src="../img/card/sneakerBalenciaga.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-2">
+                                <a onclick="plusSlides(-1, 9)">&#10094;</a>
+                                <article>
+                                    <p>Men's Screener GG sneaker</p>
+                                    <a>VIEW THIS &#10095;</a> 
+                                </article>
+                                <a onclick="plusSlides(1, 9)">&#10095;</a>
+                            </div>
+                        <label for="card2" class="button return" aria-hidden="true">Back</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <input type="checkbox" id="card3" class="more" aria-hidden="true">
+            <div class="content">
+                    <div class="front">  <!--  style="background-image: url('../img/card/sneakerV-10.png')" -->
+                    <div class="inner">
+                        <img src="../img/card/sneakerAirMax270-2.png" alt="sneakerV">
+                        <article>
+                            <p>Nike</p>
+                            <h4>Air Max 270</h4>
+                            <p>$110</p>
+                            <p><small>10 colors</small></p>
+                        </article>
+                        <label for="card3" class="button" aria-hidden="true">Details</label>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+                            <img src="../img/card/sneakerAirMax270-2.png" alt="">
+                            <div class="slider">
+                                <div class="grid-slider">
+                                    <div class="mySlides11">
+                                        <img src="../img/card/sneakerAirMax270-2.png">
+                                    </div>
+                                    <div class="mySlides11">
+                                        <img src="../img/card/sneakerAirMax270.png">
+                                    </div>
+                                    <div class="mySlides11">
+                                        <img src="../img/card/sneakerBalenciaga.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-2">
+                                <a onclick="plusSlides(-1, 10)">&#10094;</a>
+                                <article>
+                                    <p>Nike Air Max 270 React (American Modern Art)</p>
+                                    <a>VIEW THIS &#10095;</a> 
+                                </article>
+                                <a onclick="plusSlides(1, 10)">&#10095;</a>
+                            </div>
+                        <label for="card3" class="button return" aria-hidden="true">Back</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <input type="checkbox" id="card4" class="more" aria-hidden="true">
+            <div class="content">
+                    <div class="front">  <!--  style="background-image: url('../img/card/sneakerV-10.png')" -->
+                    <div class="inner">
+                        <img src="../img/card/sneakerChristianLouboutin.png" alt="sneakerV">
+                        <article>
+                            <p>Nike</p>
+                            <h4>Air Max 270</h4>
+                            <p>$110</p>
+                            <p><small>10 colors</small></p>
+                        </article>
+                        <label for="card4" class="button" aria-hidden="true">Details</label>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+                            <img src="../img/card/sneakerChristianLouboutin.png" alt="">
+                            <div class="slider">
+                                <div class="grid-slider">
+                                    <div class="mySlides12">
+                                        <img src="../img/card/sneakerGucci.png">
+                                    </div>
+                                    <div class="mySlides12">
+                                        <img src="../img/card/sneakerBalenciaga.png">
+                                    </div>
+                                    <div class="mySlides12">
+                                        <img src="../img/card/sneakerV-10.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-2">
+                                <a onclick="plusSlides(-1, 11)">&#10094;</a>
+                                <article>
+                                    <p>Nike Air Max 270 React</p>
+                                    <a>VIEW THIS &#10095;</a> 
+                                </article>
+                                <a onclick="plusSlides(1, 11)">&#10095;</a>
+                            </div>
+                        <label for="card4" class="button return" aria-hidden="true">Back</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <input type="checkbox" id="card5" class="more" aria-hidden="true">
+            <div class="content">
+                    <div class="front">  <!--  style="background-image: url('../img/card/sneakerV-10.png')" -->
+                    <div class="inner">
+                        <img src="../img/card/sneakerBalenciaga.png" alt="sneakerV">
+                        <article>
+                            <p>Balenciaga</p>
+                            <h4>TRIPLE S TRAINERS</h4>
+                            <p>$110</p>
+                            <p><small>10 colors</small></p>
+                        </article>
+                        <label for="card5" class="button" aria-hidden="true">Details</label>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="inner">
+                            <img src="../img/card/sneakerBalenciaga.png" alt="">
+                            <div class="slider">
+                                <div class="grid-slider">
+                                    <div class="mySlides13">
+                                        <img src="../img/card/sneakerAirMax97.png">
+                                    </div>
+                                    <div class="mySlides13">
+                                        <img src="../img/card/sneakerAirMax270-2.png">
+                                    </div>
+                                    <div class="mySlides13">
+                                        <img src="../img/card/sneakerAirMax270.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-2">
+                                <a onclick="plusSlides(-1, 12)">&#10094;</a>
+                                <article>
+                                    <p>TRIPLE S TRAINERS</p>
+                                    <p>Triple S in red.</p>
+                                    <a>VIEW THIS &#10095;</a> 
+                                </article>
+                                <a onclick="plusSlides(1, 12)">&#10095;</a>
+                            </div>
+                        <label for="card5" class="button return" aria-hidden="true">Back</label>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <script src="../js/header.js"></script>
-    <script src="../js/collapse.js"></script>
-    <script src="../js/card.js"></script>
-	<script src="../js/myscript.js"></script>
-</body>
-</html>
+    <br /><br />
+    <code>
+// flip card
+.scrolling-wrapper-flexbox {
+display: flex;
+flex-wrap: nowrap;
+overflow-x: auto;
+box-sizing: border-box;
+width: 100%;
+padding-top: 30px;
+.card {
+    flex: 0 0 auto;
+}
+.card2 {
+    flex: 0 0 auto;
+}
+}
 
-	
+.scrolling-wrapper, .scrolling-wrapper-flexbox {
+width: 100%;
+-webkit-overflow-scrolling: touch;
+&::-webkit-scrollbar {
+    display: none;
+}
+}
+
+.card {
+margin: 0 0 0 10px;
+width: 330px;
+height: 330px;
+.content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s cubic-bezier(0.75, 0, 0.85, 1);
+}
+}
+
+.more {
+display: none;
+
+&:checked ~ .content {
+    transform: rotateY(180deg);
+}
+}
+
+.front,
+.back {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+transform-style: preserve-3d;
+border-radius: 6px;
+.inner {
+    height: 100%;
+    display: grid;
+    transform: translateZ(80px) scale(0.94);
+}
+}
+
+.front {
+background-color: #33313b;
+background-size: cover;
+background-position: center center;
+background-size: 100%;
+background-repeat: no-repeat;
+&:after {
+    content: '';
+}
+.inner {
+    grid-template-rows: 5fr;
+    justify-items: center;
+}
+}
+
+.back {
+transform: rotateY(180deg);
+background-color: var(--dark);
+.inner {
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0.8em;
+    justify-items: center;
+}
+h4, p, label {
+    color: var(--light);
+}
+h4 {
+    font-size: 2em;
+    margin: 30px 0 30px 0;
+}
+p {
+    font-family: 'Montserrat', 'Roboto', 'Arial', serif;
+    padding: 0 15px 0 15px; 
+}
+&:not(:first-of-type):before {
+    content: '';
+    position: absolute;
+    left: -0.9em;
+    height: 18px;
+    width: 1px;
+    background-color: #ccc;
+}
+
+.description {
+    font-size: 0.86em;
+    border-radius: 5px;
+    font-weight: 600;
+    line-height: 1.4em;
+    overflow: auto;
+    color: $accent-color;
+    padding-right: 10px;
+}
+.button {
+    justify-self: center;
+}
+}
+
+.button {
+height: 3em;
+min-width: 3em;
+padding: 0 1.5em;
+align-self: end;
+
+font-family: 'UpheavalTT', monospace;
+text-transform: uppercase;
+font-size: 1.2em;
+letter-spacing: 5px;
+font-weight: 400;
+line-height: 2.9em;
+text-align: center;
+text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+cursor: pointer;
+display: block;
+
+background-color: transparent;
+border: 1px solid var(--light);
+color: var(--light);
+border-radius: 50px;
+
+left: 50%;
+backface-visibility: hidden;
+transition: 0.3s ease-in-out;
+
+&:hover {
+    background-color: var(--light);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    text-shadow: none;
+    color: $accent-color;
+}
+&.return {
+    line-height: 3em;
+    color: var(--light);
+    border-color: var(--light);
+    text-shadow: none;
+    &:hover {
+        background-color: $accent-color;
+        color: #fff;
+        box-shadow: none;
+    }
+}
+}
+
+::-webkit-scrollbar {
+width: 5px;
+}
+::-webkit-scrollbar-track {
+background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+background: lighten($accent-color, 20%);
+}
+::-webkit-scrollbar-thumb:hover {
+background: $accent-color;
+}
+    </code>
+    <small class="codeText">SCSS</small><br />
+
+    <!-- Card product  2-->
+    <h3>Product Card 2</h3>
+
+    <div class="card-products">                  
+        <div class="card-product">
+            <img src="../img/card/slika-1.png" alt="">
+            <div class="slider">
+                <div class="grid-slider">
+                    <a onclick="plusSlides(-1, 0)">&#10094;</a>
+                </div>
+                <div class="grid-slider">
+                    <div class="mySlides1">
+                        <img src="../img/card/slika-2.png">
+                    </div>
+                    <div class="mySlides1">
+                        <img src="../img/card/slika-3.png">
+                    </div>
+                    <div class="mySlides1">
+                        <img src="../img/card/slika-4.png">
+                    </div>
+                </div>
+                <div class="grid-slider">
+                    <a onclick="plusSlides(1, 0)">&#10095;</a>
+                </div>
+                <div class="grid-slider"></div>
+                <div class="grid-slider">
+                    <p>Gucci odijelo</p>
+                    <a>VIEW THIS &#10095;</a> 
+                </div>
+            </div>
+        </div>
+        <div class="card-product">
+            <img src="../img/card/slika-1.png" alt="">
+            <div class="slider">
+                <div class="grid-slider">
+                    <a onclick="plusSlides(-1, 1)">&#10094;</a>
+                </div>
+                <div class="grid-slider">
+                    <div class="mySlides2">
+                        <img src="../img/card/slika-2.png">
+                    </div>
+                    <div class="mySlides2">
+                        <img src="../img/card/slika-3.png">
+                    </div>
+                    <div class="mySlides2">
+                        <img src="../img/card/slika-4.png">
+                    </div>
+                </div>
+                <div class="grid-slider">
+                    <a onclick="plusSlides(1, 1)">&#10095;</a>
+                </div>
+                <div class="grid-slider"></div>
+                <div class="grid-slider">
+                    <p>Gucci odijelo</p>
+                    <a>VIEW THIS &#10095;</a> 
+                </div>
+            </div>
+        </div>
+        <div class="card-product">
+            <img src="../img/card/slika-1.png" alt="">
+            <div class="slider">
+                <div class="grid-slider">
+                    <a onclick="plusSlides(-1, 2)">&#10094;</a>
+                </div>
+                <div class="grid-slider">
+                    <div class="mySlides3">
+                        <img src="../img/card/slika-2.png">
+                    </div>
+                    <div class="mySlides3">
+                        <img src="../img/card/slika-3.png">
+                    </div>
+                    <div class="mySlides3">
+                        <img src="../img/card/slika-4.png">
+                    </div>
+                </div>
+                <div class="grid-slider">
+                    <a onclick="plusSlides(1, 2)">&#10095;</a>
+                </div>
+                <div class="grid-slider"></div>
+                <div class="grid-slider">
+                    <p>Gucci odijelo</p>
+                    <a>VIEW THIS &#10095;</a> 
+                </div>
+            </div>
+        </div>
+        <div class="card-product">
+            <img src="../img/card/slika-1.png" alt="">
+            <div class="slider">
+                <div class="grid-slider">
+                    <a onclick="plusSlides(-1, 3)">&#10094;</a>
+                </div>
+                <div class="grid-slider">
+                    <div class="mySlides4">
+                        <img src="../img/card/slika-2.png">
+                    </div>
+                    <div class="mySlides4">
+                        <img src="../img/card/slika-3.png">
+                    </div>
+                    <div class="mySlides4">
+                        <img src="../img/card/slika-4.png">
+                    </div>
+                </div>
+                <div class="grid-slider">
+                    <a onclick="plusSlides(1, 3)">&#10095;</a>
+                </div>
+                <div class="grid-slider"></div>
+                <div class="grid-slider">
+                    <p>Gucci odijelo</p>
+                    <a>VIEW THIS &#10095;</a> 
+                </div>
+            </div>
+        </div>
+        <div class="card-product">
+            <img src="../img/card/slika-1.png" alt="">
+            <div class="slider">
+                <div class="grid-slider">
+                    <a onclick="plusSlides(-1, 4)">&#10094;</a>
+                </div>
+                <div class="grid-slider">
+                    <div class="mySlides5">
+                        <img src="../img/card/slika-2.png">
+                    </div>
+                    <div class="mySlides5">
+                        <img src="../img/card/slika-3.png">
+                    </div>
+                    <div class="mySlides5">
+                        <img src="../img/card/slika-4.png">
+                    </div>
+                </div>
+                <div class="grid-slider">
+                    <a onclick="plusSlides(1, 4)">&#10095;</a>
+                </div>
+                <div class="grid-slider"></div>
+                <div class="grid-slider">
+                    <p>Gucci odijelo</p>
+                    <a>VIEW THIS &#10095;</a> 
+                </div>
+            </div>
+        </div>
+        <div class="card-product">
+            <img src="../img/card/slika-1.png" alt="">
+            <div class="slider">
+                <div class="grid-slider">
+                    <a onclick="plusSlides(-1, 5)">&#10094;</a>
+                </div>
+                <div class="grid-slider">
+                    <div class="mySlides6">
+                        <img src="../img/card/slika-2.png">
+                    </div>
+                    <div class="mySlides6">
+                        <img src="../img/card/slika-3.png">
+                    </div>
+                    <div class="mySlides6">
+                        <img src="../img/card/slika-4.png">
+                    </div>
+                </div>
+                <div class="grid-slider">
+                    <a onclick="plusSlides(1, 5)">&#10095;</a>
+                </div>
+                <div class="grid-slider"></div>
+                <div class="grid-slider">
+                    <p>Gucci odijelo</p>
+                    <a>VIEW THIS &#10095;</a> 
+                </div>
+            </div>
+        </div>
+        <div class="card-product">
+            <img src="../img/card/slika-1.png" alt="">
+            <div class="slider">
+                <div class="grid-slider">
+                    <a onclick="plusSlides(-1, 6)">&#10094;</a>
+                </div>
+                <div class="grid-slider">
+                    <div class="mySlides7">
+                        <img src="../img/card/slika-2.png">
+                    </div>
+                    <div class="mySlides7">
+                        <img src="../img/card/slika-3.png">
+                    </div>
+                    <div class="mySlides7">
+                        <img src="../img/card/slika-4.png">
+                    </div>
+                </div>
+                <div class="grid-slider">
+                    <a onclick="plusSlides(1, 6)">&#10095;</a>
+                </div>
+                <div class="grid-slider"></div>
+                <div class="grid-slider">
+                    <p>Gucci odijelo</p>
+                    <a>VIEW THIS &#10095;</a> 
+                </div>
+            </div>
+        </div>
+        <div class="card-product">
+            <img src="../img/card/slika-1.png" alt="">
+            <div class="slider">
+                <div class="grid-slider">
+                    <a onclick="plusSlides(-1, 7)">&#10094;</a>
+                </div>
+                <div class="grid-slider">
+                    <div class="mySlides8">
+                        <img src="../img/card/slika-2.png">
+                    </div>
+                    <div class="mySlides8">
+                        <img src="../img/card/slika-3.png">
+                    </div>
+                    <div class="mySlides8">
+                        <img src="../img/card/slika-4.png">
+                    </div>
+                </div>
+                <div class="grid-slider">
+                    <a onclick="plusSlides(1, 7)">&#10095;</a>
+                </div>
+                <div class="grid-slider"></div>
+                <div class="grid-slider">
+                    <p>Gucci odijelo</p>
+                    <a>VIEW THIS &#10095;</a> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <table>
+        <tr>
+            <th>class</th>
+            <th>explanation</th>
+        </tr>
+        <tr>
+            <td><span class="txt-primary-4">card-products</span></td>
+            <td>class enables grid layout of elements. Contains four cards per line.</td>
+        </tr>
+        <tr>
+            <td><span class="txt-primary-4">card-product</span></td>
+            <td>class for arrangement of elements within a card.</td>
+        </tr>
+        <tr>
+            <td><span class="txt-primary-4">slider</span></td>
+            <td>class is activated by moving the mouse over the card. It allows us to view different product images, and displays a description of the product.</td>
+        </tr>
+        <tr>
+            <td><span class="txt-primary-4">onclick="plusSlides(-1, 0)"</span></td>
+            <td>is used to move the slider to the left.</td>
+        </tr>
+        <tr>
+            <td><span class="txt-primary-4">onclick="plusSlides(-1, 1)"</span></td>
+            <td>is used to move the slider to the right.</td>
+        </tr>
+        <tr>
+            <td><span class="txt-primary-4">mySlides1</span></td>
+            <td> each card has its own slider class. A new ordinal number should be added for each new card. A new class in javascript should also be added.</td>
+        </tr>
+    </table>
+
+    <code>
+    &lt;div class="card-products"&gt;
+    &lt;div class="card-product"&gt;
+    &lt;img src="../img/card/slika-1.png" alt=""&gt;
+    &lt;div class="slider"&gt;
+    &lt;a onclick="plusSlides(-1, 0)"&gt;&#10094;&lt;/a&gt;
+    &lt;a onclick="plusSlides(1, 0)"&gt;&#10095;&lt;/a&gt;
+    &lt;div class="mySlides1"&gt;
+        &lt;img src="../img/card/slika-2.png"&gt;
+    &lt;/div&gt;
+    &lt;div class="mySlides1"&gt;
+        &lt;img src="../img/card/slika-3.png"&gt;
+    &lt;/div&gt;
+    &lt;div class="mySlides1"&gt;
+        &lt;img src="../img/card/slika-4.png"&gt;
+    &lt;/div&gt;
+    &lt;p&gt;Gucci odijelo&lt;/p&gt;
+    &lt;a"&gt;VIEW THIS &#10095;&lt;/a>&gt;       
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    </code>
+    <small class="codeText">HTML</small><br />
+    <code>
+    //PRODUCT CARD
+
+    .card-products {
+    display: grid;
+    // grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3px;
+    max-width: 1000px;
+    .card-product { 
+    position: relative; 
+    padding: 5%;
+    border: 1px solid gray;
+    img {
+    max-width: 100%;
+    height: auto;
+    }
+    .slider {
+    position: absolute;
+    background: white;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px;
+    display: none;
+    z-index: 20;
+    text-align: center;
+    a:nth-child(1) {
+    right: 90px;
+    }
+    a:nth-child(2) {
+    left: 90px;
+    }
+    a:nth-child(-n+2) {
+    position: relative;
+    top: 100px;
+    }
+    a:nth-child(3) {
+    cursor: pointer;
+    &:hover {
+        color: $primary-1;
+    }
+    }
+    }
+    &:hover .slider  {
+    display: block;
+    padding: 10%;
+    background-color: $white;
+    p, a{
+    margin: 10px 0 15px 0;
+    }
+    }
+    }
+    @include respond-to(small-screens) {
+    grid-template-columns: repeat(2, 50%);
+    }
+    @include respond-to(medium-screens) {
+    grid-template-columns: repeat(2, 50%);
+    }
+    @include respond-to(large-screens) {
+    grid-template-columns: repeat(3, 33%);
+    }
+    @include respond-to(extralarge-screens) {
+    grid-template-columns: repeat(4, 25%);
+    }
+    }
+    </code>
+    <small class="codeText">SCSS</small><br />
+
+    <!-- Kartica profila -->
+    <article>
+        <h3>Profile Card</h3>
+        <p>Enter the following classes to get a profile card. The card can be customized to different profiles, with self-refinement.</p>
+        <p>After the &lt;article&gt; element, we inserted a collapse component that we customize as needed.</p>
+        <p>The following information is required to complete all profile card information</p>
+        <ul>
+            <li>Background image</li>
+            <li>Profile picture</li>
+            <li>Name</li>
+            <li>Title</li>
+            <li>Description</li>
+        </ul>
+    </article>
+    <br />
+
+    <div class="card-wrapper">
+        <div class="profil-card">  
+            <!-- background slika -->
+            <img class="card-img" src="../img/card/tesla-bg.jpg" alt="card background">
+            <article>
+                <!-- slika profila -->
+                <img class="profile-img" src="../img/card/tesla.jpeg" alt="profil image">
+                <h4>Nikola Tesla</h4>
+                <h5>Izumitelj</h5>
+                <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quam eum ea consectetur, impedit cupiditate numquam amet placeat repellat libero? Impedit esse animi enim. Dolorum pariatur quasi provident obcaecati atque.</p>
+            </article>
+            
+            <div class= "kolaps">Kontakt</div>
+            <div class= "kolapsSadrzaj">
+                <div class="social">
+                    <!-- // ikona socialne mreže-->
+                    <div class="icon">
+                        <img src="../img/card/gmail.svg" alt="gmail">
+                    </div>
+                    <!-- //  podaci solcialne mreže -->
+                    <div class="content">
+                        <p><strong>Email</strong></p>
+                        <p>nikola.tesla@gmail.com</p>
+                    </div>
+                </div>
+                <div class="social">
+                    <div class="icon">
+                        <i class="fa fa-instagram"></i>
+                    </div>
+                    <div class="content">
+                        <p><strong>Instagram</strong></p>
+                        <p>nikola_tesla</p>
+                    </div>
+                </div>
+                <div class="social">
+                    <div class="icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div class="content">
+                        <p><strong>Facebook</strong></p>
+                        <p>Nikola Tesla</p>
+                    </div>
+                </div>
+            </div>
+            <div class= "kolaps">Vještine</div>
+            <div class= "kolapsSadrzaj">
+                <div class="skills">
+                    <!-- naziv vježtine -->
+                    <p>Izmjenična el. struja</p>
+                    <!-- progress bar -->
+                    <progress  value="80" max="100"></progress>
+                </div>
+                <div class="skills">
+                    <p>Fizika</p>
+                    <progress  value="90" max="100"></progress>
+                </div> 
+            </div>
+        </div>
+
+        <div class="profil-card-2">
+                <input type="checkbox" id="cardMestrovic" class="jos" aria-hidden="true">
+            <div class="sadrzaj">
+                <div class="ispred">
+                        
+                    <div class="unutra">
+                        <img class="card-img" src="../img/card/mestrovicAtelje.jpg" alt="card background">
+                        <article>
+                            <img class="profile-img" src="../img/card/mestrovic.jpeg" alt="profil image">
+                            <h4>Ivan Meštrović</h4>
+                            <h5>Kipar</h5>
+                            <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quam eum ea consectetur, impedit cupiditate numquam amet placeat repellat libero? Impedit esse animi enim. Dolorum pariatur quasi provident obcaecati atque.</p>
+                            
+                        </article>
+                        <label class="" for="cardMestrovic"  aria-hidden="true">Okreni</label>
+                    </div>
+                </div>
+                <div class="iza">
+                    <div class="unutra">
+                        <h4>Kontakt</h4>
+                        <div class="social">
+                            <!-- // ikona socialne mreže-->
+                            <div class="icon">
+                                <img src="../img/card/gmail.svg" alt="gmail">
+                            </div>
+                            <!-- //  podaci solcialne mreže -->
+                            <div class="content">
+                                <p><strong>Email</strong></p>
+                                <p>nikola.tesla@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="social">
+                            <div class="icon">
+                                <i class="fa fa-instagram"></i>
+                            </div>
+                            <div class="content">
+                                <p><strong>Instagram</strong></p>
+                                <p>nikola_tesla</p>
+                            </div>
+                        </div>
+                        <div class="social">
+                            <div class="icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <div class="content">
+                                <p><strong>Facebook</strong></p>
+                                <p>Nikola Tesla</p>
+                            </div>
+                        </div>
+                        <h4>Vještine</h4>
+                        <div class="skills">
+                            <!-- naziv vježtine -->
+                            <p>Izmjenična el. struja</p>
+                            <!-- progress bar -->
+                            <progress  value="80" max="100"></progress>
+                        </div>
+                        <div class="skills">
+                            <p>Fizika</p>
+                            <progress  value="90" max="100"></progress>
+                        </div> 
+                        <label for="cardMestrovic" class="return" aria-hidden="true">Okreni</label>
+                    </div>         
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+
+    <table>
+        <tr>
+            <th>class</th>
+            <th>explanation</th>
+        </tr>
+        <tr>
+            <td><span class="txt-primary-4">profil-card</span></td>
+            <td>using this class grid layout within which the cards are housed</td>
+        </tr>
+        <tr>
+            <td><span class="txt-primary-4">card-img</span></td>
+            <td> class for background image below profile picture.</td>
+        </tr>
+        <tr>
+            <td><span class="txt-primary-4">profile-img</span></td>
+            <td>class is used to enter a profile picture</td>
+        </tr>
+        <tr>
+            <td><span class="txt-primary-4">about</span></td>
+            <td>class is used for text input.</td>
+        </tr>
+        <tr>
+            <td><span class="txt-primary-4"> </span></td>
+            <td> </td>
+        </tr>
+    </table>
+    <br />
+
+    <code>
+&lt;div class="profil-card"&gt;
+// background slika
+&lt;img class="card-img" src="../img/card/tesla-bg.jpg" alt="card background"&gt;
+&lt;article&gt;
+    // slika profila
+    &lt;img class="profile-img" src="../img/card/tesla.jpeg" alt="profil image"&gt;
+    &lt;h4&gt;Nikola Tesla&lt;/h4&gt;
+    &lt;h5&gt;Izumitelj&lt;/h5&gt;
+    &lt;p class="about"&gt;
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quam eum ea consectetur.
+&lt;/article&gt;
+
+&lt;div class= "kolaps">Kontakt&lt;/div&gt;
+&lt;div class= "kolapsSadrzaj"&gt;
+    &lt;div class="social"&gt;
+        // ikona socialne mreže
+        &lt;div class="icon"&gt;
+            &lt;img src="../img/card/gmail.svg" alt="gmail"&gt;
+        &lt;/div&gt;
+        //  podaci solcialne mreže
+        &lt;div class="content"&gt;
+            &lt;p&gt;&lt;strong>Email&lt;/strong>&lt;/p&gt;
+            &lt;p&gt;nikola.tesla@gmail.com&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="social"&gt;
+        &lt;div class="icon"&gt;
+            &lt;i class="fa fa-instagram"&gt;&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;div class="content"&gt;
+            &lt;p>&lt;strong>Instagram&lt;/strong>&lt;/p&gt;
+            &lt;p>nikola_tesla&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="social"&gt;
+        &lt;div class="icon"&gt;
+            &lt;i class="fab fa-facebook-f">&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;div class="content"&gt;
+            &lt;p&gt;&lt;strong>Facebook&lt;/strong&gt;&lt;/p&gt;
+            &lt;p&gt;Nikola Tesla&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class= "kolaps">Vještine&lt;/div&gt;
+&lt;div class= "kolapsSadrzaj"&gt;
+    &lt;div class="skills"&gt;
+        // naziv vježtine
+        &lt;p&gt;Izmjenična el. struja&lt;/p&gt;
+        // progress bar
+        &lt;progress  value="80" max="100">&lt;/progress&gt;
+    &lt;/div&gt;
+    &lt;div class="skills"&gt;
+        &lt;p&gt;Fizika&lt;/p&gt;
+        &lt;progress  value="90" max="100">&lt;/progress&gt;
+    &lt;/div&gt; 
+&lt;/div&gt;
+&lt;/div&gt;
+    </code>
+    <small class="codeText">HTML</small><br />
+    <code>
+// PROFIL CARD
+.card-wrapper {
+display: flex;
+align-items: center;
+align-content: center;
+flex-direction: column;
+@include respond-to(small-screens) {
+grid-template-columns: repeat(2, 50%);
+}
+@include respond-to(medium-screens) {
+grid-template-columns: repeat(2, 50%);
+}
+@include respond-to(large-screens) {
+grid-template-columns: repeat(3, 33%);
+}
+@include respond-to(extralarge-screens) {
+grid-template-columns: repeat(4, 25%);
+
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+.profil-card {
+    margin: 2rem;
+    transition: transform 0.5s;
+}
+@keyframes fideIn {
+    from { opacity: 0;}
+    to { opacity: 1;}
+}
+.profil-card:nth-child(1) {
+    animation: fideIn .5s .5s backwards;
+}
+.profil-card:nth-child(2) {
+    animation: fideIn .5s 1s backwards;
+}
+.profil-card:nth-child(3) {
+    animation: fideIn .5s 1.5s backwards;
+}
+.profil-card:nth-child(4) {
+    animation: fideIn .5s 2s backwards;
+}
+}
+}
+
+.profil-card {
+width: 20rem;
+background-color: #ebeef8;
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin: 2rem 0;
+box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, 0.2);
+p {
+font-size: 0.9em;
+letter-spacing: 0.1em;
+color: white;
+margin: 0;
+}
+article {
+z-index: 100;
+padding: 0 1.5rem 0 1.5rem;
+}
+.card-img {
+width: 100%;
+height: 15rem;
+object-fit: cover;
+-webkit-clip-path: polygon(0 0, 100% 0, 100% 73%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 100% 73%, 0% 100%);
+}
+.profile-img {
+width: 13rem;
+height: 13rem;
+object-fit: cover;
+text-align: center;
+border-radius: 50%;
+margin-top: -9rem;
+z-index: 10;
+border: 0.5rem solid #ebeef8;
+position: relative;
+left: 60px;
+}
+h4, h5 {
+margin:  1.5rem 0;
+font-weight: 300;
+font-size: 1.5rem;
+color: #55acee;
+text-align: center;
+}
+.about {
+margin: 1.5rem 0;
+font-style: italic;
+text-align: left;
+color: #333;
+text-align: left;
+}
+// KONTAKT
+.social {
+width: 100%;
+height: auto;
+background-color: $primary-1;
+display: grid;
+grid-template-columns: 1fr 3fr;
+
+.icon {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    background-color: $white;
+    border-radius: 50%;
+    justify-self: center;
+    align-self: center;
+    img, svg{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+    i {
+        font-size: 24px;
+        padding: 9px;
+        display: block;
+    }
+}
+.content {
+    justify-self: start;
+    align-self: center;
+    img {
+        width: 20px;
+    }
+}
+}
+// SKILSS
+.skills {
+background-color: #4686bf;
+display: grid;
+grid-template-rows: 30px 40px;
+align-items: center;
+padding: 0 20px;
+
+}
+}
+    </code>
+    <small class="codeText">SCSS</small><br />
+    <br /><br />
+
+    <!-- Price card -->
+    <h3>Price Card</h3>
+
+    <div class="price-cards">
+        <div class="price-card">  
+            <!-- background slika -->
+            <!-- <img class="card-img" src="../img/card/tesla-bg.jpg" alt="card background"> -->
+            <!-- slika profila -->
+            <i class="fa fa-cog fa-fw fa-4x"></i>
+
+            <!-- <img class="profile-img" src="../img/card/tesla.jpeg" alt="profil image"> -->
+            <article>
+                <h4>Basic</h4>
+                <h5 class="plan-price">999<sup><small>$</small></sup></h5>
+            </article>
+            
+            <article class="about">
+                <ul>
+                    <li>Unlimited Access</li>
+                    <li>100GB Storage</li>
+                    <li>Limited Customer Support</li>
+                    <li>Forum Access</li>
+                    <li>Unlimited Downloads</li>
+                </ul>
+            </article>
+        </div>
+        <div class="price-card">  
+                <!-- background slika -->
+                <!-- <img class="card-img" src="../img/card/tesla-bg.jpg" alt="card background"> -->
+                <!-- slika profila -->
+                <i class="fa fa-cogs fa-fw fa-4x"></i>
+
+                <!-- <img class="profile-img" src="../img/card/tesla.jpeg" alt="profil image"> -->
+                <article>
+                    <h4>Professional</h4>
+                    <h5 class="plan-price">1400<sup><small>$</small></sup></h5>
+                </article>
+                
+                <article class="about">
+                    <ul>
+                        <li>Unlimited Access</li>
+                        <li>100GB Storage</li>
+                        <li>Limited Customer Support</li>
+                        <li>Forum Access</li>
+                        <li>Unlimited Downloads</li>
+                    </ul>
+                </article>
+        </div>
+        <div class="price-card">  
+                <!-- background slika -->
+                <!-- <img class="card-img" src="../img/card/tesla-bg.jpg" alt="card background"> -->
+                <!-- slika profila -->
+                <i class="fa fa-calendar fa-fw fa-4x"></i>
+
+                <!-- <img class="profile-img" src="../img/card/tesla.jpeg" alt="profil image"> -->
+                <article>
+                    <h4>Premium</h4>
+                    <h5 class="plan-price">2000<sup><small>$</small></sup></h5>
+                </article>
+                
+                <article class="about">
+                    <ul>
+                        <li>Unlimited Access</li>
+                        <li>100GB Storage</li>
+                        <li>Limited Customer Support</li>
+                        <li>Forum Access</li>
+                        <li>Unlimited Downloads</li>
+                    </ul>
+                </article>
+        </div>
+        <div class="price-card">  
+            <!-- background slika -->
+            <!-- <img class="card-img" src="../img/card/tesla-bg.jpg" alt="card background"> -->
+            <!-- slika profila -->
+            <i class="fa fa-rocket fa-fw fa-4x"></i>
+
+            <!-- <img class="profile-img" src="../img/card/tesla.jpeg" alt="profil image"> -->
+            <article>
+                <h4>Ultra Premium</h4>
+                <h5 class="plan-price">2500<sup><small>$</small></sup></h5>
+            </article>
+            
+            <article class="about">
+                <ul>
+                    <li>Unlimited Access</li>
+                    <li>100GB Storage</li>
+                    <li>Limited Customer Support</li>
+                    <li>Forum Access</li>
+                    <li>Unlimited Downloads</li>
+                </ul>
+            </article>
+        </div>
+    </div>
+    <br />
+
+    <table>
+        <tr>
+            <th>class</th>
+            <th>explanation</th>
+        </tr>
+        <tr>
+            <td><span class="txt-primary-4">pricing-table</span></td>
+            <td>class is the main class of the table. It contains the sub-classes tb-border, lr-border, pricing-inner, plan-name, plan-price-container, and plan-desc.</td>
+        </tr>
+        <tr>
+            <td><span class="txt-primary-4">tb-border and lr-border</span></td>
+            <td>classes serve to get hover animation of the border element</td>
+        </tr>
+        <tr>
+            <td><span class="txt-primary-4">pricing-inner</span></td>
+            <td>class that contains textual table information and a button</td>
+        </tr>
+        <tr>
+            <td><span class="txt-primary-4">plan-price-contaner</span></td>
+            <td>class determines where the product price will be written. The &lt;sup&gt; tag is used to write superscript text.</td>
+        </tr>
+        <tr>
+            <td><span class="txt-primary-4">plan-desc</span></td>
+            <td>class in the middle of which we place the &lt;article&gt; tag within which the list is placed.</td>
+        </tr>
+        <tr>
+            <td><span class="txt-primary-4">&lt;button&gt;</span></td>
+            <td>tag by which we do an action on the selected list.</td>
+        </tr>
+        <tr>
+            <td><span class="txt-primary-4">price table</span></td>
+            <td>should be placed inside the column element. Col-sm-3 is recommended, but the table will work on other sizes as well.</td>
+        </tr>
+    </table>
+    <br />
+
+    <code>
+&lt;div class="row"&gt;
+&lt;div class="col-sm-3"&gt;
+&lt;div class="pricing-table"&gt;
+&lt;div class="tb-border"&gt;&lt;/div&gt;
+&lt;div class="lr-border"&gt;&lt;/div&gt;
+&lt;div class="pricing-inner"&gt;
+&lt;div class="plan-name"&gt;
+&lt;p&gt;&lt;i class="fa fa-cog fa-fw fa-4x"&gt;&lt;/i&gt;&lt;/p&gt;
+&lt;small>Basic&lt;/small&gt;
+&lt;/div&gt;
+&lt;div class="plan-price-container"&gt;
+&lt;p class="plan-price"&gt;999&lt;sup&gt;&lt;small&gt;$&lt;/small&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="plan-desc"&gt;
+&lt;article&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Unlimited Access&lt;/li&gt;
+        &lt;li&gt;100GB Storage&lt;/li&gt;
+        &lt;li&gt;Limited Customer Support&lt;/li&gt;
+        &lt;li&gt;Forum Access&lt;/li&gt;
+        &lt;li&gt;Unlimited Downloads&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/article&gt;
+&lt;/div&gt;
+&lt;button class="btn-white-ghost btn-ripple"&gt;Choose Plan&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+    </code>
+    <small style="float: right;">HTML</small>
+    <br/>
+    <code>
+// PRICE TABLE
+
+.pricing-table {
+position: relative;
+margin-bottom: 15px;
+box-shadow: 0 12px 5px rgba(0, 0, 0, .3);
+
+.tb-border {
+&:before {
+content: '';
+display: block;
+height: 5px;
+top: 0;
+left: 0;
+right: 100%;
+background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+position: absolute;
+z-index: 1;
+transition: right 0.2s linear 0.6s;
+}
+&:after {
+content: '';
+display: block;
+height: 5px;
+bottom: 0;
+left: 100%;
+right: 0;
+background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+position: absolute;
+z-index: 1;
+transition: left 0.2s linear 0.2s;	
+}
+}
+.lr-border {
+&:before {
+content: '';
+display: block;
+width: 5px;
+top: 100%;
+left: 0;
+bottom: 0;
+background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+position: absolute;
+z-index: 1;
+transition: top 0.2s linear;
+}
+&:after {
+content: '';
+display: block;
+width: 5px;
+top: 0;
+right: 0;
+bottom: 100%;
+background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+position: absolute;
+z-index: 1;
+transition: bottom 0.2s linear 0.4s;	
+}
+}
+&:hover {
+.pricing-inner {
+background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+color: $white;
+}
+.plan-price {
+// color: #2ecc71;
+}
+.tb-border {
+&:before {
+right: 0;
+transition: right 0.2s linear;
+}
+&:after {
+left: 0;
+transition: left 0.2s linear 0.4s;
+}
+}
+.lr-border {
+&:before {
+top: 0;
+transition: top 0.2s linear 0.6s;
+}
+&:after {
+bottom: 0;
+transition: bottom 0.2s linear 0.2s;
+}
+} 
+button {
+-webkit-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);
+opacity: 1;
+}
+}
+}
+
+.pricing-inner {
+background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+text-align: center;
+color: $white;
+-webkit-transition: background 0.4s ease-in, color 0.4s ease-in;
+.plan-name {
+padding: 25px 15px 0 15px;
+position: relative;
+}
+.plan-price-container {
+overflow: hidden;
+}
+.plan-price {
+font-size: 46px;
+margin: 0;
+font-weight: 800;
+}
+.plan-desc {
+font-size: 0.9em;
+}
+button {
+padding: 15px 15px;
+margin: 0 15px 25px;
+opacity: 0;
+-webkit-transform: translate3d(0, -15px, 0);
+transform: translate3d(0, -15px, 0);
+-webkit-transition: opacity 0.3s, transform 0.3s;
+transition: opacity 0.3s, transform 0.3s;
+}
+}		
+    </code>
+    <small style="float: right;">SCSS</small>
+

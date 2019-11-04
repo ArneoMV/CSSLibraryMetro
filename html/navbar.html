@@ -1,20 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8" lang="hr" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Navbar</title>
 
-	<link rel="stylesheet" type="text/css" href="../css/app.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-</head>
-
-<body>
-	<header id="myNav"></header>
-	
-<div class="filler"></div>
 <!--PAGE CONTENT-->
 <br />
+
 <!-- NAVBAR -->
 <nav class="navBar">
   <h4 class="navTitle">Navbar</h4>
@@ -65,87 +52,84 @@
     <li><a href="#">About</a></li>
   </ul>
 </nav>
-
 <br />
 
-<div class="container">
-  <section>
-      <h2>Top menu</h2>
-      <p>Top menu navigation serves to have a navigation menu at the top of the page. It is a responsive design and features two levels of drop-down menus.</p>
-      <br/>
-      <table>
-          <tr>
-            <th>class</th>
-            <th>explanation</th>
-          </tr>
-          <tr>
-            <td><span class="txt-primary-4 ">navBar </span></td>
-            <td> class within which I style all the components of a &lt;nav&gt; tag</td>
-          </tr>
-          <tr>
-            <td><span class="txt-primary-4 ">toggle </span></td>
-            <td>with this class we open dropdown on the elements</td>
-          </tr>
-          <tr>
-              <td><span class="txt-primary-4 ">drop, drop-1, drop-2, drop-3 </span></td>
-              <td>each dropdown has its own serial number. The for and id element are linked using a name. It is used to know which dropdown should be opened.</td>
-            </tr>
-        </table>
+<h2>Top menu</h2>
+<p>Top menu navigation serves to have a navigation menu at the top of the page. It is a responsive design and features two levels of drop-down menus.</p>
+<br/>
+<table>
+  <tr>
+    <th>class</th>
+    <th>explanation</th>
+  </tr>
+  <tr>
+    <td><span class="txt-primary-4 ">navBar </span></td>
+    <td> class within which I style all the components of a &lt;nav&gt; tag</td>
+  </tr>
+  <tr>
+    <td><span class="txt-primary-4 ">toggle </span></td>
+    <td>with this class we open dropdown on the elements</td>
+  </tr>
+  <tr>
+      <td><span class="txt-primary-4 ">drop, drop-1, drop-2, drop-3 </span></td>
+      <td>each dropdown has its own serial number. The for and id element are linked using a name. It is used to know which dropdown should be opened.</td>
+  </tr>
+</table>
 
-      <br />
-      <code>
+<br />
+<code>
 &lt;nav class="navBar"&gt;
-  &lt;h4 class="navTitle">Navbar&lt;/h4&gt;
-  &lt;label for="drop" class="toggle"&gt;
-    &lt;div class="wrapper-menu"&gt;
-      &lt;div class="line-menu half start">&lt;/div&gt;
-      &lt;div class="line-menu">&lt;/div&gt;
-      &lt;div class="line-menu half end">&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/label&gt;
-  &lt;input type="checkbox" id="drop" /&gt;
+&lt;h4 class="navTitle">Navbar&lt;/h4&gt;
+&lt;label for="drop" class="toggle"&gt;
+&lt;div class="wrapper-menu"&gt;
+&lt;div class="line-menu half start">&lt;/div&gt;
+&lt;div class="line-menu">&lt;/div&gt;
+&lt;div class="line-menu half end">&lt;/div&gt;
+&lt;/div&gt;
+&lt;/label&gt;
+&lt;input type="checkbox" id="drop" /&gt;
 
-  &lt;ul class="menu"&gt;
-    &lt;li&gt;&lt;a href="#">Home&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt; 
-      &lt;!-- First Tier Drop Down --&gt;
-      &lt;label for="drop-1" class="toggle"&gt;Service +&lt;/label&gt;
-      &lt;a href="#"&gt;Service&lt;/a&gt;
-      &lt;input type="checkbox" id="drop-1"/&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Service 1&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Service 2&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Service 3&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt; 
-      &lt;!-- First Tier Drop Down --&gt;
-      &lt;label for="drop-2" class="toggle"&gt;Portfolio +&lt;/label&gt;
-      &lt;a href="#"&gt;Portfolio&lt;/a&gt;
-      &lt;input type="checkbox" id="drop-2"/&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Portfolio 1&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Portfolio 2&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt; 
-          &lt;!-- Second Tier Drop Down --&gt;
-          &lt;label for="drop-3" class="toggle"&gt;Works +&lt;/label&gt;
-          &lt;a href="#"&gt;Works&lt;/a&gt;
-          &lt;input type="checkbox" id="drop-3"/&gt;
-          &lt;ul&gt;
-            &lt;li&gt;&lt;a href="#"&gt;HTML/CSS&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href="#"&gt;jQuery&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href="#"&gt;Python&lt;/a&gt;&lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li>&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
-    &lt;li>&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
+&lt;ul class="menu"&gt;
+&lt;li&gt;&lt;a href="#">Home&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt; 
+&lt;!-- First Tier Drop Down --&gt;
+&lt;label for="drop-1" class="toggle"&gt;Service +&lt;/label&gt;
+&lt;a href="#"&gt;Service&lt;/a&gt;
+&lt;input type="checkbox" id="drop-1"/&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Service 1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Service 2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Service 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt; 
+&lt;!-- First Tier Drop Down --&gt;
+&lt;label for="drop-2" class="toggle"&gt;Portfolio +&lt;/label&gt;
+&lt;a href="#"&gt;Portfolio&lt;/a&gt;
+&lt;input type="checkbox" id="drop-2"/&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Portfolio 1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Portfolio 2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt; 
+    &lt;!-- Second Tier Drop Down --&gt;
+    &lt;label for="drop-3" class="toggle"&gt;Works +&lt;/label&gt;
+    &lt;a href="#"&gt;Works&lt;/a&gt;
+    &lt;input type="checkbox" id="drop-3"/&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="#"&gt;HTML/CSS&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;jQuery&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Python&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li>&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+&lt;li>&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/nav&gt;
-      </code>
-      <small class="float-right">HTML</small><br />
-      <code>
+</code>
+<small class="float-right">HTML</small><br />
+<code>
 // NAVBAR
 
 .navBar {
@@ -226,20 +210,6 @@ left: 170px;
 @include navMedia-small();
 }
 }
-          
-      </code>
-      <small class="float-right">SCSS</small><br />
-  </section>    
-</div>
-
-
-  
-  <script src="../js/navigationMenu.js"></script>
-  <script src="../js/closeIcon.js"></script>
-
-  <script src="../js/header.js"></script>
-  <script src="../js/myscript.js"></script>
-</body>
-</html>
-
-	
+    
+</code>
+<small class="float-right">SCSS</small><br />

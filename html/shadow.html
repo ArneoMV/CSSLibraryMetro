@@ -1,102 +1,78 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8" lang="hr" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Shadow</title>
 
-	<link rel="stylesheet" type="text/css" href="../css/app.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-</head>
+<h2>Shadow</h2>
+<p>The shadow effect places the shadow on the frame of the element.</p>
+<p>For the CSS framework, we have created four classes for using shadows: shadow-none, shadow, shadow-sm, and shadow-lg. The shadow-none class removes shadows from an element, while the other classes differ in the amount of shadow placed on an element.</p>
+<br/>
+<table>
+	<p>An explanation of the attributes that affect the shadow</p>
+	<tr>
+		<th>attributes</th>
+		<th>explanation</th>
+	</tr>
+	<tr>
+		<td><span class="txt-primary-4">Offset-x</span></td>
+		<td>Sets the horizontal offset of the shadow</td>
+	</tr>
+	<tr>
+		<td><span class="txt-primary-4">Offset-y</span></td>
+		<td>Sets the vertical offset of the shadow</td>
+	</tr>
+	<tr>
+		<td><span class="txt-primary-4">Blur radius</span></td>
+		<td>Sets the blur radius</td>
+	</tr>
+	<tr>
+		<td><span class="txt-primary-4">Color</span></td>
+		<td>Sets the color of the shadow</td>
+	</tr>
+</table>
+<br />
 
-<body>
-	<header id="myNav"></header>
-	
-<div class="filler"></div>
-<!--PAGE CONTENT-->
-<div class="container" id="page-content">
-    <section>
-		<h2>Shadow</h2>
-		<p>The shadow effect places the shadow on the frame of the element.</p>
-		<p>For the CSS framework, we have created four classes for using shadows: shadow-none, shadow, shadow-sm, and shadow-lg. The shadow-none class removes shadows from an element, while the other classes differ in the amount of shadow placed on an element.</p>
-		<br/>
-		<table>
-			<p>An explanation of the attributes that affect the shadow</p>
-			<tr>
-				<th>attributes</th>
-				<th>explanation</th>
-			</tr>
-			<tr>
-				<td><span class="txt-primary-4">Offset-x</span></td>
-				<td>Sets the horizontal offset of the shadow</td>
-			</tr>
-			<tr>
-				<td><span class="txt-primary-4">Offset-y</span></td>
-				<td>Sets the vertical offset of the shadow</td>
-			</tr>
-			<tr>
-				<td><span class="txt-primary-4">Blur radius</span></td>
-				<td>Sets the blur radius</td>
-			</tr>
-			<tr>
-				<td><span class="txt-primary-4">Color</span></td>
-				<td>Sets the color of the shadow</td>
-			</tr>
-		</table>
-		<br />
-       
-		<div class="shadow-lg box-shadow"><p>Big shadow</p></div>
-		<div class="shadow box-shadow"><p>Classic shadow</p></div>
-		<div class="shadow-sm box-shadow"><p>Small shadow</p></div>
-		<div class="shadow-none box-shadow"><p>Without a shado.</p></div>
-		<br/>
+<div class="shadow-lg box-shadow"><p>Big shadow</p></div>
+<div class="shadow box-shadow"><p>Classic shadow</p></div>
+<div class="shadow-sm box-shadow"><p>Small shadow</p></div>
+<div class="shadow-none box-shadow"><p>Without a shado.</p></div>
+<br/>
 
 
-		<table>
-			<tr>
-				<th>class</th>
-				<th>explanation</th>
-			</tr>
-			<tr>
-				<td><span class="txt-primary-4">shadow-lg</span></td>
-				<td>class that adds a large size to the shadow</td>
-			</tr>
-			<tr>
-				<td><span class="txt-primary-4">shadow</span></td>
-				<td>class that adds classic shadow</td>
-			</tr>
-			<tr>
-				<td><span class="txt-primary-4">shadow-sm</span></td>
-				<td>class that adds a small size to the shadow</td>
-			</tr>
-			<tr>
-				<td><span class="txt-primary-4">noshadow</span></td>
-				<td>class that excludes element shadow</td>
-			</tr>
-		</table>
-		<br />
-		<code>
+<table>
+	<tr>
+		<th>class</th>
+		<th>explanation</th>
+	</tr>
+	<tr>
+		<td><span class="txt-primary-4">shadow-lg</span></td>
+		<td>class that adds a large size to the shadow</td>
+	</tr>
+	<tr>
+		<td><span class="txt-primary-4">shadow</span></td>
+		<td>class that adds classic shadow</td>
+	</tr>
+	<tr>
+		<td><span class="txt-primary-4">shadow-sm</span></td>
+		<td>class that adds a small size to the shadow</td>
+	</tr>
+	<tr>
+		<td><span class="txt-primary-4">noshadow</span></td>
+		<td>class that excludes element shadow</td>
+	</tr>
+</table>
+<br />
+<code>
 
 .shadow-none {
-    box-shadow: none!important;
+box-shadow: none!important;
 }
 .shadow {
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
 .shadow-sm {
-    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
 }
 .shadow-lg {
-    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
 }
-		</code>
-		<small class="float-right">SCSS</small>
-	</section>		
-</div>
-
-	<script src="../js/header.js"></script>
-	<script src="../js/myscript.js"></script>
-</body>
-</html>
+</code>
+<small class="float-right">SCSS</small>
 
 	

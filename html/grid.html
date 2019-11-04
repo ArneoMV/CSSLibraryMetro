@@ -1,170 +1,148 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8" lang="hr" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Grid</title>
 
-	<link rel="stylesheet" type="text/css" href="../css/app.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-</head>
-
-<body>
-	<header id="myNav"> </header>
-	
-<div class="filler"></div>
-<!--PAGE CONTENT-->
-<div class="container">
-	<section>
-		<h2>CSS Grid</h2>
-		<p>A CSS grid can have a two-dimensional arrangement of elements. The components can be made available in columns and repeated according to our needs. The CSS schedule has the following:</p>
-		<article>
-			<ul>
-				<li>Increasing fixed sizes uses pixel measurement units</li>
-				<li>Increasing flexible sizes with percentages or "fr" units designed to work with grids</li>
-			</ul>
-			
-			<ul>
-				<h4>Position</h4>
-				<li>The element can be accurately identified within the interior solution by using a number line, call or determine within which area to solve the artificial components</li>
-				<li>The grid contains an algorithm for controlling the placement of components within the network</li>
-			</ul>
-			<ul>
-				<h4>Settlement control</h4>
-				<li>The grid contains comparison commands so that we can control the elements within the network</li>
-				<li>Content overlap control</li>
-				<li>It will be possible or possible to accommodate multiple elements within the grid, and they may partially overlap. If you have trouble resolving the z-index problem</li>
-			</ul>
-		</article>		
-
-		<br/>
-		<div class="grid-container">
-			<div class="grid-item">1</div>
-			<div class="grid-item">2</div>
-			<div class="grid-item">3</div>  
-			<div class="grid-item">4</div>
-			<div class="grid-item">5</div>
-			<div class="grid-item">6</div>  
-			<div class="grid-item">7</div>
-			<div class="grid-item">8</div>
-			<div class="grid-item">9</div>
-			<div class="grid-item">10</div>
-			<div class="grid-item">11</div>
-			<div class="grid-item">12</div> 
-		</div>
-		<br>
-
-		<table>
-			<tr>
-				<th>class</th>
-				<th>explanation</th>
-			</tr>
-			<tr>
-				<td><span class="txt-primary-4">grid-container</span></td>
-				<td>class consists of four brakepoint elements that adjust to the size of the screen.</td>
-			</tr>
-			<tr>
-				<td><span class="txt-primary-4">grid-item</span></td>
-				<td>class to which the <span class="tw-0">grid-container</span> divides.</td>
-			</tr>
-		</table>
-		<br />
-
-		<code>
-&lt;div class="grid-container"&gt;
-	&lt;div class="grid-item"&gt;1&lt;/div&gt;
-	&lt;div class="grid-item"&gt;2&lt;/div&gt;
-	&lt;div class="grid-item"&gt;3&lt;/div&gt;  
-	&lt;div class="grid-item"&gt;4&lt;/div&gt;
-	&lt;div class="grid-item"&gt;5&lt;/div&gt;
-	&lt;div class="grid-item"&gt;6&lt;/div&gt;  
-	&lt;div class="grid-item">7&lt;/div&gt;
-	&lt;div class="grid-item"&gt;8&lt;/div&gt;
-	&lt;div class="grid-item"&gt;9&lt;/div&gt;
-	&lt;div class="grid-item"&gt;10&lt;/div&gt;
-	&lt;div class="grid-item"&gt;11&lt;/div&gt;
-	&lt;div class="grid-item"&gt;12&lt;/div&gt; 
-&lt;/div&gt;
-		</code>
-		<small style="float: right;">HTML</small><br />
-		<code>
-.grid-container {
-	display: grid;
-	// grid-template-columns: auto auto auto;
-	padding: 10px;
-	background-color: $danger-3;
-	.grid-item {
-		background-color: $warrning-1;
-		border: 2px solid $warrning-0;
-		padding: 20px;
-		font-size: 30px;
-		color: $warrning-4;
-		text-align: center;
-	}
-	
-	@include respond-to(small-screens) {
-		grid-template-columns: repeat(1, 100%);
-	}
-	@include respond-to(medium-screens) {
-		grid-template-columns: repeat(2, 50%);
-	}
-	@include respond-to(large-screens) {
-		grid-template-columns: repeat(3, 33%);
-	}
-	@include respond-to(extralarge-screens) {
-		grid-template-columns: repeat(4, 25%);
-	}
-}
-		</code>
-		<small style="float: right;">SCSS</small>
-		<br />
-
-		<h3>Grid layout of a classic website</h3>
-		<br />
-		<div class="grid-container-1">
-			<div class="grid-item-1 grid-header">Header</div>
-			<div class="grid-item-1 grid-sidebar">Sidebar</div>
-			<div class="grid-item-1 grid-content-1">Content-1</div>
-			<div class="grid-item-1 grid-content-2">Content-2</div>
-			<div class="grid-item-1 grid-content-3">Content-3</div>
-			<div class="grid-item-1 grid-footer">Footer</div>
-		</div>
-		<br />
-		<table>
-			<tr>
-				<th>class</th>
-				<th>explanation</th>
-			</tr>
-			<tr>
-				<td><span class="tw-0">grid-container-1</span></td>
-				<td>The grid-container class consists of four brakepoint elements that adjust to the size of the screen.</td>
-			</tr>
-			<tr>
-				<td><span class="tw-0">grid-item-1</span></td>
-				<td>class that <span class="tw-0">grid-container</span> is part of.</td>
-			</tr>
-		</table>
-		<br /><br />
+	<h2>CSS Grid</h2>
+	<p>A CSS grid can have a two-dimensional arrangement of elements. The components can be made available in columns and repeated according to our needs. The CSS schedule has the following:</p>
+	<article>
+		<ul>
+			<li>Increasing fixed sizes uses pixel measurement units</li>
+			<li>Increasing flexible sizes with percentages or "fr" units designed to work with grids</li>
+		</ul>
 		
-		<!-- Mondrian Art Generator -->
-		<!-- https://codepen.io/vinvanbreugel/pen/pmzmmb -->
-		<div class="grid-mondarianArtGenerator">
-			<div class="item-mondarian">
-				<h1>Mondrian Art Generator</h1>
-			</div>
-			<div class="item-mondarian">
-				<div id="mondrian-wrapper"></div>
-				<p><b>Click the button below to generate a Mondrian-like painting using CSS-grid. Enjoy!</b></p>
-				<button id="js-redraw" class="btn-success-ghost">Generate</button>
-			</div>
-		</div>
-	</section>
-</div>
+		<ul>
+			<h4>Position</h4>
+			<li>The element can be accurately identified within the interior solution by using a number line, call or determine within which area to solve the artificial components</li>
+			<li>The grid contains an algorithm for controlling the placement of components within the network</li>
+		</ul>
+		<ul>
+			<h4>Settlement control</h4>
+			<li>The grid contains comparison commands so that we can control the elements within the network</li>
+			<li>Content overlap control</li>
+			<li>It will be possible or possible to accommodate multiple elements within the grid, and they may partially overlap. If you have trouble resolving the z-index problem</li>
+		</ul>
+	</article>		
 
-	<script src="../js/header.js"></script>	
-	<script src="../js/mondarianGridGenerator.js"></script>
-	<script src="../js/myscript.js"></script>
-</body>
-</html>
+	<br/>
+	<div class="grid-container">
+		<div class="grid-item">1</div>
+		<div class="grid-item">2</div>
+		<div class="grid-item">3</div>  
+		<div class="grid-item">4</div>
+		<div class="grid-item">5</div>
+		<div class="grid-item">6</div>  
+		<div class="grid-item">7</div>
+		<div class="grid-item">8</div>
+		<div class="grid-item">9</div>
+		<div class="grid-item">10</div>
+		<div class="grid-item">11</div>
+		<div class="grid-item">12</div> 
+	</div>
+	<br>
+
+	<table>
+		<tr>
+			<th>class</th>
+			<th>explanation</th>
+		</tr>
+		<tr>
+			<td><span class="txt-primary-4">grid-container</span></td>
+			<td>class consists of four brakepoint elements that adjust to the size of the screen.</td>
+		</tr>
+		<tr>
+			<td><span class="txt-primary-4">grid-item</span></td>
+			<td>class to which the <span class="tw-0">grid-container</span> divides.</td>
+		</tr>
+	</table>
+	<br />
+
+	<code>
+&lt;div class="grid-container"&gt;
+&lt;div class="grid-item"&gt;1&lt;/div&gt;
+&lt;div class="grid-item"&gt;2&lt;/div&gt;
+&lt;div class="grid-item"&gt;3&lt;/div&gt;  
+&lt;div class="grid-item"&gt;4&lt;/div&gt;
+&lt;div class="grid-item"&gt;5&lt;/div&gt;
+&lt;div class="grid-item"&gt;6&lt;/div&gt;  
+&lt;div class="grid-item">7&lt;/div&gt;
+&lt;div class="grid-item"&gt;8&lt;/div&gt;
+&lt;div class="grid-item"&gt;9&lt;/div&gt;
+&lt;div class="grid-item"&gt;10&lt;/div&gt;
+&lt;div class="grid-item"&gt;11&lt;/div&gt;
+&lt;div class="grid-item"&gt;12&lt;/div&gt; 
+&lt;/div&gt;
+	</code>
+	<small style="float: right;">HTML</small><br />
+	<code>
+.grid-container {
+display: grid;
+// grid-template-columns: auto auto auto;
+padding: 10px;
+background-color: $danger-3;
+.grid-item {
+	background-color: $warrning-1;
+	border: 2px solid $warrning-0;
+	padding: 20px;
+	font-size: 30px;
+	color: $warrning-4;
+	text-align: center;
+}
+
+@include respond-to(small-screens) {
+	grid-template-columns: repeat(1, 100%);
+}
+@include respond-to(medium-screens) {
+	grid-template-columns: repeat(2, 50%);
+}
+@include respond-to(large-screens) {
+	grid-template-columns: repeat(3, 33%);
+}
+@include respond-to(extralarge-screens) {
+	grid-template-columns: repeat(4, 25%);
+}
+}
+	</code>
+	<small style="float: right;">SCSS</small>
+	<br />
+
+	<h3>Grid layout of a classic website</h3>
+	<br />
+	<div class="grid-container-1">
+		<div class="grid-item-1 grid-header">Header</div>
+		<div class="grid-item-1 grid-sidebar">Sidebar</div>
+		<div class="grid-item-1 grid-content-1">Content-1</div>
+		<div class="grid-item-1 grid-content-2">Content-2</div>
+		<div class="grid-item-1 grid-content-3">Content-3</div>
+		<div class="grid-item-1 grid-footer">Footer</div>
+	</div>
+	<br />
+	<table>
+		<tr>
+			<th>class</th>
+			<th>explanation</th>
+		</tr>
+		<tr>
+			<td><span class="tw-0">grid-container-1</span></td>
+			<td>The grid-container class consists of four brakepoint elements that adjust to the size of the screen.</td>
+		</tr>
+		<tr>
+			<td><span class="tw-0">grid-item-1</span></td>
+			<td>class that <span class="tw-0">grid-container</span> is part of.</td>
+		</tr>
+	</table>
+	<br /><br />
+	
+	<!-- Mondrian Art Generator -->
+	<!-- https://codepen.io/vinvanbreugel/pen/pmzmmb -->
+	<div class="grid-mondarianArtGenerator">
+		<div class="item-mondarian">
+			<h1>Mondrian Art Generator</h1>
+		</div>
+		<div class="item-mondarian">
+			<div id="mondrian-wrapper"></div>
+			<p><b>Click the button below to generate a Mondrian-like painting using CSS-grid. Enjoy!</b></p>
+			<button id="js-redraw" class="btn-success-ghost">Generate</button>
+		</div>
+	</div>
+
+
+
 
 	

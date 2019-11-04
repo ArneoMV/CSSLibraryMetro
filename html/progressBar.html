@@ -1,73 +1,56 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8" lang="hr" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Progress bar</title>
 
-	<link rel="stylesheet" type="text/css" href="../css/app.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-</head>
+<h2>Progress Bar</h2>
+<p>The progress bar is a graphical component that is used to visualize the progress steps when executing an action. The bar is accompanied by a textual presentation of progress in percentage format. The purpose of the progress bar is to show the user where they are during their journey through the execution of the action. It plays an important role in reducing the anxiety that many users feel when performing their action.</p>
+<br/><br/>
+<p>In the paper, <i>"The Importance of Percentage-Done Progress Indicators for Computer-Human Interfaces,"</i> <b>Dr. Brad Myers</b> of the University of Toronto found that most users wanted to have a status indicator. Research has shown that users are more pleased to see their progress. Progress indicator increases customer engagement. When respondents from the no-progress group were asked if they wanted any indication of progress, 75 percent said yes. So, users want to have a progress bar. The answer to the question of why progress bar is such a powerful element can be found in the human subconscious. People have goals, and they want to meet those goals. The user will feel pleased when something is achieved.</p>
+<br />
 
-<body>
-	<header id="myNav"></header>
-	
-<div class="filler"></div>
-<!--PAGE CONTENT-->
-<div class="container">
-	<section>
-		<h2>Progress Bar</h2>
-		<p>The progress bar is a graphical component that is used to visualize the progress steps when executing an action. The bar is accompanied by a textual presentation of progress in percentage format. The purpose of the progress bar is to show the user where they are during their journey through the execution of the action. It plays an important role in reducing the anxiety that many users feel when performing their action.</p>
-		<br/><br/>
-		<p>In the paper, <i>"The Importance of Percentage-Done Progress Indicators for Computer-Human Interfaces,"</i> <b>Dr. Brad Myers</b> of the University of Toronto found that most users wanted to have a status indicator. Research has shown that users are more pleased to see their progress. Progress indicator increases customer engagement. When respondents from the no-progress group were asked if they wanted any indication of progress, 75 percent said yes. So, users want to have a progress bar. The answer to the question of why progress bar is such a powerful element can be found in the human subconscious. People have goals, and they want to meet those goals. The user will feel pleased when something is achieved.</p>
-		<br />
+<blockquote>
+	<p><q>It turns out that when you complete a complex task, your brain releases huge amounts of endorphins</q></p>
+	<footer>Dr. Hugo Liu from MIT</footer>
+</blockquote>
+<br />
 
-		<blockquote>
-			<p><q>It turns out that when you complete a complex task, your brain releases huge amounts of endorphins</q></p>
-			<footer>Dr. Hugo Liu from MIT</footer>
-		</blockquote>
-		<br />
+<progress id="downloadProgress" value="0" max="100">Hello</progress>
+<span id="message"></span>
+<br />
+<button class="btn-primary-flat bnt-ripple" onClick="displayProgress()">Run Progress Bar</button>
+<br />
 
-		<progress id="downloadProgress" value="0" max="100">Hello</progress>
-		<span id="message"></span>
-		<br />
-		<button class="btn-primary-flat bnt-ripple" onClick="displayProgress()">Run Progress Bar</button>
-		<br />
+<table>
+	<tr>
+		<th>attribute</th>
+		<th>explanation</th>
+	</tr>
+	<tr>
+		<td><span class="txt-primary-4">&lt;progress&gt;</span></td>
+		<td>element can be used in conjunction with JavaScript to display the progress of a task or process as it is in progress</td>
+	</tr>
+	<tr>
+		<td><span class="txt-primary-4">&lt;progress&gt;</span></td>
+		<td>usually written as &lt;progress value = "0" max = "100"&gt &lt;/progress&gt with any content within the start and end tags. This content may be the current value and / or maximum value that can be displayed to legacy browsers (i.e., browsers that do not support the &lt;progress&gt; element)</td>
+	</tr>
+	<tr>
+		<td><span class="txt-primary-4">value</span></td>
+		<td>attribute represents the current value (i.e. where progress is currently on). If you omit this attribute, the progress bar becomes "indefinite" and will not show any progress (but most browsers will show an animated bar that will show the user to try ...)</td>
+	</tr>
+	<tr>
+		<td><span class="txt-primary-4">&lt;max&gt;</span></td>
+		<td>attribute represents the total (i.e. where the progress bar value will be when completed).</td>
+	</tr>
+</table>
+<p>The &lt;progress&gt; element can be used in conjunction with JavaScript to display the progress of a task or process as it is in progress.</p>
+<br/>
 
-		<table>
-			<tr>
-				<th>attribute</th>
-				<th>explanation</th>
-			</tr>
-			<tr>
-				<td><span class="txt-primary-4">&lt;progress&gt;</span></td>
-				<td>element can be used in conjunction with JavaScript to display the progress of a task or process as it is in progress</td>
-			</tr>
-			<tr>
-				<td><span class="txt-primary-4">&lt;progress&gt;</span></td>
-				<td>usually written as &lt;progress value = "0" max = "100"&gt &lt;/progress&gt with any content within the start and end tags. This content may be the current value and / or maximum value that can be displayed to legacy browsers (i.e., browsers that do not support the &lt;progress&gt; element)</td>
-			</tr>
-			<tr>
-				<td><span class="txt-primary-4">value</span></td>
-				<td>attribute represents the current value (i.e. where progress is currently on). If you omit this attribute, the progress bar becomes "indefinite" and will not show any progress (but most browsers will show an animated bar that will show the user to try ...)</td>
-			</tr>
-			<tr>
-				<td><span class="txt-primary-4">&lt;max&gt;</span></td>
-				<td>attribute represents the total (i.e. where the progress bar value will be when completed).</td>
-			</tr>
-		</table>
-		<p>The &lt;progress&gt; element can be used in conjunction with JavaScript to display the progress of a task or process as it is in progress.</p>
-		<br/>
-
-		<code>
+<code>
 &lt;progress id="downloadProgress" value="0" max="100"&gt;&lt;/progress&gt;
 &lt;span id="message"&gt;&lt;/span&gt;
 &lt;br /&gt;
 &lt;button class="btn-flat bnt-ripple" onClick="displayProgress()"&gt;Run Progress Bar&lt;/button&gt;
-		</code>
-		<small class="codeText">HTML</small>
-		<br />
-		<code>
+</code>
+<small class="codeText">HTML</small>
+<br />
+<code>
 // Each browser seems to handle progress bar styling differently at the moment,
 // and therefore you need to style it like this:
 
@@ -79,39 +62,39 @@ width: 100%;
 progress::-webkit-progress-bar {background-color: $white;}
 progress::-webkit-progress-value {background: linear-gradient(to right, #339c4d 0%, #c2e59c 100%);} 
 progress::-moz-progress-bar {background: linear-gradient(to right, #339c4d 0%, #c2e59c 100%);}	
-		</code>
-		<small class="codeText">SCSS</small>
-		<br />
-		<p>The &lt;progress&gt; tag is usually related to Ajax event transmission.</p>
-		<code>
-		// Progress bar -> progress
-		var milisec = 0;
-		var max = 100;
+</code>
+<small class="codeText">SCSS</small>
+<br />
+<p>The &lt;progress&gt; tag is usually related to Ajax event transmission.</p>
+<code>
+// Progress bar -> progress
+var milisec = 0;
+var max = 100;
 
-		function displayProgress(){
-		if(milisec >= max){
-		document.getElementById('message').innerHTML= "Done!";
-		}
-		milisec += 10;
-		document.getElementById('downloadProgress').value = milisec;
-		setTimeout("displayProgress()",max);
-		}
-		</code>
-		<small class="codeText">JS</small>
-		
-		<br />
-		<p>A progress bar made of div tags.</p>
-		<div id="myBar"></div>
-		<button class="btn-primary-flat bnt-ripple" onclick="move()">Run Progress Bar</button>
-		
-		<br />
-		<code>
+function displayProgress(){
+if(milisec >= max){
+document.getElementById('message').innerHTML= "Done!";
+}
+milisec += 10;
+document.getElementById('downloadProgress').value = milisec;
+setTimeout("displayProgress()",max);
+}
+</code>
+<small class="codeText">JS</small>
+
+<br />
+<p>A progress bar made of div tags.</p>
+<div id="myBar"></div>
+<button class="btn-primary-flat bnt-ripple" onclick="move()">Run Progress Bar</button>
+
+<br />
+<code>
 &lt;div id="myBar">&lt;/div&gt;
 &lt;button class="btn-flat bnt-ripple" onclick="move()"&gt;Run Progress Bar&lt;/button>&gt;
-		</code>
-		<small class="codeText">HTML</small>
-		<br />	
-		<code>
+</code>
+<small class="codeText">HTML</small>
+<br />	
+<code>
 #myProgress {
 width: 100%;
 background-color: $white;
@@ -124,10 +107,10 @@ text-align: left;
 line-height: 30px;
 color: $white;
 }
-		</code>
-		<small class="codeText">SCSS</small>
-		<br />
-		<code>
+</code>
+<small class="codeText">SCSS</small>
+<br />
+<code>
 // Progress bar -> div
 function move() {
 var elem = document.getElementById("myBar");   
@@ -143,14 +126,6 @@ elem.innerHTML = width * 1  + '%';
 }
 }
 }
-		</code>
-		<small class="codeText">JS</small>
-	</section>
-</div>
+</code>
+<small class="codeText">JS</small>
 
-	<script src="../js/header.js"></script>
-	<script src="../js/myscript.js"></script>
-</body>
-</html>
-
-	

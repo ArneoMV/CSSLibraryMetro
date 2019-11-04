@@ -1,223 +1,191 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8" lang="hr" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Close icon</title>
 
-	<link rel="stylesheet" type="text/css" href="../css/app.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-</head>
-
-<body>
-	<header id="myNav"></header>
+	<h2>Hamburger icon</h2>
+	<p> The burger icon or burger menu is the name given to the menu icon found in newer programs and websites.
+		It is one of the most popular navigation components.
+		Serves as a visual representation of a button that displays and hides the menu.
+		Using the hamburger menu makes it easier to view program options on mobile devices.</p>
 	
-	<div class="filler"></div>
-	<!--PAGE CONTENT-->
-<div class="container">
-		<section>
-			<h2>Hamburger icon</h2>
-			<p> The burger icon or burger menu is the name given to the menu icon found in newer programs and websites.
-				It is one of the most popular navigation components.
-				Serves as a visual representation of a button that displays and hides the menu.
-				Using the hamburger menu makes it easier to view program options on mobile devices.</p>
-			
-			<p>The burger consists of three horizontal lines. By clicking on the burger lines, the lines are animated in the X character. It contains two states: a hamburger icon when navigation is closed and an X icon when navigation is open.</p>
-			<br /><br />
-			
+	<p>The burger consists of three horizontal lines. By clicking on the burger lines, the lines are animated in the X character. It contains two states: a hamburger icon when navigation is closed and an X icon when navigation is open.</p>
+	<br /><br />
+	
 
-			<div class="hamburgerGrid">
-				<div class="burger" id="burger">
-					<input type="checkbox" id="leftNav" />
-					<label for="leftNav">
-						<span class="bar bar-1"></span>
-						<span class="bar bar-2"></span>
-						<span class="bar bar-3"></span>
-					</label>
-				</div>
-				<div class="burger_2">
-					<div class="line-menu half start"></div>
-					<div class="line-menu"></div>
-					<div class="line-menu half end"></div>
-				</div>
-			</div>
-			<br /><br />
-			
+	<div class="hamburgerGrid">
+		<div class="burger" id="burger">
+			<input type="checkbox" id="leftNav" />
+			<label for="leftNav">
+				<span class="bar bar-1"></span>
+				<span class="bar bar-2"></span>
+				<span class="bar bar-3"></span>
+			</label>
+		</div>
+		<div class="burger_2">
+			<div class="line-menu half start"></div>
+			<div class="line-menu"></div>
+			<div class="line-menu half end"></div>
+		</div>
+	</div>
+	<br /><br />
+	
 
-			<table>
-				<tr>
-					<th>class</th>
-					<th>explanation</th>
-				</tr>
-				<tr>
-					<td><span class="txt-primary-4">burger</span></td>
-					<td>stylizes a space with three horizontal lines and X lines</td>
-				</tr>
-				<tr>
-					<td><span class="txt-primary-4">bar</span></td>
-					<td>stylizes horizontal lines</td>
-				</tr>
-				<tr>
-					<td><span class="txt-primary-4">bar-1, bar-2, bar-3</span></td>
-					<td>separately position each horizontal line</td>
-				</tr>
-			</table>
-			<article>
-				<ul>
-					<li>The first icon was created using the <span class="txt-warrning-0">input element</span>.
-						In order for the icon to be animated and transformed, it is necessary to use the <type: class="txt-warrning-0">type: 'checkbox'</span> attribute to allow the change between two states within the icon.</li>
-					<li>The second icon was created using javascript to add or remove the "open" class for icon animation by clicking on the icon</li>
-				</ul>
-			</article>
-		</section>
-		
-<div>
-		<br />
-		
+	<table>
+		<tr>
+			<th>class</th>
+			<th>explanation</th>
+		</tr>
+		<tr>
+			<td><span class="txt-primary-4">burger</span></td>
+			<td>stylizes a space with three horizontal lines and X lines</td>
+		</tr>
+		<tr>
+			<td><span class="txt-primary-4">bar</span></td>
+			<td>stylizes horizontal lines</td>
+		</tr>
+		<tr>
+			<td><span class="txt-primary-4">bar-1, bar-2, bar-3</span></td>
+			<td>separately position each horizontal line</td>
+		</tr>
+	</table>
+	<article>
+		<ul>
+			<li>The first icon was created using the <span class="txt-warrning-0">input element</span>.
+				In order for the icon to be animated and transformed, it is necessary to use the <type: class="txt-warrning-0">type: 'checkbox'</span> attribute to allow the change between two states within the icon.</li>
+			<li>The second icon was created using javascript to add or remove the "open" class for icon animation by clicking on the icon</li>
+		</ul>
+	</article>
 
-		<br />
-		<br />
+	<br />
 
-		<code>
+	<code>
 // First icon
 &lt;div class="burger" id="burger"&gt;
-	&lt;input type="checkbox" name="burger3" id="leftNav" /&gt;
-	&lt;label for="leftNav"&gt;
-		&lt;span class="bar bar-1"&gt;&lt;/span&gt;
-		&lt;span class="bar bar-2"&gt;&lt;/span&gt;
-		&lt;span class="bar bar-3"&gt;&lt;/span&gt;
-	&lt;/label&gt;
+&lt;input type="checkbox" name="burger3" id="leftNav" /&gt;
+&lt;label for="leftNav"&gt;
+	&lt;span class="bar bar-1"&gt;&lt;/span&gt;
+	&lt;span class="bar bar-2"&gt;&lt;/span&gt;
+	&lt;span class="bar bar-3"&gt;&lt;/span&gt;
+&lt;/label&gt;
 &lt;/div&gt;
 
 // Secont icon
 &lt;div class="burger_2"&gt;
-	&lt;div class="line-menu half start"&gt;&lt;/div&gt;
-	&lt;div class="line-menu"&gt;&lt;/div&gt;
-	&lt;div class="line-menu half end"&gt;&lt;/div&gt;
+&lt;div class="line-menu half start"&gt;&lt;/div&gt;
+&lt;div class="line-menu"&gt;&lt;/div&gt;
+&lt;div class="line-menu half end"&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-		</code>
-		<small style="float: right;">HTML</small><br />
-		<code>
-	// Hamburger icon 1
-	.burger {
-		width: 50px;
-		height: 42px;
-		position: relative;
-		overflow: hidden;
-		margin-left: 20px;
-		margin-right: 20px;
-		input:checked ~ label {
-			transform: rotate(90deg);
-			.bar-1 {
-			top: 18px;
-			transform: rotate(45deg);
-			}
-			.bar-2 {
-			left: 100%;
-			}
-			.bar-3 {
-			top: 18px;
-			transform: rotate(-45deg);
-			}
+	</code>
+	<small style="float: right;">HTML</small><br />
+	<code>
+// Hamburger icon 1
+.burger {
+	width: 50px;
+	height: 42px;
+	position: relative;
+	overflow: hidden;
+	margin-left: 20px;
+	margin-right: 20px;
+	input:checked ~ label {
+		transform: rotate(90deg);
+		.bar-1 {
+		top: 18px;
+		transform: rotate(45deg);
 		}
-		input {
-		display: none;
+		.bar-2 {
+		left: 100%;
 		}
-		label {
-		width: 50px;
-		height: 42px;
-		display: block;
-		transition: all 0.35s;
-		// cursor: url('../img/cursor.cur') 5 5, pointer;
+		.bar-3 {
+		top: 18px;
+		transform: rotate(-45deg);
 		}
 	}
-	.bar {
-		width: 100%;
-		height: 6px;
-		display: block;
-		position: absolute;
-		left: 0;
-		background: rgba(0, 0, 0, 0.5);
-		border-radius: 10px;
-		transition: all 0.5s;
-		pointer-events: none;
+	input {
+	display: none;
 	}
-	.bar-1 { top: 4px; }
-	.bar-2 { top: 18px; }
-	.bar-3 { top: 32px; }
-	
+	label {
+	width: 50px;
+	height: 42px;
+	display: block;
+	transition: all 0.35s;
+	// cursor: url('../img/cursor.cur') 5 5, pointer;
+	}
+}
+.bar {
+	width: 100%;
+	height: 6px;
+	display: block;
+	position: absolute;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	transition: all 0.5s;
+	pointer-events: none;
+}
+.bar-1 { top: 4px; }
+.bar-2 { top: 18px; }
+.bar-3 { top: 32px; }
+
+// Hamburger icon 2
+.burger_2{
+	width: 40px;
+	height: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	cursor: pointer;
+	transition: transform 330ms ease-out;
+}
+.burger_2.open {
+	transform: rotate(-45deg);  
+}
+.line-menu {
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	width: 100%;
+	height: 6px;
+}
+.line-menu.half {
+	width: 50%;
+}
+.line-menu.start {
+	transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+	transform-origin: right;
+}
+.open .line-menu.start {
+	transform: rotate(-90deg) translateX(3px);
+}
+.line-menu.end {
+	align-self: flex-end;
+	transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+	transform-origin: left;
+}
+.open .line-menu.end {
+	transform: rotate(-90deg) translateX(-3px);
+}
+	</code>
+	<small style="float: right;">SCSS</small><br />
+	<code>
 	// Hamburger icon 2
-	.burger_2{
-		width: 40px;
-		height: 40px;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		cursor: pointer;
-		transition: transform 330ms ease-out;
-	}
-	.burger_2.open {
-		transform: rotate(-45deg);  
-	}
-	.line-menu {
-		background-color: rgba(0, 0, 0, 0.5);
-		border-radius: 5px;
-		width: 100%;
-		height: 6px;
-	}
-	.line-menu.half {
-		width: 50%;
-	}
-	.line-menu.start {
-		transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
-		transform-origin: right;
-	}
-	.open .line-menu.start {
-		transform: rotate(-90deg) translateX(3px);
-	}
-	.line-menu.end {
-		align-self: flex-end;
-		transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
-		transform-origin: left;
-	}
-	.open .line-menu.end {
-		transform: rotate(-90deg) translateX(-3px);
-	}
-		</code>
-		<small style="float: right;">SCSS</small><br />
-		<code>
-		// Hamburger icon 2
-		var wrapperMenu = document.querySelector('.burger_2');
-		
-		wrapperMenu.addEventListener('click', function(){
-			wrapperMenu.classList.toggle('open');  
-		})
+	var wrapperMenu = document.querySelector('.burger_2');
+	
+	wrapperMenu.addEventListener('click', function(){
+		wrapperMenu.classList.toggle('open');  
+	})
 
-		function toggleClass(targetElement, addedClass) {
-			if (targetElement.classList.contains(addedClass)) {
-			targetElement.classList.remove(addedClass);
-			}
-			else {
-			targetElement.classList.add(addedClass);
-			}
-		};
-		// This is the function we add to our menu button to enable its click functionality
-		document.querySelector('.menu-btn').addEventListener('click', function() {
-			// This toggleClass is for added 'menu--open' to our menu HTML element. This will open the menu.
-			toggleClass(document.querySelector('.menu'), 'menu--open');
-			// This toggleClass is for adding '.menu-btn--on' to our menu button HTML element. This creates the animation of the hamburger/hotdog icon to the close icon.
-			toggleClass(document.querySelector('.menu-btn'), 'menu-btn--on');
-		});	
-		</code>
-		<small style="float: right;">JS</small><br />
-	</section>
-</div>
+	function toggleClass(targetElement, addedClass) {
+		if (targetElement.classList.contains(addedClass)) {
+		targetElement.classList.remove(addedClass);
+		}
+		else {
+		targetElement.classList.add(addedClass);
+		}
+	};
+	// This is the function we add to our menu button to enable its click functionality
+	document.querySelector('.menu-btn').addEventListener('click', function() {
+		// This toggleClass is for added 'menu--open' to our menu HTML element. This will open the menu.
+		toggleClass(document.querySelector('.menu'), 'menu--open');
+		// This toggleClass is for adding '.menu-btn--on' to our menu button HTML element. This creates the animation of the hamburger/hotdog icon to the close icon.
+		toggleClass(document.querySelector('.menu-btn'), 'menu-btn--on');
+	});	
+	</code>
+	<small style="float: right;">JS</small><br />
 
-
-<script src="../js/closeIcon.js"></script>
-
-<script src="../js/header.js"></script>
-<script src="../js/myscript.js"></script>
-</body>
-</html>

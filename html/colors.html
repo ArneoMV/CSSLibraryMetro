@@ -1,53 +1,36 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8" lang="hr" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Colors</title>
 
-	<link rel="stylesheet" type="text/css" href="../css/app.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-</head>
+<h2>Colors</h2>
+<p>Metro allows the use of four colors to transmit information: blue (primary), orange (warrning), red (danger), and green (success). In addition, we use white and black that do not fit into the spectrum of the other four colors.</p>
 
-<body>
-	<header id="myNav"></header>
-	
-<div class="filler"></div>
-<!--PAGE CONTENT-->
-<div class="container">
-<section>
-	<h2>Colors</h2>
-	<p>Metro allows the use of four colors to transmit information: blue (primary), orange (warrning), red (danger), and green (success). In addition, we use white and black that do not fit into the spectrum of the other four colors.</p>
+<article>
+	<ul>
+		<li><span class="txt-primary-0 ">Blue </span> - openness, intelligence, faith, stability, clarity</li>
+		<li><span class="txt-warrning-0 ">Orange </span> - active, happiness, enthusiasm, creativity, appetite</li>
+		<li><span class="txt-danger-0 ">Red </span> - aggression, passion, exciting, dramatic, love </li>
+		<li><span class="txt-success-0 ">Green </span> -  nature, calming, growth, freshness, hope, wealth, education</li>
+		<li><span class="black">White </span> - purity, perfection, light</li>
+		<li><span class="black">Balck </span> - death, evil, power, elegance</li>
+	</ul>
 
-	<article>
-		<ul>
-			<li><span class="txt-primary-0 ">Blue </span> - openness, intelligence, faith, stability, clarity</li>
-			<li><span class="txt-warrning-0 ">Orange </span> - active, happiness, enthusiasm, creativity, appetite</li>
-			<li><span class="txt-danger-0 ">Red </span> - aggression, passion, exciting, dramatic, love </li>
-			<li><span class="txt-success-0 ">Green </span> -  nature, calming, growth, freshness, hope, wealth, education</li>
-			<li><span class="black">White </span> - purity, perfection, light</li>
-			<li><span class="black">Balck </span> - death, evil, power, elegance</li>
-		</ul>
+	<p>Colors are defined using variables that can be used within SCSS. Within each color group, a palette of five different color tones was made. 
+		In order to use color, it is necessary to write its variable to the location of the value that is intended to display the color.
+			If there is a need to change color within the Metro work environment, this can be easily accomplished within the <span class="tw-0">"_colors.scss"</span> folder.</p>
+</article>
 
-		<p>Colors are defined using variables that can be used within SCSS. Within each color group, a palette of five different color tones was made. 
-			In order to use color, it is necessary to write its variable to the location of the value that is intended to display the color.
-				If there is a need to change color within the Metro work environment, this can be easily accomplished within the <span class="tw-0">"_colors.scss"</span> folder.</p>
-	</article>
-
-	<br/>
-	<h3 id="colorPickerTitle">Color Picker</h3>
-	<p>Click on the color you want to see and select the class you want.</p>
-	<div id="color-picker">
-		<div class="base-colors-container">
-			<div class="base-colors base-blue" data-color="primary">Primary</div>
-			<div class="base-colors base-yellow" data-color="warrning">Warrning</div>
-			<div class="base-colors base-red" data-color="danger">Danger</div>
-			<div class="base-colors base-green" data-color="success">Success</div>
-		</div>
+<br/>
+<h3 id="colorPickerTitle">Color Picker</h3>
+<p>Click on the color you want to see and select the class you want.</p>
+<div id="color-picker">
+	<div class="base-colors-container">
+		<div class="base-colors base-blue" data-color="primary">Primary</div>
+		<div class="base-colors base-yellow" data-color="warrning">Warrning</div>
+		<div class="base-colors base-red" data-color="danger">Danger</div>
+		<div class="base-colors base-green" data-color="success">Success</div>
 	</div>
+</div>
 
-	<br />
-	<code>
+<br />
+<code>
 /*		COLOURS		*/
 // SASS style sheet */
 // Palette color codes */
@@ -154,15 +137,5 @@ $black: #333333;
 
 .white {color: #fff;}
 .black {color: #333333;}
-	</code>
-	<small class="float-right">SCSS</small>
-</section>		
-</div>
-
-<script src="../js/header.js"></script>
-<script src="../js/colors.js"></script>
-<script src="../js/myscript.js"></script>
-</body>
-</html>
-
-	
+</code>
+<small class="float-right">SCSS</small>
