@@ -15,29 +15,40 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: $white !important;
     .head-item {
       place-self: center;
-      color: $white !important;
       a {
         padding: 0 0 0 10px;;
         img {
           min-width: 65px;
         }
       }
-      .bar {
+      .hamburger .burger label .bar {
         background-color: $white !important;
       }
+      .hamburger {
+        .burger {
+          label {
+            .bar {
+              background-color: $white !important;
+            }
+          }
+        }
+      }
+
       h2 {
         color: $white !important;
         @include respond-to(extrasmall-screens) { 
           font-size: 0.9em; 
+          color: $white !important;
         }
         @include respond-to(small-screens) { 
-          font-size: 1em;  
+          font-size: 1em;
+          color: $white !important;
         }
         @include respond-to(medium-screens) { 
-          font-size: 1.3em;  
+          font-size: 1.3em;
+          color: $white !important;
         }
       }
     }
