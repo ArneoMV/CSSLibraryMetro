@@ -7,9 +7,8 @@ class Mondrian {
             'black',
             'red',
             'blue',
-            'yellow',
-            'white',
-            'white',
+            'orange',
+            'green',
             'white'
         ];
     }
