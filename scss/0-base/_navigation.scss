@@ -15,13 +15,18 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: $white !important;
     .head-item {
       place-self: center;
+      color: $white !important;
       a {
         padding: 0 0 0 10px;;
         img {
           min-width: 65px;
         }
+      }
+      .bar {
+        background-color: $white !important;
       }
       h2 {
         color: $white !important;
