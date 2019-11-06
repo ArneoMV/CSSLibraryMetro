@@ -1,14 +1,16 @@
 // Mondrian Art Generator
 
+
 class Mondrian {
     constructor(element) {
         this.element = element;
         this.colors = [
-            'black',
+            'orange',
             'red',
             'blue',
-            'orange',
+            'yellow',
             'green',
+            'black',
             'white'
         ];
     }
