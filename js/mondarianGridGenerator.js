@@ -1,5 +1,6 @@
 // Mondrian Art Generator
 
+
 class Mondrian {
     constructor(element) {
         this.element = element;
