@@ -1,199 +1,199 @@
 // GRID LAYOUT
 
 .grid-container {
-    display: grid;
-    // grid-template-columns: auto auto auto;
-    padding: 10px;
-    background-color: $danger-3;
-    .grid-item {
-        background-color: $warrning-1;
-        border: 2px solid $warrning-0;
-        padding: 20px;
-        font-size: 30px;
-        color: $warrning-4;
-        text-align: center;
-      }
-    
-    @include respond-to(small-screens) {
-        grid-template-columns: repeat(1, 100%);
+  display: grid;
+  // grid-template-columns: auto auto auto;
+  padding: 10px;
+  background-color: $danger-3;
+  .grid-item {
+      background-color: $warrning-1;
+      border: 2px solid $warrning-0;
+      padding: 20px;
+      font-size: 30px;
+      color: $warrning-4;
+      text-align: center;
     }
-    @include respond-to(medium-screens) {
-        grid-template-columns: repeat(2, 50%);
-    }
-    @include respond-to(large-screens) {
-        grid-template-columns: repeat(3, 33%);
-    }
-    @include respond-to(extralarge-screens) {
-        grid-template-columns: repeat(4, 25%);
-    }
+  
+  @include respond-to(small-screens) {
+      grid-template-columns: repeat(1, 100%);
   }
+  @include respond-to(medium-screens) {
+      grid-template-columns: repeat(2, 50%);
+  }
+  @include respond-to(large-screens) {
+      grid-template-columns: repeat(3, 33%);
+  }
+  @include respond-to(extralarge-screens) {
+      grid-template-columns: repeat(4, 25%);
+  }
+}
 
 
 // GRID WEB
 
 .grid-container-1 {
-    display: grid;
-    height: 600px;
+  display: grid;
+  height: 600px;
 
-    .grid-header { grid-area: header; }
-    .grid-sidebar { grid-area: sidebar; }
-    .grid-content-1 { grid-area: content-1; }
-    .grid-content-2 { grid-area: content-2; }
-    .grid-content-3 { grid-area: content-3; }
-    .grid-footer { grid-area: footer; }
-    @include respond-to(small-screens) {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-gap: 1rem;
-        grid-template-areas:
-            "header"
-            "content-1"
-            "content-2"
-            "content-3"  
-            "sidebar"
-            "footer";
-    }
-    @include respond-to(medium-screens) {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-gap: 1rem;
-        grid-template-areas:
-            "header"
-            "content-1"
-            "content-2"
-            "content-3"  
-            "sidebar"
-            "footer";
-    }
-    @include respond-to(large-screens) {
-        grid-template-columns: 200px 1fr 1fr;
-        grid-template-rows: 80px 1fr 1fr 100px;
-        grid-gap: 1rem;
-        grid-template-areas:
-            "header header"
-            "content-1 content-1"
-            "content-2 content-3"  
-            "sidebar sidebar"
-            "footer footer";
-    }
-    @include respond-to(extralarge-screens) {
-        grid-template-columns: 200px 1fr 1fr;
-        grid-template-rows: 80px 1fr 1fr 100px;
-        grid-gap: 1rem;
-        grid-template-areas:
-            "header header header"
-            "sidebar content-1 content-1"
-            "sidebar content-2 content-3"  
-            "footer footer footer";
-    }
+  .grid-header { grid-area: header; }
+  .grid-sidebar { grid-area: sidebar; }
+  .grid-content-1 { grid-area: content-1; }
+  .grid-content-2 { grid-area: content-2; }
+  .grid-content-3 { grid-area: content-3; }
+  .grid-footer { grid-area: footer; }
+  @include respond-to(small-screens) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 1rem;
+      grid-template-areas:
+          "header"
+          "content-1"
+          "content-2"
+          "content-3"  
+          "sidebar"
+          "footer";
   }
+  @include respond-to(medium-screens) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 1rem;
+      grid-template-areas:
+          "header"
+          "content-1"
+          "content-2"
+          "content-3"  
+          "sidebar"
+          "footer";
+  }
+  @include respond-to(large-screens) {
+      grid-template-columns: 200px 1fr 1fr;
+      grid-template-rows: 80px 1fr 1fr 100px;
+      grid-gap: 1rem;
+      grid-template-areas:
+          "header header"
+          "content-1 content-1"
+          "content-2 content-3"  
+          "sidebar sidebar"
+          "footer footer";
+  }
+  @include respond-to(extralarge-screens) {
+      grid-template-columns: 200px 1fr 1fr;
+      grid-template-rows: 80px 1fr 1fr 100px;
+      grid-gap: 1rem;
+      grid-template-areas:
+          "header header header"
+          "sidebar content-1 content-1"
+          "sidebar content-2 content-3"  
+          "footer footer footer";
+  }
+}
 
-  /* OTHER STYLES */
- 
-  
-  .grid-item-1 {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    color: $warrning-4;
-    border: 6px solid $danger-3;
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .grid-header {
-    background-color: $warrning-1;
-  }
-  .grid-sidebar {
-    background-color: $warrning-1;
-  }
-  .grid-content-1 {
-    background-color: $warrning-1;
-  }
-  .grid-content-2,
-  .grid-content-3 {
-    background-color: $warrning-1;
-  }
-  
-  .grid-footer {
-    background-color: $warrning-1;
-  }
+/* OTHER STYLES */
+
+
+.grid-item-1 {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  color: $warrning-4;
+  border: 6px solid $danger-3;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.grid-header {
+  background-color: $warrning-1;
+}
+.grid-sidebar {
+  background-color: $warrning-1;
+}
+.grid-content-1 {
+  background-color: $warrning-1;
+}
+.grid-content-2,
+.grid-content-3 {
+  background-color: $warrning-1;
+}
+
+.grid-footer {
+  background-color: $warrning-1;
+}
 
 
 // Mondrian Art Generator
 
 :root {
-    --mondrian-black: #010302;
-    --mondrian-white: #FFF5FB;
-    --mondrian-blue: #257CC1;
-    --mondrian-red: #FC0002;
-    --mondrian-yellow: #FEEE1F;
+  --mondrian-black: #010302;
+  --mondrian-white: #FFF5FB;
+  --mondrian-blue: #257CC1;
+  --mondrian-red: #FC0002;
+  --mondrian-yellow: #FEEE1F;
 
-    --mondrian-block-size: 50px;
-    --mondrian-border-width: 10px;
+  --mondrian-block-size: 50px;
+  --mondrian-border-width: 10px;
 
-    --mondrian-font-family: 'Nunito', sans-serif;
+  --mondrian-font-family: 'Nunito', sans-serif;
 }
 
 .grid-mondarianArtGenerator {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 150px 1fr;
-    grid-gap: 1rem;
-    justify-items: center;
-    align-items: center;
-    margin: 25px;
-    #mondrian-wrapper {
-        border: 10px solid;
-    }
-    .item-mondarian {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        p, button {
-            margin: 25px 0 25px 0;
-        }
-        button {
-            background-color: var(--mondrian-yellow);
-            border: var(--mondrian-border-width) solid var(--mondrian-black);
-            font-family: var(--mondrian-font-family);
-            font-weight: 700;
-            color: $black;
-            &:hover {
-                background-color: var(--mondrian-blue);
-                color: $white;
-            }
-        }
-    }
-    .mondrian {
-        display: grid;
-        grid-auto-columns: var(--mondrian-block-size);
-        grid-auto-rows: var(--mondrian-block-size);
-        grid-auto-flow: dense;
-        grid-gap: 10px;
-        grid-template-columns: repeat(auto-fit, minmax(var(--mondrian-block-size), 1fr));
-        grid-template-rows: repeat(auto-fit, minmax(var(--mondrian-block-size), 1fr));
-        max-height: 480px;
-        // max-width: 480px;
-        background-color: var(--mondrian-black);
-        overflow: hidden;
-        box-sizing: border-box;
-    }
-    .span-1 { grid-column: span 1; }
-    .span-2 { grid-column: span 2; }
-    .span-3 { grid-column: span 3; }
-    .span-4 { grid-column: span 4; }
-    .span-5 { grid-column: span 5; }
-    .row-1 { grid-row: span 1; }
-    .row-2 { grid-row: span 2; }
-    .row-3 { grid-row: span 3; }
-    .row-4 { grid-row: span 4; }
-    .row-4 { grid-row: span 5; }
-    .color-black { background-color: var(--mondrian-black); }
-    .color-white { background-color: var(--mondrian-white); }
-    .color-blue { background-color: var(--mondrian-blue); }
-    .color-red { background-color: var(--mondrian-red); }
-    .color-yellow { background-color: var(--mondrian-yellow); }
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 1fr;
+  grid-gap: 1rem;
+  justify-items: center;
+  align-items: center;
+  margin: 25px;
+  #mondrian-wrapper {
+      border: 10px solid;
+  }
+  .item-mondarian {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      p, button {
+          margin: 25px 0 25px 0;
+      }
+      button {
+          background-color: var(--mondrian-yellow);
+          border: var(--mondrian-border-width) solid var(--mondrian-black);
+          font-family: var(--mondrian-font-family);
+          font-weight: 700;
+          color: $black;
+          &:hover {
+              background-color: var(--mondrian-blue);
+              color: $white;
+          }
+      }
+  }
+  .mondrian {
+      display: grid;
+      grid-auto-columns: var(--mondrian-block-size);
+      grid-auto-rows: var(--mondrian-block-size);
+      grid-auto-flow: dense;
+      grid-gap: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(var(--mondrian-block-size), 1fr));
+      grid-template-rows: repeat(auto-fit, minmax(var(--mondrian-block-size), 1fr));
+      max-height: 480px;
+      // max-width: 480px;
+      background-color: var(--mondrian-black);
+      overflow: hidden;
+      box-sizing: border-box;
+  }
+  .span-1 { grid-column: span 1; }
+  .span-2 { grid-column: span 2; }
+  .span-3 { grid-column: span 3; }
+  .span-4 { grid-column: span 4; }
+  .span-5 { grid-column: span 5; }
+  .row-1 { grid-row: span 1; }
+  .row-2 { grid-row: span 2; }
+  .row-3 { grid-row: span 3; }
+  .row-4 { grid-row: span 4; }
+  .row-4 { grid-row: span 5; }
+  .color-black { background-color: var(--mondrian-black); }
+  .color-white { background-color: var(--mondrian-white); }
+  .color-blue { background-color: var(--mondrian-blue); }
+  .color-red { background-color: var(--mondrian-red); }
+  .color-yellow { background-color: var(--mondrian-yellow); }
 }

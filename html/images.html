@@ -1,48 +1,51 @@
 
 <h2>Images</h2>
-<p>It is unnecessary to display large images on screens designed for smaller images. This issue has been resolved in the HTML5 standard by using two new attributes within the <img> tag: srcset and sizes. The srcset attribute allows the <img> tag to point the browser to multiple files. Sizes determines the width of the screen and the image that will be used for that screen width. This technique saves device memory and displays better quality images.</p>
+<p>It is unnecessary to display large images on screens designed for smaller images. This issue has been resolved in the HTML5 standard by using two new attributes within the &lt;img&gt; tag: srcset and sizes. The srcset attribute allows the &lt;img&gt; tag to point the browser to multiple files. Sizes determines the width of the screen and the image that will be used for that screen width. This technique saves device memory and displays better quality images.</p>
 
 <div class="col-sm-12 col-md-6 col-lg-4">
 	<figure>
-		<img srcset="../img/slika1024.png,
-					../img/slika480.png 1.5x,
-					../img/slika720.png 2x"
+		<img srcset="img/slika1024.png,
+					img/slika480.png 1.5x,
+					img/slika720.png 2x"
 			src="../img/slika480.png" alt="slika">
 			<figcaption>image width:480px</figcaption>
 	</figure>
 </div>
 <div class="col-sm-12 col-md-6 col-lg-4">
 	<figure>
-		<img srcset="../img/slika1024.png,
-					../img/slika480.png 1.5x,
-					../img/slika720.png 2x"
-			src="../img/slika720.png" alt="slika">
+		<img srcset="img/slika1024.png,
+					img/slika480.png 1.5x,
+					img/slika720.png 2x"
+			src="img/slika720.png" alt="slika">
 			<figcaption>image width:720px</figcaption>
 	</figure>
 </div>
 <div class="col-sm-12 col-md-6 col-lg-4">
 	<figure>
-		<img srcset="../img/slika1024.png,
-					../img/slika480.png 1.5x,
-					../img/slika720.png 2x"
-			src="../img/slika720.png" alt="slika">
+		<img srcset="img/slika1024.png,
+					img/slika480.png 1.5x,
+					img/slika720.png 2x"
+			src="img/slika720.png" alt="slika">
 			<figcaption>image width:720px</figcaption>
 	</figure>
 </div>
 <div class="col-sm-12 col-md-6 col-lg-4">
 	<figure>
-		<img srcset="../img/slika320.png 320w,
-					../img/slika480.png 480w,
-					../img/slika720.png 720w"
+		<img srcset="img/slika320.png 320w,
+					img/slika480.png 480w,
+					img/slika720.png 720w"
 			sizes="(max-width: 320px) 280px,
 					(max-width: 480px) 440px,
 					800px"
-			src="../img/slika320.png" alt="slika">
+			src="img/slika320.png" alt="slika">
 
 		<figcaption>image width:320px</figcaption>
 	</figure>
 </div>
 <br />
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iG9CE55wbtY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 <table>
 	<tr>
@@ -74,13 +77,13 @@
 
 <code>
 &lt;figure&gt;
-&lt;img srcset="../img/slika320.png 320w,
-../img/slika480.png 480w,
-../img/slika720.png 800w"
+&lt;img srcset="img/slika320.png 320w,
+.mg/slika480.png 480w,
+img/slika720.png 800w"
 sizes="(max-width: 320px) 280px,
 (max-width: 480px) 440px,
 800px"
-src="../img/slika320.png" alt="slika"&gt;
+src="img/slika320.png" alt="slika"&gt;
 &lt;figcaption&gt;slika 320wpx&lt;/figcaption&gt;
 &lt;/figure&gt;
 </code>

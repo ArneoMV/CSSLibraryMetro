@@ -1,30 +1,35 @@
-// let mainNavLinks = document.querySelectorAll(".navScrollspy a");
-// let mainSections = document.querySelectorAll("main section");
+/ SCROLLSPY
 
-// let lastId;
-// let cur = [];
+const makeNavLinksSmooth = ( ) => {
+  const navLinks = document.querySelectorAll( '.nav-link' );
 
-// This should probably be throttled.
-// Especially because it triggers during smooth scrolling.
-// https://lodash.com/docs/4.17.10#throttle
-// You could do like...
-// window.addEventListener("scroll", () => {
-//    _.throttle(doThatStuff, 100);
-// });
-// Only not doing it here to keep this Pen dependency-free.
+  for ( let n in navLinks ) {
+    if ( navLinks.hasOwnProperty( n ) ) {
+      navLinks[ n ].addEventListener( 'click', e => {
+        e.preventDefault( );
+        document.querySelector( navLinks[ n ].hash )
+          .scrollIntoView( {
+            behavior: "smooth"
+          } );
+      } );
+    }
+  }
+}
 
-// window.addEventListener("scroll", event => {
-// //   let fromTop = window.scrollY;
+const spyScrolling = ( ) => {
+  const sections = document.querySelectorAll( '.hero-bg' );
 
-//   mainNavLinks.forEach(link => {
-//     // let section = document.querySelector(link.hash);
+  window.onscroll = ( ) => {
+    const scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
 
-//     // if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop){
-//     //   link.classList.add("current");
-//     // } else {
-//     //   link.classList.remove("current");
-//     // }
-//   });
-// });
+    for ( let s in sections )
+      if ( sections.hasOwnProperty( s ) && sections[ s ].offsetTop <= scrollPos ) {
+        const id = sections[ s ].id;
+        document.querySelector( '.active' ).classList.remove( 'active' );
+        document.querySelector( `a[href*=${ id }]` ).parentNode.classList.add( 'active' );
+      }
+  }  
+}
 
-
+makeNavLinksSmooth( );
+spyScrolling( );

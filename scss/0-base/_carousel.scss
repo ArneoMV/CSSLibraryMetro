@@ -4,7 +4,8 @@
   height: 400px;
   width: 100%;
   margin: 0 auto;
-  .carousel_button {
+  border: 1px solid;
+  .btn_Carousel {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -15,10 +16,10 @@
       width: 25px;
     }
   }
-  .carousel_button--left {
+  .btn_prevCarousel {
     left: -40px;
   }
-  .carousel_button--right {
+  .btn_nextCarousel {
     right: -40px;
   }
   .carousel_track-container {
@@ -26,7 +27,7 @@
     height: 100%;
     position: relative;
     overflow: hidden;
-    .carousel_track {
+    .track_Carousel {
       padding: 0;
       margin: 0;
       list-style: none;
@@ -46,8 +47,8 @@
       }
     }
   }
-  .carousel_nav {
-    /* background: pink; */
+  .dots_NavCarousel {
+    // background: pink;
     display: flex;
     justify-content: center;
     padding: 10px 0;
@@ -95,5 +96,3 @@
       }
   }
 }
-
-.is-hidden {display: none;}

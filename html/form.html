@@ -553,12 +553,12 @@
         <fieldset>
             <legend>Text</legend>
             <div class="form-group">
-                <input type="text" required="required"/>
+                <input type="text"/>
                 <label for="input" class="control-label">Textfield</label>
                 <i class="bar-form"></i>
             </div>
             <div class="form-group">
-                <textarea required="required"></textarea>
+                <textarea></textarea>
                 <label for="textarea" class="control-label">Textarea</label>
                 <i class="bar-form"></i>
             </div>
@@ -631,8 +631,8 @@
     </div>
     
     <div class="button-group">
-        <button id="previous" class="btn-primary-flat disabled" disabled>Prethodno</button>
-        <button id="next" class="btn-primary-flat btn-ripple" >Sljedeće</button>
+        <button type="button" id="btn_prevForm" class="btn-primary-flat disabled" disabled>Prethodno</button>
+        <button type="button" id="btn_nextForm" class="btn-primary-flat btn-ripple" >Sljedeće</button>
     </div>
     <div class="button-group">
         <button id="validateFormStep" type="submit" class="btn-primary-ghost btn-ripple shake hidden">Submit</button>
@@ -754,8 +754,8 @@
         &lt;/div&gt;
         
         &lt;div class="button-group"&gt;
-            &lt;button id="previous" class="btn-primary-flat disabled" disabled&gt;Prethodno&lt;/button&gt;
-            &lt;button id="next" class="btn-primary-flat btn-ripple" &gt;Sljedeće&lt;/button&gt;
+            &lt;button id="btnPreviousForm" class="btn-primary-flat disabled" disabled&gt;Prethodno&lt;/button&gt;
+            &lt;button id="btnNextForm" class="btn-primary-flat btn-ripple" &gt;Sljedeće&lt;/button&gt;
         &lt;/div&gt;
         &lt;div class="button-group"&gt;
             &lt;button id="validate" type="submit" class="btn-primary-ghost btn-ripple shake hidden"&gt;Potvrdi&lt;/button&gt;
@@ -825,3 +825,5 @@
 }
 </code>
 <small class="codeText">SCSS</small><br>
+
+<script src="js/form.js"></script>

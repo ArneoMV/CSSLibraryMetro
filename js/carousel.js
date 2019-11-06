@@ -1,27 +1,28 @@
 /* Carousel */
 
-const track = document.querySelector('.carousel_track');
-const slides = Array.from(track.children);
+const track_Carousel = document.querySelector('.track_Carousel');
+let slides_Carousel = Array.from(track_Carousel.children);
+
 // Buttons
-const nextButton = document.querySelector('.carousel_button--right');
-const prevButton = document.querySelector('.carousel_button--left');
+const btn_nextCarousel = document.querySelector('.btn_nextCarousel');
+const btn_prevCarousel = document.querySelector('.btn_prevCarousel');
 // Dots
-const dotsNav = document.querySelector('.carousel_nav'); 
-const dots = Array.from(dotsNav.children);
+const dots_NavCarousel = document.querySelector('.dots_NavCarousel'); 
+const dots_Carousel = Array.from(dots_NavCarousel.children);
 
 // Counter
-const slideWidth = slides[0].getBoundingClientRect().width;
+const slideWidth = slides_Carousel[0].getBoundingClientRect().width;
 
 
 // arrange the slides next to one another
 const setSlidePosition = (slide, index) => {
     slide.style.left = slideWidth * index + 'px';
 };
-slides.forEach(setSlidePosition);
+slides_Carousel.forEach(setSlidePosition);
 
 
-const moveToSlide = (track, currentSlide, targetSlide) => {
-    track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
+const moveToSlide = (track_Carousel, currentSlide, targetSlide) => {
+    track_Carousel.style.transform = 'translateX(-' + targetSlide.style.left + ')';
     currentSlide.classList.remove('current-slide');
     targetSlide.classList.add('current-slide');
 }
@@ -31,60 +32,60 @@ const updateDots = (currentDot, targetDot) => {
     targetDot.classList.add('current-slide');
 }
 
-const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
+const hideShowArrows = (slides_Carousel, btn_prevCarousel, btn_nextCarousel, targetIndex) => {
     if (targetIndex === 0) {
-        prevButton.classList.add('is-hidden');
-        nextButton.classList.remove('is-hidden');
-    } else if (targetIndex === slides.length - 1 ) {
-        prevButton.classList.remove('is-hidden');
-        nextButton.classList.add('is-hidden');
+        btn_prevCarousel.classList.add('is-hidden');
+        btn_nextCarousel.classList.remove('is-hidden');
+    } else if (targetIndex === slides_Carousel.length - 1 ) {
+        btn_prevCarousel.classList.remove('is-hidden');
+        btn_nextCarousel.classList.add('is-hidden');
     } else {
-        prevButton.classList.remove('is-hidden');
-        nextButton.classList.remove('is-hidden');
+        btn_prevCarousel.classList.remove('is-hidden');
+        btn_nextCarousel.classList.remove('is-hidden');
     }
 }
 
 
 // when I click left, move slide to the left
-prevButton.addEventListener('click', e => {
-    const currentSlide = track.querySelector('.current-slide');
+btn_prevCarousel.addEventListener('click', e => {
+    const currentSlide = track_Carousel.querySelector('.current-slide');
     const prevSlide = currentSlide.previousElementSibling;
-    const currentDot = dotsNav.querySelector('.current-slide');
+    const currentDot = dots_NavCarousel.querySelector('.current-slide');
     const prevDot = currentDot.previousElementSibling;
-    const prevIndex = slides.findIndex(slide => slide === prevSlide);
+    const prevIndex = slides_Carousel.findIndex(slide => slide === prevSlide);
 
-    moveToSlide(track, currentSlide, prevSlide);
+    moveToSlide(track_Carousel, currentSlide, prevSlide);
     updateDots(currentDot, prevDot);
-    hideShowArrows(slides, prevButton, nextButton, prevIndex);
+    hideShowArrows(slides_Carousel, btn_prevCarousel, btn_nextCarousel, prevIndex);
 });
 
 // when I click right, move slide to the right
-nextButton.addEventListener('click', e => {
-    const currentSlide = track.querySelector('.current-slide');
+btn_nextCarousel.addEventListener('click', e => {
+    const currentSlide = track_Carousel.querySelector('.current-slide');
     const nextSlide = currentSlide.nextElementSibling;
-    const currentDot = dotsNav.querySelector('.current-slide');
+    const currentDot = dots_NavCarousel.querySelector('.current-slide');
     const nextDot = currentDot.nextElementSibling;
-    const nextIndex = slides.findIndex(slide => slide === nextSlide);
+    const nextIndex = slides_Carousel.findIndex(slide => slide === nextSlide);
 
-    moveToSlide(track, currentSlide, nextSlide);
+    moveToSlide(track_Carousel, currentSlide, nextSlide);
     updateDots(currentDot, nextDot);
-    hideShowArrows(slides, prevButton, nextButton, nextIndex);
+    hideShowArrows(slides_Carousel, btn_prevCarousel, btn_nextCarousel, nextIndex);
 });
 
 
 // when I click the nav indicators, move to that slide
-dotsNav.addEventListener('click', e => {
+dots_NavCarousel.addEventListener('click', e => {
     //what indicator was clicked on?
     const targetDot = e.target.closest('button');
 
     if (!targetDot) return;
 
-    const currentSlide = track.querySelector('.current-slide');
-    const currentDot = dotsNav.querySelector('.current-slide');
-    const targetIndex = dots.findIndex(dot => dot === targetDot);
-    const targetSlide = slides[targetIndex];
+    const currentSlide = track_Carousel.querySelector('.current-slide');
+    const currentDot = dots_NavCarousel.querySelector('.current-slide');
+    const targetIndex = dots_Carousel.findIndex(dot => dot === targetDot);
+    const targetSlide = slides_Carousel[targetIndex];
    
-    moveToSlide(track, currentSlide, targetSlide);
+    moveToSlide(track_Carousel, currentSlide, targetSlide);
     updateDots(currentDot, targetDot);
-    hideShowArrows(slides, prevButton, nextButton, targetIndex);
+    hideShowArrows(slides_Carousel, btn_prevCarousel, btn_nextCarousel, targetIndex);
 });

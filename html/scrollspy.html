@@ -1,95 +1,190 @@
 
 
- <!--Scrollspy navigation-->
- <div class="navScrollspy">
-    <a href="#section-1">Opis</a>
-    <a href="#section-2">Klase</a>
-    <a href="#section-3">Section 3</a>
-    <a href="#section-4">Section 4</a>
-    <a href="#section-5">Section 5</a>
-    <a href="#section-6">Section 6</a>
-    <a href="#section-8">HTML</a>
-    <a href="#section-9">SCSS</a>
-</div>
-<div class="filler"></div>
-<!--PAGE CONTENT-->
+ <!-- Scrollspy navigation 1 -->
 
-<article>
-    <h2>Scrollspy</h2>
-    <p>The Scrollspy is used to create is a navigation mechanism that automatically highlights the nav links based on the scroll position to indicate to the visitor where they are currently on the page. It is particularly useful when a page has a large amount of content.</p>
+ <nav id="navbar" class="navbar_Scrollspy shadow">
+    <a class="nav-link" href="#description">Description</a>
+    <a class="nav-link" href="#classes">Classes</a>
+    <a class="nav-link" href="#html_scrollspy">HTML</a>
+    <a class="nav-link" href="#scss_scrollspy">SCSS</a>
+    <a class="nav-link" href="#js_scrollspy">JS</a>
+</nav>
 
-    <ul>
-        <li></li>
-        <li> </li>
-    </ul>
-
-</article>
-
-
-<table>
-    <tr>
-        <th>class</th>
-        <th>explanation</th>
-    </tr>
-    <tr>
-        <td><span class="txt-primary-4"> </span></td>
-        <td> </td>
-    </tr>
-    <tr>
-        <td><span class="txt-primary-4"> </span></td>
-        <td> </td>
-    </tr>
-</table>
-
-<main>
-    <section class="scrollspy">
-        <div id="section-1">
-                <h3>Opis</h3>
-                <p>Scrollspy je ...</p>
+<div class="main_Scrollspy">
+    <section id="description" class="hero-bg">
+        <div class="content_Scrollspy">
+            <article>
+                <h2>Scrollspy</h2>
+                <p>The Scrollspy is used to create is a navigation mechanism that automatically highlights the nav links based on the scroll position to indicate to the visitor where they are currently on the page. It is particularly useful when a page has a large amount of content.</p>      
+                <ul>
+                    <li></li>
+                    <li> </li>
+                </ul>     
+            </article>  
         </div>
-        <div id="section-2">
-            <h3>Uputstva</h3>
-            <fieldset>
-                <legend>Klase</legend>
-                <article>
-                    <ul>
-                        <li><span class="tw-0">navScrollspy</span> služi za ...</li>
-                    </ul>
-                </article>
-            </fieldset>
+    </section>
+    <section id="classes" class="hero-bg">
+        <div class="content_Scrollspy">
+                <table>
+                    <tr>
+                        <th>css</th>
+                        <th>explanation</th>
+                    </tr>
+                    <tr>
+                        <td><span class="txt-primary-4">#navbar</span></td>
+                        <td>an "id" associated with javascript. Serves to have a smooth scroll when we click on the link we want the site to take us to</td>
+                    </tr>
+                    <tr>
+                        <td><span class="txt-primary-4">.navbar_Scrollspy</span></td>
+                        <td> A class to style navigation. The navigation contains an &lt;a href="#exapmple"&gt; element. The href attribute contains an "id" associated with its associated section. When the &lt;a&gt; element is clicked, the page takes us to the section that has the associated "id"</td>
+                    </tr>
+                    <tr>
+                        <td><span class="txt-primary-4">.main_Scrollspy</span></td>
+                        <td>class that stylizes a cointainer where sections of the page are located</td>
+                    </tr>
+                    <tr>
+                        <td><span class="txt-primary-4">#description, #classes, #html_scrollspy, #scss_scrollspy, #js_scrollspy </span></td>
+                        <td>Ids that are contained within sections</td>
+                    </tr>
+                    <tr>
+                        <td><span class="txt-primary-4">.hero-bg</span></td>
+                        <td> A class that is associated with javascript code. It connects to the nav-link class, and determines how much scrollspy moves. Class styling the interior of each section.</td>
+                    </tr>
+                </table>
         </div>
-        <div id="section-3">
-            <h3>Section 3</h3>
-            <p>Soluta quibusdam ad nostrum vel voluptate delectus sequi dolores quia quaerat officia corrupti, aperiam fugit facere debitis repudiandae praesentium sapiente inventore repellendus, nemo commodi alias!</p>
-        </div>
-        <div id="section-4">
-            <h3>Section 4</h3>
-            <p>Aliquid aliquam magnam ducimus similique obcaecati, unde exercitationem laborum incidunt, quas in ipsum inventore nostrum? Blanditiis optio cumque earum iste odio! Alias sint accusamus repudiandae.</p>
-        </div>
-        <div id="section-5">
-            <h3>Section 5</h3>
-            <p>Officia ipsum fugit iure eaque quisquam error tempore earum enim illum, delectus officiis incidunt corrupti aliquid nam quas perspiciatis eveniet doloremque quod labore? Doloremque, ipsum?</p>
-        </div>
-        <div id="section-6">
-            <h3>Section 6</h3>
-            <p>Aperiam repellat dignissimos fugiat possimus esse, suscipit neque nisi libero alias obcaecati ipsam, porro illo corrupti nostrum reprehenderit unde, illum in laudantium impedit. Modi, veniam.</p>
-        </div>
-        <div id="section-7">
-            <h3>Section 7</h3>
-            <p>Cum asperiores temporibus itaque consequatur quod inventore, quia quis explicabo dicta esse minus voluptatem reiciendis eveniet animi, necessitatibus illum dolorem doloremque repellat placeat, dolores eaque.</p>
-        </div>
-        <div id="section-8">
-            <h3>HTML</h3>
+    </section>
+    <section id="html_scrollspy" class="hero-bg">      
+        <div class="content_Scrollspy">
             <code>
-        
-        </code>
-        <small class="codeText">HTML</small><br />
+                &lt;nav id="navbar" class="navbar_Scrollspy"&gt;
+                    &lt;a class="nav-link" href="#description"&gt;Description&lt;/a&gt;
+                    &lt;a class="nav-link" href="#classes"&gt;Classes&lt;/a&gt;
+                    &lt;a class="nav-link" href="#html_scrollspy"&gt;HTML&lt;/a&gt;
+                    &lt;a class="nav-link" href="#scss_scrollspy"&gt;SCSS&lt;/a&gt;
+                &lt;/nav&gt;
+
+                &lt;div class="main_Scrollspy"&gt;
+                    &lt;section id="description" class="hero-bg"&gt;
+                        &lt;div class="content_Scrollspy"&gt;
+                            // CONTENT
+                        &lt;/div&gt;
+                    &lt;/section&gt;
+                    &lt;section id="classes" class="hero-bg"&gt;
+                        &lt;div class="content_Scrollspy"&gt;
+                            // CONTENT
+                        &lt;/div&gt;
+                    &lt;/section&gt;
+                    &lt;section id="html_scrollspy" class="hero-bg"&gt;
+                        &lt;div class="content_Scrollspy"&gt;
+                            // CONTENT
+                        &lt;/div&gt;
+                    &lt;/section&gt;
+                    &lt;section id="scss_scrollspy" class="hero-bg"&gt;
+                        &lt;div class="content_Scrollspy"&gt;
+                            // CONTENT
+                        &lt;/div&gt;
+                    &lt;/section&gt;
+                &lt;/div> &gt;
+            </code>
+            <small class="codeText">HTML</small>
         </div>
-        <div id="section-9">
-            <h3>SCSS</h3>
-            <code>      
+    </section>
+    <section id="scss_scrollspy" class="hero-bg">
+        <div class="content_Scrollspy">
+            <code>
+                .navbar_Scrollspy {
+                    height: 60px;
+                    width: 80%;
+                    position: fixed;
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    justify-items: center;
+                    align-items: center;
+                    z-index: 99;
+                    a {
+                        color: $white;
+                    }
+                    }
+                    .main_Scrollspy {
+                    display: block;
+                    position: relative;
+                    top: 50px;
+                    }
+                    .hero-bg {
+                    width: auto;
+                    height: 100vh;
+                    display: grid;
+                    justify-items: center;
+                    }
+                    .content_Scrollspy{
+                    display: grid;
+                    justify-items: center;
+                    align-items: center;
+                    width: 80%;
+                    }
+                    #navbar { background: $primary-1; }
+                    #description { background: $warrning-0; }
+                    #clases { background: $danger-0; }
+                    #html_scrollspy { background: $success-0; }
+                    #scss_scrollspy { background: $primary-3; }
+                    h1 {
+                    font-size: 5em;
+                    }
+                    .nav-item {
+                    transition: background 200ms;
+                    }
+                    
+                    .nav-link {
+                    outline: none;
+                    }
             </code>
             <small class="codeText">SCSS</small>
         </div>
     </section>
-</main>
+    <section id="js_scrollspy" class="hero-bg">
+        <div class="content_Scrollspy">
+            <code>
+            const makeNavLinksSmooth = ( ) => {
+                const navLinks = document.querySelectorAll( '.nav-link' );
+            
+                for ( let n in navLinks ) {
+                if ( navLinks.hasOwnProperty( n ) ) {
+                    navLinks[ n ].addEventListener( 'click', e => {
+                    e.preventDefault( );
+                    document.querySelector( navLinks[ n ].hash )
+                        .scrollIntoView( {
+                        behavior: "smooth"
+                        } );
+                    } );
+                }
+                }
+            }
+            
+            const spyScrolling = ( ) => {
+                const sections = document.querySelectorAll( '.hero-bg' );
+            
+                window.onscroll = ( ) => {
+                const scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
+            
+                for ( let s in sections )
+                    if ( sections.hasOwnProperty( s ) && sections[ s ].offsetTop <= scrollPos ) {
+                    const id = sections[ s ].id;
+                    document.querySelector( '.active' ).classList.remove( 'active' );
+                    document.querySelector( `a[href*=${ id }]` ).parentNode.classList.add( 'active' );
+                    }
+                }  
+            }
+            
+            makeNavLinksSmooth( );
+            spyScrolling( );
+  
+            </code>
+            <small class="codeText">JS</small>
+        </div>
+    </section>
+</div>
+
+
+
+
+<script src="js/scrollspy.js"></script>

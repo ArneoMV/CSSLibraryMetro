@@ -68,9 +68,11 @@ function show_hide4() {
 // Slide-show -> product card -> funkcionalnost
 var slideIndex = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6", "mySlides7", "mySlides8", "mySlides9","mySlides10","mySlides11","mySlides12","mySlides13"];
+
 function plusSlides(n, no) {
     showSlides(slideIndex[no] += n, no);
 }
+
 function showSlides(n, no) {
     var i;
     var x = document.getElementsByClassName(slideId[no]);

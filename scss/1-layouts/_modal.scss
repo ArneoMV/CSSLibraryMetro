@@ -10,6 +10,15 @@
 	overflow: auto;
 	background-color: rgba(0,0,0,0.5); 
 }
+	.modal-content-default-primjer {
+		@include modal-content();
+		border-left: 8px solid $color-default;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%) translateX(-50%);
+	}
 	.modal-content-default {
 		@include modal-content();
 		border-left: 8px solid $color-default;

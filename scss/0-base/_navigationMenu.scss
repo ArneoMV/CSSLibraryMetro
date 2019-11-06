@@ -1,211 +1,211 @@
 /* Navigation menu */
 
 .leftSidebar {
-    @include sidebar();
-    height: 100%;
-    width: 0;
-    top: 130px;
-    left: 0;
-    ul li a {
-        text-align: right;
-    }
+  @include sidebar();
+  height: 100%;
+  width: 0;
+  top: 130px;
+  left: 0;
+  ul li a {
+      text-align: right;
+  }
 }
 .rightSidebar {
-    @include sidebar();
-    height: 100%;
-    width: 0;
-    top: 195px;
-    right: 0;
-    .sidebar-item:nth-child(2) {
-        ul li a {
-            text-align: left;
-        }
-    }
+  @include sidebar();
+  height: 100%;
+  width: 0;
+  top: 195px;
+  right: 0;
+  .sidebar-item:nth-child(2) {
+      ul li a {
+          text-align: left;
+      }
+  }
 }
 .topSidebar {
-    @include sidebar();
-    height: 0;
-    width: 100%;
-    top: 260px;
-    left: 0;
-    .sidebar-item:nth-child(2) {
-        ul li a {
-            text-align: center;
-        }
-    }
+  @include sidebar();
+  height: 0;
+  width: 100%;
+  top: 260px;
+  left: 0;
+  .sidebar-item:nth-child(2) {
+      ul li a {
+          text-align: center;
+      }
+  }
 }
 .bottomSidebar {
-    @include sidebar();
-    height: 0;
-    width: 100%;
-    bottom: 0;
-    // top: 325px;
-    .sidebar-item:nth-child(2) {
-        ul li a {
-            text-align: center;
-        }
-    }
+  @include sidebar();
+  height: 0;
+  width: 100%;
+  bottom: 0;
+  // top: 325px;
+  .sidebar-item:nth-child(2) {
+      ul li a {
+          text-align: center;
+      }
+  }
 }
-  
-  // mainContent
+
+// mainContent
 .sideNavigation {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 65px;
-    grid-template-areas: "logo naslov naslov hamburger";  
-    background-color: $primary-1;
-    z-index: 100;
-    img {
-        width: 50px;
-        height: auto;
-    }
-    .header-item:nth-child(1) {
-        justify-self: start;
-        align-self: center;
-        padding-left: 5%;
-        //TYPE-ANIMATION EFFECT
-        .typewriter h1 {
-            color: #fff;
-            font-family: "Montserrat" "Roboto","Helvetica Neue",Arial,sans-serif; 
-            font-weight: 800;
-            overflow: hidden; /* Ensures the content is not revealed until the animation */
-            height: 65px;
-            white-space: nowrap; /* Keeps the content on a single line */
-            margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-            padding-top: 10px;
-            animation: 
-                typing 1.5s steps(30, end),
-                blink-caret 0.3s step-end ;
-            border-right: 0.25em solid #714288; 
-            font-size: 2em; 
-        }
-        /* The typing effect */
-        @keyframes typing {
-            from { width: 0 }
-            to { width: 100% }
-        }
-        /* The typewriter cursor effect */
-        @keyframes blink-caret {
-            from, to { border-color: transparent }
-            50% { border-color: #714288 }
-        }
-    }
-    .header-item:nth-child(2) {
-        place-self: center;
-        input {
-            display: none;
-        }
-        label {
-            display: block;
-            position: relative;
-            cursor: pointer;
-        }
-        label img {
-            height: 45px;
-            width: auto;
-            padding: 3px 5px;
-            transition-duration: 0.2s;
-            transform-origin: 50% 50%;
-        }
-        :checked + label:before {
-            transform: scale(1);
-        }
-        :checked + label img {
-            transform: scale(0.9);
-            box-shadow: 0 0 5px #333;
-        }
-    }
-    .header-item:nth-child(3) {
-        place-self: center;
-    }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 65px;
+  grid-template-areas: "logo naslov naslov hamburger";  
+  background-color: $primary-1;
+  z-index: 100;
+  img {
+      width: 50px;
+      height: auto;
+  }
+  .header-item:nth-child(1) {
+      justify-self: start;
+      align-self: center;
+      padding-left: 5%;
+      //TYPE-ANIMATION EFFECT
+      .typewriter h1 {
+          color: #fff;
+          font-family: "Montserrat" "Roboto","Helvetica Neue",Arial,sans-serif; 
+          font-weight: 800;
+          overflow: hidden; /* Ensures the content is not revealed until the animation */
+          height: 65px;
+          white-space: nowrap; /* Keeps the content on a single line */
+          margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+          padding-top: 10px;
+          animation: 
+              typing 1.5s steps(30, end),
+              blink-caret 0.3s step-end ;
+          border-right: 0.25em solid #714288; 
+          font-size: 2em; 
+      }
+      /* The typing effect */
+      @keyframes typing {
+          from { width: 0 }
+          to { width: 100% }
+      }
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+          from, to { border-color: transparent }
+          50% { border-color: #714288 }
+      }
+  }
+  .header-item:nth-child(2) {
+      place-self: center;
+      input {
+          display: none;
+      }
+      label {
+          display: block;
+          position: relative;
+          cursor: pointer;
+      }
+      label img {
+          height: 45px;
+          width: auto;
+          padding: 3px 5px;
+          transition-duration: 0.2s;
+          transform-origin: 50% 50%;
+      }
+      :checked + label:before {
+          transform: scale(1);
+      }
+      :checked + label img {
+          transform: scale(0.9);
+          box-shadow: 0 0 5px #333;
+      }
+  }
+  .header-item:nth-child(3) {
+      place-self: center;
+  }
 }
 
 .logo { grid-area: logo; }
 
 .mainContent, .logo, .naslov, .hamburger{
-    place-self: center;
+  place-self: center;
 }
 
 /* SIDEBAR */
 
 // NAVBAR
 .navBar {
-  min-height: 50px;
-  margin: 0;
+min-height: 50px;
+margin: 0;
+padding: 0;
+background-color: $primary-1;
+.navTitle {
+  color: white;
+  float: left;
+  height: 50px;
+  width: 150px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.toggle, [id^=drop] {
+  display: none;
+}
+.toggle:nth-child(2) {
+  float: right;
+  padding-top: 8px;
+}
+&:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ul {
+  float: right;
   padding: 0;
-  background-color: $primary-1;
-  .navTitle {
-    color: white;
-    float: left;
-    height: 50px;
-    width: 150px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-  }
-  .toggle, [id^=drop] {
-    display: none;
-  }
-  .toggle:nth-child(2) {
-    float: right;
-    padding-top: 8px;
-  }
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  ul {
-    float: right;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    position: relative;
-  }
-  ul li {
-    margin: 0px;
-    display: inline-block;
-    float: left;
-    background-color: transparent;
-    & > a:after { content: ' +'; }
-    & > a:only-child:after { content: ''; }
-  }
-  a {
-    display: block;
-    padding: 0 20px;
-    color: $white;
-    font-size: 20px;
-    line-height: 60px;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  nav ul li ul li:hover { background-color: $primary-1; }
-  a:hover { background-color: $primary-2; }
-  ul ul {
-    display: none;
-    position: absolute;
-    top: 60px;
-  }
-  ul li:hover > ul { display: inherit; }
-  ul ul li {
-    width: 170px;
-    float: none;
-    display: list-item;
-    position: relative;
-    background-color: $primary-0;
-  }
-  ul ul ul li {
-    position: relative;
-    top: -60px;
-    left: 170px;
-  }
-  @include respond-to(small-screens) {  
-    @include navMedia-small();
-  }
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+ul li {
+  margin: 0px;
+  display: inline-block;
+  float: left;
+  background-color: transparent;
+  & > a:after { content: ' +'; }
+  & > a:only-child:after { content: ''; }
+}
+a {
+  display: block;
+  padding: 0 20px;
+  color: $white;
+  font-size: 20px;
+  line-height: 60px;
+  text-decoration: none;
+  cursor: pointer;
+}
+nav ul li ul li:hover { background-color: $primary-1; }
+a:hover { background-color: $primary-2; }
+ul ul {
+  display: none;
+  position: absolute;
+  top: 60px;
+}
+ul li:hover > ul { display: inherit; }
+ul ul li {
+  width: 170px;
+  float: none;
+  display: list-item;
+  position: relative;
+  background-color: $primary-0;
+}
+ul ul ul li {
+  position: relative;
+  top: -60px;
+  left: 170px;
+}
+@include respond-to(small-screens) {  
+  @include navMedia-small();
+}
 
-  @include respond-to(medium-screens) { 
-    @include navMedia-small();
-  }
+@include respond-to(medium-screens) { 
+  @include navMedia-small();
+}
 }
 
 

@@ -1,15 +1,19 @@
 // HAMBURGER ICON
 
-// Hamburger button 2
-var wrapperMenu = document.querySelector('.burger_2');
+// Hamburger icon 2
+let wrapperMenu = document.getElementById('burger_2');
 
-wrapperMenu.addEventListener('click', function(){
-  wrapperMenu.classList.toggle('open');  
-})
+function hambi2() {
 
-// document.getElementById('icon').onclick = function () {
-//   this.classList.toggle('change')
-// }
+  if (wrapperMenu) {
+    wrapperMenu.addEventListener('click', function() {
+      wrapperMenu.classList.toggle('openBurger2');  
+    })
+  }
+}
+
+hambi2();
+
 
 // BROJ 2
 // This is a general function that could take functionality from many places.
@@ -19,20 +23,12 @@ wrapperMenu.addEventListener('click', function(){
 // 03: If it doesn't, add that class.
 // 04: End function.
 
-function toggleClass(targetElement, addedClass) {
-  if (targetElement.classList.contains(addedClass)) {
-    targetElement.classList.remove(addedClass);
-  }
-  else {
-    targetElement.classList.add(addedClass);
-  }
-};
-// This is the function we add to our menu button to enable its click functionality
-document.querySelector('.menu-btn').addEventListener('click', function() {
-  // This toggleClass is for added 'menu--open' to our menu HTML element. This will open the menu.
-  toggleClass(document.querySelector('.menu'), 'menu--open');
-  // This toggleClass is for adding '.menu-btn--on' to our menu button HTML element. This creates the animation of the hamburger/hotdog icon to the close icon.
-  toggleClass(document.querySelector('.menu-btn'), 'menu-btn--on');
-});
+// function toggleClass(targetElement, addedClass) {
 
-
+  //   if (targetElement.classList.contains(addedClass)) {
+  //     targetElement.classList.remove(addedClass);
+  //   }
+  //   else {
+  //     targetElement.classList.add(addedClass);
+  //   }
+  // }

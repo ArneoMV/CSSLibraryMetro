@@ -1,67 +1,57 @@
-html {
-  scroll-behavior: smooth;
-}
+// scrollspy
 
-
-.navScrollspy {
-    width: 100%;
-    position: fixed;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: 1fr;
-    justify-items: center;
-    background-color: $gray-8;
-    a {
-        width: auto;
-        color: $white;
-        padding: 5px 10px;
-        text-decoration: none;
-        &:hover{
-            color: $white;
-            background-color: $black;
-        }
-    }
-    @include respond-to(extrasmall-screens) {  }
-    @include respond-to(small-screens) { }
-    @include respond-to(medium-screens) { 
-        border: 1px solid blue;
-        width: 100px;
-        height: auto;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(8, 1fr);
-        a {
-            width: 100%;
-            position: relative;
-        }
-    }
-    @include respond-to(large-screens) { }
-    @include respond-to(large-2-screens) {  }
-    @include respond-to(extralarge-screens) {  }
+.navbar_Scrollspy {
+  height: 60px;
+  width: 80%;
+  position: fixed;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;
+  z-index: 99;
+  a {
+    color: $white;
+  }
 }
-.scrollspy {
+.main_Scrollspy {
+  display: block;
   position: relative;
-  top: 70px;
+  top: 50px;
 }
-#section-1, #section-2, #section-3, #section-4, #section-5, #section-6, #section-7, #section-8, #section-9   {
-  position: relative;
-  top: 70px;
-
+.hero-bg {
+  width: auto;
+  height: 100vh;
+  display: grid;
+  justify-items: center;
 }
-  // /* Only stick if you can fit */
-  // @media (min-height: 300px) {
-  //   nav ul {
-  //     position: sticky;
-  //     top: 10px;
-  //   }
-  // }
-  // .scrollspy {
-  //   @include respond-to(medium-screens) { 
-  //       // margin-left: 70px;
-  //   }
-  // }
-// section {
-//     margin: 0 0 2rem 0; 
-//     &:first-child {
-//         padding: 100px 0 0 0;
-//     }
-// }
+.content_Scrollspy{
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 80%;
+  h2, p, small {
+    color: $white !important;
+  }
+  code {
+    align-self: end;
+    width: 100% !important;
+  }
+  small {
+    align-self: start;
+  }
+  code {
+    height: auto !important;
+    max-height: 400px !important;
+  }
+}
+#navbar { background: $primary-1; }
+#description { background: $warrning-01; }
+#classes { background: $danger-01; }
+#html_scrollspy { background: $success-01; }
+#scss_scrollspy { background: $primary-01; }
+h1 {
+  font-size: 5em;
+}
+.nav-item {
+  transition: background 200ms;
+}

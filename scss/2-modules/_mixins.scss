@@ -237,11 +237,17 @@
 @mixin modal-content {
 	background-color: #f4f4f4;
 	margin: 5% auto;
-	width: 70%;
+	width: 90%;
 	box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
 	animation-name: modalopen;
 	animation-duration: 1s; 
 	// border-left: 5px solid $color-primary;
+	@include respond-to(extrasmall-screens) { width: 80%; }
+    @include respond-to(small-screens) { width: 80%; }
+    @include respond-to(medium-screens) { width: 70%; }
+    @include respond-to(large-screens) { width: 400px; }
+    @include respond-to(large-2-screens) { width: 500px; }
+    @include respond-to(extralarge-screens) { width: 550px; }
 }
 
 // visability

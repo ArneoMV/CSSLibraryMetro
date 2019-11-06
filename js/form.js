@@ -1,34 +1,32 @@
 // multi-step form
 
-const previousButton = document.getElementById("previous")
-const nextButton = document.getElementById("next")
-const submitButton = document.getElementById('validateFormStep')
-const form = document.getElementById('stepByStepForm')
-const dots = document.getElementsByClassName('progress-bar__dot')
-const numberOfSteps = 3
-let currentStep = 1
+let btn_prevForm = document.getElementById("btn_prevForm");
+let btn_nextForm = document.getElementById("btn_nextForm");
+const submitButton = document.getElementById('validateFormStep');
+const form = document.getElementById('stepByStepForm');
+let dotsForm = document.getElementsByClassName('progress-bar__dot');
+const numberOfSteps = 3;
+let currentStep = 1;
 
-for(let i = 0 ; i < dots.length ; ++i){
-   dots[i].addEventListener('click', () => {
+for(let i = 0 ; i < dotsForm.length ; ++i){
+   dotsForm[i].addEventListener('click', () => {
      goToStep(i + 1) 
    })
 }
 
-previousButton.onclick = goPrevious
-nextButton.onclick = goNext
 
-
-function goNext(e) {
-   e.preventDefault()
-   currentStep += 1
-   goToStep(currentStep)
-}
-
-function goPrevious(e) {
+btn_prevForm.addEventListener("click", function(e){
    e.preventDefault()
    currentStep -= 1
    goToStep(currentStep)
-}
+});
+
+btn_nextForm.addEventListener("click", function(e){
+   e.preventDefault()
+   currentStep += 1
+   goToStep(currentStep)
+});
+
 
 function goToStep(stepNumber){   
    currentStep = stepNumber
@@ -57,22 +55,22 @@ function goToStep(stepNumber){
    
    //if we reached final step
    if(currentStep === numberOfSteps){
-      enable(previousButton)
-      disable(nextButton)
-      show(submitButton)
+      enable(btn_prevForm)
+      disable(btn_nextForm)
+      show(submitButtonForm)
    }
    
    //else if first step
    else if(currentStep === 1){
-     disable(previousButton)
+     disable(btn_prevForm)
       enable(next)
-      hide(submitButton)
+      hide(submitButtonForm)
    }
    
    else {
-      enable(previousButton)
+      enable(btn_prevForm)
       enable(next)
-      hide(submitButton)
+      hide(submitButtonForm)
    }
 }
 

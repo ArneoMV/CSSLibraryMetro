@@ -28,11 +28,12 @@
 
     
     <div class="carousel">
-        <button class="carousel_button carousel_button--left is-hidden">
-            <img src="../img/icons/left-arrow.svg">
+        <button class="btn_Carousel btn_prevCarousel is-hidden">
+            <img src="img/icons/left-arrow.svg">
         </button>
+
         <div class="carousel_track-container">
-            <ul class="carousel_track">
+            <ul class="track_Carousel">
                 <li class="carousel_slide current-slide">
                     <img class="carousel_image" src="https://images.unsplash.com/photo-1546968375-51ddab8c30f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
                 </li>
@@ -44,15 +45,17 @@
                 </li>
             </ul>
         </div>
-        <button class="carousel_button carousel_button--right">
-            <img src="../img/icons/right-arrow.svg">
+
+        <button class="btn_Carousel btn_nextCarousel">
+            <img src="img/icons/right-arrow.svg">
         </button>
-    
-        <div class="carousel_nav">
+
+        <div class="dots_NavCarousel">
             <button class="carousel_indicator current-slide"></button>
             <button class="carousel_indicator"></button>
             <button class="carousel_indicator"></button>
         </div>
+        
     </div>
 
 
@@ -68,11 +71,11 @@
             <td> </td>
         </tr>
         <tr>
-            <td><span class="txt-primary-4">carousel_button</span></td>
+            <td><span class="txt-primary-4">btn_Carousel</span></td>
             <td> </td>
         </tr>
         <tr>
-            <td><span class="txt-primary-4">carousel_button--left & carousel_button--right</span></td>
+            <td><span class="txt-primary-4">btn_prevCarousel & btn_nextCarousel</span></td>
             <td> </td>
         </tr>
         <tr>
@@ -80,7 +83,7 @@
             <td> </td>
         </tr>
         <tr>
-            <td><span class="txt-primary-4">carousel_track</span></td>
+            <td><span class="txt-primary-4">track_Carousel</span></td>
             <td> </td>
         </tr>
         <tr>
@@ -96,7 +99,7 @@
             <td> </td>
         </tr>
         <tr>
-            <td><span class="txt-primary-4">carousel_nav</span></td>
+            <td><span class="txt-primary-4">dots_NavCarousel</span></td>
             <td> </td>
         </tr>
         <tr>
@@ -108,11 +111,11 @@
 
     <code>
     &lt;div class="carousel"&gt;
-        &lt;button class="carousel_button carousel_button--left is-hidden"&gt;
+        &lt;button class="btn_Carousel btn_prevCarousel is-hidden"&gt;
             &lt;img src="../img/icons/left-arrow.svg"&gt;
         &lt;/button&gt;
         &lt;div class="carousel_track-container"&gt;
-            &lt;ul class="carousel_track"&gt;
+            &lt;ul class="track_Carousel"&gt;
                 &lt;li class="carousel_slide current-slide"&gt;
                     &lt;img class="carousel_image" src="img1.jpg" alt=""&gt;
                 &lt;/li&gt;
@@ -124,11 +127,11 @@
                 &lt;/li&gt;
             &lt;/ul&gt;
         &lt;/div&gt;
-        &lt;button class="carousel_button carousel_button--right"&gt;
+        &lt;button class="btn_Carousel btn_nextCarousel"&gt;
             &lt;img src="../img/icons/right-arrow.svg"&gt;
         &lt;/button&gt;
     
-        &lt;div class="carousel_nav"&gt;
+        &lt;div class="dots_NavCarousel"&gt;
             &lt;button class="carousel_indicator current-slide"&gt;&lt;/button&gt;
             &lt;button class="carousel_indicator"&gt;&lt;/button&gt;
             &lt;button class="carousel_indicator"&gt;&lt;/button&gt;
@@ -142,7 +145,7 @@
         height: 400px;
         width: 100%;
         margin: 0 auto;
-        .carousel_button {
+        .btn_Carousel {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -153,10 +156,10 @@
             width: 25px;
         }
         }
-        .carousel_button--left {
+        .btn_prevCarousel {
         left: -40px;
         }
-        .carousel_button--right {
+        .btn_nextCarousel{
         right: -40px;
         }
         .carousel_track-container {
@@ -164,7 +167,7 @@
         height: 100%;
         position: relative;
         overflow: hidden;
-        .carousel_track {
+        .track_Carousel {
             padding: 0;
             margin: 0;
             list-style: none;
@@ -184,7 +187,7 @@
             }
         }
         }
-        .carousel_nav {
+        .dots_NavCarousel {
         /* background: pink; */
         display: flex;
         justify-content: center;
@@ -237,3 +240,6 @@
     .is-hidden {display: none;} 
     </code>
     <small class="codeText">SCSS</small><br>
+
+
+    <script src="js/carousel.js"></script>
