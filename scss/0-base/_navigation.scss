@@ -8,6 +8,7 @@ header {
   height: 65px;
   width: 100%;
   background-color: $priamry-0;
+  color: $white !important;
   .head {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -25,15 +26,6 @@ header {
       }
       .hamburger .burger label .bar {
         background-color: $white !important;
-      }
-      .hamburger {
-        .burger {
-          label {
-            .bar {
-              background-color: $white !important;
-            }
-          }
-        }
       }
 
       h2 {
