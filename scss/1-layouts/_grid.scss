@@ -93,8 +93,8 @@
 
 .grid-item-1 {
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  color: $warrning-4;
-  border: 6px solid $danger-3;
+  color: $white;
+  border: 6px solid $primary-3;
   border-radius: 4px;
   display: flex;
   justify-content: center;
@@ -104,21 +104,20 @@
 }
 
 .grid-header {
-  background-color: $warrning-1;
+  background-color: $primary-1;
 }
 .grid-sidebar {
-  background-color: $warrning-1;
+  background-color: $primary-1;
 }
 .grid-content-1 {
-  background-color: $warrning-1;
+  background-color: $primary-1;
 }
 .grid-content-2,
 .grid-content-3 {
-  background-color: $warrning-1;
+  background-color: $pritmary-1;
 }
-
 .grid-footer {
-  background-color: $warrning-1;
+  background-color: $primary-1;
 }
 
 
