@@ -5,11 +5,11 @@ class Mondrian {
         this.element = element;
         this.colors = [
             'black',
-            '#FA4E00',
-            '#095AA2',
-            '#FA9200',
-            '#00A969',
-            '#fff',
+            'red',
+            'blue',
+            'yellow',
+            'white',
+            'white',
             'white'
         ];
     }
