@@ -5,13 +5,15 @@ class Mondrian {
     constructor(element) {
         this.element = element;
         this.colors = [
-            'orange',
+            'black',
             'red',
             'blue',
             'yellow',
+            'white',
+            'white',
+            'white',
             'green',
-            'black',
-            'white'
+            'orange'
         ];
     }
 
