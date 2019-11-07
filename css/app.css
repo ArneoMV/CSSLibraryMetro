@@ -4059,6 +4059,10 @@ textarea:focus, input:focus {
   background: rgba(9, 90, 162, 0.5);
 }
 
+#js_scrollspy {
+  background: #333333;
+}
+
 h1 {
   font-size: 5em;
 }
