@@ -66,9 +66,6 @@ ul {
     li {
         @include listFont();
         font-family: 'UbuntuMono', monospace;
-        & {
-            // margin-bottom: 0.3rem;
-        }
         &:last-child {
             margin-bottom: 0;
         }

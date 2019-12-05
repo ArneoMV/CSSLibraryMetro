@@ -34,13 +34,13 @@
 		  list-style: none;
 		  a {
 			text-decoration: none;
-			font-size: 1em;
-			color: #818181;
 			display: block;
 			transition: 0.3s;
-			font-family: 'Libre Baskerville','Roboto Slab', serif;
 			&:hover {
 				color: $black;
+			}
+			&.tp-1 {
+				font-weight: bold;
 			}
 		  }
 		}

@@ -1,19 +1,27 @@
 /* MAIN SCRIPT */
 
 // MAIN NAVIGATION
+var sidebar = document.getElementById('mainSidebar');
+var checkBox = document.getElementById("mainNav");
+var link = document.querySelectorAll("a");
+
+// hamburger
 function mainNavigation() {
-    var checkBox = document.getElementById("mainNav");
-    
-    if (checkBox.checked == true){
-        document.getElementById("mainSidebar").style.width = "350px";
-        // document.getElementById("main").style.marginLeft = "350px";
-        
-       
+    // close navigation if hamburger clicked
+    if (checkBox.checked == true) {
+        sidebar.style.width = "350px";
     } else {
-        document.getElementById("mainSidebar").style.width = "0";
-        // document.getElementById("main").style.marginLeft= "0";
+        sidebar.style.width = "0";
     }
 }
+// link
+sidebar.addEventListener('click', function() {
+    // Uncheck
+    checkBox.checked = false;
+    sidebar.style.width = "0";
+
+    console.log('Click just happened');
+});
 
 
 // syntax Highlight
@@ -31,32 +39,6 @@ function syntaxHighlights() {
     }
 }
 window.addEventListener("load", syntaxHighlights);
-
-
-
-// BUTTON RIPPLE
-var buttons = document.getElementsByClassName('btn-ripple');
-
-Array.prototype.forEach.call(buttons, function(b) {
-    b.addEventListener('click', createRipple);
-})
-
-function createRipple(e) {
-    if (this.getElementsByClassName('ripple').length > 0) {
-        this.removeChild(this.childNodes[1]);
-    }
-
-    var circle = document.createElement('div');
-    this.appendChild(circle);
-
-    var d = Math.max(this.clientWidth, this.clientHeight);
-    circle.style.width = circle.style.height = d + 'px';
-
-    circle.style.left = e.clientX - this.offsetLeft - d / 2 + 'px';
-    circle.style.top = e.clientY - this.offsetTop - d / 2 + 'px';
-
-    circle.classList.add('ripple');
-}
 
 
 // PROGRESS BAR
