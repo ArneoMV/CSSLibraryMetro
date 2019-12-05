@@ -2006,6 +2006,11 @@ figcaption {
   font-size: 0.7em;
 }
 
+.slika img {
+  width: auto;
+  height: auto;
+}
+
 /* FORM'S */
 /* MIXINS */
 /*  navigation */
