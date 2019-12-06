@@ -320,9 +320,6 @@ header .head {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: 65px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 header .head .head-item {
   place-self: center;
@@ -331,6 +328,7 @@ header .head .head-item a {
   padding: 0 0 0 10px;
 }
 header .head .head-item a img {
+  margin-top: 10px;
   min-width: 65px;
 }
 header .head .head-item .hamburger .burger label .bar {
@@ -366,7 +364,6 @@ header .mainSidebar {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  align-items: center;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
   height: 100%;
   width: 0;
@@ -374,6 +371,11 @@ header .mainSidebar {
   left: 0;
   margin: 0;
   padding: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 header .mainSidebar .sidebar-item {
   align-self: start;

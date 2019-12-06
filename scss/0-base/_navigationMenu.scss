@@ -130,84 +130,82 @@
 
 // NAVBAR
 .navBar {
-min-height: 50px;
-margin: 0;
-padding: 0;
-background-color: $primary-1;
-.navTitle {
-  color: white;
-  float: left;
-  height: 50px;
-  width: 150px;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-}
-.toggle, [id^=drop] {
-  display: none;
-}
-.toggle:nth-child(2) {
-  float: right;
-  padding-top: 8px;
-}
-&:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-ul {
-  float: right;
-  padding: 0;
+  min-height: 50px;
   margin: 0;
-  list-style: none;
-  position: relative;
-}
-ul li {
-  margin: 0px;
-  display: inline-block;
-  float: left;
-  background-color: transparent;
-  & > a:after { content: ' +'; }
-  & > a:only-child:after { content: ''; }
-}
-a {
-  display: block;
-  padding: 0 20px;
-  color: $white;
-  font-size: 20px;
-  line-height: 60px;
-  text-decoration: none;
-  cursor: pointer;
-}
-nav ul li ul li:hover { background-color: $primary-1; }
-a:hover { background-color: $primary-2; }
-ul ul {
-  display: none;
-  position: absolute;
-  top: 60px;
-}
-ul li:hover > ul { display: inherit; }
-ul ul li {
-  width: 170px;
-  float: none;
-  display: list-item;
-  position: relative;
-  background-color: $primary-0;
-}
-ul ul ul li {
-  position: relative;
-  top: -60px;
-  left: 170px;
-}
-@include respond-to(small-screens) {  
-  @include navMedia-small();
-}
+  padding: 0;
+  background-color: $primary-1;
+  .navTitle {
+    color: white;
+    float: left;
+    height: 50px;
+    width: 150px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  .toggle, [id^=drop] {
+    display: none;
+  }
+  .toggle:nth-child(2) {
+    float: right;
+    padding-top: 8px;
+  }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  ul {
+    float: right;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+  }
+  ul li {
+    margin: 0px;
+    display: inline-block;
+    float: left;
+    background-color: transparent;
+    & > a:after { content: ' +'; }
+    & > a:only-child:after { content: ''; }
+  }
+  a {
+    display: block;
+    padding: 0 20px;
+    color: $white;
+    font-size: 20px;
+    line-height: 60px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  nav ul li ul li:hover { background-color: $primary-1; }
+  a:hover { background-color: $primary-2; }
+  ul ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+  }
+  ul li:hover > ul { display: inherit; }
+  ul ul li {
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+    background-color: $primary-0;
+  }
+  ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 170px;
+  }
+  @include respond-to(small-screens) {  
+    @include navMedia-small();
+    
+  }
 
 @include respond-to(medium-screens) { 
-  @include navMedia-small();
+    @include navMedia-small();
+  }
+
 }
-}
-
-
-
-

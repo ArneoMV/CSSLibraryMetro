@@ -2,14 +2,28 @@
 <!-- NAVBAR -->
 <nav class="navBar">
   <h4 class="navTitle">Navbar</h4>
-  <label for="drop" class="toggle">
-    <div class="wrapper-menu">
-      <div class="line-menu half start"></div>
-      <div class="line-menu"></div>
-      <div class="line-menu half end"></div>
-    </div>
-  </label>
-  <input type="checkbox" id="drop" />
+
+  <div class='burger'>
+    <label for="drop" class="toggle">
+        <span class='bar bar-1'></span>
+        <span class='bar bar-2'></span>
+        <span class='bar bar-3'></span>
+    </label>
+  </div>
+  <input type="checkbox" name='burger3' id="drop" />
+
+    <!-- 
+      <div class='burger burger-3'>
+      <label for='drop' class="toggle">
+        <span class='bar bar-1'></span>
+        <span class='bar bar-2'></span>
+        <span class='bar bar-3'></span>
+      </label>
+      <input type='checkbox' name='burger3' id='drop' />
+    </div> 
+  -->
+
+
 
   <ul class="menu">
     <li><a href="#">Home</a></li>
