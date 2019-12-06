@@ -646,26 +646,7 @@ blockquote {
 /* TABLE */
 /* MIXINS */
 /*  navigation */
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-td, th {
-  border: 1px solid #333333;
-  text-align: left;
-  padding: 8px;
-  width: auto;
-  height: auto;
-  max-width: 100px;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-
-table {
+.table_small {
   width: 100%;
   border-collapse: collapse;
   overflow: hidden;
@@ -676,102 +657,202 @@ table {
   border-spacing: 0;
   font-family: "UbuntuMono", monospace;
 }
-table::after {
+.table_small::after {
   display: block;
   content: "";
   clear: both;
 }
-table th, table td {
+.table_small th, .table_small td {
   margin: 0;
   padding: 0.9em;
   font-size: 0.85em;
   vertical-align: middle;
 }
-table thead {
+.table_small thead {
   background-color: #4686bf;
 }
-table thead::after {
+.table_small thead::after {
   display: block;
   content: "";
   clear: both;
 }
-table thead th {
+.table_small thead th {
   background-color: #095aa2;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
 }
-table tbody {
+.table_small tbody {
   background-color: rgba(70, 134, 191, 0.5);
 }
-table tbody tr th {
+.table_small tbody tr th {
   background-color: #095aa2;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
 }
-table tbody tr td {
+.table_small tbody tr td {
   color: #333333;
   text-align: left;
 }
-table tbody tr td:nth-child(1) {
+.table_small tbody tr td:nth-child(1) {
   text-align: center;
 }
-table tbody tr:nth-child(even) {
+.table_small tbody tr:nth-child(even) {
   background-color: #fff;
   color: #333333;
 }
 @media (max-width: 1024px) {
-  table th, table td {
+  .table_small th, .table_small td {
     font-size: 0.7em;
   }
 }
 @media (max-width: 840px) {
-  table th, table td {
+  .table_small th, .table_small td {
     font-size: 0.6em;
   }
-  table table {
+  .table_small table {
     display: block;
     position: relative;
     width: 100%;
   }
-  table th, table tr, table td {
+  .table_small th, .table_small tr, .table_small td {
     display: block;
   }
-  table th, table td {
+  .table_small th, .table_small td {
     font-size: 0.8em;
     min-height: 1.25em;
   }
-  table th {
+  .table_small th {
     text-align: left;
   }
-  table thead {
+  .table_small thead {
     display: block;
     float: left;
   }
-  table tbody {
+  .table_small tbody {
     display: block;
     width: auto;
     position: relative;
     overflow-x: auto;
     white-space: nowrap;
   }
-  table tbody tr {
+  .table_small tbody tr {
     display: inline-block;
     vertical-align: top;
   }
-  table thead {
+  .table_small thead {
     display: block;
     float: left;
   }
-  table tbody {
+  .table_small tbody {
     display: -webkit-box;
     overflow-x: auto;
   }
 }
 @media (max-width: 480px) {
-  table th, table td {
+  .table_small th, .table_small td {
     font-size: 0.6em;
+  }
+}
+
+.table_big {
+  border: 1px solid #333333;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+  font-family: "UbuntuMono", monospace;
+}
+.table_big caption {
+  font-size: 1.5em;
+  margin: 0.5em 0 0.75em;
+}
+.table_big thead {
+  background-color: #4686bf;
+}
+.table_big thead th {
+  background-color: #095aa2;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.table_big tbody {
+  background-color: rgba(70, 134, 191, 0.5);
+}
+.table_big tbody tr th {
+  background-color: #095aa2;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.table_big tbody tr td {
+  color: #333333;
+  text-align: left;
+}
+.table_big tbody tr td:nth-child(1) {
+  text-align: center;
+}
+.table_big tbody tr:nth-child(even) {
+  background-color: #fff;
+  color: #333333;
+}
+.table_big th, .table_big td {
+  margin: 0;
+  padding: 0.9em;
+  font-size: 0.85em;
+  vertical-align: middle;
+}
+@media screen and (max-width: 600px) {
+  .table_big {
+    border: 0;
+  }
+  .table_big caption {
+    font-size: 1.3em;
+  }
+  .table_big thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  .table_big tbody {
+    display: block;
+    height: 400px;
+    width: 100%;
+    overflow-y: auto;
+  }
+  .table_big tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+  .table_big td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+  .table_big td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .table_big td:last-child {
+    border-bottom: 0;
   }
 }
 
@@ -2438,8 +2519,6 @@ fieldset .form-radio, fieldset .form-group {
   height: 42px;
   position: relative;
   overflow: hidden;
-  margin-left: 20px;
-  margin-right: 20px;
 }
 .burger input:checked ~ label {
   transform: rotate(90deg);
@@ -4077,6 +4156,50 @@ h1 {
 
 .nav-item {
   transition: background 200ms;
+}
+
+.menu {
+  width: 100%;
+  height: 75px;
+  background-color: black;
+  position: fixed;
+  background-color: rgba(4, 180, 49, 0.6);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.light-menu {
+  width: 100%;
+  height: 75px;
+  background-color: white;
+  position: fixed;
+  background-color: rgba(4, 180, 49, 0.6);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#menu-center {
+  width: 980px;
+  height: 75px;
+  margin: 0 auto;
+}
+#menu-center ul {
+  margin: 15px 0 0 0;
+}
+#menu-center ul li {
+  list-style: none;
+  margin: 0 30px 0 0;
+  display: inline;
+}
+
+.active_NavBar {
+  font-size: 0.9em;
+  color: #fa9200 !important;
+  text-decoration: none;
 }
 
 /* Carousel */

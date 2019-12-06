@@ -11,8 +11,6 @@
   height: 42px;
   position: relative;
   overflow: hidden;
-  margin-left: 20px;
-  margin-right: 20px;
     input:checked ~ label {
       transform: rotate(90deg);
       .bar-1 {
@@ -90,3 +88,6 @@
 .openBurger2 .line-menu.end {
   transform: rotate(-90deg) translateX(-3px);
 }
+
+
+// Hamburger NavBar
