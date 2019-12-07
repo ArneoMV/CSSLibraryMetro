@@ -9,12 +9,12 @@ function mainNavigation() {
     // close navigation if hamburger clicked
     if (checkBox.checked == true) {
         sidebar.style.width = "350px";
-        sidebar.style.transition = "600ms";
+        sidebar.style.transition = "600ms ease-in";
         sidebar.style.opacity = "1";
     } else {
         sidebar.style.width = "0";
         // sidebar.style.transition = "opacity 1300ms ease-out";
-        sidebar.style.transition = "600ms";
+        sidebar.style.transition = "600ms ease-out";
         sidebar.style.filter = "alpha(opacity=0)";
         sidebar.style.opacity = "0";
     }
@@ -24,7 +24,7 @@ sidebar.addEventListener('click', function() {
     // Uncheck
     checkBox.checked = false;
     sidebar.style.width = "0px";
-    sidebar.style.transition = "600ms";
+    sidebar.style.transition = "600ms ease-out";
     sidebar.style.filter = "alpha(opacity=0)";
     sidebar.style.opacity = "0";
     console.log('Click just happened');
