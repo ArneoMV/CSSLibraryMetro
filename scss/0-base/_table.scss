@@ -1,128 +1,32 @@
 /* TABLE */
 
 @import "../2-modules/mixins.scss";
-// table {
-// 	font-family: arial, sans-serif;
-// 	// border-collapse: collapse;
-// 	// width: 100%;
-//   }
-  
-//   td, th {
-// 	border: 1px solid $black;
-// 	text-align: left;
-// 	padding: 8px;
-// 	width: auto;
-// 	height: auto;
-// 	max-width: 100px;
-//   }
-  
-//   tr:nth-child(even) {
-// 	background-color: #dddddd;
-//   }
+.tableMetro {
+	font-family: arial, sans-serif;
+	// border-collapse: collapse;
+	width: 100%;
+	td, th {
+		border: 1px solid $black;
+		// background-color: rgb(205, 108, 108);
+		text-align: left;
+		padding: 8px;
+		width: auto;
+		height: auto;
+		max-width: 100px;
+	  }
+	  tr {
+		  background-color: rgba(219, 221, 233, 0.9);
+		  
+	  }
+	  tr:nth-child(even) {
+		background-color: rgba(9,90,162,0.51);
+		td {
+			color: rgb(255, 255, 255);
+		  }
+	  }
+	
+  }
 
-// Basic table
-// table {
-// 	@include clearfix();
-// 	width: 100%;
-// 	border-collapse: collapse;
-// 	overflow: hidden;
-// 	overflow-x:auto;
-// 	table-layout: fixed;
-// 	line-height: 1.25em;/*15*/
-// 	border-spacing: 0;
-// 	font-family: "UbuntuMono", monospace;
-
-// 	th, td { 
-// 		margin: 0; 
-// 		padding: 0.9em;
-// 		font-size: 0.85em;
-// 		vertical-align: middle;
-// 	}
-// 	thead {
-// 		@include clearfix();
-// 		background-color: $primary-1;
-// 		th {
-// 			background-color: $primary-0;
-// 			color: $white;
-// 			text-align: center; 
-// 			text-transform: uppercase;
-// 		}
-// 	}
-
-// 	tbody {
-// 		background-color: $table-primary-1;
-// 		tr {
-// 			th {
-// 				background-color: $primary-0;
-// 				color: $white;
-// 				text-align: center; 
-// 				text-transform: uppercase;
-// 			}
-// 			td {
-// 				color: $black;
-// 				text-align: left; 
-// 			}
-// 			td:nth-child(1){
-// 				text-align: center; 
-// 			}
-// 			&:nth-child(even) {
-// 				background-color: $white;
-// 				color: $black;
-// 			}
-// 		}
-// 	}
-// 	@include breakpoint(desktop) { 
-// 		th, td {
-// 			font-size: 0.7em;
-// 		} 
-// 	}
-// 	@include breakpoint(tablet) { 
-// 		th, td {
-// 			font-size: 0.6em;
-// 		}
-// 		table {
-// 			display: block;
-// 			position: relative;
-// 			width: 100%;
-// 		}
-// 		th,tr,td { display: block; }
-// 		th,td {
-// 			font-size: 0.8em;
-// 			min-height: 1.25em; 
-// 		}
-// 		th {
-// 			text-align: left;
-// 		}
-// 		thead { 
-// 			display: block; 
-// 			float: left; 
-// 		}
-// 		tbody{ 
-// 			display: block; 
-// 			width: auto; 
-// 			position: relative; 
-// 			overflow-x: auto; 
-// 			white-space: nowrap;
-// 		}
-// 		tbody tr { 
-// 			display: inline-block; 
-// 			vertical-align: top; 
-// 		}
-// 		thead { 
-// 			display: block;
-// 			float: left; 
-// 		}
-// 		tbody { 
-// 			display: -webkit-box; 
-// 			overflow-x: auto; 
-// 		}
-// 	}
-// 	@include breakpoint(phone) { 
-// 		th, td {
-// 			font-size: 0.6em;
-// 		} 
-// 	}
-// }
 
 // TABLE STRIPED
 // .table-striped tbody tr:nth-of-type(odd) {

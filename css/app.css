@@ -646,6 +646,28 @@ blockquote {
 /* TABLE */
 /* MIXINS */
 /*  navigation */
+.tableMetro {
+  font-family: arial, sans-serif;
+  width: 100%;
+}
+.tableMetro td, .tableMetro th {
+  border: 1px solid #333333;
+  text-align: left;
+  padding: 8px;
+  width: auto;
+  height: auto;
+  max-width: 100px;
+}
+.tableMetro tr {
+  background-color: rgba(219, 221, 233, 0.9);
+}
+.tableMetro tr:nth-child(even) {
+  background-color: rgba(9, 90, 162, 0.51);
+}
+.tableMetro tr:nth-child(even) td {
+  color: white;
+}
+
 .table_small {
   width: 100%;
   border-collapse: collapse;
