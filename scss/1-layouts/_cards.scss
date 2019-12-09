@@ -30,7 +30,7 @@
         // grid-template-columns: repeat(1, 50%);
     }
     @include respond-to(medium-screens) {
-        grid-template-columns: repeat(2, 50%);
+        grid-template-columns: repeat(1, 100%);
     }
     @include respond-to(large-screens) {
         grid-template-columns: repeat(3, 33%);
@@ -202,6 +202,18 @@
         padding: 0 20px;
         
     }
+    @include respond-to(extrasmall-screens) {  
+        zoom: 60%
+    }
+    @include respond-to(small-screens) { 
+        zoom: 70%
+    }
+    @include respond-to(medium-screens) { 
+        zoom: 80%
+    }
+    @include respond-to(large-screens) { 
+        zoom: 90%;
+    }
 }
 .profil-card-2 {
     width: 20rem;
@@ -267,6 +279,18 @@
         border: 0.5rem solid #ebeef8;
         position: relative;
         left: 60px;
+    }
+    @include respond-to(extrasmall-screens) {  
+        zoom: 60%
+    }
+    @include respond-to(small-screens) { 
+        zoom: 70%
+    }
+    @include respond-to(medium-screens) { 
+        zoom: 80%
+    }
+    @include respond-to(large-screens) { 
+        zoom: 90%;
     }
 }
 .jos {
@@ -485,6 +509,18 @@
 		transform-style: preserve-3d;
 		transition: transform 1s cubic-bezier(0.75, 0, 0.85, 1);
     }
+    @include respond-to(extrasmall-screens) {  
+        zoom: 60%
+    }
+    @include respond-to(small-screens) { 
+        zoom: 70%
+    }
+    @include respond-to(medium-screens) { 
+        zoom: 80%
+    }
+    @include respond-to(large-screens) { 
+        zoom: 90%;
+    }
 }
 .more {
 	display: none;
@@ -624,10 +660,11 @@
 
 
 ::-webkit-scrollbar {
-	width: 5px;
+    width: 5px;
+    height: 0.5px;
 }
 ::-webkit-scrollbar-track {
-	background: #f1f1f1;
+	background: $white;
 }
 ::-webkit-scrollbar-thumb {
 	background: lighten($accent-color, 20%);

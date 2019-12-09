@@ -55,7 +55,7 @@ document.getElementById("myNav").innerHTML =
                     +"<li><a href='../html/buttons.html'>Button's</a></li>"
                     +"<li><a href='../html/modal.html'>Modal</a></li>"
                     +"<li><a href='../html/progressBar.html'>Progress bar</a></li>"
-                    +"<li><a href='../html/pagination.html'>Pagination</a></li>"
+                    // +"<li><a href='../html/pagination.html'>Pagination</a></li>"
                     
                     +"<li><span class='tp-1'>Utilities</span></li>"              
                     +"<li><a href='../html/visability.html'>Visability</a></li>"

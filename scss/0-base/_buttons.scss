@@ -14,8 +14,33 @@
     padding: 0.5625em 1.5em;
 }
 
-.btn_grid{
-    text-align: center;
+.btn_grid {
+    display: grid;
+    justify-items: center;
+    @include respond-to(extrasmall-screens) { 
+      grid-template-columns: 1fr; 
+      grid-template-rows: repeat(5, 1fr);
+     }
+    @include respond-to(small-screens) { 
+      grid-template-columns: 1fr; 
+      grid-template-rows: repeat(5, 1fr);
+     }
+    @include respond-to(medium-screens) { 
+      grid-template-columns: repeat(2, 1fr); 
+      grid-template-rows: repeat(3, 1fr);
+    }
+    @include respond-to(large-screens) { 
+      grid-template-columns: repeat(5, 1fr); 
+      grid-template-rows: 1fr;
+    }
+    @include respond-to(large-2-screens) {
+      grid-template-columns: repeat(5, 1fr); 
+      grid-template-rows: 1fr;
+    }
+    @include respond-to(extralarge-screens) { 
+      grid-template-columns:repeat(5, 1fr);
+      grid-template-rows: 1fr; 
+    }
 }
 .toggle_grid {
   display: grid;

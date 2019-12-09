@@ -405,10 +405,10 @@ fieldset {
 }
 .form-step {
     @include respond-to(small-screens) {
-        width: 90vw;
+        width: auto;
     }
     @include respond-to(medium-screens) {
-        width: 90vw;
+        width: auto;
     }
     @include respond-to(large-screens) {
         width: 500px;

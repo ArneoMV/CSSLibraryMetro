@@ -650,6 +650,9 @@ blockquote {
   font-family: arial, sans-serif;
   width: 100%;
 }
+.tableMetro tbody {
+  word-break: break-all;
+}
 .tableMetro td, .tableMetro th {
   border: 1px solid #333333;
   text-align: left;
@@ -814,7 +817,6 @@ blockquote {
 }
 .table_big tbody tr td {
   color: #333333;
-  text-align: left;
 }
 .table_big tbody tr td:nth-child(1) {
   text-align: center;
@@ -862,6 +864,8 @@ blockquote {
     display: block;
     font-size: 0.8em;
     text-align: right;
+    overflow-x: scroll;
+    white-space: nowrap;
   }
   .table_big td::before {
     /*
@@ -897,7 +901,44 @@ blockquote {
 }
 
 .btn_grid {
-  text-align: center;
+  display: grid;
+  justify-items: center;
+}
+@media only screen and (min-width: 151px) and (max-width: 479px) {
+  .btn_grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 479px) {
+  .btn_grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 719px) {
+  .btn_grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+@media only screen and (min-width: 721px) and (max-width: 919px) {
+  .btn_grid {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
+@media only screen and (min-width: 921px) and (max-width: 1199px) {
+  .btn_grid {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .btn_grid {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+  }
 }
 
 .toggle_grid {
@@ -2505,12 +2546,12 @@ fieldset .form-radio, fieldset .form-group {
 
 @media only screen and (min-width: 321px) and (max-width: 479px) {
   .form-step {
-    width: 90vw;
+    width: auto;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 719px) {
   .form-step {
-    width: 90vw;
+    width: auto;
   }
 }
 @media only screen and (min-width: 721px) and (max-width: 919px) {
@@ -4122,7 +4163,8 @@ textarea:focus, input:focus {
 
 .hero-bg {
   width: auto;
-  height: 100vh;
+  height: auto;
+  padding: 150px 0 50px 0;
   display: grid;
   justify-items: center;
 }
@@ -4133,8 +4175,12 @@ textarea:focus, input:focus {
   align-items: center;
   width: 80%;
 }
-.content_Scrollspy h2, .content_Scrollspy p, .content_Scrollspy small {
+.content_Scrollspy h2, .content_Scrollspy p {
+  color: #043764 !important;
+}
+.content_Scrollspy small {
   color: #fff !important;
+  text-align: left;
 }
 .content_Scrollspy code {
   align-self: end;
@@ -4180,44 +4226,6 @@ h1 {
   transition: background 200ms;
 }
 
-.menu {
-  width: 100%;
-  height: 75px;
-  background-color: black;
-  position: fixed;
-  background-color: rgba(4, 180, 49, 0.6);
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.light-menu {
-  width: 100%;
-  height: 75px;
-  background-color: white;
-  position: fixed;
-  background-color: rgba(4, 180, 49, 0.6);
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-#menu-center {
-  width: 980px;
-  height: 75px;
-  margin: 0 auto;
-}
-#menu-center ul {
-  margin: 15px 0 0 0;
-}
-#menu-center ul li {
-  list-style: none;
-  margin: 0 30px 0 0;
-  display: inline;
-}
-
 .active_NavBar {
   font-size: 0.9em;
   color: #fa9200 !important;
@@ -4250,7 +4258,7 @@ h1 {
   right: -40px;
 }
 .carousel .carousel_track-container {
-  background: lightgreen;
+  background: #fff;
   height: 100%;
   position: relative;
   overflow: hidden;
@@ -4290,6 +4298,21 @@ h1 {
 }
 .carousel .dots_NavCarousel .carousel_indicator.current-slide {
   background: #095aa2;
+}
+@media only screen and (min-width: 151px) and (max-width: 479px) {
+  .carousel {
+    zoom: 70%;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 479px) {
+  .carousel {
+    zoom: 80%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 719px) {
+  .carousel {
+    zoom: 90%;
+  }
 }
 @media only screen and (min-width: 721px) and (max-width: 919px) {
   .carousel {
@@ -5028,7 +5051,7 @@ code {
 }
 @media only screen and (min-width: 481px) and (max-width: 719px) {
   .price-cards {
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(1, 100%);
   }
 }
 @media only screen and (min-width: 721px) and (max-width: 919px) {
@@ -5213,6 +5236,26 @@ code {
   align-items: center;
   padding: 0 20px;
 }
+@media only screen and (min-width: 151px) and (max-width: 479px) {
+  .profil-card {
+    zoom: 60%;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 479px) {
+  .profil-card {
+    zoom: 70%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 719px) {
+  .profil-card {
+    zoom: 80%;
+  }
+}
+@media only screen and (min-width: 721px) and (max-width: 919px) {
+  .profil-card {
+    zoom: 90%;
+  }
+}
 
 .profil-card-2 {
   width: 20rem;
@@ -5275,6 +5318,26 @@ code {
   border: 0.5rem solid #ebeef8;
   position: relative;
   left: 60px;
+}
+@media only screen and (min-width: 151px) and (max-width: 479px) {
+  .profil-card-2 {
+    zoom: 60%;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 479px) {
+  .profil-card-2 {
+    zoom: 70%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 719px) {
+  .profil-card-2 {
+    zoom: 80%;
+  }
+}
+@media only screen and (min-width: 721px) and (max-width: 919px) {
+  .profil-card-2 {
+    zoom: 90%;
+  }
 }
 
 .jos {
@@ -5476,6 +5539,26 @@ code {
   transform-style: preserve-3d;
   transition: transform 1s cubic-bezier(0.75, 0, 0.85, 1);
 }
+@media only screen and (min-width: 151px) and (max-width: 479px) {
+  .card {
+    zoom: 60%;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 479px) {
+  .card {
+    zoom: 70%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 719px) {
+  .card {
+    zoom: 80%;
+  }
+}
+@media only screen and (min-width: 721px) and (max-width: 919px) {
+  .card {
+    zoom: 90%;
+  }
+}
 
 .more {
   display: none;
@@ -5608,10 +5691,11 @@ code {
 
 ::-webkit-scrollbar {
   width: 5px;
+  height: 0.5px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #fff;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -6032,19 +6116,19 @@ article ul li {
 }
 @media only screen and (min-width: 321px) and (max-width: 479px) {
   article ul li {
-    font-size: 0.8em;
+    font-size: 1em;
     line-height: 1.3em;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 719px) {
   article ul li {
-    font-size: 0.9em;
+    font-size: 1.2em;
     line-height: 1.3em;
   }
 }
 @media only screen and (min-width: 721px) and (max-width: 919px) {
   article ul li {
-    font-size: 1em;
+    font-size: 1.3em;
     line-height: 1.4em;
   }
 }
@@ -6068,19 +6152,19 @@ article ol li {
 }
 @media only screen and (min-width: 321px) and (max-width: 479px) {
   article ol li {
-    font-size: 0.8em;
+    font-size: 1em;
     line-height: 1.3em;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 719px) {
   article ol li {
-    font-size: 0.9em;
+    font-size: 1.2em;
     line-height: 1.3em;
   }
 }
 @media only screen and (min-width: 721px) and (max-width: 919px) {
   article ol li {
-    font-size: 1em;
+    font-size: 1.3em;
     line-height: 1.4em;
   }
 }
@@ -6104,19 +6188,19 @@ ul li {
 }
 @media only screen and (min-width: 321px) and (max-width: 479px) {
   ul li {
-    font-size: 0.8em;
+    font-size: 1em;
     line-height: 1.3em;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 719px) {
   ul li {
-    font-size: 0.9em;
+    font-size: 1.2em;
     line-height: 1.3em;
   }
 }
 @media only screen and (min-width: 721px) and (max-width: 919px) {
   ul li {
-    font-size: 1em;
+    font-size: 1.3em;
     line-height: 1.4em;
   }
 }
@@ -6136,19 +6220,19 @@ ol li {
 }
 @media only screen and (min-width: 321px) and (max-width: 479px) {
   ol li {
-    font-size: 0.8em;
+    font-size: 1em;
     line-height: 1.3em;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 719px) {
   ol li {
-    font-size: 0.9em;
+    font-size: 1.2em;
     line-height: 1.3em;
   }
 }
 @media only screen and (min-width: 721px) and (max-width: 919px) {
   ol li {
-    font-size: 1em;
+    font-size: 1.3em;
     line-height: 1.4em;
   }
 }

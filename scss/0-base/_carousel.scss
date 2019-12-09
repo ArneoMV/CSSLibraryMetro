@@ -23,7 +23,7 @@
     right: -40px;
   }
   .carousel_track-container {
-    background: lightgreen;
+    background: $white;
     height: 100%;
     position: relative;
     overflow: hidden;
@@ -65,9 +65,15 @@
       }
     }
   }
-  @include respond-to(extrasmall-screens) {  }
-  @include respond-to(small-screens) {  }
-  @include respond-to(medium-screens) {  }
+  @include respond-to(extrasmall-screens) { 
+    zoom: 70%;
+   }
+  @include respond-to(small-screens) { 
+    zoom: 80%;
+   }
+  @include respond-to(medium-screens) { 
+    zoom: 90%;
+   }
   @include respond-to(large-screens) {
       max-width: 400px;
       .carousel_slide {
