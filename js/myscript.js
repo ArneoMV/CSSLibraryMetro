@@ -55,20 +55,6 @@ for(var i = 0; i < elements.length; i++)
             this.classList.add("bak");  
         };
     }
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // syntax Highlight
 function syntaxHighlights() {

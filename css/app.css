@@ -3003,6 +3003,10 @@ fieldset .form-radio, fieldset .form-group {
 .navBar .toggle, .navBar [id^=drop] {
   display: none;
 }
+.navBar .burger {
+  float: right;
+  margin: 10px 15px;
+}
 .navBar .toggle:nth-child(2) {
   float: right;
   padding-top: 8px;
