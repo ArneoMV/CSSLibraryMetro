@@ -33,28 +33,21 @@ sidebar.addEventListener('click', function() {
 
 // Add or remove active class
 var elements = document.getElementsByClassName("child");
-
-for(var i = 0; i < elements.length; i++)
-    {
-        elements[i].onclick = function(){
-            
-            // remove class from sibling
-            
-            var el = elements[0];
-            while(el)
-            {
-                if(el.tagName === "DIV"){
-                    //remove class
-                    el.classList.remove("bak");
-                    
-                }
-                // pass to the new sibling
-                el = el.nextSibling;
+for (var i = 0; i < elements.length; i++) {
+    elements[i].onclick = function(){
+        // remove class from sibling   
+        var el = elements[0];
+        while(el) {
+            if(el.tagName === "DIV"){
+                //remove class
+                el.classList.remove("bak");   
             }
-            
-            this.classList.add("bak");  
-        };
-    }
+            // pass to the new sibling
+            el = el.nextSibling;
+        } 
+        this.classList.add("bak");  
+    };
+}
 
 // syntax Highlight
 function syntaxHighlights() {
@@ -73,35 +66,7 @@ function syntaxHighlights() {
 window.addEventListener("load", syntaxHighlights);
 
 
-// PROGRESS BAR
-// Progress bar -> progress
-var milisec = 0;
-var max = 100;
 
-function displayProgress() {
-    if (milisec >= max) {
-        document.getElementById('message').innerHTML = "Done!";
-    }
-    milisec += 10;
-    document.getElementById('downloadProgress').value = milisec;
-    setTimeout("displayProgress()", max);
-}
-// Progress bar -> div
-function move() {
-    var elem = document.getElementById("myBar");
-    var width = 10;
-    var id = setInterval(frame, 1);
-
-    function frame() {
-        if (width >= 100) {
-            clearInterval(id);
-        } else {
-            width++;
-            elem.style.width = width + '%';
-            elem.innerHTML = width * 1 + '%';
-        }
-    }
-}
 
 
 
