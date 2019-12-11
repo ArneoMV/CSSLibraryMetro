@@ -26,25 +26,19 @@
 
 <!-- Classic form -->
 <form class="form">
-    <h6>Form</h6>
-    <fieldset>
-        <legend>Text</legend>
-        <div class="form-group">
-            <input type="text"  required="required" pattern="\S+.*"/>
-            <label for="input"  class="control-label" >textfield</label>
-            <i class="bar-form" ></i>
-        </div>
-        <div class="form-group">
-            <input type="email" required="required" pattern="\S+.*"></input>
-            <label for="input"  class="control-label">email</label>
-            <i class="bar-form"></i>
-        </div>
-        <div class="form-group">
-            <input type="password" required="required" pattern="\S+.*"></input>
-            <label for="input"  class="control-label">password</label>
-            <i class="bar-form"></i>
-        </div>
-    </fieldset>
+    <h5>Form</h5>
+    <div class="inputFilled">
+        <input type="text"  required="required" pattern="\S+.*"/>
+        <label for="input" class="control-label">name</label>
+    </div>
+    <div class="inputFilled">
+        <input type="email"  required="required" pattern="\S+.*"/>
+        <label for="input" class="control-label" >email</label>
+    </div>
+    <div class="inputFilled">
+        <input type="password"  required="required" pattern="\S+.*"/>
+        <label for="input" class="control-label" >password</label>
+    </div>
     <fieldset>
         <legend>Select</legend>
         <div class="selectStyle">
@@ -61,38 +55,32 @@
             </select>
         </div>
     </fieldset>
-    <fieldset>
-        <legend>Radio</legend>
-        <div class="checkbox">
+    <div class="checkbox">
+        <label>
+            <input type="checkbox"  checked="checked" />
+            <i class="helper"></i>I'm the label from a checkbox
+        </label>
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox"/>
+            <i class="helper"></i>I'm the label from a checkbox
+        </label>
+    </div>       
+    <div class="form-radio">
+        <div class="radio">
             <label>
-                <input type="checkbox"  checked="checked" />
-                <i class="helper"></i>I'm the label from a checkbox
+                <input type="radio" name="radio" checked="checked"/>
+                <i class="helper"></i>I'm the label from a radio button
             </label>
         </div>
-        <div class="checkbox">
+        <div class="radio">
             <label>
-                <input type="checkbox"/>
-                <i class="helper"></i>I'm the label from a checkbox
+                <input type="radio" name="radio" />
+                <i class="helper"></i>I'm the label from a radio button
             </label>
-        </div>       
-    </fieldset>
-    <fieldset>
-        <legend>Check</legend>
-        <div class="form-radio">
-            <div class="radio">
-                <label>
-                    <input type="radio" name="radio" checked="checked"/>
-                    <i class="helper"></i>I'm the label from a radio button
-                </label>
-            </div>
-            <div class="radio">
-                <label>
-                    <input type="radio" name="radio" />
-                    <i class="helper"></i>I'm the label from a radio button
-                </label>
-            </div>
         </div>
-    </fieldset>
+    </div>
     <div class="button-container">
         <button class="btn-primary-raised btn-ripple">Submit</button>
     </div>
