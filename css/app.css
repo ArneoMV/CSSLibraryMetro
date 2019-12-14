@@ -5984,6 +5984,7 @@ body {
 
 article {
   max-width: 940px;
+  margin: 0 auto;
 }
 article ul {
   list-style: none;
