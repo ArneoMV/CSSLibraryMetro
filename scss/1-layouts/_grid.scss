@@ -41,6 +41,19 @@
   .grid-content-2 { grid-area: content-2; }
   .grid-content-3 { grid-area: content-3; }
   .grid-footer { grid-area: footer; }
+
+  @include respond-to(extrasmall-screens) { 
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    grid-template-areas:
+        "header"
+        "content-1"
+        "content-2"
+        "content-3"  
+        "sidebar"
+        "footer";  
+  }
   @include respond-to(small-screens) {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -75,6 +88,17 @@
           "content-2 content-3"  
           "sidebar sidebar"
           "footer footer";
+  }
+  @include respond-to(large-2-screens) { 
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: 80px 1fr 1fr 100px;
+    grid-gap: 1rem;
+    grid-template-areas:
+        "header header"
+        "content-1 content-1"
+        "content-2 content-3"  
+        "sidebar sidebar"
+        "footer footer";
   }
   @include respond-to(extralarge-screens) {
       grid-template-columns: 200px 1fr 1fr;
