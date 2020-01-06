@@ -2,17 +2,17 @@ https://arneomv.github.io/ScssLibraryMetro/
 
 # Project Title
 
-Scss Library - Metro
+CSS Library - Metro
 
 ## Getting Started
 
-Metro is a SCSS library. With the help of its components you can easily create a responsive website.
+Metro is a CSS library. With the help of its components you can easily create a responsive website.
 
 I started working on this project as part of my final work at the Zagreb University of applied sciences.
 
 ### Installing
 
-You can use the library by inserting a CSS folder within your project. If you have SASS installed on your computer, you can insert the SCSS folder within your project and edit it according to your needs.
+You can use the library by inserting a CSS folder within your project. If you have SASS installed on your computer, you can insert the SCSS folder within your project and edit new components and styles according to your needs.
 
 ## Built With
 
