@@ -13,8 +13,8 @@ You can use the framework by inserting a CSS folder within your project. If you 
 * [SCSS](https://sass-lang.com/) - Sass is a stylesheet language that’s compiled to CSS.
 * [Javascript](https://devdocs.io/javascript/) - JavaScript is a scripting programming language that is executed in the user's web browser.
 
-### Authors
+### Author
 
-* **© 2019 Arneo Marin-Vincetić** - [ArneoMV](https://github.com/ArneoMV)
+** © 2019 Arneo Marin-Vincetić** - [ArneoMV](https://github.com/ArneoMV)
 
 
