@@ -79,7 +79,7 @@
           "footer";
   }
   @include respond-to(large-screens) {
-      grid-template-columns: 200px 1fr 1fr;
+      // grid-template-columns: 200px 1fr 1fr;
       grid-template-rows: 80px 1fr 1fr 100px;
       grid-gap: 1rem;
       grid-template-areas:
@@ -90,7 +90,7 @@
           "footer footer";
   }
   @include respond-to(large-2-screens) { 
-    grid-template-columns: 200px 1fr 1fr;
+    // grid-template-columns: 200px 1fr 1fr;
     grid-template-rows: 80px 1fr 1fr 100px;
     grid-gap: 1rem;
     grid-template-areas:
@@ -101,7 +101,7 @@
         "footer footer";
   }
   @include respond-to(extralarge-screens) {
-      grid-template-columns: 200px 1fr 1fr;
+      // grid-template-columns: 200px 1fr 1fr;
       grid-template-rows: 80px 1fr 1fr 100px;
       grid-gap: 1rem;
       grid-template-areas:

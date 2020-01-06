@@ -4341,7 +4341,6 @@ h1 {
 }
 @media only screen and (min-width: 721px) and (max-width: 919px) {
   .grid-container-1 {
-    grid-template-columns: 200px 1fr 1fr;
     grid-template-rows: 80px 1fr 1fr 100px;
     grid-gap: 1rem;
     grid-template-areas: "header header" "content-1 content-1" "content-2 content-3" "sidebar sidebar" "footer footer";
@@ -4349,7 +4348,6 @@ h1 {
 }
 @media only screen and (min-width: 921px) and (max-width: 1199px) {
   .grid-container-1 {
-    grid-template-columns: 200px 1fr 1fr;
     grid-template-rows: 80px 1fr 1fr 100px;
     grid-gap: 1rem;
     grid-template-areas: "header header" "content-1 content-1" "content-2 content-3" "sidebar sidebar" "footer footer";
@@ -4357,7 +4355,6 @@ h1 {
 }
 @media only screen and (min-width: 1200px) {
   .grid-container-1 {
-    grid-template-columns: 200px 1fr 1fr;
     grid-template-rows: 80px 1fr 1fr 100px;
     grid-gap: 1rem;
     grid-template-areas: "header header header" "sidebar content-1 content-1" "sidebar content-2 content-3" "footer footer footer";
