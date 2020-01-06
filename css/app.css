@@ -4315,6 +4315,14 @@ h1 {
 .grid-container-1 .grid-footer {
   grid-area: footer;
 }
+@media only screen and (min-width: 151px) and (max-width: 479px) {
+  .grid-container-1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    grid-template-areas: "header" "content-1" "content-2" "content-3" "sidebar" "footer";
+  }
+}
 @media only screen and (min-width: 321px) and (max-width: 479px) {
   .grid-container-1 {
     grid-template-columns: 1fr;
@@ -4332,6 +4340,14 @@ h1 {
   }
 }
 @media only screen and (min-width: 721px) and (max-width: 919px) {
+  .grid-container-1 {
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: 80px 1fr 1fr 100px;
+    grid-gap: 1rem;
+    grid-template-areas: "header header" "content-1 content-1" "content-2 content-3" "sidebar sidebar" "footer footer";
+  }
+}
+@media only screen and (min-width: 921px) and (max-width: 1199px) {
   .grid-container-1 {
     grid-template-columns: 200px 1fr 1fr;
     grid-template-rows: 80px 1fr 1fr 100px;
