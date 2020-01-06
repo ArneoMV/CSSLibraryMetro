@@ -15,6 +15,6 @@ You can use the framework by inserting a CSS folder within your project. If you 
 
 ### Author
 
-** © 2019 Arneo Marin-Vincetić** - [ArneoMV](https://github.com/ArneoMV)
+© 2019 Arneo Marin-Vincetić** - [ArneoMV](https://github.com/ArneoMV)
 
 
