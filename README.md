@@ -1,8 +1,6 @@
 https://arneomv.github.io/MetroCSSFramework/
 
-# Project Title
-
-Metro CSS framework
+# Metro CSS framework
 
 ## Getting Started
 
