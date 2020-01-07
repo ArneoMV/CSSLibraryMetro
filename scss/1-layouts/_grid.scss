@@ -23,8 +23,11 @@
   @include respond-to(large-screens) {
       grid-template-columns: repeat(3, 33%);
   }
+  @include respond-to(large-2-screens) {  
+    grid-template-columns: repeat(4, 25%);
+  }
   @include respond-to(extralarge-screens) {
-      grid-template-columns: repeat(4, 25%);
+      grid-template-columns: repeat(5, 20%);
   }
 }
 

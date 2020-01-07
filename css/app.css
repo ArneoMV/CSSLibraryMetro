@@ -4287,9 +4287,14 @@ h1 {
     grid-template-columns: repeat(3, 33%);
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 921px) and (max-width: 1199px) {
   .grid-container {
     grid-template-columns: repeat(4, 25%);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(5, 20%);
   }
 }
 
@@ -4942,9 +4947,14 @@ code {
 .price-cards .price-card article:nth-child(2n) h5, .price-cards .price-card article:nth-child(2n) h4 {
   margin: 0;
 }
-@media only screen and (min-width: 481px) and (max-width: 719px) {
+@media only screen and (min-width: 321px) and (max-width: 479px) {
   .price-cards {
     grid-template-columns: repeat(1, 100%);
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 719px) {
+  .price-cards {
+    grid-template-columns: repeat(2, 50%);
   }
 }
 @media only screen and (min-width: 721px) and (max-width: 919px) {
@@ -4959,7 +4969,7 @@ code {
 }
 @media only screen and (min-width: 1200px) {
   .price-cards {
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(5, 20%);
   }
 }
 
@@ -5753,25 +5763,42 @@ code {
   margin: 0 auto;
 }
 
+.row {
+  position: relative;
+}
+
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 [class*=col-] {
   width: 100%;
   float: left;
   min-height: 1px;
 }
 
+/* Columns */
 .col {
+  width: 100%;
+  float: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
   padding: 1em;
   margin: 8px;
   background-color: #ffb751;
-  border: 6px solid #c73e00;
-  border-radius: 3px;
+  border: 3px solid #c73e00;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
   color: #333333;
   font-weight: 100;
   text-align: center;
 }
 
-.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9,
+.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9,
+.col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9,
+.col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
   position: relative;
   min-height: 1px;
 }
@@ -5981,10 +6008,12 @@ code {
    MODULE STYLES
    ============================== */
 /* GLOBAR ATRIBUTES */
-* {
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
 body {
