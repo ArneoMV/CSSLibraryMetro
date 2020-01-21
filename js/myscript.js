@@ -1,4 +1,5 @@
 /* MAIN SCRIPT */
+
 // MAIN NAVIGATION
 var sidebar = document.getElementById('mainSidebar');
 var checkBox = document.getElementById("mainNav");
