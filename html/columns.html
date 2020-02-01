@@ -1,7 +1,8 @@
 
 	<article>
 		<h2>Columns</h2>
-		<p>Columns system is a structure that allows for content to be stacked both vertically and horizontally in a consistent and easily manageable fashion. Additionally, grid system code is project-agnostic giving it a high degree of portability so that it may be adopted on new projects.</p>
+		<p>Columns system is a structure that allows for content to be stacked both vertically and horizontally in a consistent and easily manageable fashion. 
+			Additionally, grid system code is project-agnostic giving it a high degree of portability so that it may be adopted on new projects.</p>
 		
 		<ul>
 			<h4>The Benefits</h4>
@@ -16,30 +17,32 @@
 		<h4>Calculating Column Widths</h4>
 		<p>
 			Before we can begin making calculations, we need to determine the maximum amount of columns per row. A popular choice is 12 as it boasts flexibility given that it is divisible by 1, 2, 3, 4, and 6. This permits a variety of different combinations that still allow for evenly distributed columns of the same size.
-			<br />
 			It’s important to understand that by going with a maximum of 12 columns per row, you need to fulfill that amount for every row regardless of how many columns you want. For example, if you wanted only a row of 3 equal columns, you would use 3 elements that each span 4 columns (4×3=12). Exceeding the sum of 12 will result in the extra column(s) wrapping to a new line.
-			<br />
-			Now that we know the maximum number of columns, next we need to determine the width of a single (1/12) column using the following formula:
-			<br />
+			Now that we know the maximum number of columns, next we need to determine the width of a single (1/12) column using the following formula: <br />
 			scw = (100 – (m * (mc – 1))) / mc
-			<br /><br />
-			Where:
-			<br />
-			scw = single column width<br />
+		</p>
+		<br />
+		<br />
+		<p>
+			<b>scw = single column width</b><br />
 			m = margin (1.6%)<br />
 			mc = maximum columns (12)<br />
-			When we plug in the numbers, we get a single column width of 8.33%. From here we can use this number to calculate the rest of the column widths. The formula for this is:
+			When we plug in the numbers, we get a single column width of 8.33%. 
+			From here we can use this number to calculate the rest of the column widths. 
+			The formula for this is:
 			<br />
 			cw = (scw * cs) + (m * (cs – 1))
-			<br /><br />
-			Where:
-			<br />
-			cw = column width<br />
+		</p>
+
+			
+		<p>
+			<b>cw = column width</b><br />
 			scw = single column width (8.33%)<br />
 			cs = column span (1-12)<br />
 			m = margin (1.6%)<br />
-			Applying this formula for each of the 12 columns results in the following CSS.
 		</p>
+		<p>Applying this formula for each of the 12 columns results in the following CSS.</p>
+
 		<br /><br />
 	</article>
 
