@@ -85,11 +85,7 @@ font-style: normal;
 <small style="float: right;">SCSS</small>
 
 <!-- h1 - h6 -->
-<article>
-	<h4>Title</h4>
-	<ul>
-		<li><span class="txt-warrning-0">&lt;h1&gt; / &lt;h6&gt; </span> tags serve to display titles</li>
-	</ul>
+<section>
 	<table>
 		<tr>
 			<th>selector</th>
@@ -97,18 +93,67 @@ font-style: normal;
 		</tr>
 		<tr>
 			<td><span class="txt-primary-4"> &lt;h1&gt; / &lt;h6&gt;</span></td>
+			<td><span class="txt-warrning-0">&lt;p&gt;</span></td>
+			<td>blockquote</td>
 		</tr>
 		<tr>
 			<td><span class="txt-primary-4">tags serve to display titles</span></td>
+			<td>tag serves to display a paragraph</td>
+			<td>The blockquote tag is used to display content from another source</td>
 		</tr>
 	</table>
+
+
+	<!-- title -->
+	<h4>Title</h4>
 	<h1>h1</h1>
 	<h2>h2</h2>
 	<h3>h3</h3>
 	<h4>h4</h4>
 	<h5>h5</h5>
 	<h6>h6</h6>
-</article>
+
+	<!-- p -->
+	<h4>Paragraph</h4>
+	<p>
+		Omnivm pervm prinvipa perva svnt.
+		Ars longa vita brevis. 
+		Verba volant scripta manent.
+		Barba non facit philosophvm
+	</p>
+
+	<!-- blockquote -->
+	<blockquote>
+		<p><q>Any product that needs a manual to work is broken</q></p>
+		<footer>Elon Musk</footer>
+	</blockquote>	
+
+	<table class="tableMetro">
+		<tr>
+			<th>blockquote selector</th>
+			<th>explanation</th>
+		</tr>
+		<tr>
+			<td>&lt;blockquote&gt;</td>
+			<td> tag blockquote is used to display content from another source</td>
+		</tr>
+		<tr>
+			<td>&lt;q&gt;</td>
+			<td> tag is used to enclose quotes.</td>
+		</tr>
+		<tr>
+			<td>&lt;footer&gt;</td>
+			<td> tag displays the text reference.e</td>
+		</tr>
+		<tr>
+			<td>:nth-of-type (even)</td>
+			<td> selector  will corresponds to every element that is the nth child of a certain type, its parent. The selector will include each subsequent (odd) quote on the right side of the page</td>
+		</tr>
+	</table>
+
+</section>
+
+
 <code>
 &lt;h1&gt;h1&lt;h1&gt;
 &lt;h2&gt;h2&lt;h2&gt;
@@ -138,16 +183,9 @@ h6 {font-size: 0.75em;}
 </code>
 <small style="float: right;">CSS</small>	
 
-<!-- p -->
-<h4>Paragraph</h4>
-<article>
-	<ul>
-		<li><span class="txt-warrning-0">&lt;p&gt;</span> tag serves to display a paragraph</li>
-	</ul>
-</article>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-	Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum distinctio vitae amet nam quas. Adipisci!</p>
+
 <br />
+
 <code>
 &lt;p&gt; Lorem ipsum dolor &lt;p&gt;
 </code>
@@ -164,39 +202,9 @@ line-height: 1.4;
 </code>
 <small style="float: right;">SCSS</small>
 
-<!-- blockquote -->
-<h4>Blockquote</h4>
-<p>The blockquote tag is used to display content from another source</p>
 <br/>
 
-<blockquote>
-		<p><q>Any product that needs a manual to work is broken</q></p>
-		<footer>Elon Musk</footer>
-</blockquote>
-<br/>
 
-<table class="tableMetro">
-	<tr>
-		<th>CSS</th>
-		<th>explanation</th>
-	</tr>
-	<tr>
-		<td>&lt;blockquote&gt;</td>
-		<td> tag blockquote is used to display content from another source</td>
-	</tr>
-	<tr>
-		<td>&lt;q&gt;</td>
-		<td> tag is used to enclose quotes.</td>
-	</tr>
-	<tr>
-		<td>&lt;footer&gt;</td>
-		<td> tag displays the text reference.e</td>
-	</tr>
-	<tr>
-		<td>:nth-of-type (even)</td>
-		<td> selector  will corresponds to every element that is the nth child of a certain type, its parent. The selector will include each subsequent (odd) quote on the right side of the page</td>
-	</tr>
-</table>
 <br/><br/>
 
 <code>
