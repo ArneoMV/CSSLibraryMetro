@@ -1,264 +1,227 @@
-
-<!-- opčenito o fontovima -->
-<article>
-	<h2>Typography</h2>
-	<p>We use three font families. The titles use the Libre Baskerville font, which is a serif font and looks antique, for paragraphs we use the Montserrat font, which is a sans-serif font and looks modern, and for lists uses Ubuntu Mono, which is a monospaced font. Libre Baskerville, Montserrat and Ubuntu Mono fonts work visually in harmony with the contrast they create. The reader will be able to distinguish sections of the text while spending time on the website.</p>
-
-	<ul>
-		<li><span class="txt-warrning-0">Libre Baskerville</span> is a serif font and we use it for titles.</li>
-		<li><span class="txt-warrning-0">Montserrat</span> is sans-serif and we use it for paragraphs. </li>
-		<li><span class="txt-warrning-0">Ubuntu Mono</span> is a monospace font and we use it for lists.</li>
-	</ul>
-	<p>The @font-face rule is used to retrieve the fonts that were added inside the root folder where we stored our fonts. When a font is added to CSS, the rule tells the web browser where to fetch the font. For a web browser to successfully print a font, the font must be stored with the Web Open Font Format (WOFF2) extension. WOFF2 serves to store compressed data that supports TrueType (.ttf) and OpenType (.otf) extensions.</p>
-</article>			
-<br/>
-<fieldset>
-	<legend>Font's</legend>
-	<h3>Hello Morbo, how's the family?</h3>
-	<p>No! The kind with looting and maybe starting a few fires! I don't 'need' to drink. I can quit anytime I want! Also Zoidberg. Oh Leela! You're the only person I could turn to; you're the only person who ever loved me.</p>
+<section>
+	<!-- About fonts -->
 	<article>
+		<h2>Typography</h2>
+		<p>We use three font families. The titles use the Libre Baskerville font, which is a serif font and looks antique, for paragraphs we use the Montserrat font, which is a sans-serif font and looks modern, and for lists uses Ubuntu Mono, which is a monospaced font. Libre Baskerville, Montserrat and Ubuntu Mono fonts work visually in harmony with the contrast they create. The reader will be able to distinguish sections of the text while spending time on the website.</p>
+
 		<ul>
-			<li>Yes, except the Dave Matthews Band doesn't rock.</li>
-			<li>Just once I'd like to eat dinner with a celebrity who isn't bound and gagged.</li>
-			<li>And until then, I can never die?</li>
+			<li><span class="txt-warrning-0">Libre Baskerville</span> is a serif font and we use it for titles.</li>
+			<li><span class="txt-warrning-0">Montserrat</span> is sans-serif and we use it for paragraphs. </li>
+			<li><span class="txt-warrning-0">Ubuntu Mono</span> is a monospace font and we use it for lists.</li>
+		</ul>
+		<p><b>@font-face</b> rule is used to retrieve the fonts that were added inside the root folder where we stored our fonts. When a font is added to CSS, the rule tells the web browser where to fetch the font. For a web browser to successfully print a font, the font must be stored with the Web Open Font Format (WOFF2) extension. WOFF2 serves to store compressed data that supports TrueType (.ttf) and OpenType (.otf) extensions.</p>
+	</article>
+	<article>
+		<h3>Memoria</h3>
+		<p>Memoria minvitvr nisi nem exerceas</p>
+		<ul>
+			<li>Verba volant scripta manent</li>
+			<li>Et post malam segetem servendvm</l>
+			<li>Mens sana in corpore sano</li>
 		</ul>
 	</article>
-</fieldset>
-<br />
-<p><span class="txt-warrning-0">@font-face</span> 
-	the rule is to retrieve the fonts that were added to our root folder where we saved the fonts.
-	Once the option is added to CSS, the rule tells the web browser where to fetch the font.
-	For the web browser to print font successfully, the font must be a WOFF2 (Web Open Font Format) extension.
-	It serves to store compressed data that supports TrueType (.ttf) and OpenType (.otf) extensions.
-</p>
-<code>
-@font-face {
-font-family: 'Montserrat';
-src: url('../fonts/montserrat-webfont.woff2') format('woff2'),
-url('../fonts/montserrat-webfont.woff') format('woff'),
-url('../fonts/europaextended-webfont.ttf')  format('truetype');
-font-weight: normal;
-font-style: normal;
-}
-@font-face {
-font-family: 'UpheavalTT';
-src: url('../fonts/upheavtt-webfont.woff2') format('woff2'),
-url('../fonts/upheavtt-webfont.woff') format('woff'),
-url('../fonts/europaextended-webfont.ttf')  format('truetype');
-font-weight: normal;
-font-style: normal;
-}
-@font-face {
-font-family: 'UbuntuMono';
-src: url('../fonts/UbuntuMono/UbuntuMono-Regular.woff2') format('woff2'),
-url('../fonts/UbuntuMono/UbuntuMono-Regular.woff') format('woff'),
-url('../fonts/UbuntuMono/UbuntuMono-Regular.ttf')  format('truetype');
-font-weight: normal;
-font-style: normal;
-}
-@font-face {
-font-family: 'LibreBaskerville';
-src: url('../fonts/LibreBaskerville/LibreBaskerville-Regular.woff2') format('woff2'),
-url('../fonts/LibreBaskerville/LibreBaskerville-Regular.woff') format('woff'),
-url('..fonts/LibreBaskerville/LibreBaskerville-Bold.ttf')  format('truetype');
-font-weight: normal;
-font-style: normal;
-}
-@font-face {
-font-family: 'LibreBaskerville-Italic';
-src: url('../fonts/LibreBaskerville/LibreBaskerville-Italic.woff2') format('woff2'),
-url('../fonts/LibreBaskerville/LibreBaskerville-Italic.woff') format('woff'),
-url('..fonts/LibreBaskerville/LibreBaskerville-Italic.ttf')  format('truetype');
-font-weight: normal;
-font-style: italic;
-}
-
-@font-face {
-font-family: 'LibreBaskerville-Bold';
-src: url('../fonts/LibreBaskerville/LibreBaskerville-Bold.woff2') format('woff2'),
-url('../fonts/LibreBaskerville/LibreBaskerville-Bold.woff') format('woff'),
-url('../fonts/LibreBaskerville/LibreBaskerville-Regular.ttf')  format('truetype');
-font-weight: bold;
-font-style: normal;
-}
-</code>
-<small style="float: right;">SCSS</small>
-
-<!-- h1 - h6 -->
-<section>
-	<table>
+	<table class="tableMetro">
 		<tr>
-			<th>selector</th>
+			<th>scss</th>
 			<th>explanation</th>
 		</tr>
 		<tr>
-			<td><span class="txt-primary-4"> &lt;h1&gt; / &lt;h6&gt;</span></td>
-			<td><span class="txt-warrning-0">&lt;p&gt;</span></td>
-			<td>blockquote</td>
+			<th>&lt;h1&gt; / &lt;h6&gt;</th>
+			<th><span class="txt-primary-4">tags serve to display titles</span></th>
 		</tr>
 		<tr>
-			<td><span class="txt-primary-4">tags serve to display titles</span></td>
-			<td>tag serves to display a paragraph</td>
-			<td>The blockquote tag is used to display content from another source</td>
+			<th>&lt;p&gt;</th>
+			<th>tag serves to display a paragraph</th>
 		</tr>
-	</table>
-
-
-	<!-- title -->
-	<h4>Title</h4>
-	<h1>h1</h1>
-	<h2>h2</h2>
-	<h3>h3</h3>
-	<h4>h4</h4>
-	<h5>h5</h5>
-	<h6>h6</h6>
-
-	<!-- p -->
-	<h4>Paragraph</h4>
-	<p>
-		Omnivm pervm prinvipa perva svnt.
-		Ars longa vita brevis. 
-		Verba volant scripta manent.
-		Barba non facit philosophvm
-	</p>
-
-	<!-- blockquote -->
-	<blockquote>
-		<p><q>Any product that needs a manual to work is broken</q></p>
-		<footer>Elon Musk</footer>
-	</blockquote>	
-
-	<table class="tableMetro">
+		<tr>
+			<th>&lt;blockquote&gt;</th>
+			<th></th>
+		</tr>
+		<tr>
+			<th>@font-face</th>
+			<th>the rule is to retrieve the fonts that were added to our root folder where we saved the fonts.
+				Once the option is added to CSS, the rule tells the web browser where to fetch the font.
+				For the web browser to print font successfully, the font must be a WOFF2 (Web Open Font Format) extension.
+				It serves to store compressed data that supports TrueType (.ttf) and OpenType (.otf) extensions.
+			</th>
+		</tr>
 		<tr>
 			<th>blockquote selector</th>
 			<th>explanation</th>
 		</tr>
 		<tr>
 			<td>&lt;blockquote&gt;</td>
-			<td> tag blockquote is used to display content from another source</td>
+			<td> selector blockquote is used to display content from another source</td>
 		</tr>
 		<tr>
 			<td>&lt;q&gt;</td>
-			<td> tag is used to enclose quotes.</td>
+			<td>the selector is used to enclose quotes.</td>
 		</tr>
 		<tr>
 			<td>&lt;footer&gt;</td>
-			<td> tag displays the text reference.e</td>
+			<td>selector displays the text reference</td>
 		</tr>
 		<tr>
 			<td>:nth-of-type (even)</td>
-			<td> selector  will corresponds to every element that is the nth child of a certain type, its parent. The selector will include each subsequent (odd) quote on the right side of the page</td>
+			<td> the selector will correspond to every element that is the nth child of a certain type, its parent. The selector will include each subsequent (odd) quote on the right side of the page</td>
 		</tr>
+
 	</table>
 
+	<!-- examples -->
+	<article>
+		<h1>h1</h1>
+		<h2>h2</h2>
+		<h3>h3</h3>
+		<h4>h4</h4>
+		<h5>h5</h5>
+		<h6>h6</h6>
+		<br />
+		<p>
+			Omnivm pervm prinvipa perva svnt.
+			Ars longa vita brevis. 
+			Verba volant scripta manent.
+			Barba non facit philosophvm
+		</p>
+		<br />
+		<!-- blockquote -->
+		<blockquote>
+			<p><q>Any product that needs a manual to work is broken</q></p>
+			<footer>Elon Musk</footer>
+		</blockquote>	
+	</article>
+	<code>
+		&lt;h1&gt;h1&lt;h1&gt;
+		&lt;h2&gt;h2&lt;h2&gt;
+		&lt;h3&gt;h3&lt;h3&gt;
+		&lt;h4&gt;h4&lt;h4&gt;
+		&lt;h5&gt;h5&lt;h5&gt;
+		&lt;h6&gt;h6&lt;h6&gt;
+		
+		&lt;p&gt; Lorem ipsum dolor &lt;p&gt;
+		
+		&lt;blockquote&gt;
+		&lt;q&gt;Any product that needs a manual to work is broken&lt;/q&gt;&lt;/p&gt;
+		&lt;ooter&gt;Elon Musk&lt;/footer&gt;
+		&lt;/blockquote&gt;
+		
+	</code>
+	<small style="float: right;">HTML</small>
+	
+	<code>
+	h1, h2, h3, h4, h5, h6 {
+		font-family: 600 1.5em/1 'Raleway', sans-serif;
+		font-weight: 600;
+		font-kerning: 1.5em/1 ;
+		color: rgba(0,0,0,.5);
+		text-align: left;
+		text-transform: uppercase;
+		letter-spacing: .5em;
+	}
+	p {
+		color: #black; 
+		font-family: "Roboto","Helvetica Neue",Arial,sans-serif; 
+		font-size: 16px; 
+		font-weight: 500; 
+		line-height: 1.4;
+	}
+	
+	blockquote {
+		margin: 0 auto;
+		padding: 1em;
+		border-left: 5px solid $color-primary;
+		&:before {
+		display: none;
+		}
+		p {
+		color: $color-default;
+		font-size: 12pt;
+		line-height: 1.4;
+		font-family: $font_0, $font_1, $font_2, $font_3, $font_4, $font_5, $font_6, $font_7, $font_8;
+		font-size: 14pt;
+		}
+		footer {
+		margin-top: .5em;
+		padding: 0;
+		color: $color-default;
+		font-size: 12pt;
+		text-align: left;
+		font-style: italic;
+		&:before {
+		content: '— ';
+		}
+		}
+		&:nth-of-type(even) {
+		//The: nth-of-type(n) selector matches every element that is the nth child, of a particular type, of its parent. text-align: right;
+		border-left: none;
+		border-right: 5px solid $color-default;
+		padding: 1em 1em 1em 20%;
+		footer {
+		text-align: right;
+		&:before {
+			content: '';
+		}
+		&:after {
+			content: ' —';
+		}
+		}
+		}
+		&:not(:first-of-type) {
+		margin-top: .5em;
+		}
+		}
+	@font-face {
+		font-family: 'Montserrat';
+		src: url('../fonts/montserrat-webfont.woff2') format('woff2'),
+		url('../fonts/montserrat-webfont.woff') format('woff'),
+		url('../fonts/europaextended-webfont.ttf')  format('truetype');
+		font-weight: normal;
+		font-style: normal;
+		}
+		@font-face {
+		font-family: 'UpheavalTT';
+		src: url('../fonts/upheavtt-webfont.woff2') format('woff2'),
+		url('../fonts/upheavtt-webfont.woff') format('woff'),
+		url('../fonts/europaextended-webfont.ttf')  format('truetype');
+		font-weight: normal;
+		font-style: normal;
+		}
+		@font-face {
+		font-family: 'UbuntuMono';
+		src: url('../fonts/UbuntuMono/UbuntuMono-Regular.woff2') format('woff2'),
+		url('../fonts/UbuntuMono/UbuntuMono-Regular.woff') format('woff'),
+		url('../fonts/UbuntuMono/UbuntuMono-Regular.ttf')  format('truetype');
+		font-weight: normal;
+		font-style: normal;
+		}
+		@font-face {
+		font-family: 'LibreBaskerville';
+		src: url('../fonts/LibreBaskerville/LibreBaskerville-Regular.woff2') format('woff2'),
+		url('../fonts/LibreBaskerville/LibreBaskerville-Regular.woff') format('woff'),
+		url('..fonts/LibreBaskerville/LibreBaskerville-Bold.ttf')  format('truetype');
+		font-weight: normal;
+		font-style: normal;
+		}
+		@font-face {
+		font-family: 'LibreBaskerville-Italic';
+		src: url('../fonts/LibreBaskerville/LibreBaskerville-Italic.woff2') format('woff2'),
+		url('../fonts/LibreBaskerville/LibreBaskerville-Italic.woff') format('woff'),
+		url('..fonts/LibreBaskerville/LibreBaskerville-Italic.ttf')  format('truetype');
+		font-weight: normal;
+		font-style: italic;
+		}
+		
+		@font-face {
+		font-family: 'LibreBaskerville-Bold';
+		src: url('../fonts/LibreBaskerville/LibreBaskerville-Bold.woff2') format('woff2'),
+		url('../fonts/LibreBaskerville/LibreBaskerville-Bold.woff') format('woff'),
+		url('../fonts/LibreBaskerville/LibreBaskerville-Regular.ttf')  format('truetype');
+		font-weight: bold;
+		font-style: normal;
+		}
+	</code>
+	<small style="float: right;">CSS</small>	
+	
 </section>
 
 
-<code>
-&lt;h1&gt;h1&lt;h1&gt;
-&lt;h2&gt;h2&lt;h2&gt;
-&lt;h3&gt;h3&lt;h3&gt;
-&lt;h4&gt;h4&lt;h4&gt;
-&lt;h5&gt;h5&lt;h5&gt;
-&lt;h6&gt;h6&lt;h6&gt;
-</code>
-<small style="float: right;">HTML</small>
-<br />
-<code>
-h1, h2, h3, h4, h5, h6 {
-font-family: 600 1.5em/1 'Raleway', sans-serif;
-font-weight: 600;
-font-kerning: 1.5em/1 ;
-color: rgba(0,0,0,.5);
-text-align: left;
-text-transform: uppercase;
-letter-spacing: .5em;
-}
-h1 {font-size: 2.25em;}
-h2 {font-size: 1.875em;}
-h3 {font-size: 1.5em;}
-h4 {font-size: 1.125em;}
-h5 {font-size: 0.875em;}
-h6 {font-size: 0.75em;}
-</code>
-<small style="float: right;">CSS</small>	
-
-
-<br />
-
-<code>
-&lt;p&gt; Lorem ipsum dolor &lt;p&gt;
-</code>
-<small style="float: right;">HTML</small>
-<br />
-<code>
-p {
-color: #black; 
-font-family: "Roboto","Helvetica Neue",Arial,sans-serif; 
-font-size: 16px; 
-font-weight: 500; 
-line-height: 1.4;
-}
-</code>
-<small style="float: right;">SCSS</small>
-
-<br/>
-
-
-<br/><br/>
-
-<code>
-&lt;blockquote&gt;
-&lt;&gt;&lt;q&gt;Any product that needs a manual to work is broken&lt;/q&gt;&lt;/p&gt;
-&lt;ooter&gt;Elon Musk&lt;/footer&gt;
-&lt;/blockquote&gt;
-</code>
-<small style="float: right;">HTML</small>
-<br />
-<code>
-blockquote {
-margin: 0 auto;
-padding: 1em;
-border-left: 5px solid $color-primary;
-&:before {
-display: none;
-}
-p {
-color: $color-default;
-font-size: 12pt;
-line-height: 1.4;
-font-family: $font_0, $font_1, $font_2, $font_3, $font_4, $font_5, $font_6, $font_7, $font_8;
-font-size: 14pt;
-}
-footer {
-margin-top: .5em;
-padding: 0;
-color: $color-default;
-font-size: 12pt;
-text-align: left;
-font-style: italic;
-&:before {
-content: '— ';
-}
-}
-&:nth-of-type(even) {
-//The: nth-of-type(n) selector matches every element that is the nth child, of a particular type, of its parent. text-align: right;
-border-left: none;
-border-right: 5px solid $color-default;
-padding: 1em 1em 1em 20%;
-footer {
-text-align: right;
-&:before {
-	content: '';
-}
-&:after {
-	content: ' —';
-}
-}
-}
-&:not(:first-of-type) {
-margin-top: .5em;
-}
-}
-</code>
-<small style="float: right;">SCSS</small>
