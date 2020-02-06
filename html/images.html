@@ -75,13 +75,14 @@
 
 <code>
 &lt;figure&gt;
-&lt;img srcset="img/slika320.png 320w,
-.mg/slika480.png 480w,
-img/slika720.png 800w"
-sizes="(max-width: 320px) 280px,
-(max-width: 480px) 440px,
-800px"
-src="img/slika320.png" alt="slika"&gt;
+&lt;img srcset="img/slika320.png 	
+	320w, .mg/slika480.png 
+	480w, img/slika720.png 
+	800w"	
+	sizes="(max-width: 320px) 280px, (max-width: 480px) 
+	440px, 
+	800px" src="img/slika320.png" 
+	alt="slika"&gt;
 &lt;figcaption&gt;slika 320wpx&lt;/figcaption&gt;
 &lt;/figure&gt;
 </code>
@@ -90,8 +91,8 @@ src="img/slika320.png" alt="slika"&gt;
 <p>By extending CSS code with <b><i>iframe, object, embed, and video</i></b> we enable responsive resolution of other media elements.</p>
 <code>
 img, iframe, object, embed, video {
-width: 100%;
-max-width: 100%;
+	width: 100%;
+	max-width: 100%;
 }
 </code>
 <small style="float: right;">SCSS</small>
