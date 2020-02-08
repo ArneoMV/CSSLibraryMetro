@@ -26,19 +26,21 @@
 <!-- Clearfix -->
 <article>
     <h3>ClearFix</h3>
-    <p>Micro clearfix generates pseudo-elements and displays them on a table. This creates an anonymous table cell and a new block formatting context, which means that before the pseudo-element prevents the collapse of the upper margin. A pseudo-element is used to clear floats. As a result, there is no need to hide the generated content and the total amount of code required is reduced.</p>
+    <p>Micro clearfix generates pseudo-elements and displays them on a table. 
+        This creates an anonymous table-cell and a new block formatting context, which means that before the pseudo-element prevents the collapse of the upper margin. 
+        A pseudo-element is used to clear floats. As a result, there is no need to hide the generated content and the total amount of code required is reduced.</p>
 
     <ul>
         <li>Today's markup experts use this technique to avoid clutter in the markup. This technique was invented by Nicolas Gallagher. Read his original post on the micro-clearfix hack</li>
         <li>In this technique, the parent element is given some magical CSS properties to clean the floats of all its children.</li>
-        <li>Flexbox is supported from Firefox 18, Chrome 21, Opera 12.10, and Internet Explorer 10, Safari 6.1 (including Mobile Safari) and Android's default browser 4.4.</li>
+        <li>Flexbox is supported by Firefox 18, Chrome 21, Opera 12.10, and Internet Explorer 10, Safari 6.1 (including Mobile Safari) and Android's default browser 4.4.</li>
     </ul>
 
-    <p>Including the: before menu, it's not necessary to delete floats, but it prevents the upper margins from collapsing in modern browsers.</p>
+    <p>Including the: before themenu, it's not necessary to delete floats, but it prevents the upper margins from collapsing in modern browsers.</p>
     <ul>
         <p>This has two advantages:</p>
         <li>It provides visual consistency with other float retention techniques that create a new block formatting context, overflow: hidden;</li>
-        <li>Provides visual consistency with IE 6/7 when zoom is applied to 1</li>
+        <li>Provides visual consistency with IE 6/7 when the zoom is applied to 1</li>
     </ul>
 </article>
 
