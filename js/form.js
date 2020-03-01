@@ -1,5 +1,4 @@
-// multi-step form
-
+// MULTI STEP FORM
 let btn_prevForm = document.getElementById("btn_prevForm");
 let btn_nextForm = document.getElementById("btn_nextForm");
 const submitButton = document.getElementById('validateFormStep');
